@@ -25,13 +25,15 @@ interface Loaded {
 }
 interface Note { id: string; handId: string; step: string; stepLabel: string; flag: string; text: string; at: string }
 
+// The public site (GitHub Pages) is for students: no Student/Reviewer switch and no Reviewer mode.
+const PUBLIC = /\.github\.io$/i.test(location.hostname);
 const S = {
   hands: [] as Loaded[],
   cur: 0,
   step: 0,
   showPlayed: false,
   showAll: false,
-  mode: (lsGet('bridge-mode') === 'review' ? 'review' : 'student') as 'student' | 'review',
+  mode: (!PUBLIC && lsGet('bridge-mode') === 'review' ? 'review' : 'student') as 'student' | 'review',
   help: lsGet('bridge-help') !== 'off',
   picks: new Map<number, string>(),
   auto: new Set<number>(),               // steps the student let Autoplay or Claim play for them      // step index -> what the student chose
@@ -1223,6 +1225,7 @@ function boot() {
     else if (e.key === 'Home') go(0);
     else if (e.key === 'End') claim();
   });
+  if (PUBLIC) document.querySelectorAll<HTMLElement>('.modes, #m-review').forEach(e => { e.style.display = 'none'; });
   document.querySelectorAll<HTMLButtonElement>('[data-mode]').forEach(b => b.onclick = () => { S.mode = b.dataset.mode as any; lsSet('bridge-mode', S.mode); $('#tabbody').innerHTML = ''; restart(); });
   $<HTMLInputElement>('#help').onchange = e => { S.help = (e.target as HTMLInputElement).checked; lsSet('bridge-help', S.help ? 'on' : 'off'); render(); };
   $('#restart').onclick = restart;
