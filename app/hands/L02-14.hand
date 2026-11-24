@@ -1,0 +1,71 @@
+# Lesson 2, new hand: open 1NT with 15, partner invites, decline.
+title: Partner invites: decline with 15
+id: L02-14
+type: exercise
+lesson: 2
+concepts: 2.4, 2.7
+student: S
+board: 14
+dealer: E
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  Q84    J73    KJT    QT95
+  E  9762   A5     A85    J862
+  S  AJ5    KQ8    Q962   K73
+  W  KT3    T9642  743    A4
+
+auction:
+  E Pass
+  S 1NT*   = 15-17 points, balanced
+     key: 15 HCP and balanced: open 1NT.
+     not 1D: Did you count 15? A balanced 15-17 opens 1NT.
+     not *: Did you count 15? A balanced 15-17 opens 1NT.
+  W Pass
+  N 2NT    = 8-9 points, balanced: an invitation
+  E Pass
+  S Pass*  = A minimum: decline
+     key: Partner asks you to bid game with the top of your range. 15 is the bottom, so pass.
+     not 3NT: 2NT is an invitation. Are you at the top of your 15-17 range?
+     not *: Partner asks you to bid game with the top of your range. Are you at the top?
+  W Pass
+
+auction recap:
+  Partner's 2NT invited game: bid 3NT with a maximum, pass with a minimum.
+  15 is the bottom of your range, so your side may have only 23. You
+  decline. You are declarer, because you bid no-trump first, and so West
+  will lead to the first trick.
+
+planning:
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W H4  N H3  E HA  S H8
+  2   E H5  S HQ  W H2  N H7
+  3   S D2  W D3  N DK  E DA
+      note: The plan: drive out the ♦A for three diamond tricks, and take two tricks each in hearts and clubs.
+  4   E S2  S S5  W SK  N S4
+  5   W H6  N HJ  E S6  S HK
+  6   S D6  W D4  N DJ  E D5
+      note: Now your diamond winners: over to dummy's ♦J.
+  7   N DT  E D8  S DQ  W D7
+      note: Back to your ♦Q.
+  8   S D9  W S3  N C5  E S7
+      note: Your last diamond is a winner.
+  9   S C3  W C4  N CQ  E C2
+      note: A club to dummy's ♣Q.
+  10  N C9  E C6  S C7  W CA
+      note: Lead a club from dummy. West's ace takes it.
+  11  W HT  N CT  E S9  S SJ
+  12  W H9  N S8  E C8  S SA
+  13  W ST  N SQ  E CJ  S CK
+      note: 7 tricks: 2NT down one.
+
+play recap:
+  The plan: drive out the ♦A for three diamond tricks, and take two tricks
+  each in hearts and clubs.
+
+  2NT down one. The defenders took their aces, the ♠K and West's long
+  hearts. Good defense beat a sound contract, and that's a normal result.
+  With 15 opposite partner's 8-9, your side had 24, and passing the
+  invitation was right.

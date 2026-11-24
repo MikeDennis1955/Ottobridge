@@ -1,0 +1,94 @@
+# Lesson 5, Sample A. Mike's Exercise 4, completed with East-West cards.
+title: Your Exercise 4, completed
+id: L05-A
+type: exercise
+lesson: 5
+concepts: 5.3
+student: S
+board: 48
+dealer: W
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A76    KQ7    AJ943  J4
+  E  84     84     652    AQ9872
+  S  K532   AJ652  K7     T5
+  W  QJT9   T93    QT8    K63
+
+auction:
+  W Pass
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 2C     = Stayman: do you have a 4-card major?
+  W Pass
+  N 2D     = No 4-card major
+  E Pass
+  S 3H*    = Five hearts, game values: you choose
+     key: Five hearts and game values: partner chooses between 4♥ and 3NT.
+     not 3NT: You have five hearts, and partner may have three. Let partner choose.
+     not 2H: That shows 8-9 points; with 11, make a bid partner can't pass.
+     not 4H: Partner may have only two hearts. 3♥ asks; 4♥ guesses.
+  W Pass
+  N 4H     = I have three hearts
+     key: Three hearts, so North chooses 4♥.
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  Your 2♣ found no 4-card major in partner's hand, but you have five hearts.
+  3♥ says "five hearts, game values; you choose." With three hearts North
+  picks 4♥. South is declarer, because South bid hearts first, and so West
+  will lead to the first trick.
+
+planning:
+  trumps out: 5
+  remind: What is the contract?
+  remind: Did the opponents bid?
+
+play:
+  1   W SQ  N S6  E S8  S SK*
+      SK key: Win in hand, and save dummy's ace.
+      SK not S2: Did you think about winning the first trick? Ducking lets the defense keep leading spades.
+      note: West leads the ♠Q. Win in hand. Dummy's ♠A is saved as a way back to dummy later.
+  2   S H2  W H3  N HK  E H4
+      note: Draw trumps.
+  3   N HQ  E H8  S H5  W H9
+      note: Keep drawing trumps.
+  4   N H7  E C2  S HA  W HT
+      note: All the opponents' trumps are gone.
+  5   S DK*  W D8  N D3  E D2
+      DK key: Now set up dummy's diamonds.
+      DK not CT: Did you look at dummy's long diamonds? They're where your extra tricks come from.
+      note: Now set up dummy's diamonds.
+      ok: S
+  6   S D7  W DT  N DA  E D5
+      note: Keep going with diamonds.
+  7   N D4  E D6  S H6  W DQ
+      note: Ruff the third diamond. Diamonds split 3-3, so dummy's ♦J and ♦9 are now winners.
+  8   S S2  W ST  N SA  E S4
+      note: Back to dummy with the saved ♠A.
+  9   N DJ  E C7  S S3  W S9
+      note: Throw a losing spade from hand.
+  10  N D9  E C8  S S5  W C3
+      note: And the other one.
+  11  N C4  E CA  S C5  W C6
+      note: The two club losers can't be avoided.
+  12  E CQ  S CT  W CK  N CJ
+  13  W SJ  N S7  E C9  S HJ
+      note: Ruff West's last spade. 11 tricks: 4♥ made with an overtrick.
+
+play recap:
+  The plan: draw trumps, then set up dummy's diamonds, saving dummy's ♠A as
+  the way back to them.
+
+  Compare 3NT, played by North. East leads a club and the defense takes the
+  first six tricks: ♣K, then ♣Q and four more clubs. In 4♥, the trumps stop
+  the clubs after two rounds. This is the point of your 3♥ bid: it gave
+  partner the chance to choose the safer game.
+
+  A note on the play: setting up dummy's diamonds this way worked because
+  they split 3-3. Against a 4-2 split it would fail, and stronger lines exist,
+  such as keeping dummy's ♥Q as a way back to ruff a second diamond. Playing
+  for a spade ruff in dummy is about as good. Several lines are close here;
+  the bidding is the lesson.

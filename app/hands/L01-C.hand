@@ -1,0 +1,72 @@
+# Lesson 1, Sample C. Example hand, plays itself. Follows Sample D.
+title: How trumps work (4♥)
+id: L01-C
+type: example
+lesson: 1
+concepts: 1.2
+student: S
+board: 1
+dealer: N
+vulnerable: none
+
+deal:
+  N  K4     AKJ95  A7     Q652
+  E  AQJ93  T7     J84    K83
+  S  82     Q843   K952   JT4
+  W  T765   62     QT63   A97
+
+auction:
+  N 1H     = North dealt, so North calls first. 1♥ offers to take 7 tricks (1 + 6) with hearts as trumps.
+  E 1S     = Spades rank above hearts, so East can bid at the same level.
+  S 2H     = Hearts rank below spades, so to bid hearts South must go up a level.
+  W 2S
+  N 4H     = A bid may skip levels. 4♥ offers to take 10 tricks.
+  E Pass   = Three passes in a row end the auction.
+  S Pass
+  W Pass
+
+auction recap:
+  The contract is 4♥, meaning that NS have agreed to take 10 tricks (4+6)
+  with hearts as trumps. So the objective of EW is to "set" the contract by
+  taking 4 or more tricks themselves. North is declarer, because North was first
+  on the side to name hearts. South also bid hearts, but later. East, on
+  declarer's left, makes the opening lead. South becomes dummy.
+
+play:
+  1   E SA  S S2  W S5  N S4
+      note: East leads face up, then South lays dummy on the table. Everyone follows suit. The ace is highest, so East wins and leads again.
+  2   E SQ  S S8  W S6  N SK
+      note: The king beats the queen. North wins, and leads next. Dummy has no spades left.
+  3   N H5  E H7  S HQ  W H2
+      note: Declarer leads trumps to take the opponents' trumps away, starting with dummy's queen so that the next trump can be won back in declarer's hand.
+  4   S H3  W H6  N HA  E HT
+      note: T stands for the ten. The opponents have no trumps left.
+  5   N C2  E C3  S CJ  W CA
+      note: West wins with the ace, so West leads next.
+  6   W D3  N D7  E D4  S DK
+      note: Dummy wins, so declarer's next card comes from dummy.
+  7   S C4  W C7  N CQ  E CK
+      note: East wins with the king.
+  8   E SJ  S H8  W S7  N C5
+      note: Dummy has no spades, so declarer may play any card. A trump wins the trick: a ruff. North has no spades either and throws away a club: a discard.
+      pause
+  9   S CT  W C9  N C6  E C8
+      note: Dummy won the last trick, so dummy leads.
+  10  S D2  W DT  N DA  E D8
+      note: Dummy leads a diamond to declarer's ace.
+  11  N HK  E S3  S H4  W D6
+      note: Only North-South have trumps left, so each one is a sure winner.
+  12  N HJ  E S9  S D5  W ST
+      note: Declarer's last trumps are winners.
+  13  N H9  E DJ  S D9  W DQ
+      note: 10 tricks: 4♥ made.
+
+play recap:
+  Declarer's plan: draw the opponents' trumps, then set up club tricks. Once
+  trumps are gone, the defenders can't ruff, and dummy's trumps stop their
+  spades.
+
+  North-South took 10 tricks and East-West took 3. Notice the pattern: the
+  winner of each trick leads to the next; everyone follows suit when they
+  can; and a player who can't follow may ruff with a trump or discard.
+  Declarer plays both hands, but always in turn, clockwise.

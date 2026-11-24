@@ -1,0 +1,77 @@
+# Lesson 5, new exercise: partner invites with 2NT (no Stayman); student accepts.
+title: Partner invites with 2NT
+id: L05-24
+type: exercise
+lesson: 5
+concepts: 5.6
+student: S
+board: 47
+dealer: S
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  J97    K5     J965   KJ87
+  E  A82    Q62    Q843   QT3
+  S  KQ3    JT43   AK7    A94
+  W  T654   A987   T2     652
+
+auction:
+  S 1NT*   = 15-17 points, balanced
+     not *: 17 points and a balanced hand: open 1NT.
+  W Pass
+  N 2NT    = 8-9 points, balanced, no 4-card major
+  E Pass
+  S 3NT*   = A maximum: accept
+     key: Partner skipped Stayman, so there's no major fit. With 17, accept.
+     not Pass: 17 is the top of your range. Accept the invitation.
+     not 3H: Partner has no 4-card major, or she'd have used Stayman.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  Partner's 2NT is the old invitation: 8-9 points, and no 4-card major, since
+  with one she'd have bid Stayman. Your four hearts don't matter. With a
+  maximum you bid game. You are declarer, because you bid no-trump first, and
+  so West will lead to the first trick.
+
+planning:
+  winners: 4
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W S4  N S7  E S8  S SQ*
+      SQ key: Win with the queen.
+      SQ not S3: Did you notice your queen wins this trick? Take it while you can.
+  2   S CA  W C2  N C7  E C3
+      note: Start on clubs, your best chance for extra tricks.
+  3   S C9*  W C5  N C8  E CT
+      C9 key: Keep going with clubs. Giving up one trick sets up the rest.
+      C9 not HJ: Did you count your winners? You need extra tricks from clubs, so keep playing them.
+      C9 not DK: Did you count your winners? You need extra tricks from clubs, so keep playing them.
+      note: You give up a club trick to set up the suit.
+  4   E SA  S S3  W S5  N S9
+  5   E S2  S SK  W S6  N SJ
+  6   S HJ  W H7  N HK  E H2
+      note: Lead the jack of hearts over to dummy's king.
+  7   N CK  E CQ  S C4  W C6
+      note: Cash the clubs you've set up.
+  8   N CJ  E D4  S H3  W H8
+      note: And the last good club.
+  9   N DJ  E D8  S D7  W DT
+      note: Try the jack of diamonds: if East has the queen and plays low, it wins.
+  10  N D9  E DQ  S DK  W D2
+      note: Over to your king of diamonds.
+  11  S DA  W H9  N D5  E D3
+      note: Cash the ♦A.
+  12  S HT  W HA  N H5  E H6
+      note: Lead a heart. The defense takes the rest.
+  13  W ST  N D6  E HQ  S H4
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: you start with only four sure tricks, so you have to build more.
+  Give up a club to set up the suit, and drive out the ♠A.
+
+  3NT made exactly. Partner's 8-9 plus your 17 was enough, and the old
+  sequence did the job: no Stayman needed.

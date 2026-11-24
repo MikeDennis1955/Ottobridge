@@ -1,0 +1,73 @@
+# Lesson 5, your Exercise 5, completed with East-West cards.
+title: Your Exercise 5: a weak hand with long spades
+id: L05-05
+type: exercise
+lesson: 5
+concepts: 5.1
+student: S
+board: 9
+dealer: N
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K8     AQ62   AK94   T74
+  E  A52    K93    QT7    Q953
+  S  JT9764 54     J32    82
+  W  Q3     JT87   865    AKJ6
+
+auction:
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 2S*    = Fewer than 8 points and long spades: let's play here
+     key: A weak hand with six spades. 2♠ is to play, and North must pass.
+     not Pass: Your hand would give North almost no help in 1NT, but it can take tricks with spades as trumps.
+     not 2C: Stayman needs 8 or more points.
+     not 4S: 4♠ shows 10 or more points. You have 2.
+  W Pass
+  N Pass   = North must pass
+  E Pass
+
+auction recap:
+  With 2 points your hand is no help in no-trump, but six spades make it worth
+  several tricks with spades as trumps. 2♠ says "let's play here," and North
+  must pass. South is declarer, and so West will lead to the first trick.
+
+planning:
+  trumps out: 5
+  remind: What is the contract?
+
+play:
+  1   W CA  N C4  E C3  S C2
+  2   W HJ  N HQ  E HK  S H4
+      note: Dummy tries the queen. East has the king.
+  3   E SA  S S4  W S3  N S8*
+      S8 key: Keep the king: it can win a trick later.
+      S8 not SK: Did you notice the ace is already winning? Your king would be wasted.
+  4   E CQ  S C8  W C6  N C7
+  5   E S5  S S6  W SQ  N SK
+  6   N DA  E D7  S D2  W D5
+      note: Cash a top diamond while you're in dummy.
+      ok: H
+  7   N HA  E H3  S H5  W H7
+      note: Cash the ace of hearts too.
+      ok: D
+  8   N DK  E DT  S D3  W D6
+      note: And the other top diamond.
+  9   N H6  E H9  S S7  W H8
+      note: Declarer ruffs.
+  10  S SJ  W D8  N H2  E S2
+      note: The last trump is drawn.
+  11  S DJ  W HT  N D4  E DQ
+      note: Lead your last diamond. The defense gets one more trick whatever you do.
+  12  E C9  S S9  W CJ  N CT
+  13  S ST  W CK  N D9  E C5
+      note: 8 tricks: 2♠ made.
+
+play recap:
+  The plan: drive out the trump ace and draw trumps, then cash dummy's top
+  cards. Once the opponents' trumps are gone, your long spades are winners.
+  That's why dummy keeps the ♠K: it wins a trick later.
+
+  2♠ made exactly. In 1NT, North would have taken only about five tricks,
+  because South's long spades can't be reached without trumps. Bidding 2♠
+  turned a hopeless 1NT into a making part-score.

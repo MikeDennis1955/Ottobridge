@@ -1,0 +1,78 @@
+# Lesson 2, new hand: two five-card suits, open the higher.
+title: Two five-card suits
+id: L02-22
+type: exercise
+lesson: 2
+concepts: 2.2, 2.6
+student: S
+board: 22
+dealer: E
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K63    K963   A54    Q83
+  E  J982   T5     JT872  A6
+  S  7      AQJ84  K3     KJ952
+  W  AQT54  72     Q96    T74
+
+auction:
+  E Pass
+  S 1H*    = 13+ points, at least four hearts
+     key: 14 HCP, plus 2 for the singleton and 1 for the doubleton: 17. With two five-card suits, open the higher-ranking.
+     not 1C: With two five-card suits, which one did the lesson say to open first?
+     not 2H: A two-bid needs 22+. Did you count 17?
+     not *: With two five-card suits, open the higher-ranking one.
+  W Pass
+  N 3H     = 12-13 points and four hearts: forcing to game
+  E Pass
+  S 4H*    = Game
+     key: Partner showed 12-13 and four hearts. Your side has well over 25 and nine hearts. Bid game.
+     not Pass: 3♥ shows 12-13 points. With your 17, is there enough for game?
+     not 3NT: You have nine hearts between you. Which game is the better bet?
+     not 4C: We won't worry about slams yet. Partner showed enough for game: bid it.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  With two five-card suits you open the higher one, 1♥. Partner's jump to
+  3♥ showed 12-13 points and four hearts. Your side has about 30 points
+  and a nine-card fit, so you bid game. You are declarer, because you bid
+  hearts first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W H7  N HK  E HT  S H4
+      note: Win with dummy's ♥K, the high card from the short side, so that you can draw the next round from your hand.
+  2   N H3  E H5  S HA  W H2
+      note: The plan: draw trumps, then set up your clubs. This round draws the opponents' last trump.
+  3   S C2  W C4  N CQ  E CA
+      note: Now drive out the ♣A.
+  4   E DJ  S D3  W D6  N DA
+  5   N C3  E C6  S CJ  W C7
+      note: Back to your clubs.
+  6   S CK  W CT  N C8  E D2
+      note: Your clubs are winners now.
+  7   S C9  W S4  N S3  E S2
+      note: Keep going.
+  8   S C5  W S5  N S6  E D7
+      note: The last club.
+  9   S DK  W D9  N D4  E D8
+      note: The ♦K.
+  10  S S7  W SA  N SK  E S8
+      note: Give up the ♠A.
+  11  W ST  N H9  E S9  S H8
+      note: Dummy trumps with the ♥9.
+  12  N H6  E DT  S HJ  W DQ
+      note: Dummy's last trump. Your ♥J wins, since nobody else has a trump.
+  13  S HQ  W SQ  N D5  E SJ
+      note: Your last trump. 11 tricks: 4♥ made with an overtrick.
+
+play recap:
+  The plan: draw trumps, then set up and run your clubs.
+
+  4♥ made with an overtrick. Opening the higher of your two five-card
+  suits let partner show her heart support right away.

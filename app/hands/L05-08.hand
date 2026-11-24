@@ -1,0 +1,80 @@
+# Lesson 5, new exercise: opener has no major, then declines an invitation.
+title: No major, and a minimum
+id: L05-08
+type: exercise
+lesson: 5
+concepts: 5.2, 5.6
+student: S
+board: 15
+dealer: S
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K64    QT73   T5     KJ74
+  E  Q952   A95    QJ92   83
+  S  JT     K82    AK863  AT5
+  W  A873   J64    74     Q962
+
+auction:
+  S 1NT*   = 15-17 points, balanced
+     not *: 15 points and a balanced hand: open 1NT.
+  W Pass
+  N 2C     = Stayman: do you have a 4-card major?
+  E Pass
+  S 2D*    = No 4-card major
+     key: No 4-card major, so bid 2♦.
+     not 2H: You have only three hearts.
+     not 2NT: Answer partner's question. 2♦ says "no major."
+  W Pass
+  N 2NT    = 8-9 points, and a 4-card major
+  E Pass
+  S Pass*  = A minimum: decline the invitation
+     key: 15 points is a minimum, so decline.
+     not 3NT: 2NT invites. With a minimum, say no.
+  W Pass
+
+auction recap:
+  You had no major, so 2♦. North's 2NT showed 8-9 points (and a major that
+  didn't fit). With 15, the bottom of your range, you declined. South is
+  declarer, because South bid no-trump first, and so West will lead to the
+  first trick.
+
+planning:
+  winners: 4
+  remind: What is the contract?
+
+play:
+  1   W S3  N S4  E SQ  S ST
+  2   E S9  S SJ  W SA  N S6
+  3   W S8  N SK  E S2  S H2
+  4   N DT*  E D2  S D3  W D4
+      DT key: Start on diamonds, your long suit.
+      DT not HQ: Did you look for your long suit? Diamonds can give you the extra tricks.
+      DT not CK: Did you look for your long suit? Diamonds can give you the extra tricks.
+      note: Start on diamonds, your long suit.
+  5   N HQ  E H5  S H8  W H4
+      note: While you're in dummy, lead a heart toward your king.
+  6   N D5  E D9  S DK  W D7
+      note: Back to diamonds, over to your king.
+  7   S DA  W C2  N H3  E DJ
+      note: Cash the other top diamond.
+  8   S CA  W C6  N C4  E C3
+      note: Now the clubs: take the ace.
+  9   S CT  W C9  N C7  E C8
+      note: Lead the ten toward dummy's king-jack.
+  10  S C5  W CQ  N CK  E S5
+      note: Over to dummy's king of clubs.
+  11  N CJ  E H9  S D6  W H6
+      note: Cash the jack of clubs, now a winner.
+  12  N HT  E HA  S HK  W HJ
+      note: Lead a heart. The defense gets one more trick whatever you do.
+  13  E DQ  S D8  W S7  N H7
+      note: 9 tricks: 2NT made with an overtrick.
+
+play recap:
+  The plan: set up your long diamonds, then add club tricks. Leading
+  diamonds early, from dummy, starts that plan.
+
+  Nine tricks, so 3NT would have made this time. Declining was still right:
+  with 15 opposite 8-9, game is against the odds, and usually the extra
+  trick isn't there. This was a good decision that the cards didn't reward.

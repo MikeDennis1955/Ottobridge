@@ -1,0 +1,18 @@
+# Node
+node_modules/
+app/dist/
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+
+# Compiled solver
+tools/dd
+tools/*.o
+
+# Editors / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp

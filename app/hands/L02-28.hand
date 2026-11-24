@@ -1,0 +1,63 @@
+# Lesson 2, new hand: partner opens, you have too little to respond.
+title: Too weak to respond
+id: L02-28
+type: exercise
+lesson: 2
+concepts: 2.3
+student: S
+board: 28
+dealer: W
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AKJ853 AK4    Q6     97
+  E  QT     J75    A974   KQ32
+  S  7642   Q86    JT53   84
+  W  9      T932   K82    AJT65
+
+auction:
+  W Pass
+  N 1S     = 13+ points, at least four spades
+  E Pass
+  S Pass*  = Fewer than 6 points
+     key: 3 HCP plus 1 for the doubleton is 4. With fewer than 6, pass, even with spade support.
+     not 2S: A raise shows 6-9. Did you count 4?
+     not *: With fewer than 6 points, what does the lesson say to do?
+  W Pass
+
+auction recap:
+  Partner opened 1♠, and with only 4 points you passed, even with four
+  spades. Partner can't count on you for anything, so the auction ends
+  here. North is declarer, because he bid spades first, and so East will
+  lead to the first trick.
+
+play:
+  1   E CK  S C4  W CT  N C7
+  2   E CQ  S C8  W C5  N C9
+  3   E H5  S H6  W H9  N HK
+      note: Dummy has no clubs left, so East switches.
+  4   N SA  E ST  S S2  W S9
+      note: Declarer draws trumps first.
+  5   N SK  E SQ  S S4  W C6
+      note: One more round, and the trumps are gone.
+  6   N HA  E H7  S H8  W H2
+      note: Now the heart winners.
+  7   N H4  E HJ  S HQ  W H3
+      note: The third heart, to dummy's queen.
+  8   S D3  W D2  N DQ  E DA
+      note: Only diamonds are left to lose, so declarer gives them up.
+  9   E D4  S D5  W DK  N D6
+  10  W CA  N S3  E C2  S DT
+  11  N SJ  E D7  S S6  W CJ
+      note: The rest are trumps, all winners.
+  12  N S8  E D9  S S7  W D8
+      note: Another trump.
+  13  N S5  E C3  S DJ  W HT
+      note: 9 tricks: 1♠ made with two overtricks.
+
+play recap:
+  Declarer's plan: draw trumps, cash the hearts, then give up the
+  diamonds.
+
+  1♠ made with two overtricks. Your side had 20 points, well short of the
+  25 a game needs, so stopping low was right.

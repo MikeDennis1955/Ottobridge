@@ -1,0 +1,73 @@
+# Lesson 2, from the Lesson 2 bidding exercise 3e (partner opens 1S).
+title: Partner opens 1♠: respond 2NT
+id: L02-17
+type: exercise
+lesson: 2
+concepts: 2.3, 2.6
+student: S
+board: 17
+dealer: N
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AQ864  Q2     KJ4    Q83
+  E  K532   T953   763    J4
+  S  J7     AK64   QT5    K975
+  W  T9     J87    A982   AT62
+
+auction:
+  N 1S     = 13+ points, at least four spades
+  E Pass
+  S 2NT*   = 12-14 points, balanced, no spade support
+     key: 13 HCP, balanced, and only two spades. Respond 2NT.
+     not 2S: 2♠ shows 6-9 with support. Did you count 13?
+     not 3S: 3♠ needs four spades. You have two.
+     not 2H: To bid hearts at the two level you need five of them.
+     not *: With a balanced 12-14 and no spade support, which response fits?
+  W Pass
+  N 3NT    = Game
+  E Pass
+  S Pass*  = Partner has chosen the game
+     key: Partner has bid game. Pass.
+     not *: Partner has bid game. Is there anything left to say?
+  W Pass
+
+auction recap:
+  Your 2NT showed a balanced 12-14 without spade support. Partner, with
+  13+ of her own, knew your side had 25 and bid game. You are declarer,
+  because you bid no-trump first, and so West will lead to the first
+  trick.
+
+planning:
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W D2  N D4  E D3  S DT
+  2   S SJ  W ST  N S4  E SK
+      note: The plan: set up the spades, then take your hearts and diamonds and a club. Start with your ♠J.
+  3   E D7  S D5  W DA  N DJ
+  4   W D8  N DK  E D6  S DQ
+  5   N SQ  E S2  S S7  W S9
+      note: Now run the spades.
+  6   N SA  E S3  S H4  W C6
+      note: Keep going.
+  7   N S8  E S5  S C5  W H7
+      note: Dummy's spades are all winners.
+  8   N S6  E H3  S C7  W C2
+      note: The last spade.
+  9   N C3  E C4  S CK  W CA
+      note: Lead a club toward your ♣K.
+  10  W D9  N C8  E H5  S H6
+      note: West cashes the last diamond.
+  11  W CT  N CQ  E CJ  S C9
+      note: Dummy's ♣Q wins.
+  12  N H2  E H9  S HK  W H8
+      note: Now the hearts: a heart to your ♥K.
+  13  S HA  W HJ  N HQ  E HT
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: set up the spades, then take your hearts, diamonds and a club.
+
+  3NT made. Partner's five spades turned into four tricks once the king
+  was gone.

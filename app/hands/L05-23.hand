@@ -1,0 +1,80 @@
+# Lesson 5, new exercise: student opens 2NT with four spades.
+title: Your 2NT, four spades
+id: L05-23
+type: exercise
+lesson: 5
+concepts: 5.7
+student: S
+board: 46
+dealer: E
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  JT86   QT8    54     A643
+  E  K73    752    T972   QJ2
+  S  AQ54   AKJ    KJ63   K5
+  W  92     9643   AQ8    T987
+
+auction:
+  E Pass
+  S 2NT*   = 21-22 points, balanced
+     key: 21 points and a balanced hand: open 2NT.
+     not 1NT: 1NT shows 15-17. You have 21.
+     not *: 21 points and balanced: open 2NT.
+  W Pass
+  N 3C     = Stayman: do you have a 4-card major?
+  E Pass
+  S 3S*    = Four spades, not four hearts
+     key: Answer Stayman: 3♠ shows four spades.
+     not 3D: 3♦ says "no major." You have four spades.
+     not 3NT: Partner asked a question. Answer it.
+  W Pass
+  N 4S     = Four spades too: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 2NT and answered Stayman with 3♠. Partner had four spades as
+  well, so she bid the game. You are declarer, because you bid spades first,
+  and so West will lead to the first trick.
+
+planning:
+  trumps out: 5
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W CT  N C3  E C2  S CK
+  2   S C5  W C7  N CA  E CJ
+      note: Cross to dummy with the club ace, to lead trumps from there.
+  3   N SJ  E S3  S S4*  W S2
+      S4 key: Let the jack run. If East has the king, it can't escape.
+      S4 not SA: Did you think about the finesse? If East has the king, the jack wins.
+      note: A finesse: if East has the king, the jack wins.
+  4   N ST  E S7  S S5  W S9
+      note: Repeat the finesse.
+  5   N C6  E CQ  S SQ  W C8
+      note: Ruff a club to get back to your hand.
+  6   S SA  W H3  N S6  E SK
+      note: Draw the last trump. The king falls.
+  7   S HA  W H4  N H8  E H2
+      note: Trumps are drawn. Cash your top hearts.
+  8   S HK  W H6  N HT  E H5
+      note: And the king.
+  9   S HJ  W H9  N HQ  E H7
+      note: Over to dummy's queen of hearts.
+  10  N C4  E D2  S D3  W C9
+      note: Lead the last club. The defense is due some diamond tricks.
+  11  W DA  N D4  E D7  S D6
+  12  W DQ  N D5  E D9  S DK
+  13  S DJ  W D8  N S8  E DT
+      note: 11 tricks: 4♠ made with an overtrick.
+
+play recap:
+  The plan: cross to dummy so you can lead trumps toward your ace-queen.
+  That finesse catches the ♠K if East has it. Then draw trumps and cash your
+  hearts.
+
+  4♠ made 11 tricks. 3NT would also have made, with nine, so the choice
+  didn't cost the game this time. But 4♠ scored more, and with a 4-4 major
+  fit the suit contract is usually the better bet.

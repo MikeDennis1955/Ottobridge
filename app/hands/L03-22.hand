@@ -1,0 +1,76 @@
+# Lesson 3, new exercise: an old sequence (1NT-2NT, declined). Eight tricks needed: force out the ♦A.
+title: Eight tricks in 2NT
+id: L03-22
+type: exercise
+lesson: 3
+concepts: 3.2
+student: S
+board: 54
+dealer: E
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K62    A54    T765   Q84
+  E  753    JT976  92     AT6
+  S  AQ4    K83    KQJ4   932
+  W  JT98   Q2     A83    KJ75
+
+auction:
+  E Pass
+  S 1NT*   = 15-17 points, balanced
+     not *: 15 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 2NT    = 8-9 points, balanced: invites game
+  E Pass
+  S Pass*  = Declines: a minimum 1NT
+     key: 15 is the bottom of your range. Decline the invitation.
+     not 3NT: Partner asked whether you have the top of your range. Did you notice that 15 is the bottom?
+     not *: Partner's 2NT asks: are you at the top of your 15-17?
+  W Pass
+
+auction recap:
+  You opened 1NT and partner invited with 2NT. With 15, the bottom of your
+  range, you declined. You are declarer, because you bid no-trump first, and
+  so West will lead to the first trick.
+
+planning:
+  winners: 8
+  spades: 3 = The ace, king and queen.
+  hearts: 2 = The ace and king.
+  diamonds: 3 = Three, once the ace is gone.
+  clubs: 0 = None.
+  remind: In 2NT you need 8 tricks. Count the obvious winners in each suit.
+  remind: Your diamonds are missing only the ace. How many tricks will they give once it's gone?
+play:
+  1   W SJ  N S2  E S3  S SQ
+      note: Five winners on top: three spades and two hearts. Your diamonds give three more once the ace is gone.
+  2   S DK  W DA  N D5  E D2
+      note: Start on diamonds right away.
+  3   W ST  N SK  E S5  S S4
+  4   N D6  E D9  S DQ*  W D3
+      DQ key: Play your queen. It wins the trick.
+      DQ not D4: Did you see that East could win this trick? Your queen wins it.
+      note: Back to the diamonds.
+  5   S DJ  W D8  N D7  E H6
+      note: Keep going with the diamonds.
+  6   S D4  W C5  N DT  E S7
+      note: The opponents are out of diamonds, so even the small ones win.
+  7   N H4  E H7  S HK  W H2
+      note: Now take your other winners.
+  8   S SA  W S8  N S6  E C6
+      note: Your ♠A.
+  9   S H3  W HQ  N HA  E H9
+      note: That's eight tricks.
+  10  N H5  E HJ  S H8  W S9
+      note: The rest belong to the defense.
+  11  E HT  S C2  W C7  N C4
+  12  E CA  S C3  W CJ  N C8
+  13  E CT  S C9  W CK  N CQ
+      note: 8 tricks: 2NT made.
+
+play recap:
+  The plan: count five winners on top, then force out the ♦A to set up three
+  diamond tricks.
+
+  You stopped below game with 15 opposite 8-9, and eight tricks was just
+  right.

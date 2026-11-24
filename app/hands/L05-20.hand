@@ -1,0 +1,71 @@
+# Lesson 5, new exercise: Stayman over a 2NT opening, heart fit found.
+title: Stayman over 2NT: a heart fit
+id: L05-20
+type: exercise
+lesson: 5
+concepts: 5.7
+student: S
+board: 41
+dealer: N
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  Q6     AK97   Q65    AKQJ
+  E  A32    JT6    T983   965
+  S  K75    8532   K72    843
+  W  JT984  Q4     AJ4    T72
+
+auction:
+  N 2NT    = 21-22 points, balanced
+  E Pass
+  S 3C*    = Stayman: do you have a 4-card major?
+     key: Four hearts, and 6 points is enough for game opposite 2NT. Ask first.
+     not 3NT: You have four hearts. Look for the fit first.
+     not Pass: 6 points opposite 21-22 is enough for game.
+  W Pass
+  N 3H     = Four hearts
+  E Pass
+  S 4H*    = Game in hearts
+     key: An 8-card heart fit and enough for game: bid 4♥.
+     not 3NT: You've found your heart fit. Play in hearts.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You had four hearts, so you asked with 3♣. Partner had hearts too, and 4♥
+  followed. North is declarer, because North bid hearts first, and so East
+  will lead to the first trick.
+
+play:
+  1   E DT  S D2  W D4  N DQ
+  2   N HA  E H6  S H2  W H4
+      note: Draw trumps.
+  3   N HK  E HT  S H3  W HQ
+      note: Keep drawing trumps.
+  4   N CA  E C5  S C3  W C2
+      note: Run the clubs.
+  5   N CK  E C6  S C4  W C7
+      note: Keep going.
+  6   N CQ  E C9  S C8  W CT
+      note: And another club.
+  7   N CJ  E HJ  S D7  W S4
+      note: East's jack of hearts was always going to win a trick. Dummy throws a diamond.
+  8   E SA  S S5  W S8  N S6
+  9   E D9  S DK  W DA  N D5
+  10  W DJ  N D6  E D3  S H5
+      note: Dummy ruffs.
+  11  S SK  W S9  N SQ  E S2
+      note: Cash dummy's ♠K.
+  12  S S7  W ST  N H7  E S3
+      note: Declarer ruffs.
+  13  N H9  E D8  S H8  W SJ
+      note: 10 tricks: 4♥ made.
+
+play recap:
+  Declarer's plan: draw trumps, then run the clubs to throw away a losing
+  diamond from dummy.
+
+  4♥ made ten tricks. 3NT would have gone down, with only eight: the
+  defenders would attack spades and diamonds, and there aren't nine tricks
+  to take first. The 4-4 heart fit gave declarer trumps to stop that.

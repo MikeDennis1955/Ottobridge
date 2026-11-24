@@ -1,0 +1,71 @@
+# Lesson 3, new exercise: knock out the ace of diamonds while you still hold a spade stopper.
+title: Force out the ace first
+id: L03-07
+type: exercise
+lesson: 3
+concepts: 3.2, 3.4
+student: S
+board: 39
+dealer: S
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  862    K73    KQJT6  Q2
+  E  53     QJT4   982    KT98
+  S  AK4    A852   73     AJ64
+  W  QJT97  96     A54    753
+
+auction:
+  S 1NT*   = 15-17 points, balanced
+     not *: 16 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so West will lead to the first trick.
+
+planning:
+  winners: 9-10
+  spades: 2 = The ace and king.
+  hearts: 2 = The ace and king.
+  diamonds: 4 = Four, once the ace is gone. Force it out first.
+  clubs: 1-2 = The ace. The queen might win too, depending on where the king is.
+  remind: You need 9 tricks. Count the obvious winners in each suit.
+  remind: Dummy's diamonds have no winners on top. How many will they have once the ace is gone?
+play:
+  1   W SQ  N S2  E S3  S SA
+      note: Only five winners on top: two spades, two hearts and the ♣A. But once the ♦A is gone, dummy's diamonds are worth four tricks. Win the first spade and keep the king to stop spades a second time.
+  2   S D3  W DA  N D6  E D2
+      note: Start on diamonds right away. The ace is going to win a trick whatever you do, so let it win now.
+  3   W SJ  N S6  E S5  S SK
+      note: West keeps on with spades, and your king stops them.
+  4   S D7  W D4  N DK  E D8
+      note: Now cross to dummy's diamonds. They are all winners.
+  5   N DQ  E D9  S C4  W D5
+      note: Keep cashing dummy's diamonds.
+  6   N DJ  E C8  S H2  W S7
+      note: Another winner.
+  7   N DT  E C9  S C6  W S9
+      note: The last diamond.
+  8   N HK  E H4  S H5  W H6
+      note: Now take your other winners. Dummy's ♥K first, the high card from the short side...
+  9   N H3  E HT  S HA  W H9
+      note: ...then the ♥A in your hand.
+  10  S CA  W C3  N C2  E CT
+      note: And the ♣A makes nine tricks.
+  11  S CJ  W C5  N CQ  E CK
+      note: Nine tricks are in. The rest belong to the defense.
+  12  E HQ  S H8  W C7  N H7
+  13  E HJ  S S4  W ST  N S8
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: count five winners on top, then get four more from dummy's
+  diamonds by forcing out the ace.
+
+  West had three spade winners set up by the end, but never got back in to
+  take them. You forced out the ♦A while you still had a spade stopper.

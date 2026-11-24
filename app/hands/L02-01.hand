@@ -1,0 +1,69 @@
+# Lesson 2, from the Lesson 2 bidding exercise 3a (partner opens 1S).
+title: Partner opens 1♠: raise or not?
+id: L02-01
+type: exercise
+lesson: 2
+concepts: 2.3
+student: S
+board: 1
+dealer: N
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AQJ75  K84    A5     732
+  E  962    J976   JT8    AKT
+  S  KT4    A3     9432   J865
+  W  83     QT52   KQ76   Q94
+
+auction:
+  N 1S     = 13+ points, at least four spades
+  E Pass
+  S 2S*    = 6-9 points and spade support
+     key: 8 HCP plus 1 for the doubleton heart makes 9, and you have three spades. Raise.
+     not 1NT: Did you check the list from the top? With three-card support, the raise comes first.
+     not Pass: Did you count your points? 8 HCP is enough to respond.
+     not 3S: 3♠ shows 12-13 points and four spades. Is your hand that strong?
+     not *: With 6-9 points and three spades, can you show partner the fit right away?
+  W Pass
+  N Pass   = A minimum opening: no game in sight
+  E Pass
+
+auction recap:
+  Partner's 1♠ showed 13+ points and at least four spades, so your three
+  spades give your side at least seven, very likely eight. Your 2♠ showed
+  6-9 points with support. Partner has a minimum, so even if you have 9,
+  your side has about 22: not enough for game. She passes. North is
+  declarer, because she bid spades first, and so East will lead to the
+  first trick.
+
+play:
+  1   E CK  S C5  W C9  N C2
+  2   E CA  S C6  W C4  N C3
+  3   E CT  S CJ  W CQ  N C7
+      note: West's queen takes the third club.
+  4   W DK  N DA  E D8  S D2
+  5   N H4  E H6  S HA  W H2
+      note: Declarer's plan: ruff a heart in dummy, then draw trumps. First the ♥A.
+  6   S H3  W H5  N HK  E H7
+      note: Back to the ♥K.
+  7   N H8  E H9  S S4  W HT
+      note: Dummy ruffs the last heart.
+  8   S SK  W S3  N S5  E S2
+      note: Now draw trumps.
+  9   S ST  W S8  N SJ  E S6
+      note: Declarer plays the ♠J, or East's ♠9 could win this trick.
+  10  N SA  E S9  S D3  W D6
+      note: The last trump.
+  11  N SQ  E HJ  S D4  W D7
+      note: Declarer's trumps are winners.
+  12  N S7  E DT  S D9  W HQ
+      note: And another.
+  13  N D5  E DJ  S C8  W DQ
+      note: Only a diamond is left to lose. 9 tricks: 2♠ made with an overtrick.
+
+play recap:
+  Declarer's plan: ruff a heart in dummy, then draw trumps. That makes
+  six trump tricks, two hearts and a diamond.
+
+  2♠ made with an overtrick. Your raise told partner about the fit at
+  once, and the point count told her to stop low.

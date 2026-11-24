@@ -1,0 +1,68 @@
+# Lesson 1, Sample D. Example hand, plays itself. Comes before Sample C.
+title: How tricks work (no-trump)
+id: L01-D
+type: example
+lesson: 1
+concepts: 1.1
+student: S
+board: 2
+dealer: E
+vulnerable: NS
+
+deal:
+  N  K83    A62    85     KQ954
+  E  62     QT93   JT64   J83
+  S  A75    K74    KQ73   A72
+  W  QJT94  J85    A92    T6
+
+auction:
+  E Pass   = East dealt, so East calls first. Pass is a call too.
+  S 1NT    = An offer to take 7 tricks with no trumps.
+  W Pass
+  N 3NT    = A higher offer: 9 tricks, no trumps.
+  E Pass   = Three passes in a row end the auction.
+  S Pass
+  W Pass
+
+auction recap:
+  The contract is 3NT, meaning that NS have agreed to take 9 tricks (3+6). So
+  the objective of EW is to "set" the contract by taking 5 or more tricks
+  themselves. South is declarer, because South named no-trump first. West, on
+  declarer's left, makes the opening lead. North becomes dummy.
+
+play:
+  1   W SQ  N S3  E S2  S SA
+      note: West leads face up, then North lays dummy on the table. The highest spade wins.
+  2   S CA  W C6  N C4  E C3
+      note: South won, so South leads next.
+  3   S C2  W CT  N CK  E C8
+      note: T stands for the ten. Declarer chooses dummy's card.
+  4   N D5  E D4  S DK  W DA
+      note: Both opponents followed to two clubs, so dummy's clubs are safe. Declarer gives up a diamond now to set up an extra trick later.
+      pause
+  5   W SJ  N SK  E S6  S S5
+  6   N CQ  E CJ  S C7  W D2
+      note: West has no clubs left and throws away a diamond: a discard.
+  7   N C9  E H3  S H4  W D9
+      note: Now only dummy has clubs, so the 9 wins.
+  8   N C5  E H9  S D3  W H5
+      note: Even the 5 wins. Dummy's long suit has taken five tricks.
+  9   N HA  E HT  S H7  W H8
+      note: Declarer cashes the heart winners.
+  10  N H2  E HQ  S HK  W HJ
+      note: Then gives up a heart.
+  11  S DQ  W S4  N D8  E D6
+      note: The trick set up at trick 4. That makes ten.
+  12  S D7  W S9  N H6  E DT
+      note: East's ten beats the 7.
+  13  E DJ  S S7  W ST  N S8
+      note: West's spade is higher, but diamonds were led. Only a card in the suit led can win.
+
+play recap:
+  Declarer's plan: count the tricks you can take right away, then set up the
+  long club suit to make the rest.
+
+  North-South took 10 tricks and East-West took 3: 3NT made with an
+  overtrick. Extra tricks count, so it pays to take them. The rules never
+  changed: follow suit if you can; if you can't, any card will do, but it
+  can't win; and the highest card of the suit led takes the trick.

@@ -1,0 +1,61 @@
+# Lesson 2, from the point-count exercise hand 4, as responder to 2NT.
+title: Partner opens 2NT, you have 3
+id: L02-13
+type: exercise
+lesson: 2
+concepts: 2.4
+student: S
+board: 13
+dealer: N
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  KJ4    AKQ97  43     AKQ
+  E  76532  86     AKT2   T5
+  S  Q8     JT43   865    9642
+  W  AT9    52     QJ97   J873
+
+auction:
+  N 2NT    = 21-22 points, balanced
+  E Pass
+  S Pass*  = Fewer than 4 points
+     key: 3 HCP. Opposite 21-22, your side has 25 at most, and usually less. Pass.
+     not 3NT: Did you count 3? A raise to 3NT needs 4 or more.
+     not *: With fewer than 4 points opposite 2NT, the lesson says pass.
+  W Pass
+
+auction recap:
+  Partner's 2NT showed 21-22 points and a balanced hand. With fewer than 4
+  points, your side is very likely short of the 25 needed for game, so you
+  pass. North is declarer, because he bid no-trump first, and so East will
+  lead to the first trick.
+
+play:
+  1   E DK  S D5  W DQ  N D3
+  2   E D2  S D6  W DJ  N D4
+  3   W D9  N S4  E DA  S D8
+  4   E DT  S C2  W D7  N SJ
+  5   E S2  S S8  W SA  N SK
+  6   W ST  N H7  E S3  S SQ
+      note: Dummy's ♠Q wins.
+  7   S HJ  W H2  N H9  E H6
+      note: Declarer's plan: run the hearts and clubs. Start the hearts from dummy while you're there.
+  8   S H3  W H5  N HQ  E H8
+      note: Over to declarer's ♥Q.
+  9   N HA  E S5  S H4  W C3
+      note: More hearts.
+  10  N HK  E S6  S HT  W C7
+      note: The ♥K.
+  11  N CQ  E C5  S C4  W C8
+      note: Now the clubs.
+  12  N CK  E CT  S C6  W CJ
+      note: Keep going.
+  13  N CA  E S7  S C9  W S9
+      note: The last club. 8 tricks: 2NT made.
+
+play recap:
+  Declarer's plan: hope the defenders' diamonds split evenly, then take
+  the heart and club winners.
+
+  2NT made exactly. Your four hearts helped partner run the suit, but with
+  only 3 points, passing was right.

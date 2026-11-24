@@ -1,0 +1,72 @@
+# Lesson 5, your Exercise 2, completed with East-West cards.
+title: Your Exercise 2: five spades, invitational
+id: L05-02
+type: exercise
+lesson: 5
+concepts: 5.3
+student: S
+board: 4
+dealer: W
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K3     AQT    A984   QT95
+  E  85     KJ974  Q76    K62
+  S  QJ974  5      KJ5    J873
+  W  AT62   8632   T32    A4
+
+auction:
+  W Pass
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 2C     = Stayman: do you have a 4-card major?
+  W Pass
+  N 2D     = No 4-card major
+  E Pass
+  S 2S*    = Five spades, 8-9 points: invitational
+     key: Five spades and 8 points: invite with 2♠ and let North decide.
+     not 3S: 3♠ shows 10 or more points. You have 8.
+     not 2NT: 2NT says nothing about your five spades. North may have three.
+     not Pass: 2♦ is not a contract you want. North has no 4-card major, not diamonds.
+  W Pass
+  N 2NT    = Minimum, and only two spades
+     key: Only two spades and a minimum, so North declines with 2NT.
+  E Pass
+  S Pass   = You have told your story
+  W Pass
+
+auction recap:
+  2♠ showed five spades and 8-9 points. North had only two spades and a
+  minimum 15, so North chose 2NT. You have nothing more to say, so you pass.
+  North is declarer, because North bid no-trump first, and so East will lead
+  to the first trick.
+
+play:
+  1   E H7  S H5  W H2  N HT
+  2   N SK  E S5  S S4  W SA
+      note: Declarer drives out the ♠A to set up dummy's spades.
+  3   W CA  N C5  E C2  S C3
+  4   W H8  N HQ  E HK  S S7
+  5   E HJ  S C7  W H3  N HA
+  6   N D4  E D6  S DJ  W D2
+      note: The jack wins, and dummy is on lead to use its spades.
+  7   S SQ  W S2  N S3  E S8
+      note: Run dummy's spades while dummy has the lead.
+  8   S SJ  W S6  N C9  E H4
+      note: And the last good spade.
+  9   S CJ  W C4  N CT  E CK
+      note: Lead a club to set up a club trick.
+  10  E H9  S C8  W H6  N D8
+  11  E DQ  S D5  W D3  N DA
+  12  N CQ  E C6  S S9  W ST
+      note: Cash the good ♣Q.
+  13  N D9  E D7  S DK  W DT
+      note: 8 tricks: 2NT made.
+
+play recap:
+  Declarer's plan: knock out the ♠A early to set up dummy's long spades,
+  then cash them.
+
+  2NT made exactly. With North's minimum and no spade fit, 3NT would have
+  gone down. Your 2♠ described your hand, and North made the right call with
+  the extra information.

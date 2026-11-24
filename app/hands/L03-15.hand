@@ -1,0 +1,78 @@
+# Lesson 3, new exercise: dummy's clubs are missing the ace and king. Lose both early, while you still hold stoppers.
+title: Two honors to force out
+id: L03-15
+type: exercise
+lesson: 3
+concepts: 3.2, 3.4, 3.5
+student: S
+board: 47
+dealer: S
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A72    Q82    54     QJT98
+  E  53     J976   QJ9    AK76
+  S  K64    AK5    AK72   432
+  W  QJT98  T43    T863   5
+
+auction:
+  S 1NT*   = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 2NT    = 8-9 points, balanced: invites game
+  E Pass
+  S 3NT*   = Accepts: a maximum 1NT
+     key: 17 is the top of your range. Accept the invitation.
+     not Pass: Partner invited you to bid on with the top of your range. Did you notice that 17 is the top?
+     not *: Partner's 2NT asks: are you at the top of your 15-17?
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1NT and partner invited with 2NT. With 17, the top of your
+  range, you accepted. You are declarer, because you bid no-trump first, and
+  so West will lead to the first trick.
+
+planning:
+  winners: 10
+  spades: 2 = The ace and king. One in each hand, to stop the spades twice.
+  hearts: 3 = The ace, king and queen.
+  diamonds: 2 = The ace and king.
+  clubs: 3 = Three, once the ace and king are gone.
+  remind: You need 9 tricks. Count the obvious winners in each suit.
+  remind: Dummy's clubs are missing the ace and the king. How many tricks will they give once both are gone?
+play:
+  1   W SQ  N S2  E S3  S SK
+      note: Seven winners on top: two spades, three hearts and two diamonds. Dummy's clubs give three more, but only after the ace and the king are gone. You'll lose the lead twice, so keep a spade stopper in each hand: win with the king in your hand.
+  2   S C2  W C5  N CQ  E CA
+      note: Start on clubs right away.
+  3   E S5  S S4  W ST  N SA
+      note: East returns partner's spades. Dummy's ace stops them a second time.
+  4   N CJ  E CK  S C3  W H3
+      note: Keep going: force out the king. If East had held it back, dummy's ♥Q would still be a way back to the clubs later.
+  5   E DQ  S DA  W D3  N D4
+      note: East is out of spades and tries diamonds. You still have the ♦A.
+  6   S C4  W H4  N CT  E C6
+      note: Your last club takes you to dummy's winners.
+  7   N C9  E C7  S D2  W S8
+      note: Keep cashing dummy's clubs.
+  8   N C8  E H6  S S6  W S9
+      note: The last club.
+  9   N HQ  E H7  S H5  W HT
+      note: Now the hearts: dummy's queen first, while you're in dummy.
+  10  N H8  E H9  S HK  W D6
+      note: Then over to your king...
+  11  S DK  W D8  N D5  E D9
+      note: ...and your other winners.
+  12  S HA  W DT  N H2  E HJ
+  13  S D7  W SJ  N S7  E DJ
+      note: 10 tricks: 3NT made with an overtrick.
+
+play recap:
+  The plan: count seven winners on top, then force out the ♣A and ♣K to set up
+  dummy's clubs.
+
+  You had to give up the lead twice, and you had a spade stopper ready each
+  time. West's spades were set up by the end, but West never got in to take
+  them.

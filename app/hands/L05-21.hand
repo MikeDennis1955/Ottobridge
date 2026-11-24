@@ -1,0 +1,72 @@
+# Lesson 5, new exercise: after 2♠, responder invites with a fit; opener declines.
+title: A spade fit, an invitation
+id: L05-21
+type: exercise
+lesson: 5
+concepts: 5.5
+student: S
+board: 44
+dealer: W
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A976   T86    AQ8    KQ4
+  E  853    A42    942    AJ97
+  S  QJ42   Q5     K76    8532
+  W  KT     KJ973  JT53   T6
+
+auction:
+  W Pass
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 2C*    = Stayman: do you have a 4-card major?
+     key: 8 points and four spades: Stayman.
+     not 2NT: You have four spades. Ask first.
+  W Pass
+  N 2S     = Four spades, not four hearts
+  E Pass
+  S 3S*    = A spade fit, 8-9 points: an invitation
+     key: You've found a fit, and with 8 points you invite with 3♠.
+     not 4S: With 8 points, invite and let partner decide.
+     not 2NT: You've found a spade fit. Raise spades.
+  W Pass
+  N Pass   = A minimum: decline
+  E Pass
+
+auction recap:
+  Partner showed four spades, so you had a fit. With 8 points you invited with
+  3♠, and partner, with a minimum 15, declined. North is declarer, because
+  North bid spades first, and so East will lead to the first trick.
+
+play:
+  1   E D9  S D6  W D3  N DQ
+  2   N DA  E D2  S D7  W D5
+      note: Cash the ♦A.
+  3   N HT  E H2  S H5  W HJ
+      note: Lead hearts to ruff one in dummy, the short trump hand.
+  4   W HK  N H6  E H4  S HQ
+  5   W H9  N H8  E HA  S S2
+      note: East plays the ace, and dummy ruffs.
+  6   S SQ  W ST  N S6  E S3
+      note: Draw trumps.
+  7   S SJ  W SK  N SA  E S5
+      note: Keep drawing trumps.
+  8   N S9  E S8  S S4  W H3
+      note: Trumps are drawn.
+  9   N CK  E C7  S C2  W C6
+      note: Lead clubs to knock out the ace.
+  10  N CQ  E CA  S C3  W CT
+      note: Keep pushing clubs.
+  11  E CJ  S C5  W H7  N C4
+  12  E C9  S C8  W DT  N S7
+      note: Declarer ruffs.
+  13  N D8  E D4  S DK  W DJ
+      note: 9 tricks: 3♠ made.
+
+play recap:
+  Declarer's plan: draw trumps, use dummy's trumps to ruff a heart, and give
+  up the tricks that can't be avoided.
+
+  3♠ made exactly, and 4♠ would have gone down. Inviting, rather than
+  bidding game yourself, let partner judge with the full picture, and his
+  minimum said stop.

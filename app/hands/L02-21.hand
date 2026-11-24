@@ -1,0 +1,75 @@
+# Lesson 2, new hand: partner opens a strong two-bid and you have almost nothing.
+title: Partner opens 2♠: you must bid
+id: L02-21
+type: exercise
+lesson: 2
+concepts: 2.5, 2.7
+student: S
+board: 21
+dealer: N
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AKQJ74 AK5    AK3    8
+  E  3      JT87   962    KJ753
+  S  85     Q962   J874   T62
+  W  T962   43     QT5    AQ94
+
+auction:
+  N 2S     = 22+ points, five or more spades: forcing
+  E Pass
+  S 2NT*   = The waiting response: tells partner nothing yet
+     key: Partner's 2♠ is forcing, so you must bid even with 3 points. 2NT keeps the auction open and lets partner describe her hand.
+     not Pass: Partner's 2♠ is forcing. Did you remember you must bid once?
+     not 3S: Is two small spades enough to raise?
+     not 3H: To bid your own suit you need a pretty good hand and a good suit. Is that this hand?
+     not *: When partner's bid is forcing, which response is almost always right?
+  W Pass
+  N 4S     = Game in spades
+  E Pass
+  S Pass*  = Partner has chosen the game
+     key: Partner knows you may have nothing and still chose 4♠. Pass.
+     not *: Partner knows you may have nothing and still chose 4♠. Is there anything left to say?
+  W Pass
+
+auction recap:
+  Partner's 2♠ showed 22 or more points and at least five spades, and it
+  was forcing: you had to bid. 2NT is the waiting bid. It says nothing
+  about your hand, so partner, knowing you might have nothing, still bid
+  game with her strong hand and long spades. North is declarer, because
+  she bid spades first, and so East will lead to the first trick.
+
+play:
+  1   E HJ  S H2  W H3  N HK
+  2   N SA  E S3  S S5  W S2
+      note: Declarer's plan: draw trumps, then play hearts for four tricks to get rid of the club loser. Start drawing trumps.
+  3   N SK  E C3  S S8  W S6
+      note: Keep drawing trumps.
+  4   N SQ  E D2  S C2  W S9
+      note: West still has trumps.
+  5   N SJ  E C5  S C6  W ST
+      note: The last trump is gone.
+  6   N HA  E H7  S H6  W H4
+      note: Now the hearts.
+  7   N H5  E H8  S H9  W C4
+      note: A heart to dummy.
+  8   S HQ  W C9  N C8  E HT
+      note: Dummy's ♥Q lets declarer get rid of the club loser.
+  9   S D4  W D5  N DK  E D6
+      note: A diamond to declarer's ♦K.
+  10  N S7  E C7  S D7  W CQ
+      note: Declarer's trumps are winners.
+  11  N S4  E CJ  S D8  W CA
+      note: Another trump.
+  12  N DA  E D9  S DJ  W DT
+      note: The ♦A.
+  13  N D3  E CK  S CT  W DQ
+      note: West's ♦Q takes the last trick. 12 tricks: 4♠ made with two overtricks.
+
+play recap:
+  Declarer's plan: draw trumps, then play hearts for four tricks to get
+  rid of the club loser.
+
+  4♠ made with two overtricks. Your ♥Q was worth a trick, but partner bid
+  game knowing you might have nothing at all. Your job was simply to keep
+  the auction open.

@@ -1,0 +1,81 @@
+# Lesson 5, new exercise: opener shows spades.
+title: Partner asks, you have spades
+id: L05-07
+type: exercise
+lesson: 5
+concepts: 5.2
+student: S
+board: 14
+dealer: E
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AK95   974    73     A932
+  E  QJ6    53     KJT95  J54
+  S  T743   AQ8    A42    KQ6
+  W  82     KJT62  Q86    T87
+
+auction:
+  E Pass
+  S 1NT*   = 15-17 points, balanced
+     not *: 15 points and a balanced hand: open 1NT.
+  W Pass
+  N 2C     = Stayman: do you have a 4-card major?
+  E Pass
+  S 2S*    = Four spades, not four hearts
+     key: Four spades, so bid 2♠.
+     not 2D: 2♦ says "no 4-card major." You have four spades.
+     not 2NT: Answer partner's question. 2♠ shows your spades.
+  W Pass
+  N 4S     = Four spades too, and game values
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  North's 2♣ asked for a 4-card major. You showed spades, and North, who also
+  has four spades and enough for game, bid 4♠. South is declarer, because
+  South bid spades first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 5
+  remind: What is the contract?
+
+play:
+  1   W H6  N H4  E H3  S H8*
+      H8 key: The 8 is enough to win. Save the ace.
+      H8 not HA: Did you see that your 8 already wins the trick? Keep the ace for later.
+  2   S ST  W S2  N S5  E SJ
+      note: Start on trumps.
+  3   E DK  S D2  W D6  N D3
+  4   E DJ  S DA  W D8  N D7
+  5   S S7  W S8  N SK  E S6
+      note: Back to trumps: three are still out.
+  6   N SA  E SQ  S S3  W H2
+      note: The queen falls. Trumps are drawn.
+  7   N C2  E C4  S CK  W C7
+      note: Trumps are drawn. Now take your club winners, starting with the king, a high card from the short side.
+  8   S CQ  W C8  N C3  E C5
+      note: And the queen.
+  9   S HA  W HT  N H7  E H5
+      note: Cash the ace of hearts.
+  10  S D4*  W DQ  N S9  E D5
+      D4 key: Ruff your last diamond loser in dummy.
+      D4 not HQ: Did you count your losers? Dummy can still ruff your last diamond.
+      D4 not S4: Did you count your losers? Dummy can still ruff your last diamond.
+      note: Ruff a diamond in dummy.
+  11  N CA  E CJ  S C6  W CT
+      note: Dummy's ♣A.
+  12  N C9  E D9  S HQ  W HJ
+      note: Dummy's last club is a winner.
+  13  N H9  E DT  S S4  W HK
+      note: Declarer ruffs the last trick. 11 tricks: 4♠ made with an overtrick.
+
+play recap:
+  The plan: draw trumps, cash your winners, and ruff your last diamond loser
+  in dummy. Winning trick 1 with the ♥8 saves the ace, and leading the last
+  diamond sets up the ruff.
+
+  4♠ made with an overtrick. 3NT would have gone down: the defense could set up
+  West's long hearts. The 4-4 spade fit gave declarer a way to ruff and kept
+  the hearts under control.

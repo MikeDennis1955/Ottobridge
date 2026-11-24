@@ -1,0 +1,72 @@
+# Lesson 2, from the point-count exercise hand 1 (12 points: pass), then partner opens 1NT.
+title: Pass with 12, then bid game
+id: L02-10
+type: exercise
+lesson: 2
+concepts: 2.1, 2.4
+student: S
+board: 10
+dealer: E
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A8     K53    AK52   QJ73
+  E  762    T2     QT963  A92
+  S  KQT93  AJ98   74     85
+  W  J54    Q764   J8     KT64
+
+auction:
+  E Pass
+  S Pass*  = Not enough to open
+     key: 10 HCP plus 2 for the two doubletons is 12. An opening bid needs 13.
+     not 1S: Did you count 12? An opening bid needs 13 points.
+     not *: Did you count 12? An opening bid needs 13 points.
+  W Pass
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 3NT*   = 10+ points: game
+     key: 10 HCP opposite 15-17 makes at least 25. Bid game.
+     not 2NT: 2NT shows 8-9. Did you count 10 HCP?
+     not Pass: Did you count 10? Opposite 15-17 that's game.
+     not 2S: This lesson's responses to 1NT are raises in no-trump. With 10, bid game.
+     not *: With 10+ opposite 15-17, can you bid game directly?
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  12 points is not quite enough to open, so you passed. But a hand that
+  can't open can still be worth a game once partner opens. Opposite 15-17,
+  your 10 HCP make at least 25, so bid 3NT. North is declarer, because she
+  bid no-trump first, and so East will lead to the first trick.
+
+play:
+  1   E D6  S D7  W DJ  N DK
+  2   N SA  E S2  S S3  W S4
+      note: Declarer's plan: run dummy's long spades, keeping the ♦A as a stopper. Start with the ♠A.
+  3   N S8  E S6  S SK  W S5
+      note: Over to dummy's spades.
+  4   S SQ  W SJ  N D2  E S7
+      note: Run the spades.
+  5   S C5  W C4  N CJ  E CA
+      note: A club from dummy. East's ace takes it.
+  6   E D9  S D4  W D8  N DA
+  7   N H3  E H2  S HA  W H4
+      note: A heart to dummy's ♥A.
+  8   S ST  W C6  N C3  E C2
+      note: Dummy's spades are winners.
+  9   S S9  W H6  N D5  E D3
+      note: The last spade.
+  10  S H8  W H7  N HK  E HT
+      note: A heart back to declarer's ♥K.
+  11  N H5  E C9  S H9  W HQ
+      note: Nine tricks are in. Another heart.
+  12  W CK  N C7  E DT  S C8
+  13  W CT  N CQ  E DQ  S HJ
+      note: 10 tricks: 3NT made with an overtrick.
+
+play recap:
+  Declarer's plan: run dummy's long spades, keeping the ♦A as a stopper.
+
+  3NT made with an overtrick. Your side had 27 points. Passing first cost
+  nothing: you showed your values as soon as partner opened.

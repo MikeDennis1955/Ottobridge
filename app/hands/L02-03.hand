@@ -1,0 +1,73 @@
+# Lesson 2, from the point-count exercise hand 3 (a diamond added: the PDF hand has 12 cards).
+title: Open 1NT, partner bids game
+id: L02-03
+type: exercise
+lesson: 2
+concepts: 2.2, 2.4
+student: S
+board: 3
+dealer: S
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  Q85    A93    K763   Q83
+  E  A962   Q7     T95    A942
+  S  KJ7    KT82   AQ42   K6
+  W  T43    J654   J8     JT75
+
+auction:
+  S 1NT*   = 15-17 points, balanced
+     key: 16 HCP and balanced: open 1NT.
+     not 1D: Did you count 16? A balanced 15-17 opens 1NT, not one of a suit.
+     not 1H: Did you count 16? A balanced 15-17 opens 1NT, not one of a suit.
+     not 1C: Did you count 16? A balanced 15-17 opens 1NT, not one of a suit.
+     not Pass: Did you count your points? 16 is plenty to open.
+     not *: Did you count 16? A balanced 15-17 opens 1NT.
+  W Pass
+  N 3NT    = 10+ points, balanced: game
+  E Pass
+  S Pass*  = Partner has chosen the game
+     key: Partner knows your range and has picked the contract. Pass.
+     not *: Partner knew you have 15-17 and chose game. Is there anything left to tell her?
+  W Pass
+
+auction recap:
+  Your 1NT told partner almost everything: 15-17 points and a balanced
+  hand. With 10 or more points, she knew your side had at least 25, so she
+  bid game. You are declarer, because you bid no-trump first, and so West
+  will lead to the first trick.
+
+planning:
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W CJ  N C3  E C2  S CK
+  2   S SK  W S3  N S5  E SA
+      note: The plan: take four diamonds, two spades and two hearts to go with your club trick. First drive out the ♠A.
+  3   E D5  S DQ  W D8  N D3
+  4   S D2  W DJ  N DK  E D9
+      note: Now the diamonds: over to dummy's ♦K.
+  5   N D6  E DT  S DA  W S4
+      note: Back to your ♦A.
+  6   S H2  W H4  N H9  E HQ
+      note: Lead a heart to set up a second heart trick.
+  7   E S2  S S7  W ST  N SQ
+  8   N S8  E S9  S SJ  W C5
+      note: A spade back to your ♠J.
+  9   S D4  W C7  N D7  E C4
+      note: Dummy's last diamond is a winner.
+  10  N HA  E H7  S H8  W H5
+      note: The ♥A.
+  11  N H3  E S6  S HK  W H6
+      note: A heart to your ♥K.
+  12  S C6  W CT  N CQ  E CA
+      note: A club to dummy's ♣Q. East's ace takes it.
+  13  E C9  S HT  W HJ  N C8
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: drive out the ♠A, then take four diamonds, two spades and two
+  hearts to go with your club trick.
+
+  3NT made. Your side had 27 points and balanced hands, just what no-trump
+  games are made of.

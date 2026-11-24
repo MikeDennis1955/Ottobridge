@@ -1,0 +1,72 @@
+# Lesson 3, new exercise: count the winners at no-trump. Nine sure tricks: take them.
+title: Nine sure tricks
+id: L03-03
+type: exercise
+lesson: 3
+concepts: 3.2
+student: S
+board: 35
+dealer: S
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K72    965    AKQ4   764
+  E  QJT9   32     T987   QJ9
+  S  A63    A74    J3     AK852
+  W  854    KQJT8  652    T3
+
+auction:
+  S 1NT*   = 15-17 points, balanced
+     not *: 16 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT with 16 points, and partner raised to game. You are
+  declarer, because you bid no-trump first, and so West will lead to the
+  first trick.
+
+planning:
+  winners: 9-11
+  spades: 2 = The ace and king.
+  hearts: 1 = The ace. Once it's gone, West's hearts are ready to run.
+  diamonds: 4 = Four on top. Play the jack first, from the short side.
+  clubs: 2-4 = Two on top. Two more if you give up a club, but that lets the opponents in.
+  remind: You need 9 tricks. Count the obvious winners in each suit.
+  remind: If you lose the lead, what will the opponents do?
+play:
+  1   W HK  N H5  E H2  S HA
+      note: Count first: two spades, one heart, four diamonds and two clubs. That's nine, exactly enough. Take them before the opponents can take theirs.
+  2   S DJ  W D2  N D4  E D7
+      note: Start with diamonds. Play the jack first, the high card from the short side, so the suit doesn't get stuck in your hand.
+  3   S D3  W D5  N DA  E D8
+      note: Now over to dummy's diamonds.
+  4   N DK  E D9  S C2  W D6
+      note: Keep taking the diamonds.
+  5   N DQ  E DT  S H4  W S4
+      note: The ♦Q makes four diamond tricks.
+  6   N SK  E S9  S S3  W S5
+      note: Now the spades, starting with dummy's king.
+  7   N S2  E ST  S SA  W S8
+      note: Back to your ♠A.
+  8   S CA  W C3  N C4  E C9
+      note: And your two top clubs.
+  9   S CK  W CT  N C6  E CJ
+      note: That's nine tricks.
+  10  S C5  W H8  N C7  E CQ
+      note: Nine tricks are in. The rest belong to the defense.
+  11  E H3  S H7  W HQ  N H9
+  12  W HJ  N H6  E SJ  S S6
+  13  W HT  N S7  E SQ  S C8
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: count your winners. With nine on top, exactly enough, you take them
+  and don't give the opponents a chance.
+
+  This doesn't happen often. If you had started by giving up a club trick to
+  set up your long clubs, West would have won the lead and taken four hearts
+  to go with it: down one.

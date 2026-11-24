@@ -1,0 +1,75 @@
+# Lesson 2, from the point-count exercise hand 8.
+title: Open 1♥ with a balanced 14
+id: L02-02
+type: exercise
+lesson: 2
+concepts: 2.2
+student: S
+board: 2
+dealer: E
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  853    KQ72   J632   K8
+  E  972    84     A98    AT632
+  S  QJ6    AT65   KQ5    Q94
+  W  AKT4   J93    T74    J75
+
+auction:
+  E Pass
+  S 1H*    = 13+ points, at least four hearts
+     key: 14 HCP and balanced, but not 15-17, so no 1NT. Open your only four-card suit.
+     not 1NT: Did you count 15? 14 is one short of a 1NT opening.
+     not Pass: Did you count your points? 14 is enough to open.
+     not *: In this lesson a suit opening needs only four cards. Which suit has four?
+  W Pass
+  N 2H     = 6-9 points and heart support
+  E Pass
+  S Pass*  = No game: 14 plus at most 9 is 23
+     key: Partner showed 6-9. Even if she has 9, your side has 23, short of the 25 for game.
+     not 3H: Did you add it up? Your 14 plus partner's 6-9 can't reach 25.
+     not 4H: Did you add it up? Your 14 plus partner's 6-9 can't reach 25.
+     not 2NT: Did you add it up? Your 14 plus partner's 6-9 can't reach 25.
+  W Pass
+
+auction recap:
+  A balanced 14 is too weak for 1NT, so you open your four-card heart
+  suit. Partner's raise shows 6-9 points and heart support. Add it up: 14
+  plus at most 9 is 23, short of game, so you pass. You are declarer,
+  because you bid hearts first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 5
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W SK  N S3  E S2  S S6
+  2   W SA  N S5  E S7  S SQ
+  3   W S4  N S8  E S9  S SJ
+      note: West's third spade. Your ♠J wins.
+  4   S H5  W H3  N HQ  E H4
+      note: The plan: draw trumps, then drive out the ♣A and the ♦A. Start with a heart to dummy's queen.
+  5   N HK  E H8  S H6  W H9
+      note: Keep drawing trumps.
+  6   N H2  E C2  S HA  W HJ
+      note: A third round draws West's last trump.
+  7   S C4  W C5  N CK  E CA
+      note: Now drive out the ♣A.
+  8   E C3  S CQ  W C7  N C8
+  9   S DK  W D4  N D2  E DA
+      note: Next, drive out the ♦A.
+  10  E C6  S C9  W CJ  N H7
+      note: Dummy is out of clubs, so it can trump.
+  11  N D3  E D8  S DQ  W D7
+      note: Back to your ♦Q.
+  12  S D5  W DT  N DJ  E D9
+      note: Dummy's ♦J is high now.
+  13  N D6  E CT  S HT  W ST
+      note: Dummy's last diamond is a winner too. 9 tricks: 2♥ made with an overtrick.
+
+play recap:
+  The plan: draw trumps, then drive out the ♣A and the ♦A to set up
+  winners in both minors.
+
+  2♥ made with an overtrick. Your side had 23 points, and your pass kept
+  you out of a game that needed 10 tricks.

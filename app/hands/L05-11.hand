@@ -1,0 +1,84 @@
+# Lesson 5, new exercise: opener shows hearts, partner has spades.
+title: Hearts, but partner has spades
+id: L05-11
+type: exercise
+lesson: 5
+concepts: 5.2, 5.6
+student: S
+board: 22
+dealer: E
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A762   Q54    J65    A73
+  E  K93    J7     A872   Q962
+  S  Q85    AK98   KQ3    K84
+  W  JT4    T632   T94    JT5
+
+auction:
+  E Pass
+  S 1NT*   = 15-17 points, balanced
+     not *: 17 points and a balanced hand: open 1NT.
+  W Pass
+  N 2C     = Stayman: do you have a 4-card major?
+  E Pass
+  S 2H*    = Four hearts
+     key: Four hearts, so bid 2♥.
+     not 2D: 2♦ says "no 4-card major." You have four hearts.
+  W Pass
+  N 3NT    = Game values, four spades, not four hearts
+  E Pass
+  S Pass*  = No spade fit: 3NT is right
+     key: North has spades, not hearts. You have only three spades, so pass.
+     not 4S: You have only three spades.
+     not 4H: North's 3NT says "not hearts."
+  W Pass
+
+auction recap:
+  You showed hearts. North's 3NT said "game values, but not hearts," so
+  North's major is spades. You have only three spades, so there is no fit, and
+  you pass. South is declarer, because South bid no-trump first, and so West
+  will lead to the first trick.
+
+planning:
+  winners: 6
+  remind: What is the contract?
+
+play:
+  1   W SJ  N S2  E S3  S SQ*
+      SQ key: Win the trick with the queen.
+      SQ not S8: Did you notice your queen wins this trick? Ducking gives the defense a chance to set up spades.
+      SQ not S5: Did you notice your queen wins this trick? Ducking gives the defense a chance to set up spades.
+  2   S DK*  W D4  N D5  E DA
+      DK key: Knock out the ace to set up your diamonds.
+      DK not CK: Did you look for where your extra tricks come from? Diamonds need the ace knocked out first.
+      note: Knock out the ♦A to set up diamond tricks.
+  3   E CQ  S C4  W C5  N CA
+  4   N SA  E S9  S S5  W S4
+      note: Take the ace of spades.
+  5   N H5  E H7  S HA  W H2
+      note: Now the hearts: lead toward your ace-king.
+  6   S HK  W H3  N H4  E HJ
+      note: Take the other top heart.
+  7   S H9  W H6  N HQ  E D2
+      note: Over to dummy's queen of hearts.
+  8   N S7  E SK  S S8  W ST
+      note: Lead a spade to set up dummy's long spade.
+  9   E C9  S CK  W CT  N C3
+  10  S DQ  W D9  N D6  E D7
+      note: Now cash your diamond winners.
+  11  S D3  W DT  N DJ  E D8
+      note: Over to dummy's jack of diamonds.
+  12  N S6  E C2  S C8  W HT
+      note: Dummy's last spade is a winner.
+  13  N C7  E C6  S H8  W CJ
+      note: 10 tricks: 3NT made with an overtrick.
+
+play recap:
+  The plan: knock out the ♦A to set up extra diamond tricks, then cash the
+  rest. Winning the first spade with the queen keeps the defense from
+  setting up their spades first.
+
+  3NT made with an overtrick. With no 4-4 major fit, no-trump was the right place to
+  play. Stayman did its job: it checked for a fit, found none, and still
+  reached the right game.

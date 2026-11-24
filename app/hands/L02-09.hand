@@ -1,0 +1,66 @@
+# Lesson 2, from the Lesson 2 bidding exercise 2b (partner opens 1C).
+title: Partner opens 1♣: a weak raise
+id: L02-09
+type: exercise
+lesson: 2
+concepts: 2.3
+student: S
+board: 9
+dealer: N
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A95    K97    Q52    AJ64
+  E  K763   A654   K97    T7
+  S  84     QT2    J83    K9532
+  W  QJT2   J83    AT64   Q8
+
+auction:
+  N 1C     = 13+ points, at least four clubs
+  E Pass
+  S 2C*    = 6-9 points and club support
+     key: 6 HCP plus 1 for the doubleton spade is 7, and five clubs. Raise.
+     not Pass: Did you count 7 points? With 6 or more, find a response.
+     not 1NT: Did you check the list from the top? With five clubs, the raise comes first.
+     not 3C: 3♣ shows 12-13 points. Did you count 7?
+     not *: With 6-9 points and club support, can you raise partner?
+  W Pass
+  N Pass   = A minimum: no game
+  E Pass
+
+auction recap:
+  Partner's 1♣ promised four or more clubs, so your five give your side at
+  least nine. Your 2♣ showed 6-9 points with support. With 14, partner can
+  count no more than 23 for your side, and a club game needs about 28. She
+  passes. North is declarer, because she bid clubs first, and so East will
+  lead to the first trick.
+
+play:
+  1   E S3  S S4  W SJ  N SA
+  2   N CA  E C7  S C2  W C8
+      note: Declarer draws trumps.
+  3   N C4  E CT  S CK  W CQ
+      note: Trumps are all drawn.
+  4   S H2  W H3  N HK  E HA
+      note: Lead a heart to set up a trick there.
+  5   E S6  S S8  W ST  N S9
+  6   W SQ  N S5  E S7  S C3
+      note: Dummy ruffs the third spade.
+  7   S HQ  W H8  N H7  E H4
+      note: Keep leading hearts.
+  8   S HT  W HJ  N H9  E H5
+      note: Hearts again.
+  9   W S2  N C6  E SK  S D3
+      note: Declarer ruffs again.
+  10  N D2  E D7  S DJ  W DA
+      note: Now diamonds, to set up a trick there.
+  11  W D4  N DQ  E DK  S D8
+  12  E D9  S C9  W D6  N D5
+  13  S C5  W DT  N CJ  E H6
+      note: 8 tricks: 2♣ made.
+
+play recap:
+  Declarer's plan: draw trumps, then use the long clubs to ruff.
+
+  2♣ made exactly. Your raise showed the fit and your strength in one bid,
+  and partner knew to stop.

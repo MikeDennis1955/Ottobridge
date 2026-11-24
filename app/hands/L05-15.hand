@@ -1,0 +1,71 @@
+# Lesson 5, new exercise: after 2♦, responder bids the no-trump game.
+title: No fit, but enough for game
+id: L05-15
+type: exercise
+lesson: 5
+concepts: 5.3
+student: S
+board: 32
+dealer: W
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AT2    A3     843    AKT92
+  E  Q873   JT86   KT96   5
+  S  K5     K742   A52    QJ63
+  W  J964   Q95    QJ7    874
+
+auction:
+  W Pass
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 2C*    = Stayman: do you have a 4-card major?
+     key: Four hearts: look for a heart fit before settling in no-trump.
+     not 3NT: You have four hearts. Ask first.
+  W Pass
+  N 2D     = No 4-card major
+  E Pass
+  S 3NT*   = No fit, 10+ points: game
+     key: No heart fit, and 13 points is plenty for game.
+     not 2NT: 2NT only invites. You have enough for game.
+     not 3H: 3♥ would show five hearts.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You had four hearts, so you asked first. Partner's 2♦ said "no major," so
+  you bid the game in no-trump. North is declarer, because North bid no-trump
+  first, and so East will lead to the first trick.
+
+play:
+  1   E HJ  S H2  W H5  N HA
+  2   N C2  E C5  S CQ  W C4
+      note: Declarer starts on the long club suit, with dummy's queen first, a high card from the short side.
+  3   S C3  W C7  N CA  E S3
+      note: Back to declarer's ace.
+  4   N CK  E D6  S C6  W C8
+      note: Keep running the clubs.
+  5   N C9  E S7  S CJ  W S4
+      note: Over to dummy's ♣J.
+  6   S DA  W D7  N D3  E D9
+      note: While in dummy, cash dummy's other winners.
+  7   S HK  W H9  N H3  E H6
+      note: The ♥K too.
+  8   S SK  W S6  N S2  E S8
+      note: Cash the spade winners, the ♠K first from the short side.
+  9   S S5  W S9  N SA  E SQ
+      note: Then across to declarer's ace.
+  10  N CT  E H8  S D2  W DJ
+      note: Cash the last club.
+  11  N D8  E DT  S D5  W DQ
+      note: Give up a diamond: the rest of the tricks are settled.
+  12  W HQ  N D4  E HT  S H4
+  13  W SJ  N ST  E DK  S H7
+      note: 10 tricks: 3NT made with an overtrick.
+
+play recap:
+  Declarer's plan: run the long clubs first, then cash the other winners.
+
+  3NT made ten tricks. Stayman cost nothing: when partner had no major, you
+  still reached the right game.

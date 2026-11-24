@@ -1,0 +1,74 @@
+# Lesson 2, new hand: two long suits, open the longer.
+title: Two long suits: open the longer
+id: L02-30
+type: exercise
+lesson: 2
+concepts: 2.2, 2.6
+student: S
+board: 30
+dealer: E
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  862    Q85    J96    KQ73
+  E  AKT3   742    AT8    T96
+  S  5      K93    KQ73   AJ842
+  W  QJ974  AJT6   542    5
+
+auction:
+  E Pass
+  S 1C*    = 13+ points, at least four clubs
+     key: 13 HCP plus 2 for the singleton is 15. Five clubs and four diamonds: open the longer suit.
+     not 1D: With two long suits, which one did the lesson say to open?
+     not 1NT: Is a hand with a singleton balanced?
+     not *: With two long suits, open the longer one.
+  W Pass
+  N 2C     = 6-9 points and club support
+  E Pass
+  S Pass*  = No game: at most 24
+     key: Partner showed 6-9. 15 plus 9 is 24 at most, and a club game needs about 28. Pass.
+     not 3C: Did you add it up? 15 plus 6-9 is far short of a club game.
+     not 2D: Partner has found a fit and shown a weak hand. Is there anything to gain by bidding on?
+     not 3NT: Did you add it up? 15 plus 6-9 can't reach 25.
+  W Pass
+
+auction recap:
+  You opened your longer suit, and partner raised: 6-9 points with club
+  support. Your side has at most 24, far short of the 28 a club game
+  needs, so you pass. You are declarer, because you bid clubs first, and
+  so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W SQ  N S2  E S3  S S5
+  2   W SJ  N S6  E ST  S C2
+      note: You have no spades left, so trump.
+  3   S CA  W C5  N C3  E C6
+      note: Draw trumps. The opponents hold four.
+  4   S C4  W S4  N CK  E C9
+      note: Keep drawing trumps.
+  5   N CQ  E CT  S C8  W S7
+      note: The last trump is gone.
+  6   N D6  E D8  S DK  W D4
+      note: Lead a diamond toward your ♦KQ.
+  7   S D3  W D5  N DJ  E DA
+      note: Keep leading diamonds to drive out the ace.
+  8   E H2  S H3  W HJ  N HQ
+  9   N D9  E DT  S DQ  W D2
+      note: Back to your ♦Q.
+  10  S D7  W S9  N H5  E H4
+      note: Your last diamond is a winner.
+  11  S HK  W HA  N H8  E H7
+      note: Lead your ♥K. West takes the ace.
+  12  W HT  N S8  E SK  S H9
+  13  W H6  N C7  E SA  S CJ
+      note: 9 tricks: 2♣ made with an overtrick.
+
+play recap:
+  The plan: draw trumps, then set up your diamonds.
+
+  2♣ made with an overtrick. Your side had 21 points, nowhere near the 28
+  a club game needs.

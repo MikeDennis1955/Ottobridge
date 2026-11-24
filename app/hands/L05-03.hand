@@ -1,0 +1,76 @@
+# Lesson 5, your Exercise 3, completed with East-West cards.
+title: Your Exercise 3: partner shows hearts
+id: L05-03
+type: exercise
+lesson: 5
+concepts: 5.4
+student: S
+board: 5
+dealer: N
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  KQJ9   QT84   A6     KJ6
+  E  843    KJ52   T2     A532
+  S  T762   A7     KQ54   QT7
+  W  A5     963    J9873  984
+
+auction:
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 2C     = Stayman: do you have a 4-card major?
+  W Pass
+  N 2H     = Four hearts (maybe four spades too)
+  E Pass
+  S 3NT*   = Game values, four spades, not four hearts
+     key: No heart fit. Stayman promised a major, so 3NT also tells North you have four spades.
+     not 4H: You have only two hearts.
+     not 3S: 3♠ shows five spades. You have four.
+     not 2NT: 2NT only invites. With 11 points you have enough for game.
+  W Pass
+  N 4S     = I have four spades too
+     key: North has both majors, so North corrects to 4♠.
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  North's 2♥ showed four hearts, but you have only two. Since your 2♣ promised
+  a 4-card major and it wasn't hearts, your 3NT told North you have four
+  spades, with enough for game. North has four spades too, so North bids 4♠.
+  North is declarer, because North bid spades first, and so East will lead to
+  the first trick.
+
+play:
+  1   E DT  S D4  W D3  N DA
+  2   N SK  E S3  S S2  W SA
+      note: Start drawing trumps. West wins the ace.
+  3   W D8  N D6  E D2  S DK
+  4   S S6  W S5  N SQ  E S4
+      note: Back in dummy, lead trumps again.
+  5   N SJ  E S8  S S7  W D7
+      note: The last trump: the opponents have none left.
+  6   N H4  E H2  S HA  W H3
+      note: Now the hearts, starting with dummy's ♥A.
+  7   S H7  W H6  N HT  E HJ
+      note: Give up the heart loser now, while you still control the other suits.
+  8   E CA  S C7  W C4  N C6
+  9   E C2  S CT  W C8  N CK
+  10  N H8  E H5  S ST  W H9
+      note: Ruff a heart in dummy.
+  11  S DQ  W D9  N HQ  E C3
+      note: Declarer throws the last heart on dummy's ♦Q.
+  12  S CQ  W C9  N CJ  E C5
+      note: Cash the ♣Q.
+  13  S D5  W DJ  N S9  E HK
+      note: Declarer ruffs the last diamond. 10 tricks: 4♠ made.
+
+play recap:
+  Declarer's plan: count losers first. The ♠A and ♣A must be lost, so only
+  one heart can go. Dummy's ♥A covers one of declarer's four hearts. Of the
+  other three, give one up, ruff one in dummy and throw one on dummy's ♦Q.
+  Draw trumps first.
+
+  4♠ made exactly. 3NT would also have made on this deal, with nine tricks,
+  so the choice cost nothing this time. When you find a 4-4 major fit, the
+  suit contract is usually at least as good as 3NT, and often better.

@@ -1,0 +1,88 @@
+# Lesson 5, new exercise: opener has both majors, then accepts an invitation.
+title: Both majors, and a maximum
+id: L05-10
+type: exercise
+lesson: 5
+concepts: 5.2, 5.6
+student: S
+board: 19
+dealer: S
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AQ82   QJ4    873    953
+  E  76     T32    J42    KJT74
+  S  JT43   AK86   AKT    Q6
+  W  K95    975    Q965   A82
+
+auction:
+  S 1NT*   = 15-17 points, balanced
+     not *: 17 points and a balanced hand: open 1NT.
+  W Pass
+  N 2C     = Stayman: do you have a 4-card major?
+  E Pass
+  S 2H*    = Four hearts (maybe four spades too)
+     key: With both majors, bid hearts first.
+     not 2S: With both majors, bid 2♥ first. If partner has spades, you'll still find out.
+     not 2D: 2♦ says "no 4-card major." You have two.
+  W Pass
+  N 2NT    = 8-9 points, four spades, not four hearts
+  E Pass
+  S 4S*    = A maximum, with four spades
+     key: Partner's major is spades, and you have 17: bid game in spades.
+     not Pass: You have the top of your range and a spade fit. Accept.
+     not 3NT: You've found an 8-card spade fit. Play in spades.
+     not 3S: With a maximum, bid the game yourself.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You bid hearts first, as you should with both majors. North's 2NT said "not
+  hearts, 8-9 points," and since Stayman promised a major, North must have
+  spades. With a maximum and four spades yourself, you bid 4♠. South is
+  declarer, because South bid spades first, and so West will lead to the first
+  trick.
+
+planning:
+  trumps out: 5
+  remind: What is the contract?
+
+play:
+  1   W D5  N D3  E D2  S DT
+  2   S SJ  W S5  N S2*  E S6
+      S2 key: Let the jack run. If West has the king, it can't escape.
+      S2 not SQ: Did you think about the finesse? If West has the king, your jack wins.
+      S2 not SA: Did you think about the finesse? If West has the king, your jack wins.
+      note: Draw trumps.
+  3   S ST  W S9  N S8*  E S7
+      S8 key: Same again: let the ten run.
+      S8 not SA: Did you notice West may still have the king? Let the ten run.
+      note: Repeat the finesse: lead the ten.
+  4   S S4  W SK  N SA  E H2
+      note: Trumps are drawn.
+  5   N C9  E C4  S C6  W CA
+      note: Trumps are drawn. Lead a club: you have a loser there anyway.
+  6   W H9  N H4  E H3  S HK
+  7   S HA  W H5  N HJ  E HT
+      note: Cash your top hearts.
+      ok: D
+  8   S DA  W D6  N D7  E D4
+      note: Now cash your top diamonds.
+      ok: H
+  9   S DK  W D9  N D8  E DJ
+      note: And the other one.
+  10  S H8  W H7  N HQ  E C7
+      note: Lead a heart over to dummy's queen.
+  11  N C5  E CK  S CQ  W C2
+      note: From dummy, lead a club toward your queen.
+  12  E CJ  S S3  W C8  N C3
+  13  S H6  W DQ  N SQ  E CT
+      note: 11 tricks: 4♠ made with an overtrick.
+
+play recap:
+  The plan: draw trumps by leading toward dummy's ace-queen, so the finesse
+  can catch the ♠K, then cash your winners.
+
+  4♠ made 11 tricks. 3NT would have gone down. Bidding hearts first lost
+  nothing: partner showed spades next, and you found the fit.

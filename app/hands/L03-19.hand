@@ -1,0 +1,78 @@
+# Lesson 3, new exercise: set up dummy's clubs by forcing out the ace, then throw diamond losers on them.
+title: Clubs for your diamonds
+id: L03-19
+type: exercise
+lesson: 3
+concepts: 3.3
+student: S
+board: 51
+dealer: S
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  Q742   K4     753    KQJ9
+  E  T3     8652   QJT6   T54
+  S  AKJ85  A73    K42    62
+  W  96     QJT9   A98    A873
+
+auction:
+  S 1S*    = 13+ points, at least four spades
+     not *: 15 high-card points and five spades: what does the lesson open?
+  W Pass
+  N 3S     = 4+ spades, 12-13 points: game forcing
+  E Pass
+  S 4S*    = Game
+     key: Partner's jump raise forces to game. Bid it.
+     not Pass: Partner's 3♠ forces to game. Did you add your points to partner's 12-13?
+     not *: Partner showed 12-13 points and four spades. Can you see 25?
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1♠ and partner's jump to 3♠ showed four spades and 12-13
+  points, so you bid game. You are declarer, because you bid spades first,
+  and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 3
+  spades: 0 = Solid.
+  hearts: 0 = The third heart, but dummy can ruff it.
+  diamonds: 2 = Two after the ace. Both may go away on dummy's clubs.
+  clubs: 1 = The ace. Force it out to set up dummy's clubs.
+  remind: You can afford three losers in 4♠. Count the obvious losers suit by suit in your own hand.
+  remind: Dummy has four clubs to your two. What happens once the ♣A is gone?
+play:
+  1   W HQ  N H4  E H2  S HA
+      note: Four losers: one heart, two diamonds and the ♣A. Once the ♣A is gone, dummy's clubs can take care of your diamonds. Draw trumps first.
+  2   S S5  W S6  N SQ  E S3
+      note: Draw trumps. Start with dummy's queen, the high card from the short side, so that you finish in your own hand.
+  3   N S2  E ST  S SA  W S9
+      note: Both opponents followed twice. Trumps are drawn.
+  4   S C2  W C3  N CK  E C4
+      note: Now force out the ♣A.
+  5   N CQ  E C5  S C6  W CA
+      note: Keep going until the ace is gone.
+  6   W HJ  N HK  E H5  S H3
+  7   N CJ  E CT  S D2  W C7
+      note: Dummy's clubs are winners now. Throw away your diamond losers.
+  8   N C9  E D6  S D4  W C8
+      note: Another discard: your last diamond loser goes away.
+  9   N D3  E DT  S DK  W DA
+      note: Now the last diamond loser. West wins the ace: a trick you counted.
+  10  W HT  N S7  E H6  S H7
+      note: Dummy has no hearts left, so it ruffs.
+  11  N D5  E DQ  S S8  W D9
+      note: Dummy's last diamond. You ruff it.
+  12  S SJ  W H9  N S4  E H8
+      note: Your last trumps are winners.
+  13  S SK  W D8  N D7  E DJ
+      note: 11 tricks: 4♠ made with an overtrick.
+
+play recap:
+  The plan: draw trumps, force out the ♣A, and throw two diamond losers on
+  dummy's clubs. Dummy's last trump took care of the heart.
+
+  Notice that forcing out the ace is the same idea you use at no-trump: you
+  lose one trick to set up several.

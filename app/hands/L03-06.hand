@@ -1,0 +1,80 @@
+# Lesson 3, new exercise: four losers, one too many; throw one away on dummy's extra heart winner.
+title: A loser goes on dummy's heart
+id: L03-06
+type: exercise
+lesson: 3
+concepts: 3.3
+student: S
+board: 38
+dealer: E
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  Q52    AK54   842    763
+  E  983    T62    QJT9   T84
+  S  AKJ74  Q8     A73    A52
+  W  T6     J973   K65    KQJ9
+
+auction:
+  E Pass
+  S 1S*    = 13+ points, at least four spades
+     not *: 18 high-card points and five spades. Too many for 1NT, too few for a two-bid: what's left?
+  W Pass
+  N 2S     = 6-9 points and spade support
+  E Pass
+  S 4S*    = Game
+     key: 19 points with the doubleton, plus at least 6 from partner, makes 25. Bid game.
+     not Pass: Did you add it up? Partner has at least 6, and 19 plus 6 is 25.
+     not *: Partner showed 6-9 and spade support. Can you see 25 points?
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1♠ and partner raised to 2♠. With 19 points, you knew your side
+  had at least 25, so you bid game. You are declarer, because you bid spades
+  first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 5
+  losers: 4
+  spades: 0 = Solid.
+  hearts: 0 = None, and dummy's fourth heart is an extra winner.
+  diamonds: 2 = Two small ones after the ace. One may go away on dummy's extra heart.
+  clubs: 2 = Two small ones after the ace.
+  remind: You can afford three losers in 4♠. Count the obvious losers suit by suit in your own hand.
+  remind: Dummy has more hearts than you do. What could you do with the extra one?
+play:
+  1   W CK  N C3  E C4  S CA
+      note: Four losers: two diamonds and two clubs. One too many. But dummy's hearts are better than yours: after your ♥Q is gone, dummy's king is an extra winner, and you can throw a loser away on it. First, draw trumps.
+  2   S S4  W S6  N SQ  E S3
+      note: Draw trumps. Start with dummy's queen, the high card from the short side, so that you finish in your own hand with the ace and king. If trumps break badly, you can draw the last one from there.
+  3   N S2  E S8  S SA  W ST
+      note: Back to your hand with the ace.
+  4   S SK  W D5  N S5  E S9
+      note: West is out of trumps. Your king draws East's last one.
+  5   S HQ*  W H3  N H4  E H2
+      HQ key: Lead the queen first, the high card from the short side.
+      HQ not H8: Did you remember to play the high card from the short side first? Otherwise your queen falls under dummy's king, and there's no extra winner.
+      note: Now the hearts. Play your queen first, the high card from the short side.
+  6   S H8  W H7  N HA  E H6
+      note: Over to dummy's ♥A.
+  7   N HK  E HT  S D3  W H9
+      note: You have no hearts left, so throw away a loser: a diamond or a club. Don't ruff: dummy's king is already winning the trick.
+  8   N D2  E D9  S DA  W D6
+      note: Now the diamonds. Only one loser is left in the suit.
+      ok: C
+  9   S D7  W DK  N D4  E DT
+      note: Give up your last diamond loser.
+  10  W CQ  N C6  E C8  S C2
+  11  W CJ  N C7  E CT  S C5
+  12  W C9  N D8  E DJ  S S7
+  13  S SJ  W HJ  N H5  E DQ
+      note: 10 tricks: 4♠ made.
+
+play recap:
+  The plan: count four losers, draw trumps, then throw one loser away on
+  dummy's extra heart winner.
+
+  The defense took only the three tricks you could afford. Dummy's long
+  suit did the work, just as it would at no-trump.

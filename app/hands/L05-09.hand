@@ -1,0 +1,77 @@
+# Lesson 5, new exercise: opener shows hearts, then declines an invitation.
+title: Hearts, and a minimum
+id: L05-09
+type: exercise
+lesson: 5
+concepts: 5.2, 5.6
+student: S
+board: 18
+dealer: E
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A2     T754   KJ84   654
+  E  KQ643  82     A976   83
+  S  T95    AKQ6   Q32    AT2
+  W  J87    J93    T5     KQJ97
+
+auction:
+  E Pass
+  S 1NT*   = 15-17 points, balanced
+     not *: 15 points and a balanced hand: open 1NT.
+  W Pass
+  N 2C     = Stayman: do you have a 4-card major?
+  E Pass
+  S 2H*    = Four hearts
+     key: Four hearts, so bid 2♥.
+     not 2D: 2♦ says "no 4-card major." You have four hearts.
+  W Pass
+  N 3H     = Four hearts too, 8-9 points: invitational
+  E Pass
+  S Pass*  = A minimum: decline
+     key: 15 is a minimum, so decline the invitation.
+     not 4H: 3♥ invites. With a minimum, say no.
+  W Pass
+
+auction recap:
+  You showed four hearts, and North raised to 3♥: four hearts and 8-9 points,
+  inviting game. With 15, a minimum, you passed. South is declarer, because
+  South bid hearts first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 5
+  remind: What is the contract?
+
+play:
+  1   W CK  N C4  E C3  S CA
+  2   S HA*  W H3  N H4  E H2
+      HA key: Draw trumps first, with your top hearts.
+      HA not H6: Did you remember that your top trumps can draw the opponents' trumps?
+      note: Draw trumps.
+  3   S HK  W H9  N H5  E H8
+      note: Keep drawing trumps.
+  4   S HQ  W HJ  N H7  E S3
+      note: Trumps are drawn.
+  5   S ST  W S7  N S2  E SQ
+      note: Trumps are drawn. Lead a spade toward dummy's ace.
+  6   E DA  S D2  W D5  N D4
+  7   E C8  S C2  W C9  N C5
+  8   W CQ  N C6  E S4  S CT
+  9   W CJ  N HT  E S6  S D3
+      note: Dummy ruffs.
+  10  N DK  E D6  S DQ  W DT
+      note: Now the diamonds, to set up dummy's winners.
+  11  N DJ  E D7  S S5  W C7
+      note: Cash dummy's good diamond.
+  12  N SA  E SK  S S9  W S8
+      note: Cash the ace of spades.
+  13  N D8  E D9  S H6  W SJ
+      note: 9 tricks: 3♥ made.
+
+play recap:
+  The plan: draw trumps, then ruff a club loser in dummy and use dummy's
+  diamonds. Drawing trumps with your top hearts comes first, so the defense
+  can't ruff your winners.
+
+  3♥ made exactly. 4♥ would have gone down one. With a minimum opposite an
+  invitation, passing was right, and this time it was rewarded.

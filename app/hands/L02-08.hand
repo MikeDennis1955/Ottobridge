@@ -1,0 +1,75 @@
+# Lesson 2, from the Lesson 2 bidding exercise 3d (partner opens 1S).
+title: Show your five-card suit at the two level
+id: L02-08
+type: exercise
+lesson: 2
+concepts: 2.3, 2.6
+student: S
+board: 8
+dealer: W
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AKQ986 K4     83     Q53
+  E  3      Q987   A752   KT86
+  S  54     AJT53  KQJ6   72
+  W  JT72   62     T94    AJ94
+
+auction:
+  W Pass
+  N 1S     = 13+ points, at least four spades
+  E Pass
+  S 2H*    = 10+ points, five or more hearts
+     key: 11 points, only two spades, and five hearts. Hearts rank lower than spades, so you need 10+ to bid them at the two level. You have it.
+     not 1NT: 1NT shows 6-9. Did you count 11?
+     not 2S: Is two small spades enough support to raise?
+     not 2NT: 2NT shows 12-14 and a balanced hand. Did you count 11?
+     not Pass: Did you count your points? 11 is plenty to respond.
+     not *: With 10+ points and five hearts, which response shows them?
+  W Pass
+  N 2S     = A minimum, with long spades
+  E Pass
+  S Pass*  = Stop: about 24 points, no fit
+     key: Partner showed a minimum opening. 13 plus your 11 is 24, short of game, and you have no fit for spades. Pass.
+     not 3S: Did you add it up? Partner's minimum and your 11 come to about 24, short of game.
+     not 4S: Did you add it up? Partner's minimum and your 11 come to about 24, short of game.
+     not 2NT: Did you add it up? Partner's minimum and your 11 come to about 24, short of game.
+     not 3H: Partner didn't support hearts. Is there anything new to say?
+  W Pass
+
+auction recap:
+  Partner's 1♠ showed 13+ points and four or more spades. Your 2♥ showed
+  10+ points and five hearts. Repeating spades told you two things:
+  partner has long spades, and no extra strength. Your side has about 24
+  points, so you stop in 2♠. North is declarer, because she bid spades
+  first, and so East will lead to the first trick.
+
+play:
+  1   E C6  S C2  W CA  N C3
+  2   W S2  N SQ  E S3  S S4
+      note: West switches to a trump.
+  3   N SK  E H7  S S5  W S7
+      note: Declarer's plan: draw trumps, then drive out the ♦A. Keep drawing trumps.
+  4   N SA  E D2  S H3  W SJ
+      note: The ♠A. Only West's ♠T is still out.
+  5   N D3  E D5  S DJ  W D4
+      note: Now the diamonds, toward dummy's honors.
+  6   S DK  W D9  N D8  E DA
+      note: Keep leading diamonds to drive out the ace.
+  7   E CK  S C7  W C4  N C5
+  8   E C8  S H5  W CJ  N CQ
+  9   N S6  E H8  S HT  W ST
+      note: Declarer gives up West's ♠T.
+  10  W H2  N H4  E HQ  S HA
+  11  S HJ  W H6  N HK  E H9
+      note: Over to declarer's ♥K.
+  12  N S8  E D7  S D6  W C9
+      note: Declarer's trumps are winners.
+  13  N S9  E CT  S DQ  W DT
+      note: The last trump. 9 tricks: 2♠ made with an overtrick.
+
+play recap:
+  Declarer's plan: draw trumps, then drive out the ♦A.
+
+  2♠ made with an overtrick, losing a trump, two clubs and a diamond. With
+  about 24 points and no fit, stopping low was right: 4♠ had no chance.

@@ -1,0 +1,69 @@
+# Lesson 2, from the Lesson 2 bidding exercise 3b (partner opens 1S). 1NT with a singleton, per Mike.
+title: Partner opens 1♠: no perfect answer
+id: L02-12
+type: exercise
+lesson: 2
+concepts: 2.3
+student: S
+board: 12
+dealer: W
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AQ853  K7     K62    984
+  E  K42    J942   J983   KQ
+  S  7      AQT65  Q75    JT73
+  W  JT96   83     AT4    A652
+
+auction:
+  W Pass
+  N 1S     = 13+ points, at least four spades
+  E Pass
+  S 1NT*   = 6-9 points
+     key: Our bidding rules have no good response to 1♠ here. The hand isn't really balanced, but it isn't strong enough for 2♥. We'd rather tell a small lie about our distribution than exaggerate our strength.
+     not 2H: 2♥ promises 10+ points. Did you count 9?
+     not Pass: Did you count 9? With 6 or more, find a response.
+     not 2S: Is one spade enough support to raise?
+     not *: With 6-9 points and no spade support, which response is closest to the truth?
+  W Pass
+  N Pass   = A minimum: no game
+  E Pass
+
+auction recap:
+  With 9 points and a singleton spade, there was no perfect bid. 1NT told
+  partner the most important thing, your strength. Partner has a minimum,
+  so your side has about 22: no game. You are declarer, because you bid
+  no-trump first, and so West will lead to the first trick.
+
+planning:
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W SJ  N SQ  E SK  S S7
+  2   E D3  S D5  W DT  N DK
+  3   N HK  E H2  S H5  W H3
+      note: The plan: take your top hearts and hope the ♥J falls. Dummy's ♥K first, the high card from the short side.
+  4   N H7  E H9  S HA  W H8
+      note: A heart to your ♥A.
+  5   S HQ  W C2  N S3  E H4
+      note: The ♥Q. The jack hasn't fallen, so East still has it.
+  6   S C3  W C5  N C8  E CQ
+      note: You have no way back to your hand for the last hearts, so try the clubs.
+  7   E DJ  S DQ  W DA  N D2
+  8   W D4  N D6  E D8  S D7
+  9   E S2  S C7  W S9  N SA
+  10  N C4  E CK  S CJ  W C6
+      note: Another club. The defenders take the rest.
+  11  E D9  S CT  W S6  N C9
+  12  E HJ  S H6  W CA  N S5
+  13  E S4  S HT  W ST  N S8
+      note: 5 tricks: 1NT down two.
+
+play recap:
+  The plan: take your top hearts and hope the ♥J falls.
+
+  1NT down two. East held four hearts to the jack, and with no way back to
+  your hand, the long hearts never scored. That was a sound contract, but
+  the cards just weren't breaking your way. Your 1NT was a small white lie
+  about your shape, but it told partner your strength, and that was what
+  mattered.

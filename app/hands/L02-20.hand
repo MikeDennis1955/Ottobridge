@@ -1,0 +1,74 @@
+# Lesson 2, from the Lesson 2 bidding exercise 2f (partner opens 1C).
+title: Partner opens 1♣: show diamonds, then bid game
+id: L02-20
+type: exercise
+lesson: 2
+concepts: 2.3, 2.6
+student: S
+board: 20
+dealer: W
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A84    K63    K4     QJT86
+  E  T5     J875   J76    A742
+  S  KJ3    AQT    Q983   K95
+  W  Q9762  942    AT52   3
+
+auction:
+  W Pass
+  N 1C     = 13+ points, at least four clubs
+  E Pass
+  S 1D*    = 6+ points, four or more diamonds
+     key: 15 HCP, balanced, with four diamonds. Show your suit at the one level; partner will bid again.
+     not 2NT: 2NT shows 12-14. Did you count 15?
+     not 2C: Raising shows 6-9, and you have more. Can you show your diamonds first?
+     not 3NT: A jump to 3NT isn't in our system. Start with 1♦.
+     not *: With four diamonds, which response shows them at the one level?
+  W Pass
+  N 1NT    = A balanced minimum, 13-14
+  E Pass
+  S 3NT*   = Game
+     key: Partner showed 13-14. With your 15, your side has 28 or more: bid game.
+     not Pass: Partner showed 13-14. With your 15, is there enough for game?
+     not 2NT: 2NT invites. With 28 or more between you, do you need partner's help to decide?
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  1♦ showed four diamonds and 6+ points, and partner had to bid again. His
+  1NT showed a balanced minimum. 15 plus 13-14 is 28 or more, so you bid
+  game. North is declarer, because he bid no-trump first, and so East will
+  lead to the first trick.
+
+play:
+  1   E H5  S HQ  W H2  N H3
+  2   S CK  W C3  N C6  E CA
+      note: Declarer's plan: drive out the ♣A, then run the clubs. Dummy's ♣K first, the high card from the short side.
+  3   E H7  S HA  W H4  N H6
+  4   S D3  W D2  N DK  E D6
+      note: A diamond to declarer's king.
+  5   N S4  E S5  S SJ  W SQ
+      note: A spade toward dummy's ♠KJ.
+  6   W H9  N HK  E H8  S HT
+  7   N CQ  E C2  S C5  W S2
+      note: Now run the clubs.
+  8   N CJ  E C4  S C9  W S6
+      note: Keep going.
+  9   N CT  E C7  S D8  W D5
+      note: And again.
+  10  N C8  E ST  S D9  W S7
+      note: The last club.
+  11  N SA  E D7  S S3  W S9
+      note: The ♠A.
+  12  N S8  E HJ  S SK  W DT
+      note: A spade to dummy's king.
+  13  S DQ  W DA  N D4  E DJ
+      note: West's ♦A takes the last trick. 10 tricks: 3NT made with an overtrick.
+
+play recap:
+  Declarer's plan: drive out the ♣A and run the clubs.
+
+  3NT made with an overtrick. Your 1♦ kept the auction low while partner
+  described his hand, and then you knew enough to bid game.

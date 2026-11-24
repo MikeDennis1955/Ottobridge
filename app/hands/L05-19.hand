@@ -1,0 +1,79 @@
+# Lesson 5, new exercise: after 2♥, responder invites with five spades; opener declines.
+title: Five spades, partner declines
+id: L05-19
+type: exercise
+lesson: 5
+concepts: 5.4
+student: S
+board: 40
+dealer: W
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  KJ     AJ75   JT5    AQ43
+  E  T7     K843   A97    K875
+  S  Q9864  92     KQ84   J2
+  W  A532   QT6    632    T96
+
+auction:
+  W Pass
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 2C*    = Stayman: do you have a 4-card major?
+     key: 8 points and five spades: start with Stayman.
+     not 2S: 2♠ now would be weak, under 8 points. You have 8.
+  W Pass
+  N 2H     = Four hearts
+  E Pass
+  S 2S*    = Five spades, 8-9 points, not four hearts
+     key: No heart fit. 2♠ shows five spades and invites.
+     not 2NT: 2NT would show only four spades. Show your fifth.
+     not 3S: 3♠ would show 10+ points. You have 8.
+  W Pass
+  N 2NT    = A minimum, only two spades
+  E Pass
+  S Pass*  = Accept partner's decision
+     key: Partner has a minimum and no spade fit. Stop here.
+     not 3S: Partner has denied three spades. 2NT is fine.
+     not 3NT: Partner declined your invitation. Respect it.
+  W Pass
+
+auction recap:
+  You showed five spades and an invitation. Partner had only two spades and 16
+  points, near the bottom of the range, so she declined with 2NT. North is
+  declarer, because North bid no-trump first, and so East will lead to the
+  first trick.
+
+play:
+  1   E C5  S CJ  W C6  N C3
+  2   S SQ  W S2  N SJ  E S7
+      note: Dummy's spades are the long suit to set up.
+  3   S S9  W S3  N SK  E ST
+      note: Declarer plays the ♠K so dummy's spades can run later.
+  4   N DJ  E D7  S DQ  W D2
+      note: Lead the ♦J to reach dummy's diamonds.
+  5   S S8  W S5  N C4  E H3
+      note: Keep leading spades to knock out the ace.
+  6   S S6  W SA  N H5  E H4
+      note: Drive out the ♠A.
+  7   W D6  N D5  E D9  S DK
+  8   S S4  W D3  N H7  E C7
+      note: The spades are set up.
+  9   S D8  W H6  N DT  E DA
+      note: Lead a diamond toward declarer.
+  10  E HK  S H2  W HT  N HA
+  11  N CA  E C8  S C2  W C9
+      note: Cash the club winner.
+  12  N HJ  E H8  S H9  W HQ
+      note: Exit with a heart.
+  13  W CT  N CQ  E CK  S D4
+      note: 9 tricks: 2NT made with an overtrick.
+
+play recap:
+  Declarer's plan: drive out the ♠A to set up dummy's long spades, keeping a
+  way to reach them.
+
+  2NT made nine tricks, so 3NT would have made too. Partner's decision was
+  still sound: with 16 points and no spade fit, game needed things to go
+  well, and this time they did. Good bidding doesn't always reach the best
+  score.

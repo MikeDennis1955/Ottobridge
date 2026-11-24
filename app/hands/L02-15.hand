@@ -1,0 +1,72 @@
+# Lesson 2, from the point-count exercise hand 10.
+title: Short suits help you open
+id: L02-15
+type: exercise
+lesson: 2
+concepts: 2.1, 2.6
+student: S
+board: 15
+dealer: S
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  853    K82    KJ64   Q85
+  E  T962   Q54    A2     A643
+  S  K4     AJ6    QT9753 J7
+  W  AQJ7   T973   8      KT92
+
+auction:
+  S 1D*    = 13+ points, at least four diamonds
+     key: 11 HCP plus 1 for each doubleton is 13, with six diamonds. Open 1♦.
+     not Pass: Did you count your doubletons? They bring you to 13.
+     not 2D: A two-bid shows 22+ points. Did you count 13?
+     not *: With 13 points and six diamonds, which opening shows them?
+  W Pass
+  N 2D     = 6-9 points and diamond support
+  E Pass
+  S Pass*  = No game: at most 22
+     key: Partner showed 6-9. Your 13 plus 9 is 22 at most, and a diamond game needs about 28.
+     not 3D: Did you add it up? 13 plus 6-9 is far short of a diamond game.
+     not 2NT: Did you add it up? 13 plus 6-9 can't reach 25.
+     not 3NT: Did you add it up? 13 plus 6-9 can't reach 25.
+  W Pass
+
+auction recap:
+  Your two doubletons lifted 11 HCP to 13, enough to open. Partner's 2♦
+  showed 6-9 points and diamond support. Your side has at most 22, and a
+  game in diamonds needs about 28, so you pass. You are declarer, because
+  you bid diamonds first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 3
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W HT  N H2  E HQ  S HA
+  2   S D3  W D8  N DK  E DA
+      note: The plan: draw trumps, take your heart winners, then trump clubs. Start with a trump to dummy's king.
+  3   E ST  S SK  W SA  N S3
+  4   W SQ  N S5  E S2  S S4
+  5   W SJ  N S8  E S6  S D9
+      note: You have no spades left, so trump.
+  6   S DT  W C2  N D4  E D2
+      note: Draw East's last trump.
+  7   S HJ  W H3  N H8  E H4
+      note: Now your heart winners.
+  8   S H6  W H7  N HK  E H5
+      note: A heart to dummy's ♥K.
+  9   N C5  E C3  S CJ  W CK
+      note: Lead a club. You have to lose some clubs anyway.
+  10  W CT  N CQ  E CA  S C7
+  11  E C4  S D5  W C9  N C8
+      note: Trump it.
+  12  S DQ  W H9  N D6  E C6
+      note: Take your trumps.
+  13  S D7  W S7  N DJ  E S9
+      note: The last trump. 8 tricks: 2♦ made.
+
+play recap:
+  The plan: draw trumps, take your heart winners, then trump clubs.
+
+  2♦ made exactly. Partner's raise and your pass kept you in a safe part
+  score.

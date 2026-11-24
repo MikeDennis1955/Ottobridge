@@ -1,0 +1,99 @@
+Lesson #3: Introduction to Play of the Hand
+
+Review: In the last lesson we began to think about how the bidding works. The bidding is based on the idea of Point Count as a shared tool for hand evaluation that can form the basis for a system of common understandings about how bids can be used to describe the strength (high cards) and shape (distribution of cards among suits) of the partnership's hands. In this lesson, we will begin the exploration of how to play the hand as declarer. This is often described as "dummy play," which is a bit of a misnomer because it refers to how the declarer uses both their own hand and the cards in the dummy together in attempting to fulfill their contract.
+
+This is a critical point and one that novices can struggle to grasp. When you see the dummy, you need to perceive the complementary relationships between your hand and the dummy. As you go through this lesson, think at every step about how your hand and dummy work together to take as many tricks as possible.
+
+Our goal is to get you to begin playing with at least a bare framework of how to approach the two parts of the game. YOU WILL LIKELY STILL FEEL LOST FOR A WHILE. That's OK; it gets better.
+
+
+Play of the Hand (Basics): The first time an opening lead is made against your contract and the dummy is tabled, you will feel at least a brief frisson of panic. Here are some principles to think about:
+
+1. Before you play to the first trick from dummy, take your time. Review the bidding, be clear about your contract, and consider how you might approach the problem at hand.
+
+2. In a no-trump contract, begin by counting your sure winners (see below). There will only occasionally be enough sure tricks to make your contract without doing some work. Once you determine the gap between how many sure winners you have and how many tricks are required to make the contract, think about where you can perhaps develop extra tricks. This may involve establishing cards in long suits, promoting mid-level cards, or using positional advantages to take tricks cheaply (more later).
+
+3. In a trump contract, begin by counting your sure or likely losers (see below). Assuming this number exceeds the number of tricks you can afford to lose, look for ways to reduce the number of losers. This could include the same techniques as in no-trump, but an additional tool is available: the use of trumps to reduce the losers.
+
+4. The most common error of rookies is playing off their sure winners immediately, and then leading a random card because they're out of ideas. That almost never works out well. DO NOT BE AFRAID TO LOSE TRICKS! Unless you're playing a slam, you can afford to lose some tricks, and doing so tactically, usually earlier in the play, will pay big dividends. It may not be too strong to say that good declarer play is about losing the right tricks at the right time.
+
+
+Counting Winners (No-trump Contracts) and Losers (Trump Contracts)
+
+In the previous section we referred to counting winners/losers in the hand when the dummy appears. This process involves examining each suit, counting up the winners/losers in that suit, and adding up the totals. It accomplishes two objectives. First, it allows you to judge how close you are to fulfilling the contract. If your contract is 3NT, you need to take 9 tricks. If your total winner count is 7 sure winners, you've got some work to do finding two more winners. If you're playing 6H, you can afford to lose only a single trick, and if this initial assessment shows 2 losers, you'll need to find a way to eliminate one of those to succeed.
+
+Second, the counting process reveals the challenges that you face and perhaps several approaches to success. Examining each suit gives you a list of tasks that you'll need to undertake as well as landmines to avoid. As you grow in skill at the game, you will develop the ability to integrate the tactical challenges in each suit into a comprehensive plan of attack. Note that you probably can't do that yet, but that's where you're trying to get to. Often these tasks will compete for resources of entries and control; you might have to choose between two different approaches because you can't do both. Which approach ("line") is more likely to succeed, based on the information you have so far? Which one has the biggest payoff? But that's down the line. Let's see some examples of counting an individual suit. In these hands, the suit in question will be diamonds, not that it matters. We will consider it from both a winners standpoint for a NT contract and a losers standpoint for a trump contract. The top hand will be the dummy and the bottom hand is yours as declarer. A few of these examples preview the finesse, a way of capturing an opponent's high card by leading toward your own; we'll cover it properly in Lesson 4.
+
+When counting losers, count them in the hand with more trumps (usually yours), and let the high cards in the other hand cover them. For example, with AK7 in dummy and 953 in your hand, dummy's A and K take care of two of your diamonds, but your third diamond is a loser.
+
+Example 1:	AK7
+		953
+
+This holding contains exactly 2 winners (the A and K) and exactly one loser (the 3rd round of the suit, after the AK are played, will lose to an opponent's high card). Not much can be done to stretch this into a 3rd winner. However, if this is a side suit in a trump contract, we might be able to dispose of the third card in either dummy or declarer's hand and then trump the 3rd round of the suit, eliminating one loser. Make a note!
+
+Example 2:	AQ5
+		K96
+
+In this holding, you can take three tricks in the diamond suit, neither more nor fewer. You have some flexibility about the order you might take these. For example, you could lead the 6 toward the A, return the 5 to the K, and then lead the 9 back to the Q. The only thing you really don't want to do is overtake your K with dummy's A, or overtake dummy's Q with your K. While that addresses the question of how many tricks you can take, it doesn't define how these diamonds will figure into the play. One thing is clear: it would be wrong to go ahead and take these tricks right away! First of all, after taking those three winners, you will have established at least one long diamond card in an opponent's hand which they can take if they get the lead. But less obviously, this suit can perform the essential function of allowing you to move back and forth between your hand and dummy.
+
+------------------------------------------------------------
+NOTE: Getting from Here to There and Back Again
+
+Every trick is won by one hand or the other, and whoever wins it must lead to the next. That makes the lead itself a resource. Your winners in dummy are only useful if you can get to dummy to cash them, and the same goes for your own hand. A card that wins a trick in the other hand is called an ENTRY, and part of your planning when dummy comes down should be counting entries the way you count winners: how many ways do I have to reach dummy, and how many to get back? In the example above, the diamonds give you three crossings in a row, so don't squander them by cashing the suit early. In the no-trump example later in this lesson, the K of spades is dummy's only way in once the diamonds are set up, so guard it as carefully as the diamonds themselves. Beginners usually discover entries the hard way, with a stack of good cards stranded in dummy and no way to reach them.
+------------------------------------------------------------
+
+Example 3:	A863
+		K42
+
+There are obviously two winners here, but something else is going on. We have 7 diamonds between us, so the opponents have 6. If the opponents each have 3 diamonds, we could play the A, then the K, and then a 3rd round, after which the 13th diamond will be a winner. It's not clear that this is a good idea. It's against the odds to find that "even" split of the opponents' diamonds, and it only gets us one additional winner, but still, notice that it's a possible source of an extra winner. From a loser standpoint in a trump contract, there's one loser, although we may be able to eliminate it if we can get rid of one of declarer's diamonds so that declarer can trump the 3rd round of the suit. Something to keep in mind.
+
+Example 4:	953
+		AQJ862
+
+At NT we can count 1 immediate winner, the A, but this is a much more powerful asset than that. In fact this suit might generate 6 winners and almost always at least 5. The opponents only have 4 diamonds and likely the only diamond that matters is the K of diamonds. If we play the A and then follow up with the Q, the opponents can win their K but then the rest of declarer's diamonds are winners! We've given up 1 trick to get 4 more back in return. Even better, if the K is in East's hand to your right and if we can lead from the dummy, we could pinch the K between our A and QJ (see Lesson 4). We might take all 6 tricks that way. In a suit contract, the same thinking applies to losers. We might have 1 loser (the K of diamonds), but again if East holds the K, we may be able to eliminate that loser by leading from the dummy through East's trapped K. We would count this as 5 or 6 winners, depending on the position of the K of diamonds, and 0-1 losers, with the same condition.
+
+Example 5:	KQJT5
+		764
+
+We don't have any immediate winners in diamonds on this hand, since we're missing the A. But dummy's diamonds are a potentially rich source of tricks. We will keep leading the suit until an opponent wins their A, and then the rest of dummy's diamonds will be good. As with the previous example, we concede 1 trick to get many more back in return. In a trump contract, we see an unavoidable loser, the A, but that's all. 4 winners, 1 loser.
+
+Example 6:	J42
+		Q73
+
+Here's a good suit to avoid. There are no obvious winners here. True, if the opponents bang down the A and K of the suit, we can win the 3rd round, but opponents usually have no incentive for being so friendly. More generally, if the opponents lead this suit, we will be able to take a trick, whereas if we lead the suit, we probably won't. In a trump or NT contract, we want to avoid leading the suit. Still, examining the suit after any opening lead other than diamonds, we should conclude that it's probably got 0 winners / 3 losers.
+
+There are far too many possible suit combinations to be covered in a lesson like this. The takeaway should be that this way of approaching the hand can be very useful in creating a plan of attack as declarer. When the dummy is tabled, don't panic. Go through the winners/losers exercise to start thinking about the challenges and opportunities the hand presents.
+
+
+No-trump Example:
+			S: KT7
+			H: J5
+			D: KQJT4
+			C: 632
+
+			S: A84
+			H: AQ64
+			D: 865
+			C: AK7
+
+After a boring auction (1NT by you, P, 3NT by partner, all pass), West leads the 5 of clubs. This is NT, so we count winners. In the spade suit, we have 2; in hearts we have 1, but a possibility of developing either the Q or J as a second winner. In diamonds we have 4 easy tricks once we force out the A, and in the club suit 2 winners with no obvious chance for a third. So 4 diamonds, 2 spades, 2 clubs and at least 1 heart. That's 9! The plan is going to be to win the first club trick with the A or K and start leading diamonds to force out the A. The option for creating an extra heart trick is unnecessary and in fact risky. When the opponents get in with the A of diamonds, they'll lead a second round of clubs to force out your stopper, and then if they get in again, the rest of their clubs can be cashed, perhaps setting your contract. Correct play is to ignore the siren song of an extra trick in hearts in order to be certain of 9 tricks. Note the process here: we count the winners in each suit and add those up, along the way noticing opportunities and challenges, and then integrate that tactical-level information into a coherent strategy for winning 9 tricks and making the contract. The plan: win the club, force out the diamond A to establish that suit, and then cash our 9 winners.
+
+One more wrinkle: the defenders may refuse to take their A of diamonds until the third round, when you have no diamonds left in your hand. Then you'll need another way to reach dummy's good diamonds, and the K of spades is it. That's a good reason not to cash your spades early.
+
+
+Trump Example:
+			S: 52
+			H: QJT3
+			D: AJT4
+			C: KQ6
+
+			S: AK9
+			H: K9642
+			D: Q7
+			C: T53
+
+You opened 1H and partner raised to 3, showing an opening hand or better and 4+ hearts in support. You bid 4H and that becomes the contract. West leads the 4 of spades. Count losers. It looks like you have a loser in spades, but notice that after you win the A and K of the suit, dummy is out of spades and can trump the third round of the suit, so no losers, although you will need to remember to trump the 3rd spade in dummy. In the trump suit, we can't avoid a loser to the A but are otherwise clean. In diamonds we have a potential loser, the K, but note that as with earlier cases, the position of the K of diamonds matters. If West holds that card, we can lead the Q of diamonds, and if West withholds his K, let the Q ride to win the trick, then continue by leading the 7, planning to insert the J if West plays low again. Note that you will lose a trick if East holds the K, but you will have established the secondary honors in the North hand to use to discard losers from your own hand. So 0 or 1 loser in diamonds. In clubs, we have 1 loser for sure and possibly 2. If East holds the A, then when they use it to capture dummy's K or Q, we will be faced with a second potential loser in the suit.
+
+So the total loser count is 0 in spades (provided we remember to trump the third round in dummy), 1 in hearts, 0 or 1 in diamonds depending on which opponent has the K, and in clubs, 1 or 2 depending on who holds the A. Potentially 4 losers, which is one too many. But prospects are promising, as we'll see. Win the opening spade lead in your hand and start on trumps. Say East wins the A of trumps and continues the spade suit. Win that, trump your last spade in dummy, and then finish drawing trumps ending in your own hand. Then table the Q of diamonds and, as suggested, let it ride if West doesn't play the K. If this wins, lead a small diamond prepared to play dummy's J. Whether the trick wins or loses, you have winners in dummy's hand to discard one of the club losers in your hand. Again, notice the progression: we counted losers and discovered that we might lose 4 with bad luck. In particular, we saw that the club suit might give up 2 tricks, and we looked for a way to avoid that by establishing diamond winners in dummy for a club discard.
+
+Usually your winner or loser count will be somewhat provisional, depending on the positions of various high cards in the defensive hands and the distribution in key suits. The count points at potential outcomes; the plan is built to limit the space of possible outcomes to potentially successful ones.

@@ -1,0 +1,87 @@
+# Lesson 5, new exercise: student opens 2NT with both majors.
+title: Your 2NT, both majors
+id: L05-18
+type: exercise
+lesson: 5
+concepts: 5.7
+student: S
+board: 38
+dealer: E
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  9852   95     9754   KJ7
+  E  JT     JT432  Q82    986
+  S  AQ63   AQ76   AK     QT4
+  W  K74    K8     JT63   A532
+
+auction:
+  E Pass
+  S 2NT*   = 21-22 points, balanced
+     key: 21 points and a balanced hand: open 2NT.
+     not 1NT: 1NT shows 15-17. You have 21.
+     not *: 21 points and balanced: open 2NT.
+  W Pass
+  N 3C     = Stayman: do you have a 4-card major?
+  E Pass
+  S 3H*    = Four hearts (maybe four spades too)
+     key: With both majors, bid hearts first, just as over 1NT.
+     not 3S: With both majors, bid 3♥ first. If partner has spades, you'll find out.
+     not 3D: 3♦ says "no major." You have two.
+  W Pass
+  N 3NT    = Game, no heart fit, four spades
+  E Pass
+  S 4S*    = Four spades too: play in spades
+     key: Partner asked with Stayman, so 3NT promises four spades. You have four too.
+     not Pass: Partner has four spades and so do you. Play in the fit.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 2NT and bid hearts first, with both majors. Partner's 3NT said
+  "not hearts," and since he asked with Stayman, he must have spades. So you
+  bid 4♠. You are declarer, because you bid spades first, and so West will
+  lead to the first trick.
+
+planning:
+  trumps out: 5
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W DJ  N D4  E D2  S DK
+  2   S SA*  W S4  N S2  E ST
+      SA key: Draw trumps with your top spades.
+      SA not S3: Did you remember that your top trumps can draw the opponents' trumps?
+      SA not S6: Did you remember that your top trumps can draw the opponents' trumps?
+      note: Draw trumps.
+  3   S SQ  W S7  N S5  E SJ
+      note: Keep drawing trumps.
+  4   S S6*  W SK  N S8  E H2
+      S6 key: Draw the last trump: the king is still out.
+      S6 not HQ: Did you count trumps? One is still out, the king.
+      note: Trumps are drawn.
+  5   W CA  N C7  E C6  S C4
+  6   W C5  N CJ  E C8  S CT
+  7   N CK  E C9  S CQ  W C2
+      note: Cash dummy's club winner.
+  8   N D9  E D8  S DA  W D3
+      note: Back to your hand with a diamond.
+  9   S HA  W H8  N H5  E H3
+      note: Cash the ace of hearts.
+  10  S H6  W HK  N H9  E H4
+      note: Give up a heart. Your queen becomes a winner later.
+  11  W C3  N S9  E HT  S H7
+      note: Dummy ruffs.
+  12  N D7  E DQ  S S3  W D6
+      note: You ruff.
+  13  S HQ  W DT  N D5  E HJ
+      note: 10 tricks: 4♠ made.
+
+play recap:
+  The plan: draw trumps first, even though you lose the ♠K. Then count:
+  three losers (♠K, ♣A, ♥K) is exactly what you can afford.
+
+  4♠ made ten tricks. 3NT would have gone down, with only eight. Bidding
+  hearts first cost nothing: partner's 3NT told you about the spades, and
+  you found the fit.

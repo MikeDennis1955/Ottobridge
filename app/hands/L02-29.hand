@@ -1,0 +1,66 @@
+# Lesson 2, from the 1NT response exercise (hand c, adjusted so the play is simple): raise 1NT to game.
+title: Raise 1NT to game
+id: L02-29
+type: exercise
+lesson: 2
+concepts: 2.4, 2.6
+student: S
+board: 29
+dealer: N
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AK3    AQ2    Q862   J74
+  E  4      JT987  J74    Q953
+  S  T875   K654   AK5    86
+  W  QJ962  3      T93    AKT2
+
+auction:
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 3NT*   = 10+ points: game
+     key: 10 HCP opposite 15-17 makes at least 25. Bid game.
+     not 2NT: 2NT shows 8-9. Did you count 10?
+     not Pass: Did you add it up? 10 plus 15-17 is at least 25.
+     not *: With 10+ opposite 15-17, can you bid game directly?
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  Partner's 1NT showed 15-17 points and a balanced hand. Your 10 points
+  bring your side to at least 25, enough for game, so you bid 3NT. North
+  is declarer, because she bid no-trump first, and so East will lead to
+  the first trick.
+
+play:
+  1   E HJ  S H4  W H3  N HQ
+  2   N D2  E D4  S DA  W D3
+      note: Declarer's plan: there are nine top tricks, so take them. Start with diamonds, playing dummy's high cards first.
+  3   S DK  W D9  N D6  E D7
+      note: The ♦K.
+  4   S D5  W DT  N DQ  E DJ
+      note: Back to declarer's ♦Q.
+  5   N D8  E C3  S C6  W S2
+      note: Declarer's last diamond is a winner.
+  6   N HA  E H8  S H5  W C2
+      note: Now the hearts.
+  7   N H2  E H9  S HK  W CT
+      note: A heart to dummy's ♥K.
+  8   S S5  W S6  N SA  E S4
+      note: Back to declarer's spades.
+  9   N SK  E HT  S S7  W S9
+      note: The ninth trick.
+  10  N C4  E C5  S C8  W CK
+      note: Nine tricks are in. Declarer gives up the rest.
+  11  W CA  N C7  E C9  S ST
+  12  W SQ  N S3  E CQ  S S8
+  13  W SJ  N CJ  E H7  S H6
+      note: 9 tricks: 3NT made.
+
+play recap:
+  Declarer's plan: take the nine top tricks: two spades, three hearts and
+  four diamonds.
+
+  3NT made. Your 10 points were all partner needed to hear to know your
+  side had enough for game.

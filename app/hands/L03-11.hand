@@ -1,0 +1,73 @@
+# Lesson 3, new exercise: a partscore with six losers; dummy ruffs the third diamond.
+title: Six losers in 2♥
+id: L03-11
+type: exercise
+lesson: 3
+concepts: 3.3
+student: S
+board: 43
+dealer: S
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K842   T652   92     Q53
+  E  75     73     QJT3   AKJT9
+  S  A63    AKQJ4  864    72
+  W  QJT9   98     AK75   864
+
+auction:
+  S 1H*    = 13+ points, at least four hearts
+     not *: 14 high-card points and five hearts: what does the lesson open?
+  W Pass
+  N 2H     = 6-9 points and heart support
+  E Pass
+  S Pass*  = No game: at most 24
+     key: 15 points with the doubleton. Partner has at most 9, so your side has at most 24. Pass.
+     not *: Did you add it up? 15 plus 9 is only 24.
+  W Pass
+
+auction recap:
+  You opened 1♥ and partner raised to 2♥, showing 6-9 points. Your side
+  can't have 25, so you stopped in a partscore. You are declarer, because
+  you bid hearts first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 5
+  spades: 1 = The third spade.
+  hearts: 0 = Solid.
+  diamonds: 2 = Three small ones, but dummy can ruff the third.
+  clubs: 2 = The ace and king.
+  remind: In 2♥ you need 8 tricks, so you can afford five losers. Count the obvious losers suit by suit in your own hand.
+  remind: Dummy has only two diamonds. What can it do on the third round?
+play:
+  1   W DA  N D2  E D3  S D4
+      note: Six losers: one spade, three diamonds and two clubs. One too many. But dummy has only two diamonds, so it can ruff your third one.
+  2   W DK  N D9  E DT  S D6
+  3   W H9  N H2  E H3  S HJ
+      note: West sees that dummy is out of diamonds and leads a trump, hoping to stop the ruff.
+  4   S D8  W D5  N H5  E DJ
+      note: Ruff your last diamond loser in dummy now, before the opponents can lead another trump.
+      ok: H
+  5   N H6  E H7  S HQ  W H8
+      note: Now draw the opponents' last trumps.
+  6   S SA  W S9  N S2  E S5
+      note: The spades: ace and king, then the loser you counted.
+  7   S S3  W ST  N SK  E S7
+      note: Then the ♠K.
+  8   N S4  E C9  S S6  W SJ
+      note: Your third spade is a loser. Give it up.
+  9   W C8  N C3  E CJ  S C2
+  10  E CA  S C7  W C6  N C5
+  11  E CK  S H4  W C4  N CQ
+  12  S HA  W SQ  N HT  E DQ
+      note: Your last two trumps take the last two tricks.
+  13  S HK  W D7  N S8  E CT
+      note: 8 tricks: 2♥ made.
+
+play recap:
+  The plan: count six losers, one more than 2♥ can afford, and ruff the
+  third diamond in dummy.
+
+  West tried to stop the ruff by leading a trump, but dummy still had
+  enough trumps left to take care of the third diamond.

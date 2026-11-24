@@ -1,0 +1,129 @@
+Play check: Lessons 2, 3 and 5 (Ottobridge v90), run 2026-11-21
+Tool: /mnt/project-files/tools/playcheck.py (double-dummy solver on every scripted card).
+
+How to read it
+- DD par = tricks declarer takes with perfect play by everyone, seeing all cards. Scripted = what the script makes.
+- SLIP  = a card by declarer's side that costs a trick double dummy. Often fine single dummy (e.g. a finesse
+          that loses, or a safe line that gives up a DD-only overtrick). Worth a look when it is large or the note
+          doesn't explain it.
+- GIFT  = a defender's card that hands declarer a trick. Real defenders rarely do this: each one needs a look.
+- LEAD  = a blind opening lead that costs a trick. Usually fine.
+- Scripted above par means the defense gave something away somewhere.
+
+L02-03: 3NT by S. DD par 10 tricks, scripted 9 (+0).
+  SLIP trick 4: S D2 (-1)   [note: Now the diamonds: over to dummy's ♦K.]
+
+L02-04: 1NT by N. DD par 8 tricks, scripted 7 (+0).
+  SLIP trick 2: N SA (-1)   [note: Declarer's plan: set up dummy's spades. Start with the ♠A.]
+
+L02-08: 2S by N. DD par 9 tricks, scripted 9 (+1).
+  GIFT trick 2: W S2 (+1)   [note: West switches to a trump.]
+  SLIP trick 2: N SQ (-1)   [note: West switches to a trump.]
+
+L02-09: 2C by N. DD par 8 tricks, scripted 8 (+0).
+  SLIP trick 4: N HK (-1)   [note: Lead a heart to set up a trick there.]
+  GIFT trick 5: E S6 (+1)
+
+L02-10: 3NT by N. DD par 10 tricks, scripted 10 (+1).
+  GIFT trick 5: W C4 (+1)   [note: A club from dummy. East's ace takes it.]
+  SLIP trick 10: S H8 (-1)   [note: A heart back to declarer's ♥K.]
+
+L02-12: 1NT by S. DD par 7 tricks, scripted 5 (-2).
+  SLIP trick 4: S HA (-2)   [note: A heart to your ♥A.]
+
+L02-14: 2NT by S. DD par 8 tricks, scripted 7 (-1).
+  SLIP trick 4: S S5 (-1)
+  GIFT trick 9: W C4 (+1)   [note: A club to dummy's ♣Q.]
+  SLIP trick 10: N C9 (-1)   [note: Lead a club from dummy. West's ace takes it.]
+
+L02-16: 3NT by N. DD par 11 tricks, scripted 10 (+1).
+  SLIP trick 6: S SQ (-1)   [note: Another spade, to drive out the ace.]
+
+L02-19: 3NT by S. DD par 9 tricks, scripted 11 (+2).
+  GIFT trick 1: E HA (+2)
+
+L02-20: 3NT by N. DD par 10 tricks, scripted 10 (+1).
+  LEAD trick 1: E H5 (+1)
+  SLIP trick 5: S SJ (-1)   [note: A spade toward dummy's ♠KJ.]
+
+L02-23: 3NT by S. DD par 9 tricks, scripted 10 (+1).
+  LEAD trick 1: W S6 (+1)
+  SLIP trick 2: S CJ (-2)   [note: Declarer's plan: drive out the ♣A, then take hearts, spades, clubs and a diamond. Dummy's two queens help.]
+  GIFT trick 3: E DJ (+2)
+  SLIP trick 10: N D7 (-1)   [note: Back to declarer's ♦K.]
+  GIFT trick 12: E DT (+1)   [note: Ten tricks are in. West's ♠K takes this one.]
+
+L02-26: 1NT by N. DD par 8 tricks, scripted 7 (+0).
+  GIFT trick 2: W H3 (+1)   [note: West returns partner's suit.]
+  SLIP trick 9: S SA (-1)   [note: Cash the ♠A.]
+  SLIP trick 10: N D2 (-1)   [note: Seven tricks are in. Lead a diamond and let the defense take the rest.]
+
+L02-29: 3NT by N. DD par 9 tricks, scripted 9 (+0).
+  GIFT trick 7: W CT (+1)   [note: A heart to dummy's ♥K.]
+  SLIP trick 8: S S5 (-1)   [note: Back to declarer's spades.]
+
+L02-30: 2C by S. DD par 9 tricks, scripted 9 (+1).
+  GIFT trick 1: E S3 (+1)
+  SLIP trick 12: N S8 (-1)
+
+L02-32: 1NT by S. DD par 7 tricks, scripted 8 (+1).
+  GIFT trick 2: E S2 (+1)   [note: East returns partner's suit.]
+  SLIP trick 6: S HQ (-1)   [note: Keep going.]
+  GIFT trick 7: E C7 (+1)   [note: Declarer's hearts are all winners now.]
+  SLIP trick 8: N D7 (-1)   [note: The last heart.]
+  GIFT trick 12: W ST (+1)
+
+L03-02: 4H by S. DD par 12 tricks, scripted 11 (+1).
+  SLIP trick 5: N S3 (-1)   [note: Back to your hand with the ♠A.]
+
+L03-03: 3NT by S. DD par 11 tricks, scripted 9 (+0).
+  SLIP trick 1: S HA (-2)   [note: Count first: two spades, one heart, four diamonds and two clubs. That's nine, exactly enough. Take them before the opponents can take theirs.]
+
+L03-05: 3NT by N. DD par 10 tricks, scripted 9 (+0).
+  LEAD trick 1: E SQ (+1)   [note: Seven sure winners: two spades, two hearts, one diamond and two clubs. Your eight clubs can give two more, but only after you lose one club trick. Win with the ace and keep dummy's ♠K to stop the spades again.]
+  SLIP trick 3: S CK (-1)   [note: The king too. Both opponents follow.]
+  SLIP trick 7: N D6 (-1)   [note: Dummy's last club winner.]
+
+L03-07: 3NT by S. DD par 10 tricks, scripted 9 (+0).
+  LEAD trick 1: W SQ (+1)   [note: Only five sure winners: two spades, two hearts and the ♣A. But once the ♦A is gone, dummy's diamonds are worth four tricks. Win the first spade and keep the king to stop spades a second time.]
+  SLIP trick 6: S H2 (-1)   [note: Another winner.]
+  GIFT trick 7: E C9 (+1)   [note: The last diamond.]
+  SLIP trick 7: S C6 (-1)   [note: The last diamond.]
+  SLIP trick 10: S CA (-1)   [note: And the ♣A makes nine tricks.]
+
+L03-10: 3NT by S. DD par 12 tricks, scripted 11 (+2).
+  SLIP trick 9: S HA (-1)   [note: Back to your hand for the red-suit winners.]
+
+L03-12: 3NT by N. DD par 12 tricks, scripted 9 (+0).
+  SLIP trick 6: N C7 (-1)   [note: Keep cashing dummy's diamonds.]
+  SLIP trick 8: S S2 (-2)   [note: Back to your hand for the rest of your winners.]
+
+L03-15: 3NT by S. DD par 9 tricks, scripted 9 (+0).
+  SLIP trick 4: N CJ (-1)   [note: Keep going: force out the king.]
+  GIFT trick 4: E CK (+1)   [note: Keep going: force out the king.]
+  GIFT trick 4: W D3 (+1)   [note: Keep going: force out the king.]
+  SLIP trick 6: S C4 (-1)   [note: Your last club takes you to dummy's winners.]
+  GIFT trick 6: W D8 (+1)   [note: Your last club takes you to dummy's winners.]
+  SLIP trick 8: S D7 (-1)   [note: The last club.]
+
+L03-18: 3NT by S. DD par 9 tricks, scripted 10 (+1).
+  GIFT trick 2: W CK (+1)
+
+L03-20: 3NT by N. DD par 11 tricks, scripted 10 (+1).
+  SLIP trick 9: N S5 (-1)   [note: Over to dummy's ♠K.]
+
+L05-04: 3NT by N. DD par 9 tricks, scripted 9 (+0).
+  LEAD trick 1: E D6 (+1)
+  SLIP trick 9: N SA (-1)   [note: Cash the ♠A.]
+
+L05-17: 4H by N. DD par 10 tricks, scripted 10 (+0).
+  SLIP trick 8: S DA (-1)   [note: Cash the ♦A.]
+  GIFT trick 10: E SQ (+1)
+
+L05-A: 4H by S. DD par 11 tricks, scripted 11 (+1).
+  LEAD trick 1: W SQ (+1)   [note: West leads the ♠Q. Win in hand. Dummy's ♠A is saved as a way back to dummy later.]
+  SLIP trick 6: N DA (-1)   [note: Keep going with diamonds.]
+  GIFT trick 10: W SJ (+1)   [note: And the other one.]
+  SLIP trick 11: N C4 (-1)   [note: The two club losers can't be avoided.]
+
+No flags: L02-01, L02-02, L02-05, L02-06, L02-07, L02-11, L02-13, L02-15, L02-17, L02-18, L02-21, L02-22, L02-24, L02-25, L02-27, L02-28, L02-31, L03-01, L03-04, L03-06, L03-08, L03-09, L03-11, L03-13, L03-14, L03-16, L03-17, L03-19, L03-21, L03-22, L05-01, L05-02, L05-03, L05-05, L05-06, L05-07, L05-08, L05-09, L05-10, L05-11, L05-12, L05-13, L05-14, L05-15, L05-16, L05-18, L05-19, L05-20, L05-21, L05-22, L05-23, L05-24, L05-B

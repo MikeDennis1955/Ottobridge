@@ -1,0 +1,79 @@
+# Lesson 5, new exercise: a weak hand with long diamonds over 1NT.
+title: Weak with six diamonds
+id: L05-12
+type: exercise
+lesson: 5
+concepts: 5.1
+student: S
+board: 24
+dealer: W
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AQ98   87     KQ92   KJ8
+  E  KJ43   QT95   J      A653
+  S  52     J6     AT8654 972
+  W  T76    AK432  73     QT4
+
+auction:
+  W Pass
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 2D*    = To play: fewer than 8 points, long diamonds
+     key: A weak hand with six diamonds: bid 2♦, and partner must pass.
+     not Pass: Your hand is worth little in no-trump, but several tricks in diamonds.
+     not 2C: Stayman shows 8+ points and a major. You have neither.
+  W Pass
+  N Pass   = 2♦ is to play
+  E Pass
+
+auction recap:
+  With 5 points and six diamonds, your hand is weak in no-trump but useful
+  with diamonds as trumps. 2♦ asks partner to pass, and he does. You are
+  declarer, and so West will lead to the first trick.
+
+planning:
+  trumps out: 3
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W HA  N H7  E H5  S H6
+  2   W HK  N H8  E H9  S HJ
+  3   W ST  N S8  E S3  S S2
+  4   W H4  N D2*  E HT  S C2
+      D2 key: Ruff: dummy is out of hearts.
+      D2 not CK: Did you notice dummy has no hearts left? Ruff instead of letting the heart win.
+      D2 not SA: Did you notice dummy has no hearts left? Ruff instead of letting the heart win.
+      note: Dummy ruffs.
+  5   N DK*  E DJ  S D4  W D3
+      DK key: Now draw trumps.
+      DK not SA: Did you remember to draw trumps before cashing your side winners?
+      DK not CK: Did you remember to draw trumps before cashing your side winners?
+      note: Draw trumps.
+  6   N DQ  E C3  S D5  W D7
+      note: Trumps are drawn.
+  7   N SA  E S4  S S5  W S6
+      note: Trumps are drawn. Take the ace of spades.
+      ok: C
+  8   N SQ  E SJ  S C7  W S7
+      note: Cash the queen of spades too.
+      ok: C
+  9   N CK  E CA  S C9  W C4
+      note: Lead a club to knock out the ace.
+  10  E SK  S D6  W H2  N S9
+      note: You ruff.
+  11  S DA  W H3  N D9  E C5
+      note: Cash your trump winners.
+  12  S DT  W CT  N C8  E C6
+      note: Keep cashing trumps.
+  13  S D8  W CQ  N CJ  E HQ
+      note: 9 tricks: 2♦ made with an overtrick.
+
+play recap:
+  The plan: ruff the third heart in dummy, draw trumps, then cash your
+  winners. Ruffing first stops West's heart winner; drawing trumps next
+  keeps the defense from ruffing yours.
+
+  2♦ made nine tricks. 1NT would have made too, just, with seven. Most of
+  the time a hand like yours takes more tricks with diamonds as trumps than
+  it adds in no-trump, so 2♦ is the safer bet.

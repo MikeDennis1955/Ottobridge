@@ -1,0 +1,72 @@
+# Lesson 2, from the Lesson 2 bidding exercise 2a (partner opens 1C). The PDF hand has 14 cards; one diamond removed.
+title: Partner opens 1♣: show your spades
+id: L02-04
+type: exercise
+lesson: 2
+concepts: 2.3, 2.6
+student: S
+board: 4
+dealer: W
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A85    K65    QJT    KJ65
+  E  Q93    JT98   A87    Q43
+  S  JT764  AQ2    943    T7
+  W  K2     743    K652   A982
+
+auction:
+  W Pass
+  N 1C     = 13+ points, at least four clubs
+  E Pass
+  S 1S*    = 6+ points, four or more spades
+     key: 7 HCP plus 1 for the doubleton is 8, and five spades. Show them at the one level.
+     not Pass: Did you count 8? With 6 or more, find a response.
+     not 2C: With only two clubs, can you raise partner?
+     not 1NT: You have a spade suit to show. Did you look at that option?
+     not 2S: A jump to 2♠ isn't in our system. 1♠ shows spades and 6+ points.
+     not *: With 6+ points and four or more spades, which response shows them?
+  W Pass
+  N 1NT    = A balanced minimum, 13-14
+  E Pass
+  S Pass*  = No game: about 22 points
+     key: Partner showed 13-14. With your 8, your side has about 22. Stop.
+     not 2S: Partner chose no-trump. With so little extra, let her play 1NT.
+     not 2NT: Did you add it up? 8 plus 13-14 is well short of 25.
+     not 3NT: Did you add it up? 8 plus 13-14 is well short of 25.
+  W Pass
+
+auction recap:
+  Your 1♠ showed four or more spades and 6+ points. Partner's 1NT said she
+  has a balanced minimum and fewer than four spades. With your 8, your
+  side has about 22: no game, so pass. North is declarer, because she bid
+  no-trump first, and so East will lead to the first trick.
+
+play:
+  1   E HJ  S H2  W H3  N HK
+  2   N SA  E S3  S S4  W S2
+      note: Declarer's plan: set up dummy's spades. Start with the ♠A.
+  3   N S5  E S9  S ST  W SK
+      note: Another spade, to drive out the king.
+  4   W D2  N DT  E DA  S D3
+  5   E D8  S D4  W DK  N DJ
+  6   W D6  N DQ  E D7  S D9
+  7   N S8  E SQ  S S6  W C9
+      note: Another spade, to drive out the queen.
+  8   E C3  S C7  W CA  N C5
+  9   W D5  N H5  E H8  S CT
+  10  W C8  N CK  E C4  S S7
+      note: Declarer's ♣K wins.
+  11  N H6  E H9  S HQ  W H4
+      note: A heart over to dummy.
+  12  S HA  W H7  N C6  E HT
+      note: The ♥A.
+  13  S SJ  W C2  N CJ  E CQ
+      note: Dummy's last spade is a winner. 7 tricks: 1NT made.
+
+play recap:
+  Declarer's plan: set up dummy's long spades, keeping the ♥A and ♥Q to
+  reach them.
+
+  1NT made. Your side had 21 HCP, and the part score was the right place
+  to stop.

@@ -1,0 +1,74 @@
+# Lesson 2, from the Lesson 2 bidding exercise 3c (partner opens 1S), with the DQ swapped for a small diamond so it fits the 12-13 raise (Mike, 2026-11-20).
+title: Partner opens 1♠: a strong raise
+id: L02-24
+type: exercise
+lesson: 2
+concepts: 2.3, 2.1
+student: S
+board: 24
+dealer: W
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AK863  Q72    A4     Q93
+  E  7      JT94   JT2    AT872
+  S  QJ54   A      98763  KJ4
+  W  T92    K8653  KQ5    65
+
+auction:
+  W Pass
+  N 1S     = 13+ points, at least four spades
+  E Pass
+  S 3S*    = 12-13 points and four spades: forcing to game
+     key: 11 HCP plus 2 for the singleton heart is 13, with four spades. That's the 3♠ raise.
+     not 2S: 2♠ shows 6-9. Did you count the singleton? It brings you to 13.
+     not 2D: You have four spades. Isn't the raise the first thing to show?
+     not 4S: 4♠ isn't in our system. 3♠ shows the fit and game values, and partner will bid game.
+     not *: With four spades and 12-13 points, which raise shows both?
+  W Pass
+  N 4S     = Game
+  E Pass
+  S Pass*  = Partner has chosen the game
+     key: Your side has the points and the fit for game, and partner bid it. Pass.
+     not *: We won't worry about slams yet. Partner bid game: pass.
+  W Pass
+
+auction recap:
+  Your singleton heart is worth more now that you know partner has spades:
+  four trumps and a short suit make a strong hand stronger. 3♠ showed
+  four-card support and game values, and partner bid game. North is
+  declarer, because she bid spades first, and so East will lead to the
+  first trick.
+
+play:
+  1   E HJ  S HA  W H3  N H2
+  2   S CK  W C5  N C3  E CA
+      note: Declarer's plan: trump hearts in dummy, losing one trick in each side suit. First drive out the ♣A.
+  3   E C2  S C4  W C6  N CQ
+  4   N H7  E H4  S S4  W H5
+      note: Dummy trumps a heart.
+  5   S SQ  W S2  N S3  E S7
+      note: A trump from dummy.
+  6   S D3  W DQ  N DA  E D2
+      note: A diamond to declarer's ace.
+  7   N HQ  E H9  S SJ  W H6
+      note: Dummy trumps another heart.
+  8   S S5  W S9  N SK  E C7
+      note: Now draw trumps.
+  9   N SA  E DT  S D6  W ST
+      note: The last trump.
+  10  N C9  E CT  S CJ  W H8
+      note: A club to dummy's ♣J.
+  11  S D7  W DK  N D4  E DJ
+      note: Give up a diamond.
+  12  W HK  N S6  E HT  S D8
+      note: Declarer trumps.
+  13  N S8  E C8  S D9  W D5
+      note: The last trump. 11 tricks: 4♠ made with an overtrick.
+
+play recap:
+  Declarer's plan: trump hearts in dummy, losing just one trick in each
+  side suit.
+
+  4♠ made with an overtrick. Your singleton heart let dummy ruff twice,
+  just as the lesson says: a short suit gains value once you find a fit.

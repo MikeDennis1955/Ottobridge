@@ -1,0 +1,66 @@
+# Lesson 5, new exercise: no 4-card major, so no Stayman: straight to 3NT.
+title: No major? Just bid 3NT
+id: L05-04
+type: exercise
+lesson: 5
+concepts: 5.1
+student: S
+board: 8
+dealer: W
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A82    K86    AQ54   K95
+  E  QJ7    T53    KJ86   AT2
+  S  KT3    A92    932    QJ84
+  W  9654   QJ74   T7     763
+
+auction:
+  W Pass
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 3NT*   = 10+ points, balanced, no 4-card major
+     key: No 4-card major, so Stayman has nothing to find. Bid the game.
+     not 2C: Stayman promises a 4-card major. You don't have one.
+     not 2NT: 2NT invites. With 10 points you have enough for game.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  Stayman is for hands with a 4-card major. Without one, the old responses
+  still apply: 2NT with 8-9, 3NT with 10 or more. You had 10, so 3NT. North is
+  declarer, because North bid no-trump first, and so East will lead to the
+  first trick.
+
+play:
+  1   E D6  S D2  W DT  N DQ
+  2   N CK  E C2  S C4  W C3
+      note: Set up the clubs to drive out the ace. Start with the king, the high card from the short side.
+  3   N C5  E CA  S C8  W C6
+      note: Keep pushing clubs: the ace must go.
+  4   E DK  S D3  W D7  N DA
+  5   N C9  E CT  S CJ  W C7
+      note: Cross to dummy with a club.
+  6   S CQ  W S4  N D4  E H3
+      note: Dummy's last club is a winner.
+  7   S HA  W H4  N H6  E H5
+      note: Cash the ♥A while in dummy.
+  8   S H2  W HJ  N HK  E HT
+      note: Over to declarer's ♥K.
+  9   N SA  E S7  S S3  W S5
+      note: Cash the ♠A.
+  10  N S2  E SJ  S SK  W S6
+      note: And over to dummy's ♠K.
+  11  S ST  W S9  N S8  E SQ
+      note: Nothing left to set up: the last tricks go to the defense.
+  12  E DJ  S D9  W H7  N D5
+  13  E D8  S H9  W HQ  N H8
+      note: 9 tricks: 3NT made.
+
+play recap:
+  Declarer's plan: count the sure tricks (two in each of spades, hearts and
+  diamonds), then set up the clubs for three more, knocking out the ace.
+
+  3NT made nine tricks. With no major to look for, the direct 3NT gave the
+  opponents no extra information and reached the right game.

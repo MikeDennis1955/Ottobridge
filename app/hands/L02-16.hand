@@ -1,0 +1,77 @@
+# Lesson 2, from the Lesson 2 bidding exercise 2d (partner opens 1C).
+title: Partner opens 1♣: a strong response
+id: L02-16
+type: exercise
+lesson: 2
+concepts: 2.3, 2.6
+student: S
+board: 16
+dealer: W
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  92     KQ5    KJ74   KQ62
+  E  J84    T82    T652   A83
+  S  KQT53  AJ4    AQ8    J7
+  W  A76    9763   93     T954
+
+auction:
+  W Pass
+  N 1C     = 13+ points, at least four clubs
+  E Pass
+  S 1S*    = 6+ points, four or more spades
+     key: 17 points and five spades. Start by showing your suit. 1♠ is forcing, so partner will bid again.
+     not 1NT: 1NT shows 6-9. Did you count 17?
+     not 2NT: 2NT shows 12-14 and no suit to show. You have five spades.
+     not 3NT: A jump to 3NT isn't in our system. Show your spades first.
+     not *: With five spades, which response shows them?
+  W Pass
+  N 1NT    = A balanced minimum, 13-14, fewer than four spades
+  E Pass
+  S 3NT*   = Game
+     key: Partner showed 13-14. With your 17, your side has 30 or more: bid game. Partner has fewer than four spades, so no-trump is the place.
+     not Pass: Partner showed 13-14. With your 17, is there enough for game?
+     not 2NT: 2NT invites. With 30 points between you, do you need partner's help to decide?
+     not 4S: Partner has fewer than four spades. Which game is the better bet?
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  Your 1♠ showed spades and 6+ points, and partner has to bid again. His
+  1NT showed a balanced 13-14 without four spades. Your 17 makes 30
+  between you, so you bid game, in no-trump. North is declarer, because he
+  bid no-trump first, and so East will lead to the first trick.
+
+play:
+  1   E D2  S DQ  W D3  N D4
+      note: Dummy's ♦Q wins.
+  2   S CJ  W C4  N C2  E CA
+      note: Declarer's plan: drive out the ♣A, then take diamonds, hearts, clubs and spades. Dummy's ♣J first, the high card from the short side.
+  3   E C8  S C7  W C5  N CQ
+  4   N S2  E S4  S SK  W S6
+      note: A spade to dummy's king.
+  5   S H4  W H3  N HQ  E H2
+      note: Back to declarer's ♥Q.
+  6   N S9  E S8  S SQ  W SA
+      note: Another spade, to drive out the ace.
+  7   W D9  N D7  E D5  S DA
+  8   S HA  W H6  N H5  E H8
+      note: The ♥A.
+  9   S D8  W H7  N DJ  E D6
+      note: Over to declarer's diamonds.
+  10  N DK  E DT  S S3  W H9
+      note: The ♦K.
+  11  N HK  E HT  S HJ  W S7
+      note: The ♥K.
+  12  N CK  E C3  S S5  W C9
+      note: The ♣K.
+  13  N C6  E SJ  S ST  W CT
+      note: West takes the last trick. 10 tricks: 3NT made with an overtrick.
+
+play recap:
+  Declarer's plan: drive out the ♣A, then take four diamonds, three
+  hearts, two clubs and at least one spade.
+
+  3NT made with an overtrick. Showing your spades first let partner tell
+  you he didn't have four, and you knew no-trump was the game to bid.

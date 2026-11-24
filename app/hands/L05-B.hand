@@ -1,0 +1,90 @@
+# Lesson 5, Sample B. New hand, opener's side.
+title: Both majors, opener's side
+id: L05-B
+type: exercise
+lesson: 5
+concepts: 5.2, 5.6
+student: S
+board: 50
+dealer: E
+vulnerable: NS
+
+deal:
+  N  KJ62   Q5     A854   963
+  E  53     T976   QJT92  54
+  S  AQ74   KJ83   K6     A72
+  W  T98    A42    73     KQJT8
+
+auction:
+  E Pass
+  S 1NT*   = 15-17 points, balanced
+     not *: 17 points and balanced: open 1NT.
+  W Pass
+  N 2C     = Stayman: do you have a 4-card major?
+  E Pass
+  S 2H*    = Four hearts (may also have four spades)
+     key: Right: with both majors, bid hearts first.
+     not 2S: With both majors, bid 2♥ first. If partner has spades, you'll still find out.
+     not 2D: 2♦ says "no 4-card major." You have two.
+  W Pass
+  N 3NT    = Game values, but not four hearts
+     key: Partner bid Stayman, so partner has a major. 3NT says it isn't hearts.
+  E Pass
+  S 4S*    = Four spades: we have a fit
+     not Pass: Partner's major must be spades. Bid 4♠.
+     not 4H: Partner's 3NT said "not hearts." Bid 4♠.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  With 17 points and a balanced hand, you open 1NT. Partner's 2♣ looks for a
+  major. With both, you bid 2♥ first. Partner's 3NT says "not hearts, but
+  game." Since Stayman promised a major, partner must have spades. You have
+  them too: 4♠. South is declarer, because South bid spades first, and so West
+  will lead to the first trick.
+
+planning:
+  trumps out: 5
+  remind: What is the contract?
+
+play:
+  1   W CK  N C3  E C4  S CA
+  2   S SA  W S8  N S2  E S3
+      note: Draw trumps before the opponents can ruff a club.
+  3   S S4  W S9  N SK  E S5
+      note: Keep drawing trumps.
+  4   N SJ  E D2  S S7  W ST
+      note: Trumps are drawn.
+  5   N H5  E H6  S HJ  W HA
+      note: Knock out the ace of hearts.
+  6   W CQ  N C6  E C5  S C2
+  7   W CJ  N C9  E D9  S C7
+      note: The defense has its three tricks.
+  8   W CT  N D4  E DT  S SQ*
+      SQ key: Ruff in hand, keeping dummy's last trump for a heart.
+      SQ not H3: Did you notice you can ruff this club? Throwing a heart gives the defense a trick.
+      SQ not DK: Did you notice you can ruff this club? Throwing a diamond gives the defense a trick.
+      note: Ruff in hand, keeping dummy's last trump to ruff a heart.
+  9   S H3  W H2  N HQ  E H7
+      note: Lead a heart toward dummy's queen.
+  10  N D5  E DJ  S DK  W D3
+      note: Back to your hand with a diamond.
+  11  S HK  W H4  N D8*  E HT
+      D8 key: Keep the ace of diamonds; throw the 8.
+      D8 not DA: Did you notice the ace is a sure trick? Discard the 8 instead.
+      note: Dummy is out of hearts now.
+  12  S H8  W C8  N S6  E H9
+      note: Ruff the last heart in dummy.
+  13  N DA  E DQ  S D6  W D7
+      note: 10 tricks: 4♠ made.
+
+play recap:
+  The plan: draw trumps, knock out the ♥A, and ruff a heart in dummy for the
+  extra trick.
+
+  In 3NT, West leads ♣K. Declarer has only one club stopper and must knock
+  out ♥A to make nine tricks. West wins it and cashes the clubs: four clubs
+  and ♥A beat 3NT by one trick. In 4♠, the trumps stop the clubs and dummy's
+  short hearts give an extra trick by ruffing. The 4-4 fit was worth a full
+  game swing.

@@ -1,0 +1,81 @@
+# Lesson 3, new exercise: trumps missing the ace and king. Lead them anyway: those two losers can't be avoided.
+title: Don't be afraid to lose trumps
+id: L03-17
+type: exercise
+lesson: 3
+concepts: 3.3, 3.4
+student: N
+board: 49
+dealer: N
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A4     QJT98  AK52   32
+  E  QJT9   K3     J98    QJT9
+  S  K82    7654   Q4     AK65
+  W  7653   A2     T763   874
+
+auction:
+  N 1H*    = 13+ points, at least four hearts
+     not *: 14 high-card points and five hearts: what does the lesson open?
+  E Pass
+  S 3H     = 4+ hearts, 12-13 points: game forcing
+  W Pass
+  N 4H*    = Game
+     key: Partner's jump raise forces to game. Bid it.
+     not Pass: Partner's 3♥ forces to game. Did you add 16 and 12?
+     not *: Partner showed 12-13 points and four hearts. Can you see 25?
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1♥ and partner's jump to 3♥ showed four hearts and 12-13
+  points, so you bid game. You are declarer, because you bid hearts first,
+  and so East will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 2
+  spades: 0 = The ace and king.
+  hearts: 2 = The ace and king. Lose them early.
+  diamonds: 0 = The fourth diamond, but dummy can ruff it.
+  clubs: 0 = The ace and king.
+  remind: You can afford three losers in 4♥. Count the obvious losers suit by suit in your own hand.
+  remind: Two of your losers are in trumps. When should you lose them?
+play:
+  1   E SQ  S S2  W S3  N SA
+      note: Three losers: the ♥A, the ♥K and the fourth diamond. You can afford all three. The trump losers can't be avoided, so lose them now, before the opponents can ruff your winners.
+  2   N HQ  E H3  S H4  W HA
+      note: Lead trumps, even though you're missing the ace and king. They will win tricks sooner or later, so let them win now, while you still control the other suits.
+  3   W S5  N S4  E ST  S SK
+  4   S H5  W H2  N HJ  E HK
+      note: Keep leading trumps. This time East wins the king, and the opponents have none left.
+  5   E SJ  S S8  W S6  N H8*
+      H8 key: You have no spades left, so ruff.
+      H8 not *: Did you notice that you have no spades left? Ruff East's winner.
+      note: Ruff. Now take your winners.
+  6   N DA  E D8  S D4  W D3
+      note: The diamonds: ace, then over to dummy's queen.
+  7   N D5  E D9  S DQ  W D6
+      note: Over to dummy's ♦Q.
+  8   S CA  W C4  N C2  E C9
+      note: Dummy's clubs.
+  9   S CK  W C7  N C3  E CT
+      note: The ♣K.
+  10  S C6  W C8  N H9  E CJ
+      note: Ruff to get back to your hand.
+  11  N DK  E DJ  S C5  W D7
+      note: The ♦K.
+  12  N D2  E S9  S H6  W DT
+      note: Dummy ruffs your last diamond.
+  13  S H7  W S7  N HT  E CQ
+      note: 11 tricks: 4♥ made with an overtrick.
+
+play recap:
+  The plan: count three losers, two of them in trumps, and lose the trump
+  tricks first.
+
+  You lost the lead twice, early on, and nothing bad happened. Losing the
+  tricks you must lose, at a time of your choosing, is a big part of
+  declarer play.

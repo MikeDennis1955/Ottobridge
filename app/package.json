@@ -1,0 +1,13 @@
+{
+  "name": "ottobridge",
+  "version": "1.0.0",
+  "description": "Ottobridge: scripted bridge practice hands for students",
+  "scripts": {
+    "build": "node build.mjs"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2"
+  },
+  "private": true
+}

@@ -1,0 +1,71 @@
+# Lesson 5, your Exercise 6, completed with East-West cards.
+title: Your Exercise 6: partner declines
+id: L05-06
+type: exercise
+lesson: 5
+concepts: 5.3
+student: S
+board: 12
+dealer: W
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  KJ5    A3     QT74   AJ72
+  E  AT86   J54    K9     QT85
+  S  Q94    KQT72  J83    94
+  W  732    986    A652   K63
+
+auction:
+  W Pass
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 2C     = Stayman: do you have a 4-card major?
+  W Pass
+  N 2D     = No 4-card major
+  E Pass
+  S 2H     = Five hearts, 8-9 points: invitational
+  W Pass
+  N 2NT    = Minimum, and only two hearts
+  E Pass
+  S Pass*  = You have told your story
+     key: You showed 8-9 points and five hearts. North's 2NT says no to game.
+     not 3NT: North has already said no to game. Trust partner.
+     not 3H: North has only two hearts, so there is no heart fit.
+  W Pass
+
+auction recap:
+  2♥ showed five hearts and 8-9 points. North, with a minimum and only two
+  hearts, declined with 2NT. If that were enough for game, North would have
+  bid it. North is declarer, because North bid no-trump first, and so East
+  will lead to the first trick.
+
+play:
+  1   E C5  S C4  W CK  N CA
+  2   N HA  E H4  S H2  W H6
+      note: Declarer starts on dummy's long hearts, cashing the ace first.
+  3   N H3  E H5  S HK  W H8
+      note: Continue hearts, crossing to dummy's king.
+  4   S HQ  W H9  N D4  E HJ
+      note: The jack falls, so all of dummy's hearts are winners.
+  5   S HT  W S2  N S5  E S6
+      note: Run dummy's good hearts.
+  6   S H7  W D2  N D7  E S8
+      note: And the last one.
+  7   S DJ  W D5  N DT  E DK
+      note: Lead toward declarer's Q-10 to knock out a diamond honor.
+  8   E CQ  S C9  W C3  N C2
+  9   E CT  S S4  W C6  N CJ
+  10  N SK  E ST  S S9  W S3
+      note: Lead a spade to set up a spade trick.
+  11  N C7  E C8  S D3  W D6
+      note: Exit with a club: declarer has taken all the tricks available.
+  12  E SA  S SQ  W S7  N SJ
+  13  E D9  S D8  W DA  N DQ
+      note: 8 tricks: 2NT made.
+
+play recap:
+  Declarer's plan: run dummy's hearts. Cash the ♥A first, the high card from
+  the short side, then cross to dummy's hearts.
+
+  2NT made exactly, with five heart tricks from dummy. With nine tricks
+  needed, 3NT would have gone down. Trusting partner's 2NT was right.

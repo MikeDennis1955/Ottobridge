@@ -1,0 +1,77 @@
+# Lesson 5, new exercise: Stayman over 2NT, opener has both majors.
+title: Stayman over 2NT: both majors
+id: L05-22
+type: exercise
+lesson: 5
+concepts: 5.7
+student: S
+board: 45
+dealer: N
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AK63   AKJ6   Q64    KJ
+  E  J7     932    AJT87  976
+  S  QT84   T87    932    A83
+  W  952    Q54    K5     QT542
+
+auction:
+  N 2NT    = 21-22 points, balanced
+  E Pass
+  S 3C*    = Stayman: do you have a 4-card major?
+     key: Four spades and 6 points: ask for a major.
+     not 3NT: You have four spades. Ask first.
+     not Pass: 6 points opposite 21-22 is enough for game.
+  W Pass
+  N 3H     = Four hearts (maybe four spades too)
+  E Pass
+  S 3NT*   = Game in no-trump, and four spades
+     key: No heart fit. Because you asked, 3NT shows four spades. Partner will correct with spades.
+     not 4H: You have only three hearts.
+     not 3S: 3♠ would show five spades. You have four.
+  W Pass
+  N 4S     = Four spades too: play in spades
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  Partner bid hearts first, as she should with both majors. Your 3NT said "not
+  hearts, but I have spades," since you asked with Stayman. With four spades
+  as well, partner bid 4♠. North is declarer, because North bid spades first,
+  and so East will lead to the first trick.
+
+play:
+  1   E C9  S C3  W C2  N CJ
+  2   N SA  E S7  S S4  W S2
+      note: Draw trumps.
+  3   N SK  E SJ  S S8  W S5
+      note: Keep drawing trumps.
+  4   N S6  E H2  S ST  W S9
+      note: Trumps are drawn.
+  5   S CA  W C4  N CK  E C6
+      note: Cross to dummy's ♣A to lead a heart toward declarer.
+  6   S HT  W H4  N H6  E H3
+      note: Declarer leads toward the A-K-J, hoping West has the queen.
+  7   S H8  W H5  N HJ  E H9
+      note: Lead toward declarer's hearts again, repeating the finesse.
+  8   N HA  E D7  S H7  W HQ
+      note: The queen falls, and the hearts are all winners.
+  9   N HK  E C7  S D2  W D5
+      note: Cash the last top heart.
+  10  N DQ  E D8  S D3  W DK
+      note: Lead a diamond to set up a diamond trick.
+  11  W CQ  N S3  E DT  S C8
+      note: Declarer ruffs.
+  12  N D6  E DJ  S D9  W C5
+      note: Concede a diamond.
+  13  E DA  S SQ  W CT  N D4
+      note: 11 tricks: 4♠ made with an overtrick.
+
+play recap:
+  Declarer's plan: draw trumps, then take a heart finesse to win four heart
+  tricks.
+
+  4♠ made 11 tricks. 3NT would have gone down, with only eight: the
+  defenders would set up their diamonds. Your 3NT bid told partner about
+  your spades, and partner found the fit.

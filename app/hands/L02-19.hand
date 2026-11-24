@@ -1,0 +1,73 @@
+# Lesson 2, new hand: open 1NT with 17, partner invites, accept.
+title: Partner invites: accept with 17
+id: L02-19
+type: exercise
+lesson: 2
+concepts: 2.4, 2.7
+student: S
+board: 19
+dealer: S
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  KT4    Q85    A9752  94
+  E  Q752   A9732  4      Q65
+  S  AJ6    K4     KQ83   KJ72
+  W  983    JT6    JT6    AT83
+
+auction:
+  S 1NT*   = 15-17 points, balanced
+     key: 17 HCP and balanced: open 1NT.
+     not 1D: Did you count 17? A balanced 15-17 opens 1NT.
+     not 1C: Did you count 17? A balanced 15-17 opens 1NT.
+     not *: Did you count 17? A balanced 15-17 opens 1NT.
+  W Pass
+  N 2NT    = 8-9 points, balanced: an invitation
+  E Pass
+  S 3NT*   = A maximum: accept
+     key: 17 is the top of your range. Accept the invitation.
+     not Pass: Partner asks you to bid game with the top of your range. Is 17 the top?
+     not *: Partner asks you to bid game with the top of your range. Is 17 the top?
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  Partner's 2NT invited game. With 17, the top of your range, your side
+  has at least 25, so you accept. You are declarer, because you bid no-
+  trump first, and so West will lead to the first trick.
+
+planning:
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W HJ  N H5  E HA  S H4
+  2   E H3  S HK  W H6  N H8
+  3   S DK  W D6  N D2  E D4
+      note: Run the diamonds, your longest suit together.
+  4   S DQ  W DT  N D5  E C5
+      note: Keep going.
+  5   S D3  W DJ  N DA  E S2
+      note: Over to dummy's ♦A.
+  6   N D9  E C6  S D8  W C3
+      note: Dummy's diamonds are all winners now.
+  7   N D7  E S5  S C2  W C8
+      note: The last diamond.
+  8   N HQ  E H2  S C7  W HT
+      note: Cash the ♥Q.
+  9   N S4  E S7  S SA  W S3
+      note: Now the spades: a spade to your ace.
+  10  S S6  W S8  N SK  E SQ
+      note: Back to dummy's king.
+  11  N ST  E H7  S SJ  W S9
+      note: Your ♠J is high now.
+  12  S CK  W CA  N C4  E CQ
+      note: Lead a club. West takes the ace.
+  13  W CT  N C9  E H9  S CJ
+      note: 11 tricks: 3NT made with two overtricks.
+
+play recap:
+  The plan: run the diamonds, then take your other winners.
+
+  3NT made with two overtricks. Partner's five diamonds were worth five
+  tricks once they joined your four.

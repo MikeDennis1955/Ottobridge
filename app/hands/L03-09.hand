@@ -1,0 +1,77 @@
+# Lesson 3, new exercise: the lesson's K64 opposite A875 diamond layout. Eight sure tricks; the ninth comes from the long diamond.
+title: The fourth diamond
+id: L03-09
+type: exercise
+lesson: 3
+concepts: 3.2
+student: N
+board: 41
+dealer: N
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AQ4    AQJ    A875   962
+  E  JT98   T97    QJ3    AKT
+  S  K73    K82    K64    8543
+  W  652    6543   T92    QJ7
+
+auction:
+  N 1NT*   = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  E Pass
+  S 2NT    = 8-9 points, balanced: invites game
+  W Pass
+  N 3NT*   = Accepts: a maximum 1NT
+     key: Partner invites with 8-9. You have 17, the top of your range, so accept.
+     not Pass: Partner invited you to bid on with the top of your range. 17 is the top. Did you add 17 and 8?
+     not *: Partner's 2NT asks: are you at the top of your 15-17?
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT, and partner's 2NT invited game. With 17, the top of your
+  range, you accepted. You are declarer, because you bid no-trump first, and
+  so East will lead to the first trick.
+
+planning:
+  winners: 8-9
+  spades: 3 = The ace, king and queen.
+  hearts: 3 = The ace, king and queen.
+  diamonds: 2-3 = Two on top. A third if the opponents' six split 3-3.
+  clubs: 0 = None.
+  remind: You need 9 tricks. Count the obvious winners in each suit.
+  remind: Look at the diamonds: dummy's K64 and your A875. The opponents have six. What if they break 3-3?
+play:
+  1   E SJ  S S3  W S2  N SQ
+      note: Eight winners on top: three spades, three hearts and two diamonds. The ninth can come from your fourth diamond, if the opponents' six diamonds split three and three.
+  2   N D5  E D3  S DK  W D2
+      note: Start on diamonds.
+  3   S D4  W D9  N DA  E DJ
+      note: Over to your ♦A.
+  4   N D7  E DQ  S D6  W DT
+      note: Give up the third diamond. Both opponents have followed three times, so your last diamond is now a winner.
+  5   E CA  S C3  W C7  N C2
+      note: The defense takes its club tricks.
+  6   E CK  S C4  W CJ  N C6
+  7   E CT  S C5  W CQ  N C9
+  8   W H3  N HJ  E H7  S H2
+  9   N HA  E H9  S H8  W H4
+      note: Cash your hearts.
+  10  N HQ  E HT  S HK  W H5
+      note: Your last heart winner. Dummy's king has to go on it, but you have enough.
+  11  S SK  W S5  N S4  E S8
+      note: Now the spades, the king first, the high card from the short side.
+  12  S S7  W S6  N SA  E S9
+      note: Over to your ♠A.
+  13  N D8  E ST  S C8  W H6
+      note: The fourth diamond is the ninth trick. 3NT made.
+
+play recap:
+  The plan: count eight winners on top and look for the ninth in the long
+  diamonds.
+
+  The diamonds split 3-3, which happens about a third of the time, so you
+  needed a little luck. If you had cashed your spades and hearts first,
+  East's fourth spade would have become a winner too, and the defense would
+  have had five tricks.

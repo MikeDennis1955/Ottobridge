@@ -1,0 +1,74 @@
+# Lesson 5, new exercise: Stayman over a 2NT opening, no fit.
+title: Stayman over 2NT: no fit
+id: L05-16
+type: exercise
+lesson: 5
+concepts: 5.7
+student: S
+board: 33
+dealer: N
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  KQ2    AK8    AKJ2   Q98
+  E  T983   JT     984    AJT4
+  S  654    Q943   T73    K76
+  W  AJ7    7652   Q65    532
+
+auction:
+  N 2NT    = 21-22 points, balanced
+  E Pass
+  S 3C*    = Stayman: do you have a 4-card major?
+     key: Four hearts and 5 points: enough to look for a heart game.
+     not Pass: 5 points opposite 21-22 is enough for game.
+     not 3NT: You have four hearts. Check for a fit first.
+  W Pass
+  N 3D     = No 4-card major
+  E Pass
+  S 3NT*   = No fit, so game in no-trump
+     key: Partner has no 4-card major, so settle in 3NT.
+     not 4H: Partner has denied four hearts.
+     not Pass: 3♦ only says "no major." It is not a place to play.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  With four hearts you asked first. Partner's 3♦ said "no major," so there was
+  no heart fit and you bid the no-trump game. North is declarer, because North
+  bid no-trump first, and so East will lead to the first trick.
+
+play:
+  1   E CJ  S C6  W C2  N CQ
+  2   N HA  E HT  S H3  W H2
+      note: Start on the hearts, the long suit: four of them will be winners.
+  3   N HK  E HJ  S H4  W H5
+      note: Keep cashing hearts.
+  4   N H8  E S3  S H9  W H6
+      note: Dummy wins, and the hearts are now good.
+  5   S HQ  W H7  N S2  E C4
+      note: Cash dummy's good ♥Q.
+  6   S DT  W D6  N D2  E D4
+      note: Lead toward declarer's A-K-J: if West has the queen, the ten wins.
+  7   S D7  W D5  N DJ  E D8
+      note: Lead another diamond, finessing the jack.
+  8   N DA  E D9  S D3  W DQ
+      note: Cash the ♦A, and the queen falls.
+  9   N DK  E S8  S S4  W C3
+      note: The ♦K too.
+  10  N C9  E CT  S CK  W C5
+      note: Lead toward dummy's ♣K to set up a club trick.
+  11  S S6  W S7  N SQ  E S9
+      note: Lead toward declarer's ♠K-Q.
+  12  N C8  E CA  S C7  W SJ
+      note: Exit with a club.
+  13  E ST  S S5  W SA  N SK
+      note: 11 tricks: 3NT made with two overtricks.
+
+play recap:
+  Declarer's plan: take the heart tricks, then set up the diamonds with a
+  finesse.
+
+  3NT made 11 tricks. Passing 2NT would have scored only a part-score, and
+  4♥ was never on: partner had just three hearts. Stayman found out there
+  was no fit, and 3NT was the right game.

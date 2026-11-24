@@ -1,0 +1,69 @@
+# Lesson 2, based on the Lesson 2 bidding exercise 4a (partner opens 1NT), reworked to 9 HCP so 3NT makes on plain play.
+title: Partner opens 1NT: invite with 8
+id: L02-05
+type: exercise
+lesson: 2
+concepts: 2.4, 2.7
+student: S
+board: 5
+dealer: N
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A85    KQ5    AKJ72  92
+  E  Q64    JT98   T53    AJ6
+  S  K97    A743   Q6     T843
+  W  JT32   62     984    KQ75
+
+auction:
+  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 2NT*   = 8-9 points, balanced: an invitation
+     key: 9 HCP and balanced. Raise to 2NT: partner will bid game with a maximum.
+     not 3NT: 3NT shows 10+. Did you count 9?
+     not Pass: Did you count 9? With 8-9 you can invite game.
+     not *: With a balanced 9, which raise of 1NT invites game?
+  W Pass
+  N 3NT    = A maximum: accepts the invitation
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  Your 2NT said: 8-9 points, balanced. If partner has 15 or 16, your side
+  may be short of 25, so she passes. With 17 she knows there is enough,
+  and bids game. North is declarer, because she bid no-trump first, and so
+  East will lead to the first trick.
+
+play:
+  1   E HJ  S H3  W H2  N HQ
+  2   N D2  E D3  S DQ  W D4
+      note: Declarer's plan: take the diamonds, then the hearts and spades, before the defenders get in. Dummy's ♦Q goes first, the high card from the short side.
+  3   S D6  W D8  N DA  E D5
+      note: Back to declarer's diamonds.
+  4   N DK  E DT  S C3  W D9
+      note: Keep running the diamonds.
+  5   N DJ  E S4  S C4  W H6
+      note: Keep going.
+  6   N D7  E S6  S C8  W C5
+      note: The last diamond.
+  7   N S5  E SQ  S SK  W S2
+      note: Now a spade toward dummy's king.
+  8   S S7  W ST  N SA  E C6
+      note: Back to declarer's ♠A.
+  9   N HK  E H8  S H4  W S3
+      note: The heart winners.
+  10  N H5  E H9  S HA  W C7
+      note: A heart to dummy's ace.
+  11  S CT  W CQ  N C2  E CA
+      note: Ten tricks are in. Dummy leads a club, and the defenders take the rest.
+  12  E CJ  S H7  W CK  N C9
+  13  W SJ  N S8  E HT  S S9
+      note: 10 tricks: 3NT made with an overtrick.
+
+play recap:
+  Declarer's plan: take the diamonds, then the hearts and spades, before
+  the defenders get in.
+
+  3NT made with an overtrick. Your side had 26 points. Your invitation let
+  partner decide, because only she knew whether she had 15 or 17.

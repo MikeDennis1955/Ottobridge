@@ -1,0 +1,71 @@
+# Lesson 2, from the point-count exercise hand 9.
+title: Two four-card suits: open the lower
+id: L02-06
+type: exercise
+lesson: 2
+concepts: 2.1, 2.2
+student: S
+board: 6
+dealer: E
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  QT5    K97    Q4     J8643
+  E  A63    T432   762    AQ5
+  S  K842   AJ6    KJ95   72
+  W  J97    Q85    AT83   KT9
+
+auction:
+  E Pass
+  S 1D*    = 13+ points, at least four diamonds
+     key: 12 HCP plus 1 for the doubleton club is 13: enough to open. With two four-card suits, open the lower-ranking one.
+     not 1S: With two four-card suits, which one did the lesson say to open first?
+     not Pass: Did you count 13? 12 HCP and the doubleton make an opening bid.
+     not 1NT: 1NT shows 15-17. Did you count 12 HCP?
+     not *: With two four-card suits, open the lower-ranking one.
+  W Pass
+  N 1NT    = 6-9 points, no four-card spades, not much diamond support
+  E Pass
+  S Pass*  = No game: at most 22
+     key: Partner showed 6-9. Your 13 plus 9 is 22 at most, so stop.
+     not 1S: 1NT says partner doesn't have four spades. Do you need to show yours?
+     not 2NT: Did you add it up? 13 plus 6-9 can't reach 25.
+     not 3NT: Did you add it up? 13 plus 6-9 can't reach 25.
+  W Pass
+
+auction recap:
+  You opened the lower of your two four-card suits. Partner's 1NT showed
+  6-9 points and no four-card spade suit (with one she'd have bid 1♠).
+  Your side has at most 22, so you pass. North is declarer, because she
+  bid no-trump first, and so East will lead to the first trick.
+
+play:
+  1   E H2  S H6  W HQ  N HK
+  2   N DQ  E D2  S D5  W DA
+      note: Declarer's plan: set up tricks in diamonds, spades and hearts. First drive out the ♦A.
+  3   W CK  N C3  E C5  S C2
+      note: West switches to clubs.
+  4   W CT  N C4  E CQ  S C7
+  5   E H3  S HJ  W H5  N H7
+  6   S S2  W S7  N ST  E S3
+      note: Now a spade from dummy toward declarer's ♠Q and ♠T.
+  7   N D4  E D6  S DK  W D3
+      note: A diamond to dummy's king.
+  8   S S4  W S9  N SQ  E SA
+      note: Another spade, to drive out the ace.
+  9   E H4  S HA  W H8  N H9
+  10  S SK  W SJ  N S5  E S6
+      note: Dummy's spades are winners now.
+  11  S S8  W C9  N C6  E D7
+      note: The last spade is high too.
+  12  S DJ  W D8  N C8  E HT
+      note: The ♦J.
+  13  S D9  W DT  N CJ  E CA
+      note: The ♦9 is a loser. 8 tricks: 1NT made with an overtrick.
+
+play recap:
+  Declarer's plan: set up tricks in diamonds, spades and hearts, knowing
+  the defenders will get chances to take their clubs.
+
+  1NT made with an overtrick. Your side had 20 points, and the part score
+  was the right place to stop.

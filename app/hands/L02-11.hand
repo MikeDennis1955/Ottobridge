@@ -1,0 +1,80 @@
+# Lesson 2, from the point-count exercise hand 7.
+title: A strong two-bid
+id: L02-11
+type: exercise
+lesson: 2
+concepts: 2.2, 2.5
+student: S
+board: 11
+dealer: S
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  9643   952    J82    Q96
+  E  KJT85  3      T9     KT732
+  S  -      AQJT84 AKQ43  A4
+  W  AQ72   K76    765    J85
+
+auction:
+  S 2H*    = 22+ points, five or more hearts: forcing
+     key: 20 HCP, plus 3 for the void and 1 for the doubleton: 24, with six hearts. Open 2♥. Partner must respond.
+     not 1H: With 24 points, a one-bid might be passed out. Did you remember the two-bid?
+     not 2D: With six hearts and five diamonds, which suit is longer?
+     not 1D: With 24 points, a one-bid might be passed out. Did you remember the two-bid?
+     not 2NT: 2NT shows a balanced hand. Is a void balanced?
+     not *: With 22+ points and a long suit, which opening makes partner bid?
+  W Pass
+  N 3H     = Heart support and a few points
+  E Pass
+  S 4H*    = Game
+     key: Partner's raise shows three or more hearts and a smattering of points. With 24 of your own, bid game.
+     not Pass: Your 24 points plus partner's raise: is there enough for game?
+     not 6H: We won't worry about slams yet, and partner showed very little. 4♥ is enough.
+     not *: Your 24 points plus partner's raise: is there enough for game?
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  2♥ showed 22+ points and five or more hearts, and partner had to bid.
+  Her 3♥ raise said three or more hearts and a smattering of high cards.
+  That is plenty for game, so you bid 4♥. You are declarer, because you
+  bid hearts first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W H6  N H2  E H3  S H8
+  2   S D3  W D5  N DJ  E D9
+      note: The plan: run your diamonds, then trump your black-suit losers. First, cross to dummy's ♦J.
+  3   N H5  E C2  S HA  W H7
+      note: Lead a trump from dummy to your ♥A.
+  4   S DA  W D6  N D2  E DT
+      note: Now run your diamonds.
+  5   S DK  W D7  N D8  E S5
+      note: Keep going.
+  6   S DQ  W S2  N C6  E C3
+      note: And again.
+  7   S D4  W C5  N C9  E C7
+      note: Your last diamond is a winner.
+  8   S CA  W C8  N CQ  E CT
+      note: Cash the ♣A.
+  9   S C4  W CJ  N H9  E CK
+      note: Lead your last club and trump it in dummy.
+  10  N S3  E ST  S H4  W S7
+      note: Lead a spade from dummy and trump it.
+  11  S HT  W HK  N S4  E S8
+      note: Lead a trump. West's ♥K takes it.
+  12  W SA  N S6  E SJ  S HJ
+      note: Trump West's ♠A.
+  13  S HQ  W SQ  N S9  E SK
+      note: Your last trump. 12 tricks: 4♥ made with two overtricks.
+
+play recap:
+  The plan: run your diamonds, then trump your black-suit losers.
+
+  4♥ made with two overtricks. Partner had only 3 points, but your strong
+  two-bid made sure she kept the auction open, and her raise was all you
+  needed to bid game.

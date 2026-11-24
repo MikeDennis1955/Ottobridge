@@ -1,0 +1,68 @@
+# Lesson 2, new hand: a 3NT opening (23-25, balanced).
+title: Open 3NT with 24
+id: L02-18
+type: exercise
+lesson: 2
+concepts: 2.2
+student: S
+board: 18
+dealer: E
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  9742   T83    95     Q873
+  E  QJ8    A642   86     T962
+  S  AK5    KQ5    AKJ7   KJ4
+  W  T63    J97    QT432  A5
+
+auction:
+  E Pass
+  S 3NT*   = 23-25 points, balanced
+     key: 24 HCP and balanced: open 3NT.
+     not 2NT: 2NT shows 21-22. Did you count 24?
+     not 2D: A two-bid needs a five-card suit. With a balanced 23-25, open 3NT.
+     not 1D: With 24 points, a one-bid might be passed out. Which opening shows your hand in one go?
+     not *: With a balanced 23-25, open 3NT.
+  W Pass
+  N Pass   = 2 points: nothing to add
+  E Pass
+
+auction recap:
+  3NT describes a balanced 23-25 in a single bid. Partner has only 2
+  points, so he passes. You are declarer, because you bid no-trump first,
+  and so West will lead to the first trick.
+
+planning:
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W D3  N D9  E D6  S D7
+      note: Dummy's ♦9 wins the first trick.
+  2   N H3  E H2  S HQ  W H7
+      note: The plan: drive out the ♣A, keeping your other suits as stoppers. First use dummy's entry to lead a heart toward your ♥KQ.
+  3   S CK  W CA  N C3  E C2
+      note: Now drive out the ♣A.
+  4   W HJ  N H8  E H4  S HK
+  5   S CJ  W C5  N C7  E C6
+      note: Your clubs are winners now.
+  6   S C4  W D2  N CQ  E C9
+      note: A club to dummy's ♣Q.
+  7   N S2  E SJ  S SA  W S3
+      note: Back to your ♠A.
+  8   S SK  W S6  N S4  E S8
+      note: The ♠K.
+  9   S DA  W D4  N D5  E D8
+      note: The ♦A.
+  10  S DK  W DT  N HT  E CT
+      note: The ♦K.
+  11  S DJ  W DQ  N S7  E H6
+      note: Nine tricks are in. Your ♦J loses to West's queen.
+  12  W H9  N C8  E HA  S H5
+  13  E SQ  S S5  W ST  N S9
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: drive out the ♣A, keeping your other suits as stoppers.
+
+  3NT made. Partner had almost nothing, but your 24 points and his 2 were
+  just enough.

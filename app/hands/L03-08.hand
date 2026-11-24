@@ -1,0 +1,83 @@
+# Lesson 3, new exercise: draw trumps before cashing dummy's diamonds, then throw a loser on them.
+title: Trumps first, then diamonds
+id: L03-08
+type: exercise
+lesson: 3
+concepts: 3.3
+student: S
+board: 40
+dealer: W
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K82    K964   AKQ7   53
+  E  9653   73     T4     AKJ96
+  S  A74    AQJ85  62     Q72
+  W  QJT    T2     J9853  T84
+
+auction:
+  W Pass
+  N 1D     = 13+ points, at least four diamonds
+  E Pass
+  S 1H*    = 6+ points, at least four hearts
+     not *: With 6+ points and a 4-card major higher than partner's suit, what does the lesson respond?
+  W Pass
+  N 2H     = Four hearts, a minimum opening
+  E Pass
+  S 4H*    = Game
+     key: 14 points with the doubleton, and partner opened: at least 13. That's 27. Bid game.
+     not Pass: Did you add it up? Partner opened, so 14 plus 13 is already past 25.
+     not 3H: Can your side have less than 25? Partner opened, so you have at least 27.
+     not *: Partner opened and has four hearts. Can you see 25 points?
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  Partner opened 1♦ and raised your hearts. With 14 points opposite an
+  opening bid, you bid game. You are declarer, because you bid hearts first,
+  and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 3
+  spades: 1 = The third spade. It may go away on dummy's extra diamond.
+  hearts: 0 = Solid.
+  diamonds: 0 = Dummy has them covered.
+  clubs: 2 = The ace and king. Dummy can ruff the third.
+  remind: You can afford three losers in 4♥. Count the obvious losers suit by suit in your own hand.
+  remind: Dummy has more diamonds than you. What could you do with the extra one? And what could go wrong before trumps are drawn?
+play:
+  1   W SQ  N S2  E S3  S SA
+      note: Four losers: one spade and three clubs. Dummy's third diamond can take care of one of them. But first, draw trumps, or an opponent with short diamonds could ruff it.
+  2   S H5  W H2  N HK  E H3
+      note: Draw trumps.
+  3   N H4  E H7  S HA  W HT
+      note: Both opponents followed twice. Trumps are drawn.
+  4   S D2  W D3  N DA  E D4
+      note: Now the diamonds.
+  5   N DK  E DT  S D6  W D5
+      note: The ♦K.
+  6   N DQ  E S5  S S4  W D8
+      note: East has no diamonds left, but no trumps either. Throw your spade loser away.
+  7   N SK  E S6  S S7  W ST
+      note: Cash the ♠K.
+  8   N S8  E S9  S H8  W SJ
+      note: You have no spades left, so ruff dummy's last spade.
+      ok: D
+  9   S C2  W C4  N C3  E CJ
+      note: Now the clubs. You have two losers there, but dummy can ruff the third round.
+  10  E CA  S C7  W C8  N C5
+  11  E CK  S CQ  W CT  N H6
+      note: Dummy ruffs.
+  12  N D7  E C9  S HQ  W D9
+      note: Dummy's last diamond. You ruff it in your hand.
+  13  S HJ  W DJ  N H9  E C6
+      note: 11 tricks: 4♥ made with an overtrick.
+
+play recap:
+  The plan: draw trumps, then throw your spade loser on dummy's third
+  diamond, and ruff the third club in dummy.
+
+  Drawing trumps first mattered. If you had played diamonds at once, East
+  would have ruffed the ♦Q, and your spade loser would still be there.

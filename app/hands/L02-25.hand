@@ -1,0 +1,72 @@
+# Lesson 2, from the Lesson 2 bidding exercise 2e (partner opens 1C).
+title: Partner opens 1♣: the jump raise
+id: L02-25
+type: exercise
+lesson: 2
+concepts: 2.3, 2.6
+student: S
+board: 25
+dealer: N
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  KJ5    KJ6    Q72    QJ94
+  E  T762   874    9853   A5
+  S  A9     QT9    KJ4    KT732
+  W  Q843   A532   AT6    86
+
+auction:
+  N 1C     = 13+ points, at least four clubs
+  E Pass
+  S 3C*    = 12-13 points and four or more clubs: forcing to game
+     key: 13 HCP and five clubs. With 12-13 and four-card support, raise to 3.
+     not 2C: 2♣ shows 6-9. Did you count 13?
+     not 2NT: 2NT is for hands without good support. Five clubs is good support.
+     not 1D: You have five-card support. Isn't the raise the first thing to show?
+     not *: With 12-13 points and club support, which raise shows both?
+  W Pass
+  N 3NT    = Balanced: prefers game in no-trump
+  E Pass
+  S Pass*  = Partner has chosen the game
+     key: A club game needs about 28 points; 3NT needs only 25. Partner chose the easier game. Pass.
+     not 4C: A club game needs 11 tricks and about 28 points. 3NT needs only 9. Which is easier?
+     not 5C: A club game needs 11 tricks and about 28 points. 3NT needs only 9. Which is easier?
+  W Pass
+
+auction recap:
+  Your 3♣ showed 12-13 points and club support, enough for game. Partner,
+  with a balanced hand, chose 3NT: nine tricks are easier than the eleven
+  a club game needs. North is declarer, because he bid no-trump first, and
+  so East will lead to the first trick.
+
+play:
+  1   E S2  S S9  W SQ  N SK
+  2   N CQ  E C5  S C2  W C6
+      note: Declarer's plan: drive out the ♣A and then the ♥A, keeping the spade winners as stoppers.
+  3   N CJ  E CA  S C3  W C8
+      note: Keep leading clubs until the ace is gone.
+  4   E ST  S SA  W S3  N S5
+  5   S CK  W H2  N C4  E D3
+      note: Now run the clubs.
+  6   S CT  W H3  N C9  E H4
+      note: Keep going.
+  7   S C7  W H5  N D2  E D5
+      note: The last club.
+  8   S HQ  W HA  N H6  E H7
+      note: Now drive out the ♥A.
+  9   W S8  N SJ  E S6  S D4
+  10  N HK  E H8  S H9  W D6
+      note: The heart winners.
+  11  N HJ  E S7  S HT  W DT
+      note: And another.
+  12  N DQ  E D8  S DJ  W DA
+      note: Lead a diamond. West takes the ace.
+  13  W S4  N D7  E D9  S DK
+      note: 9 tricks: 3NT made.
+
+play recap:
+  Declarer's plan: drive out the ♣A and the ♥A, keeping the spade winners
+  as stoppers.
+
+  3NT made. Your raise told partner about the fit and the strength, and he
+  picked the game that needs fewer tricks.

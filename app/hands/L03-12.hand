@@ -1,0 +1,75 @@
+# Lesson 3, new exercise: take your time at trick 1. Win with your own king and keep dummy's ♥A as the way back to the diamonds.
+title: Which heart wins trick 1?
+id: L03-12
+type: exercise
+lesson: 3
+concepts: 3.5, 3.1, 3.2
+student: N
+board: 44
+dealer: W
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AK4    K52    64     AQJ72
+  E  J75    QJT98  A9     T96
+  S  862    A3     KQJT5  853
+  W  QT93   764    8732   K4
+
+auction:
+  W Pass
+  N 1NT*   = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  E Pass
+  S 3NT    = 10+ points: game
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so East will lead to the first trick.
+
+planning:
+  winners: 9-10
+  spades: 2 = The ace and king.
+  hearts: 2 = The ace and king. Dummy's ace is its only way in: save it.
+  diamonds: 4 = Four, once the ace is gone, if you can reach them.
+  clubs: 1-2 = The ace. The queen might win too, depending on where the king is. Don't risk the contract for it.
+  remind: You need 9 tricks. Count the obvious winners in each suit.
+  remind: Dummy's diamonds can give four tricks once the ace is gone. How will you reach them?
+play:
+  1   E HQ  S H3*  W H4  N HK
+      note: Five winners on top: two spades, two hearts and the ♣A. Dummy's diamonds will give four more once the ace is gone. Dummy's only other card that wins a trick is the ♥A, so save it: win this trick in your hand with the king.
+      H3 key: Save dummy's ♥A. Your own king can win this trick.
+      H3 not HA: Did you think about how you will get to dummy's diamonds later? The ♥A is dummy's only way in.
+  2   N D6  E D9  S DK  W D2
+      note: Start on diamonds right away to force out the ace.
+  3   S DQ  W D3  N D4  E DA
+      note: Keep going until the ace is gone.
+  4   E HJ  S HA  W H6  N H2
+      note: East keeps on with hearts. Win with dummy's ace: that's the way to the diamonds you saved.
+  5   S DJ  W D7  N C2  E S5
+      note: Dummy's diamonds are all winners now.
+  6   S DT  W D8  N H5  E S7
+      note: Keep cashing dummy's diamonds.
+  7   S D5  W S3  N S4  E C6
+      note: The last diamond.
+  8   S S2  W S9  N SK  E SJ
+      note: Back to your hand for the rest of your winners. Don't try anything fancy for extra tricks: if the defense gets the lead now, East's hearts are ready to run.
+  9   N SA  E H8  S S6  W ST
+      note: The ♠A.
+  10  N CA  E C9  S C3  W C4
+      note: That's nine tricks.
+  11  N CQ  E CT  S C5  W CK
+      note: The rest belong to the defense.
+  12  W SQ  N C7  E HT  S S8
+  13  W H7  N CJ  E H9  S C8
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: count five winners on top, force out the ♦A, and keep dummy's ♥A
+  as the way back to the diamonds.
+
+  The key moment was trick 1. If dummy's ace had won it, East would have
+  held off with the ♦A until dummy's diamonds were cut off, and you would
+  have come up short of nine tricks.

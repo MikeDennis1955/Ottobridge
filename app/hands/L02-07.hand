@@ -1,0 +1,76 @@
+# Lesson 2, from the point-count exercise hand 5.
+title: Open 2NT with 21
+id: L02-07
+type: exercise
+lesson: 2
+concepts: 2.2
+student: S
+board: 7
+dealer: S
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K92    J852   Q74    Q93
+  E  T83    T4     KT8632 A5
+  S  AQJ6   KQ3    AJ     KJT8
+  W  754    A976   95     7642
+
+auction:
+  S 2NT*   = 21-22 points, balanced
+     key: 21 HCP and balanced: open 2NT.
+     not 1NT: Did you count 21? That's too strong for 1NT, which shows 15-17.
+     not 1C: Did you count 21? A balanced 21-22 opens 2NT.
+     not 1S: Did you count 21? A balanced 21-22 opens 2NT.
+     not 2C: Did you count 21? A two-bid in a suit needs 22 and a five-card suit.
+     not 3NT: Did you count 21? 3NT shows 23-25.
+     not *: Did you count 21? A balanced 21-22 opens 2NT.
+  W Pass
+  N 3NT    = 4+ points: game
+  E Pass
+  S Pass*  = Partner has chosen the game
+     key: Partner knows you have 21-22, so she knows your side has 25+. Pass.
+     not *: Partner knew your range and chose game. Is there anything left to say?
+  W Pass
+
+auction recap:
+  2NT describes your hand in one bid: 21-22 points, balanced. Partner
+  needs only 4 points to know your side has 25, so with 8 she bids game.
+  You are declarer, because you bid no-trump first, and so West will lead
+  to the first trick.
+
+planning:
+  remind: What is the contract? How many tricks do you need?
+
+play:
+  1   W H6  N H2  E HT  S HK
+  2   S CT  W C2  N C3  E CA
+      note: The plan: drive out the ♣A, and lead toward the ♦J for a second diamond trick: if East has the king, the jack wins.
+  3   E H4  S H3  W H9  N HJ
+      note: East returns partner's suit.
+  4   N D4  E D2  S DJ  W D5
+      note: A diamond from dummy toward your ♦AJ. If East has the king, your jack wins.
+  5   S C8  W C4  N CQ  E C5
+      note: A club to dummy's ♣Q.
+  6   N C9  E D3  S CK  W C6
+      note: Back to your ♣K.
+  7   S CJ  W C7  N S2  E D6
+      note: Your last club is a winner.
+  8   S DA  W D9  N D7  E D8
+      note: Cash the ♦A.
+  9   S S6  W S4  N SK  E S3
+      note: A spade to dummy's king.
+  10  N S9  E S8  S SJ  W S5
+      note: Back to your spades.
+  11  S SQ  W S7  N H5  E ST
+      note: Keep going.
+  12  S SA  W H7  N H8  E DT
+      note: The last spade.
+  13  S HQ  W HA  N DQ  E DK
+      note: West's ♥A takes the last trick. 11 tricks: 3NT made with two overtricks.
+
+play recap:
+  The plan: drive out the ♣A, and lead toward the ♦J for a second
+  diamond trick. It works when East has the king, as here.
+
+  3NT made with two overtricks. Partner had 8 points, and with your 21
+  that made 29: plenty for game.
