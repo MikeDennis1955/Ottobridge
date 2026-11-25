@@ -47,32 +47,35 @@ play:
   2   W SK  N S6  E S9  S S5
   3   W SJ  N S7  E SQ  S S8
       note: Three spade losers, as you counted. You can't afford another.
-  4   E H2  S H4  W H3  N H5
-      note: East switches to a trump. Draw trumps before you cash the clubs, so nobody can ruff them.
-  5   N H7  E HT  S HA  W H6
+  4   E D8  S DA*  W D9  N D4
+      note: East switches to a diamond, right through your ace-queen. Decision time.
+      DA key: Up with the ace. You don't need the finesse: dummy's clubs will take care of your other two diamonds.
+      DA not *: Did you count dummy's clubs? Four club winners, and you have only two clubs: the third and fourth take care of your diamonds. If you finesse and West has the king, that's your fourth loser.
+  5   S H4  W H3  N HQ* E H2
+      note: Draw trumps before you cash the clubs, so nobody can ruff them. Dummy's queen first, the high card from the short side.
+      HQ key: Win with the queen, the high card from the short side.
+      HQ not *: Did you mean to let East win? A low card from dummy lets East's ♥10 take the trick. Play the queen.
+  6   N H5  E HT  S HA  W H6
       note: Both opponents followed twice, so trumps are drawn.
-  6   S C2  W C3  N CA  E C7
+  7   S C2  W C3  N CA  E C7
       note: Now the clubs. Lead to dummy's ace.
-  7   N CK  E C8  S C9  W C4
+  8   N CK  E C8  S C9  W C4
       note: And the king.
-  8   N CQ  E CT  S D3  W C5
+  9   N CQ  E CT  S D3  W C5
       note: You're out of clubs, so throw a diamond on dummy's queen.
-  9   N CJ  E ST  S DQ*  W C6
-      note: And the ♦Q on the jack. No diamond finesse needed.
-      DQ key: Throw the queen. Now you have no diamond loser at all, and you never needed the finesse.
-      DQ not *: Did you count your losers? Throw the ♦Q: your ace will take care of the last diamond, and no finesse is needed.
-  10  N D4  E D2  S DA  W D9
-      note: Over to your ♦A.
-  11  S HK  W DT  N H9  E D5
+  10  N CJ  E D2  S DQ  W C6
+      note: And your last diamond on the jack. No diamond finesse needed.
+  11  N D7  E D5  S H8  W DT
       note: The rest are yours.
-  12  S HJ  W DJ  N HQ  E D6
-  13  N D7  E D8  S H8  W DK
+  12  S HK  W DJ  N H9  E D6
+  13  S HJ  W DK  N H7  E ST
       note: 10 tricks: 4♥ made.
 
 play recap:
-  The plan: you counted four losers, one too many. Rather than hope East held
-  the ♦K for a finesse, you threw your diamonds away on dummy's extra club
-  winners, a sure thing.
+  The plan: you counted four losers, one too many. When East led a diamond
+  through your ace-queen, the finesse was tempting. Instead you went up with
+  the ace and threw your other diamonds away on dummy's extra club winners,
+  a sure thing.
 
   West had the ♦K, so the finesse would have lost, and with three spades
   already gone, you'd have been down one. When you have a sure way to get rid

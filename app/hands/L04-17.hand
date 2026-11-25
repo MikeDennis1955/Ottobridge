@@ -29,11 +29,11 @@ auction recap:
   bid no-trump first, and so West will lead to the first trick.
 
 planning:
-  winners: 11-12
+  winners: 10-11
   spades: 3 = The ace, king and queen.
-  hearts: 0-1 = Dummy's king, if West, who led the suit, has the ace.
+  hearts: 0 = Dummy's king wins only if West, who led the suit, has the ace. Fingers crossed.
   diamonds: 5 = Dummy's long suit. Cash your ace first, the high card from the short side.
-  clubs: 3 = Three, once the ace is gone. But giving up the lead could be dangerous.
+  clubs: 2-3 = Two or three, once the ace is gone. But you can't afford to give up the lead: the defense would run the hearts. Your real tricks are five diamonds, three spades and, with luck, the ♥K.
   remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
   remind: West led a low heart. Who might have the ♥A?
 play:

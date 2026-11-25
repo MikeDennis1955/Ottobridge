@@ -12,23 +12,23 @@ vulnerable: NS
 deal:            # spades  hearts  diamonds  clubs
   N  A873   Q854   632    95
   E  T52    76     K984   T763
-  S  K4     AKJ93  AQT    Q42
-  W  QJ96   T2     J75    AKJ8
+  S  K4     AKJ93  AQT    J42
+  W  QJ96   T2     J75    AKQ8
 
 auction:
   S 1H     = 13+ points, at least four hearts
-     not *: 19 points and five hearts: open your long suit at the one level.
+     not *: 18 points and five hearts: open your long suit at the one level.
   W Pass
   N 2H     = 6-9 points, 3+ hearts
   E Pass
   S 4H     = Game
-     not *: You have 20 points counting your doubleton, and partner has at least 6: enough for game.
+     not *: You have 19 points counting your doubleton, and partner has at least 6: enough for game.
   W Pass
   N Pass
   E Pass
 
 auction recap:
-  You opened 1♥ and partner raised to 2♥. With 20 points counting
+  You opened 1♥ and partner raised to 2♥. With 19 points counting
   distribution, you bid game. You are declarer, because you bid hearts
   first, and so West will lead to the first trick.
 
@@ -38,7 +38,7 @@ planning:
   spades: 0 = Your king and dummy's ace.
   hearts: 0 = Solid.
   diamonds: 2 = The king and the jack, unless you lead toward your ace-queen-ten from dummy and East has one of them.
-  clubs: 2 = The ace and king. Your third club can be ruffed in dummy, or may even win.
+  clubs: 2 = The ace and king. Dummy can ruff your third club.
   remind: You can afford three losers in 4♥. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
   remind: Which hand must lead diamonds? How many ways do you have to get there?
 play:
@@ -61,12 +61,12 @@ play:
       DQ not DA: Did you think about finessing again? West has shown the jack, so East may well have the king. The ace wins only if the king falls under it.
   9   S DA  W D7  N D6  E D9
       note: The queen won. Cash the ace.
-  10  S CQ  W C8  N S7  E C7
-      note: Your ♣Q is good now: West has the jack, but the ace and king are gone.
-  11  S HK  W S6  N H5  E CT
+  10  S CJ  W CQ  N H5  E C7
+      note: Now ruff your last club in dummy.
+  11  N S7  E ST  S H9  W S6
       note: The rest are yours.
-  12  S HJ  W S9  N H8  E DK
-  13  S H9  W CJ  N S8  E ST
+  12  S HK  W S9  N H8  E CT
+  13  S HJ  W C8  N S8  E DK
       note: 10 tricks: 4♥ made.
 
 play recap:

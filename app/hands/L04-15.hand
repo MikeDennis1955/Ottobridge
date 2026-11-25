@@ -1,4 +1,4 @@
-# Lesson 4, new exercise: QJT8 opposite A32 at no-trump. Lead the queen, then the jack, from dummy; East's king is trapped and you lose the lead only once.
+# Lesson 4, new exercise: QJT8 opposite A32 at no-trump. Duck the first spade, win the second in dummy, lead the queen then the jack (East's king trapped), then leave clubs and set up diamonds (Mike's line, 2026-11-25).
 title: Keep leading from dummy
 id: L04-15
 type: exercise
@@ -29,18 +29,20 @@ auction recap:
   bid no-trump first, and so West will lead to the first trick.
 
 planning:
-  winners: 7-10
+  winners: 7
   spades: 2 = The ace and king.
   hearts: 2 = The ace and king.
-  diamonds: 2-3 = Two once the ace is gone. A third if they split 3-3.
-  clubs: 1-3 = The ace. Two more if East has the king and you lead the queen and jack from dummy; only one more if you have to lose to the king.
+  diamonds: 2 = Two once the ace is gone. A third if they split 3-3.
+  clubs: 1 = The ace. Two more if East has the king and you lead the queen and jack from dummy.
   remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
   remind: West's spades will be a threat once your stoppers are gone. How many times can you afford to give up the lead?
 play:
-  1   W SQ  N S2  E S3  S SA
-      note: You'll have to give up the lead once, to the ♦A. If you also lose a club to the king, the defense gets in twice: enough to knock out your spade stoppers and cash West's spades. So try to take the clubs without losing one: lead them from dummy. Win the ♠A in your hand, and keep dummy's king as a stopper.
-  2   S H3  W H2  N HK  E H6
-      note: Over to dummy with the ♥K, to lead clubs from there.
+  1   W SQ  N S2  E S3  S S4*
+      note: Seven obvious winners. Clubs can give two more if East has the king and you lead the queen and then the jack from dummy. You'll have to give up the lead to the ♦A, and West's spades are the danger.
+      S4 key: Duck. You'll lose a spade sooner or later, so lose it now. Then East may have no spade left to lead back to West.
+      S4 not SA: Did you think about ducking? Win now, and whoever wins the ♦A may still have a spade to lead to West. Lose the spade you have to lose now.
+  2   W SJ  N SK  E S6  S S8
+      note: Win in dummy, ready to lead clubs, and keep your ♠A as a stopper.
   3   N CQ  E C6  S C2*  W C4
       note: Lead the ♣Q from dummy.
       C2 key: Let the queen run. If East has the king, it wins, and you're still in dummy.
@@ -49,32 +51,33 @@ play:
       note: The queen won. Now the jack, the same way.
       C3 key: Let it run again.
       C3 not CA: Did you notice East may still have the king? Let the jack run.
-  5   N CT  E CK  S CA  W H5
-      note: Lead the ten. East covers with the king, and your ace wins. Three club tricks, without losing the lead.
-  6   S DK  W DA  N D3  E D7
-      note: Now force out the ♦A. That's the only time you'll give up the lead.
-  7   W SJ  N SK  E S6  S S4
+  5   N D3  E D7  S DK  W DA
+      note: The jack won too: with your ♣A, that's the club tricks you need. Leave the rest of the clubs alone, and set up the diamonds. Playing a third club now would make East's king a winner.
+  6   W ST  N S5  E H6  S SA
       note: West knocks out your last spade stopper, but West has no way back in.
-  8   N DJ  E D9  S D2  W D6
+  7   S D2  W D6  N DJ  E D9
       note: Cash the diamonds. Dummy's jack first, the high card from the short side.
-  9   N D4  E DT  S DQ  W D8
+  8   N D4  E DT  S DQ  W D8
       note: Over to your queen.
-  10  S HA  W H8  N H4  E HT
-      note: That's nine tricks.
-  11  S D5  W S7  N C8  E C9
+  9   S D5  W S7  N C8  E HT
       note: Both opponents followed to three diamonds, so your last one wins too.
-  12  S S8  W ST  N S5  E HJ
-      note: Nothing left to win. Give up the rest.
-  13  W S9  N H7  E HQ  S H9
-      note: 10 tricks: 3NT made with an overtrick.
+  10  S HA  W H2  N H4  E HJ
+      note: Now the hearts.
+  11  S H3  W H5  N HK  E HQ
+      note: That's nine tricks.
+  12  N CT  E CK  S CA  W S9
+      note: Lead the ♣10 through East. The king has to cover, and your ace wins.
+  13  S H9  W H8  N H7  E C9
+      note: 11 tricks: 3NT made with two overtricks.
 
 play recap:
-  The plan: you could afford to lose the lead only once, to the ♦A. So you
-  needed the clubs without losing to the king, which meant leading them from
-  dummy, with East's king trapped.
+  The plan: seven obvious winners, two more from clubs if East held the
+  king, and the diamonds to set up. Before anything else, you ducked the
+  first spade, so West's spades would be harder to reach.
 
-  Leading the queen and then the jack kept you in dummy each time they won,
-  so one entry was enough. You could lead honors because you held the cards
-  in between: the queen, jack and ten together. If West had held the king, it
-  would have won, and West would have knocked out your last spade stopper
-  before you could set up the diamonds.
+  Leading the queen and then the jack from dummy kept you in dummy each time
+  they won, so one entry was enough. You could lead honors because you held
+  the cards in between: the queen, jack and ten together. Once they had won,
+  you left the clubs alone and went after the diamonds: a third club would
+  only have set up East's king. When you have the tricks you need from one
+  suit, you don't have to cash them all at once.

@@ -43,13 +43,13 @@ planning:
   remind: You can afford three losers in 4♠. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
   remind: When can your ♥K win a trick? Which hand should lead hearts?
 play:
-  1   W DQ  N DA  E D2  S D5
+  1   W CQ  N CA  E C2  S C4
       note: Four losers, one too many. The ♥K can win a trick if East has the ace and you lead hearts from dummy, so East has to play before your king. Win in dummy.
   2   N SQ  E S3  S S6  W S5
       note: Draw trumps. Dummy's queen first, the high card from the short side.
   3   N S2  E S9  S SA  W ST
       note: Over to your ace. Both opponents followed twice, so trumps are drawn.
-  4   S DJ  W D8  N DK  E D4
+  4   S D5  W D8  N DK  E D2
       note: Now get back to dummy, to lead a heart toward your king.
   5   N H4  E H5  S HK*  W H2
       note: Lead a low heart from dummy.
@@ -57,16 +57,16 @@ play:
       HK not H3: Did you think about the king? East has already played, so if East has the ace, your king wins now. Holding it back gains nothing.
   6   S H3  W HT  N H7  E HJ
       note: The king won. Your other heart is a loser: get it out of the way.
-  7   E D6  S D7  W D9  N D3
-  8   W CQ  N CA  E C2  S C4
-  9   N C5  E C7  S CK  W C3
-      note: Cash the ♣K.
-  10  S C9  W CJ  N C6  E C8
-      note: Your last club is a loser. Let it go.
+  7   E D6  S D7  W D9  N DA
+  8   N D3  E D4  S DJ  W DQ
+      note: Your third diamond is a loser. Let it go.
+  9   W CJ  N C6  E C7  S CK
+  10  S C9  W CT  N C5  E C8
+      note: Your last club is a loser too.
   11  W DT  N S4  E H6  S S8
   12  S SK  W HQ  N S7  E H9
       note: The rest are yours.
-  13  S SJ  W CT  N H8  E HA
+  13  S SJ  W C3  N H8  E HA
       note: 10 tricks: 4♠ made.
 
 play recap:

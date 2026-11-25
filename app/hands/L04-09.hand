@@ -41,29 +41,30 @@ planning:
   remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
   remind: Clubs offer the most. Which hand should lead them, and how many times can you get there?
 play:
-  1   W SJ  N S7  E S2  S SA
-      note: Seven winners on top. Clubs can give two more if East has the queen and you lead them from dummy, twice. Win the ♠A in your hand: dummy's king and queen are your two ways across.
-  2   S S4  W S8  N SK  E S3
-      note: Over to dummy with the ♠K.
-  3   N CT  E C2  S C5*  W CA
+  1   W SJ  N SQ*  E S2  S S4
+      note: Seven winners on top. Clubs can give two more if East has the queen and you lead them from dummy, twice.
+      SQ key: Win in dummy, so you can lead a club right away. Dummy's ♠K is a second way across, and your ♠A stays home to stop the spades.
+      SQ not S7: Did you think about winning in dummy? You need to lead clubs from there. Winning in your hand with the ♠A means using up another spade stopper later just to get across.
+  2   N CT  E C2  S C5*  W CA
       note: Lead the ♣10 from dummy.
       C5 key: Let the ten run. If East has the queen, the ten pushes out an honor, and your king and jack sit over East's queen.
       C5 not *: Did you think about letting the ten run? Leading from dummy only works if you wait to see East's card. Play low and keep the king and jack behind East.
-  4   W ST  N SQ  E S6  S S5
-      note: West won the ace and kept on with spades. Win in dummy with the queen: just where you want to be.
-  5   N C9  E C6  S CJ*  W C7
+  3   W ST  N SK  E S3  S S5
+      note: West won the ace and kept on with spades. Win in dummy with the king: just where you want to be, and your ace is still at home.
+  4   N C9  E C6  S CJ*  W C7
       note: Lead clubs from dummy again.
       CJ key: East played low, so finesse the jack. If East has the queen, it wins.
       CJ not CK: Did you think about the finesse? West has already won the ace, so East probably holds the queen. Play the jack.
-  6   S CK  W C8  N C3  E CQ
+  5   S CK  W C8  N C3  E CQ
       note: The jack won. Cash the king, and East's queen falls. Dummy's last club is a winner.
-  7   S H5  W H9  N HA  E H2
+  6   S H5  W H9  N HA  E H6
       note: Over to dummy's ♥A to cash the club.
-  8   N C4  E H6  S D2  W S9
+  7   N C4  E H2  S D2  W S8
       note: The fourth club.
-  9   N H3  E H8  S HK  W HJ
+  8   N H3  E H8  S HK  W HJ
       note: Back to your hearts.
-  10  S HQ  W D4  N H7  E HT
+  9   S HQ  W D4  N H7  E HT
+  10  S SA  W S9  N S7  E S6
       note: That's nine tricks.
   11  S D7  W D5  N D6  E DA
       note: Nothing left to win. Give up the rest.
@@ -76,7 +77,7 @@ play recap:
   leading them from dummy twice so that your king and jack sit over East's
   queen.
 
-  Winning the first spade in your hand was the quiet key: it left dummy's
-  king and queen as two ways across, one for each club lead. If the club
-  finesse had lost, you would still have had chances: a 3-3 heart split, or
-  a diamond led toward your king.
+  Winning the first spade in dummy was the quiet key: you could lead a club
+  at once, dummy's ♠K was a second way across, and your ♠A stayed home as a
+  stopper. If the club finesse had lost, you would still have had chances:
+  a 3-3 heart split, or a diamond led toward your king.

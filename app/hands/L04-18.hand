@@ -55,17 +55,19 @@ play:
       CK not *: That can still work if you come back to dummy and lead toward the king again, but why wait? East has already played, so if East has the ace, your king wins now.
   5   S C3  W CT  N C4  E CQ
       note: The king won. Your other clubs are losers: get them out of the way.
-  6   E CA  S C7  W CJ  N C5
-  7   E D2  S D6  W D9  N DA
-  8   N SK  E S6  S S2  W S9
-      note: Cash the ♠K.
-  9   N S8  E S7  S S5  W SJ
+  6   E S6  S S2  W ST  N SK
+      note: East leads a spade, setting up a spade winner for West.
+  7   N C5  E CA  S C7  W CJ
+      note: Give up your last club loser.
+  8   E S7  S S5  W SJ  N S8
       note: The third spade is a loser you can't avoid.
-  10  W ST  N C6  E D3  S H9
-  11  S HK  W DT  N H5  E D4
+  9   W DQ  N DA  E D2  S D6
+  10  N C6  E D3  S D8  W D9
+      note: Dummy's last club is a winner: nobody else has a club left.
+  11  N DK  E D4  S H9  W DT
       note: The rest are yours.
-  12  S HJ  W DJ  N H8  E D5
-  13  S D8  W DQ  N DK  E D7
+  12  S HK  W DJ  N H5  E D5
+  13  S HJ  W S9  N H8  E D7
       note: 10 tricks: 4♥ made.
 
 play recap:

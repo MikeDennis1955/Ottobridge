@@ -1,9 +1,9 @@
-# Lesson 4, new exercise: QJT95 opposite A432 at no-trump. Lead the queen from dummy; giving up a diamond to East would let West run the spades.
-title: Lead the queen through East
+# Lesson 4, new exercise: QJT95 opposite A432 at no-trump. Mike's line (2026-11-25): duck the first spade, win the second, then cash the ♦A and lead toward dummy, so the diamond is lost, if at all, to East, who has no spade left. The finesse would lose to West's singleton king.
+title: Safer than a finesse
 id: L04-12
 type: exercise
 lesson: 4
-concepts: 4.2, 3.5
+concepts: 4.7
 student: S
 board: 78
 dealer: E
@@ -34,50 +34,50 @@ auction recap:
   first trick.
 
 planning:
-  winners: 9-10
+  winners: 9
   spades: 1 = The ace.
-  hearts: 3 = Your ace and king, and dummy's queen. Play the queen early, the high card from the short side.
-  diamonds: 4-5 = Four once the king is gone. All five if East has the king and you lead from dummy.
+  hearts: 3 = Your ace and king, and dummy's queen.
+  diamonds: 4 = Four once the king is gone.
   clubs: 1 = Dummy's ace.
   remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
-  remind: Your ♠A is your only spade stopper. What happens if you lose the lead?
+  remind: You'll probably have to lose the lead to the ♦K. What could the defense do then?
 play:
-  1   W SK  N S2  E S5  S SA
-      note: Nine winners if you can set up the diamonds, but once your ♠A is gone, West's spades are all winners. You can't afford to lose a diamond trick to the king. Win the ♠A.
-  2   S H4  W H2  N HQ  E H3
-      note: Over to dummy with the ♥Q, to lead diamonds from there.
-  3   N DQ  E D7  S D2*  W D6
-      note: Lead the ♦Q from dummy.
-      D2 key: Let the queen run. If East has the king, the queen wins and you are still in dummy.
-      D2 not DA: Did you think about letting the queen run? With the ace, you'll have to lose a diamond to the king, and then West takes four spades. If East has the king, the queen wins and you never lose the lead.
-  4   N DJ  E D8  S D3*  W C5
-      note: The queen won, and West shows out. East still has the king. Lead the jack.
-      D3 key: Let it run again. East's king is trapped.
-      D3 not DA: Did you notice East still has the king? Let the jack run.
-  5   N DT  E DK  S DA  W C9
-      note: Lead the ten. East covers with the king, and your ace takes it.
-  6   S D4  W H8  N D9  E C2
-      note: Keep a low diamond in your hand to reach dummy's last two.
-  7   N D5  E C4  S S3  W S6
-      note: Dummy's last diamond.
-  8   N H7  E H5  S HA  W H9
+  1   W SK  N S2  E S5  S S3*
+      note: Nine winners once the ♦K is gone. But when an opponent wins it, West's spades are the danger: once your ♠A is gone, they are all winners. Get ready before you touch the diamonds.
+      S3 key: Duck. You have to lose a spade sooner or later, so lose it now. Win the next one, and East may have no spade left to lead back to West.
+      S3 not SA: Did you think about ducking? Win now, and whoever gets in with the ♦K may still have a spade to lead to West's winners. Lose the spade you have to lose now.
+  2   W SQ  N S4  E ST  S SA
+      note: Now win the ace. Both opponents followed twice.
+  3   S DA*  W D6  N D5  E D7
+      note: Now the diamonds. Cash the ace first.
+      DA key: The ace first. If West has a singleton king, it falls. Otherwise you'll lead toward dummy, and only East can win the king.
+      DA not *: Did you think about the ace? A finesse loses if West has the king, and West is the one with spades to cash. Cash the ace, then lead toward dummy: you lose a diamond only to East.
+  4   S D2  W C5  N D9  E DK
+      note: Lead toward dummy. West shows out, so East has the king. Let East take it: East has no spades left.
+  5   E H3  S H4  W H8  N HQ
+      note: East had no spade to lead. You're safe, and the rest of the diamonds are good.
+  6   N DQ  E D8  S D3  W C9
+      note: Cash the diamonds.
+  7   N DJ  E C2  S D4  W S6
+  8   N DT  E C4  S C7  W S8
+  9   N H7  E H5  S HA  W H9
       note: Back to your hand for the hearts.
-  9   S HK  W HT  N S4  E H6
-      note: That's nine tricks. Cash the ♣A too.
-  10  S C7  W CT  N CA  E CJ
-      note: Ten.
-  11  N C6  E CK  S C8  W S8
+  10  S HK  W HT  N C3  E H6
+  11  S C8  W CT  N CA  E CJ
+      note: And dummy's ♣A. That's nine tricks.
+  12  N C6  E CK  S CQ  W H2
       note: Nothing left to win. Give up the rest.
-  12  E HJ  S CQ  W SJ  N S9
-  13  E ST  S S7  W SQ  N C3
-      note: 10 tricks: 3NT made with an overtrick.
+  13  E HJ  S S7  W SJ  N S9
+      note: 9 tricks: 3NT made.
 
 play recap:
-  The plan: you had nine tricks once the diamonds were set up, but you could
-  not afford to let East in with the ♦K, because East would lead a spade and
-  West would cash four.
+  The plan: nine tricks once the diamonds were set up, but setting them up
+  meant losing the lead to the ♦K. So first you ducked a spade and won the
+  second, leaving East with none. Then you cashed the ♦A and led toward
+  dummy.
 
-  Leading the queen, then the jack, kept you in dummy whenever they won, and
-  you could lead honors because you held all the cards in between. With the
-  king in East, you never lost a diamond. If West had held the king, you
-  would have lost it to West, and West would have cashed the spades.
+  East won the king but had no spade to lead, so West's spades never came
+  into play. A finesse of the queen would have worked here too, but it loses
+  whenever West has the king. Your line loses only if West has the king with
+  another diamond, and it wins when West's king is a singleton: cashing the
+  ace drops it.

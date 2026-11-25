@@ -1,4 +1,4 @@
-# Lesson 4, new exercise: the lesson's two-way finesse (AJ74 opposite KT95). Pick the direction where a losing finesse can't hurt: West has the clubs, East has none.
+# Lesson 4, new exercise: the lesson's two-way finesse (AJ74 opposite KT95). Duck the first club (Mike, 2026-11-25), then pick the direction where a losing finesse can't hurt: West has the clubs, East has none.
 title: Which way to finesse?
 id: L04-16
 type: exercise
@@ -30,49 +30,53 @@ auction recap:
   bid no-trump first, and so West will lead to the first trick.
 
 planning:
-  winners: 9-10
+  winners: 9
   spades: 3 = The ace, king and queen.
-  hearts: 3-4 = The ace and king, and the jack or ten once the queen is gone. All four if you guess where the queen is.
+  hearts: 3 = The ace and king, and the jack or ten once the queen is gone. A fourth if you guess where the queen is.
   diamonds: 2 = The ace and king.
   clubs: 1 = The ace.
   remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
   remind: You can finesse either opponent for the ♥Q. If the finesse loses, which opponent would you rather have win it?
 play:
-  1   W CK  N C3  E C4  S CA
-      note: Nine winners, even if you lose a heart to the queen. But once your ♣A is gone, West's clubs are winners, and East has already shown out. Win the ace: you have no other club stopper.
-  2   S HK  W H3  N H4  E H2
+  1   W CK  N C3  E C4  S C2*
+      note: Nine winners, even if you lose a heart to the queen. But once your ♣A is gone, West's clubs will be winners.
+      C2 key: Duck. You'll lose a club sooner or later, so lose it now. If East follows to the next club too, you'll know who still has clubs.
+      C2 not CA: Did you think about ducking? If you win now and later lose a heart to East, East may still have a club to lead back to West. Lose tricks early!
+  2   W CQ  N C5  E S3  S CA
+      note: East shows out. Now win the ace: East has no club left to lead.
+  3   S HK  W H3  N H4  E H2
       note: You can finesse either way in hearts. If you lose a heart to West, West cashes the clubs and you go down. If you lose it to East, East has no club to lead. So play West for the queen. First cash your king, in case East has the queen alone.
-  3   S H5  W H6  N HJ*  E H8
+  4   S H5  W H6  N HJ*  E H8
       note: Now lead toward dummy's ace-jack.
       HJ key: West played low, so finesse the jack. If West has the queen, the jack wins. If East has it, East wins, but East has no club to lead, and you still make your contract.
       HJ not HA: Did you think about the finesse? Finessing the jack now plays West for the queen. If it loses, it loses to East, who can't hurt you.
-  4   N HA  E S3  S H9  W HQ
+  5   N HA  E S5  S H9  W HQ
       note: The jack won. Cash the ace, and West's queen falls.
-  5   N H7  E S5  S HT  W D2
+  6   N H7  E S6  S HT  W D2
       note: Your last heart is a winner.
-  6   S S4  W S9  N SK  E S6
+  7   S S4  W S9  N SK  E S8
       note: Now the spades.
       ok: D
-  7   N S2  E S8  S SQ  W C7
+  8   N S2  E ST  S SQ  W C7
       note: Back to your queen and ace.
-  8   S SA  W C9  N S7  E ST
+  9   S SA  W CJ  N S7  E SJ
       note: The third spade winner.
-  9   S D3  W D9  N DA  E D6
+  10  S D3  W D9  N DA  E D6
       note: Now the diamonds.
-  10  N D4  E D7  S DK  W DJ
+  11  N D4  E D7  S DK  W DJ
       note: That's ten tricks.
-  11  S D8  W CT  N D5  E DQ
+  12  S D8  W CT  N D5  E DQ
       note: Nothing left to win. Give up the rest.
-  12  E SJ  S C2  W CJ  N C8
-  13  E DT  S C6  W CQ  N C5
+  13  E DT  S C6  W C9  N C8
       note: 10 tricks: 3NT made with an overtrick.
 
 play recap:
   The plan: you had nine tricks even if you lost a heart, as long as you lost
   it to the right opponent.
 
-  With the ace-jack and king-ten-nine split between the hands, you could
-  finesse either way. West led clubs and East showed out, so losing a heart
-  to West would have let West cash five clubs. You played West for the
-  queen: if the finesse had lost, it would have lost to East, who had no
-  club to lead back. Here it won, for an overtrick.
+  First you ducked a club, and East showed out on the second round: now you
+  knew East had no club to lead back. With the ace-jack and king-ten-nine
+  split between the hands, you could finesse either way. Losing a heart to
+  West would have let West cash four clubs, so you played West for the
+  queen: if the finesse had lost, it would have lost to East. Here it won,
+  for an overtrick.

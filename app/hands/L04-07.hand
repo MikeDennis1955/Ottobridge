@@ -29,11 +29,11 @@ auction recap:
   bid no-trump first, and so West will lead to the first trick.
 
 planning:
-  winners: 7-10
-  spades: 1-3 = The ace. Up to two more if you lead toward your jack-ten-nine twice and East has the king or queen.
+  winners: 7
+  spades: 1 = The ace. This suit is your best chance for two more: if East has the king or the queen, or both, leading toward your jack-ten-nine twice wins two extra tricks.
   hearts: 3 = The ace, king and queen.
   diamonds: 3 = The ace, king and queen.
-  clubs: 0-1 = Maybe the king, after the ace is gone.
+  clubs: 0 = The king could win a trick only after the ace is gone.
   remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
   remind: Which hand must lead spades? How many times can you get there?
 play:

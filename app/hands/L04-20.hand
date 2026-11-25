@@ -61,12 +61,15 @@ play:
       note: Lead toward dummy again.
       DT key: West played low again, so finesse again. If West has the queen, the ten wins.
       DT not DA: Did you notice West may still have the queen? Finesse again: you lose only if East has both honors.
-  8   N DA  E D8  S D6  W DQ
-      note: The ten won. Cash the ace.
-  9   N DJ  E H5  S H4  W C6
+  8   N H6*  E H5  S HK  W H9
+      note: The ten won. Now East has shown the king, so West has the queen.
+      H6 key: Back to your hand, to lead toward dummy's ace-jack once more. West's queen is trapped, however many diamonds West has.
+      H6 not DA: Did you notice West is marked with the queen? Cashing the ace drops it only if West has no more diamonds. Go back to your hand and lead toward the ace-jack: then the queen can't escape.
+  9   S D6  W DQ  N DA  E D8
+      note: Lead toward the ace-jack. West has to play the queen, and the ace takes it.
+  10  N DJ  E H7  S H4  W C6
       note: Dummy's last diamond takes care of your heart loser.
-  10  N H6  E H7  S HK  W H9
-  11  S SK  W CJ  N S6  E HT
+  11  N S6  E HT  S SK  W CJ
       note: The rest are yours.
   12  S SQ  W CQ  N S9  E C9
   13  S S8  W HQ  N HJ  E C7
@@ -78,5 +81,6 @@ play recap:
   take care of your heart loser.
 
   The first finesse lost to East's king, but the second one won, because
-  West held the queen. Leading toward dummy twice loses two diamonds only
+  West held the queen. After that, West was marked with the queen, so you
+  went back to your hand to lead toward the ace-jack a third time. Leading toward dummy twice loses two diamonds only
   when East holds both the king and the queen, about one time in four.

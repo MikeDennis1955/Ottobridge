@@ -30,13 +30,13 @@ auction recap:
   bid no-trump first, and so West will lead to the first trick.
 
 planning:
-  winners: 9-10
+  winners: 9
   spades: 1 = The ace. After that, West's spades are all winners.
   hearts: 3 = The ace, king and queen.
-  diamonds: 1-2 = The ace. The queen too, if East has the king and you finesse.
+  diamonds: 1 = The ace. If you needed a tenth trick, you'd finesse the queen. You don't: if the finesse lost, West would win the king and cash his spades.
   clubs: 4 = Eight clubs with the ace, king, queen and jack: four tricks.
   remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
-  remind: What happens if you take a finesse and it loses?
+  remind: You have nine tricks. What happens if you take a finesse and it loses?
 play:
   1   W SK  N S2  E S6  S SA
       note: Nine winners on top. A diamond finesse could make a tenth, but if it lost, West would win the king and cash four more spades. Win the ♠A and take your nine tricks.
