@@ -38,7 +38,7 @@ planning:
   winners: 8
   spades: 3 = The ace, king and queen.
   hearts: 3 = The ace, king and queen.
-  diamonds: 2 = Two on top. A third is possible if the opponents' six split 3-3.
+  diamonds: 2 = Two on top. A third only if the opponents' six split 3-3: worth trying, but well short of an even chance, so don't count it.
   clubs: 0 = None.
   remind: You need 9 tricks. Count the obvious winners in each suit.
   remind: Look at the diamonds: dummy's K64 and your A875. The opponents have six. What if they break 3-3?
