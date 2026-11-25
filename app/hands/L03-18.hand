@@ -41,27 +41,30 @@ play:
   1   W CA  N CQ  E C6  S C2
       note: West leads the top clubs.
   2   W CK  N H2  E C9  S C5
-  3   W SQ  N S4  E S2  S SA
+  3   W HT  N H3  E H5  S HA
       note: Six winners on top: two in each of spades, hearts and diamonds. Dummy's long diamonds can give three more, if the opponents' five diamonds split 3-2. But dummy has no way in except diamonds. So give up the first diamond, and keep one in your hand to lead over to dummy later.
-  4   S D3  W D8  N D2  E D9
+  4   S D3  W D8  N D2*  E D9
       note: Let the opponents win this diamond. You still have a diamond left to lead over to dummy next time.
-  5   E S3  S SK  W S8  N S6
+      D2 key: Duck. You have to lose a diamond anyway, so lose it now, while you still have a diamond to lead to dummy.
+      D2 not DA: Did you think about how to get back to dummy? If you play the ace and king, the third diamond is lost, and dummy has no other way in to its last diamonds.
+      D2 not DK: Did you think about how to get back to dummy? If you play the ace and king, the third diamond is lost, and dummy has no other way in to its last diamonds.
+  5   E S7  S SK  W S8  N S4
   6   S D6  W DQ  N DA  E DT
       note: Now lead your last diamond over to dummy.
   7   N DK  E DJ  S C7  W S9
       note: The opponents' diamonds are all gone. Dummy's are all winners.
-  8   N D7  E S7  S C8  W ST
+  8   N D7  E S2  S H4  W C3
       note: Keep cashing dummy's diamonds.
-  9   N D5  E H8  S S5  W HT
+  9   N D5  E S3  S S5  W C4
       note: Another diamond.
-  10  N D4  E H5  S H4  W C4
+  10  N D4  E H6  S C8  W H7
       note: The last diamond.
-  11  N H3  E H6  S HA  W H7
-      note: Back to your hand for the hearts.
+  11  N SJ  E H8  S SA  W ST
+      note: Back to your hand with the ♠A.
   12  S HK  W H9  N HJ  E HQ
       note: The ♥K.
-  13  S CJ  W C3  N SJ  E CT
-      note: 10 tricks: 3NT made with an overtrick.
+  13  S CJ  W SQ  N S6  E CT
+      note: Your ♣J is the last club left. 10 tricks: 3NT made with an overtrick.
 
 play recap:
   The plan: count six winners on top, then set up dummy's diamonds by giving
