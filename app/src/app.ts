@@ -551,7 +551,8 @@ function renderTable(L: Loaded, pos: Pos) {
   const contract = c && pos.callsShown === s.auction.length
     ? `<div class="contract"><b>${c.level}${c.strain === 'NT' ? 'NT' : SUIT_SYM[c.strain]}${c.doubled}</b> by ${SEAT_NAME[c.declarer]}<br><span>N–S ${pos.tricksNS} · E–W ${pos.tricksEW}</span>${pos.final ? `<br><b class="fscore">${scoreShort(L)}</b>` : ''}</div>` : '';
   const prompt = S.mode === 'student' && pendingAt(L, S.step) && L.steps[S.step].kind === 'card' ? `<div class="yourturn">Your play: tap a card</div>` : '';
-  $('#table').innerHTML = `<div class="felt">${prompt}${hands}<div class="centre">${centre}</div>${contract}<div class="compass">${(['top', 'left', 'right', 'bottom'] as const).map(p => `<span class="c-${p}">${seatAt(s.student, p)}</span>`).join('')}</div></div>`;
+  const demo = s.type === 'example' ? `<div class="demobadge" title="This hand plays itself: press Autoplay, or step through with Next.">Demo</div>` : '';
+  $('#table').innerHTML = `<div class="felt">${demo}${prompt}${hands}<div class="centre">${centre}</div>${contract}<div class="compass">${(['top', 'left', 'right', 'bottom'] as const).map(p => `<span class="c-${p}">${seatAt(s.student, p)}</span>`).join('')}</div></div>`;
   $('#table').querySelectorAll<HTMLButtonElement>('[data-play]').forEach(b => b.onclick = () => studentPick(b.dataset.play!));
 }
 

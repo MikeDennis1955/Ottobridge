@@ -1,76 +1,78 @@
-# Lesson 3, new exercise: count losers in a trump contract, then ruff the extra ones in dummy.
-title: Too many losers? Use dummy's trumps
+# Lesson 3, new example hand: take your time at trick 1. Throw a diamond loser away before you let the defense in with the ♠A.
+title: First things first
 id: L03-02
-type: exercise
+type: example
 lesson: 3
-concepts: 3.3
+concepts: 3.1, 3.3
 student: S
 board: 34
 dealer: E
 vulnerable: NS
 
 deal:            # spades  hearts  diamonds  clubs
-  N  K53    Q842   A      Q8652
-  E  QJT9   T9     QJ73   743
-  S  A84    AKJ76  K652   9
-  W  762    53     T984   AKJT
+  N  876     AKJ4   6542   53
+  E  43      Q8762  9      QJT42
+  S  KQJT92  5      A873   AK
+  W  A5      T93    KQJT   9876
 
 auction:
   E Pass
-  S 1H     = 13+ points, at least four hearts
+  S 1S     = 13+ points, at least four spades
   W Pass
-  N 3H     = 4+ hearts, 12-13 points: game forcing
+  N 2S     = 6-9 points and spade support
   E Pass
-  S 4H     = Game
+  S 4S     = Game
   W Pass
   N Pass
   E Pass
 
 auction recap:
-  You opened 1♥ and partner jumped to 3♥, showing four hearts and 12-13
-  points, so you bid game. You are declarer, because you bid hearts first,
-  and so West will lead to the first trick.
+  You opened 1♠ with 17 high-card points and a six-card suit, and partner
+  raised. That was enough for game. You are declarer, because you bid spades
+  first, and so West will lead to the first trick.
 
 planning:
   trumps out: 4
-  losers: 2
-  spades: 1 = The third spade. Nothing to be done about it.
-  hearts: 0 = Solid.
-  diamonds: 0 = Two small ones after the ace and king, but dummy can ruff both.
-  clubs: 1 = The ace.
-  remind: You can afford three losers in 4♥. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
-  remind: How could dummy's trumps help with the diamonds?
+  losers: 4
+  spades: 1 = The ace.
+  hearts: 0 = None, and dummy's ♥K is an extra winner.
+  diamonds: 3 = Three small ones. One may go away on dummy's ♥K, but only before the defense gets in.
+  clubs: 0 = Solid.
+  remind: You can afford three losers in 4♠. Count the obvious losers suit by suit in your own hand.
+  remind: What will the defense do when they win the ♠A?
 play:
-  1   W CA  N C2  E C3  S C9
-      note: West leads the ace of clubs. That's one of your losers gone already.
-  2   W H5  N H2  E H9  S HJ
-  3   S HK  W H3  N H4  E HT
-      note: The plan: draw trumps, then ruff two diamonds in dummy. One more round of trumps, and both opponents follow.
-  4   S D2  W D4  N DA  E D3
-      note: Trumps are drawn, and dummy still has two left. Start on diamonds with dummy's ace.
-  5   N S3  E S9  S SA  W S2
-      note: Back to your hand with the ♠A.
-  6   S DK  W D8  N C5  E D7
-      note: Your ♦K wins. Dummy doesn't ruff your own winner: throw a club.
-  7   S D5  W D9  N H8*  E DJ
-      note: Now ruff a losing diamond with a small trump.
-      H8 key: Dummy has no diamonds left, so it can ruff your loser.
-      H8 not *: Did you count your losers? Dummy has no diamonds, so it can trump this one.
-  8   N C6  E C4  S H6  W CT
-      note: Ruff a club to get back to your hand.
-  9   S D6  W DT  N HQ*  E DQ
-      note: And ruff your last diamond loser.
-      HQ key: Ruff your last diamond loser with dummy's last trump.
-      HQ not *: Did you count your losers? Dummy can still ruff this diamond.
-  10  N SK  E ST  S S4  W S6
-      note: Cash the ♠K.
-  11  N S5  E SJ  S S8  W S7
-      note: The third spade is a loser you can't avoid.
-  12  E SQ  S H7  W CJ  N C8
-  13  S HA  W CK  N CQ  E C7
-      note: 11 tricks: 4♥ made with an overtrick.
+  1   W DK  N D2  E D9  S DA
+      note: Declarer stops to count. Four losers: the ♠A and three diamonds. If declarer draws trumps now, West wins the ace and takes three diamonds: down one. But dummy's ♥K is an extra winner, and declarer has no hearts after the first round. So first get rid of a diamond.
+      pause
+  2   S H5  W H3  N HA  E H2
+      note: Over to dummy's ♥A...
+  3   N HK  E H6  S D3  W H9
+      note: ...and throw a diamond away on the ♥K. Now declarer has only three losers.
+  4   N S6  E S3  S SK  W SA
+      note: Now it's safe to start on trumps. West wins the ace.
+  5   W DQ  N D4  E C2  S D7
+      note: West takes the diamond tricks...
+  6   W DJ  N D5  E C4  S D8
+  7   W DT  N D6  E H7  S S2
+      note: ...but declarer is out of diamonds now, and ruffs the third one.
+  8   S SQ  W S5  N S7  E S4
+      note: Draw the last trumps.
+  9   S CA  W C6  N C3  E CT
+      note: The rest are winners.
+  10  S CK  W C7  N C5  E CJ
+      note: The ♣K.
+  11  S SJ  W C8  N S8  E CQ
+      note: The rest are all trumps.
+  12  S ST  W C9  N H4  E H8
+      note: Another trump.
+  13  S S9  W HT  N HJ  E HQ
+      note: 10 tricks: 4♠ made.
 
 play recap:
-  The plan: you counted four losers, one spade, two diamonds and one club,
-  one too many for 4♥. Dummy's short diamonds and spare trumps took care of
-  the diamonds: each ruff turned a loser into a winner.
+  The plan: count four losers, throw one away on dummy's ♥K, and only then
+  draw trumps.
+
+  Usually you draw trumps first. But here the opponents held the ♠A, so
+  drawing trumps meant giving them the lead, and they had diamond tricks
+  waiting. Declarer counted at trick 1, saw the danger, and got rid of a
+  loser first.
