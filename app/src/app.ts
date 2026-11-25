@@ -292,7 +292,7 @@ function renderHome() {
     const set = setOf(r!.lesson), pos = set.findIndex(x => x.i === ri);
     parts.push(`<button class="continue" id="cont"><span class="lbl">Continue</span><b>Lesson ${r!.lesson}, hand ${pos + 1} of ${set.length}</b><span>${prose(S.hands[ri].script!.title)}</span></button>`);
   } else {
-    parts.push(`<div class="welcome"><h1>Welcome</h1><p>Each lesson has a short reading and a set of hands to bid and play. Start with Lesson 1, or jump to any lesson you like.</p><p><b>About the practice hands.</b> Every hand in Ottobridge is scripted. You choose your own bids and plays, and dummy's plays when you are declarer. If your choice matches the script, fine. If it does the same job, such as a touching card, the script's card is played without comment. If our analysis says it would go wrong, we explain why and show the script's choice.</p><p>New here? We recommend the <b>Orientation Tour</b> first: a one-minute look at the table and the menu.</p><button class="btn primary" id="welcometour">Take the Orientation Tour</button></div>`);
+    parts.push(`<div class="welcome"><h1>Welcome</h1><p>Each lesson has a short reading and a set of hands to bid and play. Start with Lesson 1, or jump to any lesson you like.</p><p><b>About the practice hands.</b> Every hand in Ottobridge is scripted. You choose your own bids and plays, and dummy's plays when you are declarer. If your choice matches the script, fine. If it does the same job, such as a touching card, the script's card is played without comment. If our analysis says it would go wrong, we explain why and show the script's choice.</p><p><b>Demonstrations.</b> A few hands carry a yellow <span class="demotag">Demo</span> badge on the table. Those play themselves: press Autoplay to watch, or step through with Next. They pause at the moment that matters.</p><p>New here? We recommend the <b>Orientation Tour</b> first: a one-minute look at the table and the menu.</p><button class="btn primary" id="welcometour">Take the Orientation Tour</button></div>`);
   }
   parts.push('<h2 class="homeh">Your lessons</h2><div class="lessonlist">');
   for (const c of CATALOG) {
@@ -419,7 +419,7 @@ function renderCrumbs() {
 
 // --- first-visit tour ---
 const TOUR: { sel: string; text: string; menu?: boolean }[] = [
-  { sel: '#table', text: "This is the table. Your hand is at the bottom. The other hands stay hidden until the play shows them." },
+  { sel: '#table', text: "This is the table. Your hand is at the bottom. The other hands stay hidden until the play shows them. A yellow Demo badge in the corner means the hand plays itself: just watch, or step through with Next." },
   { sel: '#stepcard', text: "This panel tells you what's happening. When it's your turn, it shows a bidding box, or asks you to tap a card." },
   { sel: '#next', text: "Press Next to move the hand along, one call or card at a time." },
   { sel: '#notesbtn', text: "Lesson notes opens the lesson text for this hand, without leaving the table." },
