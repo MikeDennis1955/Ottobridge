@@ -4,36 +4,36 @@ id: L03-21
 type: exercise
 lesson: 3
 concepts: 3.3, 3.4
-student: N
-board: 53
-dealer: N
+student: S
+board: 47
+dealer: S
 vulnerable: NS
 
 deal:            # spades  hearts  diamonds  clubs
-  N  AKJ94  AK5    A64    72
-  E  T5     QJ9    KQJ8   T653
-  S  Q832   864    53     KQ84
-  W  76     T732   T972   AJ9
+  N  Q832   864    53     KQ84
+  E  76     T732   T972   AJ9
+  S  AKJ94  AK5    A64    72
+  W  T5     QJ9    KQJ8   T653
 
 auction:
-  N 1S*    = 13+ points, at least four spades
+  S 1S*    = 13+ points, at least four spades
      not *: 19 high-card points and five spades. Too many for 1NT, too few for a two-bid: what's left?
-  E Pass
-  S 2S     = 6-9 points and spade support
   W Pass
-  N 4S*    = Game
+  N 2S     = 6-9 points and spade support
+  E Pass
+  S 4S*    = Game
      key: 20 points with the doubleton, plus at least 6 from partner. That's 26. Bid game.
      not Pass: Did you add it up? Partner has at least 6, and 20 plus 6 is 26.
      not 3S: Can your side have less than 25? 20 plus at least 6 is already 26.
      not *: Partner showed 6-9 and spade support. Can you see 25 points?
-  E Pass
-  S Pass
   W Pass
+  N Pass
+  E Pass
 
 auction recap:
   You opened 1♠ and partner raised to 2♠. With 20 points, you knew your side
   had at least 26, so you bid game. You are declarer, because you bid spades
-  first, and so East will lead to the first trick.
+  first, and so West will lead to the first trick.
 
 planning:
   trumps out: 4
@@ -45,28 +45,28 @@ planning:
   remind: You can afford three losers in 4♠. Count the obvious losers suit by suit in your own hand.
   remind: Dummy has only two diamonds. What has to happen before it can ruff your third one?
 play:
-  1   E DK  S D3  W D2  N DA
+  1   W DK  N D3  E D2  S DA
       note: Four losers: one heart, two diamonds and the ♣A. Dummy has just two diamonds, so after one more round it can ruff your third diamond. Draw trumps first: dummy will still have trumps left.
-  2   N S4  E S5  S SQ  W S6
+  2   S S4  W S5  N SQ  E S6
       note: Draw trumps. Start with dummy's queen, the high card from the short side, so that you finish in your own hand.
-  3   S S2  W S7  N SA  E ST
+  3   N S2  E S7  S SA  W ST
       note: Both opponents followed twice. Trumps are drawn, and dummy still has two.
-  4   N D4  E DJ  S D5  W D7
+  4   S D4  W DJ  N D5  E D7
       note: Now give up a diamond. After this, dummy has none left.
-  5   E HQ  S H4  W H2  N HA
-  6   N D6  E DQ  S S8  W D9
+  5   W HQ  N H4  E H2  S HA
+  6   S D6  W DQ  N S8  E D9
       note: Ruff your last diamond in dummy.
-  7   S CK  W CA  N C2  E C3
+  7   N CK  E CA  S C2  W C3
       note: Now force out the ♣A. Dummy's other clubs will be winners.
-  8   W H3  N HK  E HJ  S H6
-  9   N C7  E C5  S CQ  W C9
+  8   E H3  S HK  W HJ  N H6
+  9   S C7  W C5  N CQ  E C9
       note: Over to dummy's ♣Q.
-  10  S C8  W CJ  N S9  E C6
-      note: West still has the ♣J, so ruff.
-  11  N H5  E H9  S H8  W HT
+  10  N C8  E CJ  S S9  W C6
+      note: East still has the ♣J, so ruff.
+  11  S H5  W H9  N H8  E HT
       note: Your last heart is the loser you counted.
-  12  W H7  N SJ  E D8  S C4
-  13  N SK  E CT  S S3  W DT
+  12  E H7  S SJ  W D8  N C4
+  13  S SK  W CT  N S3  E DT
       note: 10 tricks: 4♠ made.
 
 play recap:

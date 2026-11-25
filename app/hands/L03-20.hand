@@ -4,30 +4,30 @@ id: L03-20
 type: exercise
 lesson: 3
 concepts: 3.2
-student: N
-board: 52
-dealer: W
+student: S
+board: 58
+dealer: E
 vulnerable: both
 
 deal:            # spades  hearts  diamonds  clubs
-  N  AQ5    K84    AK62   852
-  E  J4     QJT97  T73    T94
-  S  K72    A53    854    KQJ3
-  W  T9863  62     QJ9    A76
+  N  K72    A53    854    KQJ3
+  E  T9863  62     QJ9    A76
+  S  AQ5    K84    AK62   852
+  W  J4     QJT97  T73    T94
 
 auction:
-  W Pass
-  N 1NT*   = 15-17 points, balanced
+  E Pass
+  S 1NT*   = 15-17 points, balanced
      not *: 16 points and a balanced hand: what does the lesson open?
-  E Pass
-  S 3NT    = 10+ points: game
   W Pass
-  N Pass
+  N 3NT    = 10+ points: game
   E Pass
+  S Pass
+  W Pass
 
 auction recap:
   You opened 1NT and partner raised to game. You are declarer, because you
-  bid no-trump first, and so East will lead to the first trick.
+  bid no-trump first, and so West will lead to the first trick.
 
 planning:
   winners: 9-11
@@ -38,31 +38,31 @@ planning:
   remind: You need 9 tricks. Count the obvious winners in each suit.
   remind: Dummy's clubs have no winners on top. How many will they have once the ace is gone?
 play:
-  1   E HQ  S H3  W H2  N HK
+  1   W HQ  N H3  E H2  S HK
       note: Seven winners on top: three spades, two hearts, two diamonds. Once the ♣A is gone, dummy's clubs give at least two more. Win in your hand and keep dummy's ♥A to stop the hearts again.
-  2   N C2  E C4  S CK  W CA
+  2   S C2  W C4  N CK  E CA
       note: Start on clubs.
-  3   W H6  N H4  E HJ  S HA
+  3   E H6  S H4  W HJ  N HA
       note: Dummy's ♥A stops the hearts a second time.
-  4   S CQ  W C7  N C5  E C9
+  4   N CQ  E C7  S C5  W C9
       note: Dummy's clubs are winners now.
-  5   S CJ  W C6  N C8  E CT
+  5   N CJ  E C6  S C8  W CT
       note: Both opponents have followed three times...
-  6   S C3  W S3  N H8  E H9
+  6   N C3  E S3  S H8  W H9
       note: ...so even dummy's ♣3 wins. A good day.
-  7   S S2  W S6  N SQ  E S4
+  7   N S2  E S6  S SQ  W S4
       note: Now the spades.
-  8   N SA  E SJ  S S7  W S8
+  8   S SA  W SJ  N S7  E S8
       note: Then the ace.
-  9   N S5  E H7  S SK  W S9
+  9   S S5  W H7  N SK  E S9
       note: Over to dummy's ♠K.
-  10  S D4  W D9  N DA  E D3
+  10  N D4  E D9  S DA  W D3
       note: And the diamonds.
-  11  N DK  E D7  S D5  W DJ
+  11  S DK  W D7  N D5  E DJ
       note: That's ten tricks.
-  12  N D6  E DT  S D8  W DQ
+  12  S D6  W DT  N D8  E DQ
       note: The rest belong to the defense.
-  13  W ST  N D2  E HT  S H5
+  13  E ST  S D2  W HT  N H5
       note: 10 tricks: 3NT made with an overtrick.
 
 play recap:

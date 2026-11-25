@@ -1,64 +1,64 @@
-# Lesson 2, new hand (Mike's texture pair, second hand): 13 HCP with poor texture, open reluctantly. Student sits North.
+# Lesson 2, new hand (Mike's texture pair, second hand): 13 HCP with poor texture, open reluctantly. Student sits South.
 title: A reluctant opening
 id: L02-32
 type: exercise
 lesson: 2
 concepts: 2.1, 2.2
-student: N
-board: 32
-dealer: W
+student: S
+board: 38
+dealer: E
 vulnerable: EW
 
 deal:            # spades  hearts  diamonds  clubs
-  N  QJ65   K82    QJ74   KJ
-  E  A2     54     K62    A97542
-  S  974    AQT93  85     T63
-  W  KT83   J76    AT93   Q8
+  N  974    AQT93  85     T63
+  E  KT83   J76    AT93   Q8
+  S  QJ65   K82    QJ74   KJ
+  W  A2     54     K62    A97542
 
 auction:
-  W Pass
-  N 1D*    = 13+ points, at least four diamonds
+  E Pass
+  S 1D*    = 13+ points, at least four diamonds
      key: 13 HCP plus 1 for the doubleton is 14, so you open, but reluctantly: no aces, and the queens and jacks are scattered. With two four-card suits, open the lower one.
      not 1S: With two four-card suits, which one did the lesson say to open?
      not Pass: Did you count the doubleton? 13 plus 1 is 14, enough to open, even if the hand looks poor.
      not 1NT: 1NT shows 15-17. Did you count 13 HCP?
      not *: With 14 points and two four-card suits, what does the lesson say to open?
-  E Pass
-  S 1NT    = 6-9 points, balanced
   W Pass
-  N Pass*  = No game: at most 23
+  N 1NT    = 6-9 points, balanced
+  E Pass
+  S Pass*  = No game: at most 23
      key: Partner showed 6-9. 14 plus 9 is 23 at most, short of the 25 a game needs. Pass.
      not *: Did you add it up? 14 plus 6-9 can't reach 25.
-  E Pass
+  W Pass
 
 auction recap:
   Your hand counts to 14, so it opens, but reluctantly: there are no aces,
   and the queens and jacks are spread around instead of backing up a long
   suit. Partner's 1NT showed 6-9 points and a balanced hand. Your side has
-  at most 23, so you pass. South is declarer, because he bid no-trump
-  first, and so West will lead to the first trick.
+  at most 23, so you pass. North is declarer, because he bid no-trump
+  first, and so East will lead to the first trick.
 
 play:
-  1   W S3  N S5  E SA  S S4
-  2   E S2  S S7  W SK  N S6
-      note: East returns partner's suit.
-  3   W S8  N SJ  E C4  S S9
-  4   N HK  E H4  S H3  W H6
+  1   E S3  S S5  W SA  N S4
+  2   W S2  N S7  E SK  S S6
+      note: West returns partner's suit.
+  3   E S8  S SJ  W C4  N S9
+  4   S HK  W H4  N H3  E H6
       note: Declarer's plan: run the hearts. The king first, the high card from the short side.
-  5   N H8  E H5  S HA  W H7
+  5   S H8  W H5  N HA  E H7
       note: Back to declarer's hand.
-  6   S HQ  W HJ  N H2  E C5
+  6   N HQ  E HJ  S H2  W C5
       note: Keep going.
-  7   S HT  W C8  N D4  E C7
+  7   N HT  E C8  S D4  W C7
       note: Declarer's hearts are all winners now.
-  8   S H9  W D3  N D7  E C9
+  8   N H9  E D3  S D7  W C9
       note: The last heart.
-  9   S D5  W D9  N DQ  E DK
+  9   N D5  E D9  S DQ  W DK
       note: Declarer leads a diamond to try to set up a trick in dummy.
-  10  E CA  S C3  W CQ  N CJ
-  11  E D6  S D8  W DA  N DJ
-  12  W DT  N CK  E D2  S C6
-  13  W ST  N SQ  E C2  S CT
+  10  W CA  N C3  E CQ  S CJ
+  11  W D6  N D8  E DA  S DJ
+  12  E DT  S CK  W D2  N C6
+  13  E ST  S SQ  W C2  N CT
       note: Dummy's ♠Q wins the last trick. 7 tricks: 1NT made.
 
 play recap:

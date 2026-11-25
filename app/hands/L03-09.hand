@@ -4,35 +4,35 @@ id: L03-09
 type: exercise
 lesson: 3
 concepts: 3.2
-student: N
-board: 41
-dealer: N
+student: S
+board: 19
+dealer: S
 vulnerable: EW
 
 deal:            # spades  hearts  diamonds  clubs
-  N  AQ4    AQJ    A875   962
-  E  JT98   T97    QJ3    AKT
-  S  K73    K82    K64    8543
-  W  652    6543   T92    QJ7
+  N  K73    K82    K64    8543
+  E  652    6543   T92    QJ7
+  S  AQ4    AQJ    A875   962
+  W  JT98   T97    QJ3    AKT
 
 auction:
-  N 1NT*   = 15-17 points, balanced
+  S 1NT*   = 15-17 points, balanced
      not *: 17 points and a balanced hand: what does the lesson open?
-  E Pass
-  S 2NT    = 8-9 points, balanced: invites game
   W Pass
-  N 3NT*   = Accepts: a maximum 1NT
+  N 2NT    = 8-9 points, balanced: invites game
+  E Pass
+  S 3NT*   = Accepts: a maximum 1NT
      key: Partner invites with 8-9. You have 17, the top of your range, so accept.
      not Pass: Partner invited you to bid on with the top of your range. 17 is the top. Did you add 17 and 8?
      not *: Partner's 2NT asks: are you at the top of your 15-17?
-  E Pass
-  S Pass
   W Pass
+  N Pass
+  E Pass
 
 auction recap:
   You opened 1NT, and partner's 2NT invited game. With 17, the top of your
   range, you accepted. You are declarer, because you bid no-trump first, and
-  so East will lead to the first trick.
+  so West will lead to the first trick.
 
 planning:
   winners: 8
@@ -43,31 +43,31 @@ planning:
   remind: You need 9 tricks. Count the obvious winners in each suit.
   remind: Look at the diamonds: dummy's K64 and your A875. The opponents have six. What if they break 3-3?
 play:
-  1   E SJ  S S3  W S2  N SQ
+  1   W SJ  N S3  E S2  S SQ
       note: Eight winners on top: three spades, three hearts and two diamonds. The ninth can come from your fourth diamond, if the opponents' six diamonds split three and three.
-  2   N D5  E D3  S D4*  W D9
+  2   S D5  W D3  N D4*  E D9
       D4 key: Duck. You have to lose a diamond anyway, so lose it now.
       D4 not DK: Did you remember that you have to lose a diamond anyway? Lose it now, on the first round, and keep the ace and king to take control later.
       note: Start on diamonds, and duck the first round: play low from both hands. You have to lose a diamond anyway, so lose it now, while you still control the other suits.
-  3   W CQ  N C2  E CA  S C3
+  3   E CQ  S C2  W CA  N C3
       note: The defense takes its club tricks.
-  4   E CK  S C4  W C7  N C6
-  5   E CT  S C5  W CJ  N C9
-  6   W H3  N HJ  E H7  S HK
+  4   W CK  N C4  E C7  S C6
+  5   W CT  N C5  E CJ  S C9
+  6   E H3  S HJ  W H7  N HK
       note: Dummy's king goes on your jack, so the hearts don't get stuck: the high card from the short side.
-  7   S H8  W H4  N HQ  E H9
+  7   N H8  E H4  S HQ  W H9
       note: Back to your hearts.
-  8   N HA  E HT  S H2  W H5
+  8   S HA  W HT  N H2  E H5
       note: Your last heart winner.
-  9   N D7  E DJ  S DK  W D2
+  9   S D7  W DJ  N DK  E D2
       note: Now the diamonds again. Both opponents followed to the first round.
-  10  S D6  W DT  N DA  E DQ
+  10  N D6  E DT  S DA  W DQ
       note: Back to your ♦A. Both opponents followed three times, so your last diamond is now a winner.
-  11  N D8  E S8  S C8  W H6
+  11  S D8  W S8  N C8  E H6
       note: The fourth diamond is your ninth trick.
-  12  N S4  E S9  S SK  W S5
+  12  S S4  W S9  N SK  E S5
       note: Now the spades, over to dummy's king.
-  13  S S7  W S6  N SA  E ST
+  13  N S7  E S6  S SA  W ST
       note: 3NT made.
 
 play recap:

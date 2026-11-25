@@ -1,65 +1,65 @@
-# Lesson 2, from exercise 2c: partner opens 1♣, you respond with a flat 8. Student sits North.
+# Lesson 2, from exercise 2c: partner opens 1♣, you respond with a flat 8. Student sits South.
 title: A flat hand: 1NT over 1♣
 id: L02-26
 type: exercise
 lesson: 2
 concepts: 2.3
-student: N
-board: 26
-dealer: E
+student: S
+board: 36
+dealer: W
 vulnerable: both
 
 deal:            # spades  hearts  diamonds  clubs
-  N  763    QJ9    K982   Q54
-  E  K95    T76    QT3    A987
-  S  AQ4    K82    J5     KJT63
-  W  JT82   A543   A764   2
+  N  AQ4    K82    J5     KJT63
+  E  JT82   A543   A764   2
+  S  763    QJ9    K982   Q54
+  W  K95    T76    QT3    A987
 
 auction:
-  E Pass
-  S 1C     = 13+ points, at least four clubs
   W Pass
-  N 1NT*   = 6-9 points, balanced
+  N 1C     = 13+ points, at least four clubs
+  E Pass
+  S 1NT*   = 6-9 points, balanced
      key: 8 HCP and a flat hand. The rule list points to 2♣ with three clubs, but in practice 1NT describes this hand best.
      not 2C: The rules point to 2♣, but did you notice how flat your hand is? 1NT says so in one bid.
      not 1D: 1♦ is allowed, but with such a flat hand, doesn't 1NT tell partner more?
      not Pass: Did you count 8? With 6 or more, keep the auction open.
      not *: With 6-9 and a flat hand, which response describes it in one bid?
-  E Pass
-  S Pass   = No game: partner has a minimum
   W Pass
+  N Pass   = No game: partner has a minimum
+  E Pass
 
 auction recap:
   Partner opened 1♣. The rule list points to a raise to 2♣ with three
   clubs, but with a flat 8 points, 1NT describes your hand best. Partner
   passed, so there is no game. You are declarer, because you bid no-trump
-  first, and so East will lead to the first trick.
+  first, and so West will lead to the first trick.
 
 planning:
   remind: What is the contract? How many tricks do you need?
 
 play:
-  1   E HT  S H2  W HA  N H9
-  2   W H3  N HJ  E H6  S H8
-      note: West returns partner's suit.
-  3   N CQ  E C7  S C3  W C2
+  1   W HT  N H2  E HA  S H9
+  2   E H3  S HJ  W H6  N H8
+      note: East returns partner's suit.
+  3   S CQ  W C7  N C3  E C2
       note: The plan: set up dummy's clubs. Play the queen first, the high card from your short side.
-  4   N C4  E C8  S CK  W S2
+  4   S C4  W C8  N CK  E S2
       note: Keep leading clubs until the ace is gone.
-  5   S CJ  W D4  N C5  E CA
-      note: Keep going. East takes the ace.
-  6   E H7  S HK  W H5  N HQ
-  7   S CT  W S8  N S3  E C9
+  5   N CJ  E D4  S C5  W CA
+      note: Keep going. West takes the ace.
+  6   W H7  N HK  E H5  S HQ
+  7   N CT  E S8  S S3  W C9
       note: Dummy's clubs are winners now.
-  8   S C6  W D6  N S6  E S5
+  8   N C6  E D6  S S6  W S5
       note: The last club.
-  9   S SA  W ST  N S7  E S9
+  9   N SA  E ST  S S7  W S9
       note: Cash the ♠A.
-  10  S DJ  W D7  N D2  E DQ
+  10  N DJ  E D7  S D2  W DQ
       note: Seven tricks are in. Lead a diamond and let the defense take the rest.
-  11  E DT  S D5  W DA  N D8
-  12  W H4  N D9  E D3  S S4
-  13  W SJ  N DK  E SK  S SQ
+  11  W DT  N D5  E DA  S D8
+  12  E H4  S D9  W D3  N S4
+  13  E SJ  S DK  W SK  N SQ
       note: 7 tricks: 1NT made.
 
 play recap:

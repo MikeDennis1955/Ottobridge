@@ -4,29 +4,29 @@ id: L03-05
 type: exercise
 lesson: 3
 concepts: 3.2, 3.4, 3.5
-student: N
-board: 37
-dealer: N
+student: S
+board: 31
+dealer: S
 vulnerable: NS
 
 deal:            # spades  hearts  diamonds  clubs
-  N  A85    AK3    AJ64   762
-  E  QJT97  762    852    Q9
-  S  K62    854    73     AK543
-  W  43     QJT9   KQT9   JT8
+  N  K62    854    73     AK543
+  E  43     QJT9   KQT9   JT8
+  S  A85    AK3    AJ64   762
+  W  QJT97  762    852    Q9
 
 auction:
-  N 1NT*   = 15-17 points, balanced
+  S 1NT*   = 15-17 points, balanced
      not *: 16 points and a balanced hand: what does the lesson open?
-  E Pass
-  S 3NT    = 10+ points: game
   W Pass
-  N Pass
+  N 3NT    = 10+ points: game
   E Pass
+  S Pass
+  W Pass
 
 auction recap:
   You opened 1NT and partner raised to game. You are declarer, because you
-  bid no-trump first, and so East will lead to the first trick.
+  bid no-trump first, and so West will lead to the first trick.
 
 planning:
   winners: 7-9
@@ -37,33 +37,33 @@ planning:
   remind: You need 9 tricks. Count the obvious winners in each suit.
   remind: Where can two more come from? What will you have to give up to get them?
 play:
-  1   E SQ  S S2  W S3  N SA
+  1   W SQ  N S2  E S3  S SA
       note: Seven winners on top: two spades, two hearts, one diamond and two clubs. Your eight clubs can give two more, but only after you lose one club trick. Win with the ace and keep dummy's ♠K to stop the spades again.
-  2   N C2  E C9  S C3*  W C8
+  2   S C2  W C9  N C3*  E C8
       note: Start on clubs, and let the opponents win the first round. You have to lose a club anyway, so lose it now.
       C3 key: Duck. You must lose a club sooner or later, and losing it now keeps the ace and king in dummy, with a small club left in your hand to reach them.
       C3 not CA: That works here, because dummy has the ♠K as a way back. But did you think about ducking first? You must lose a club anyway, and ducking keeps control of the suit.
       C3 not CK: That works here, because dummy has the ♠K as a way back. But did you think about ducking first? You must lose a club anyway, and ducking keeps control of the suit.
-  3   E SJ  S SK  W S4  N S5
+  3   W SJ  N SK  E S4  S S5
       note: The ♠K stops the spades a second time, and puts you in dummy.
-  4   S CA  W CT  N C6  E CQ
+  4   N CA  E CT  S C6  W CQ
       note: Now the ace and king of clubs.
-  5   S CK  W CJ  N C7  E H2
+  5   N CK  E CJ  S C7  W H2
       note: Both opponents followed twice. Dummy's last two clubs are winners.
-  6   S C5  W D9  N D4  E S7
+  6   N C5  E D9  S D4  W S7
       note: Keep cashing dummy's clubs.
-  7   S C4  W DT  N D6  E S9
+  7   N C4  E DT  S D6  W S9
       note: Dummy's last club winner.
-  8   S H4  W HT  N HA  E H6
+  8   N H4  E HT  S HA  W H6
       note: Back to your hand for the rest of your winners.
-  9   N HK  E H7  S H5  W HJ
+  9   S HK  W H7  N H5  E HJ
       note: The ♥K.
-  10  N DA  E D2  S D3  W DQ
+  10  S DA  W D2  N D3  E DQ
       note: That's nine tricks. The rest belong to the defense.
-  11  N DJ  E D5  S D7  W DK
+  11  S DJ  W D5  N D7  E DK
       note: Nothing left to win. Give up the rest.
-  12  W HQ  N H3  E D8  S H8
-  13  W H9  N S8  E ST  S S6
+  12  E HQ  S H3  W D8  N H8
+  13  E H9  S S8  W ST  N S6
       note: 9 tricks: 3NT made.
 
 play recap:
