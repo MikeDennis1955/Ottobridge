@@ -1,0 +1,75 @@
+# Lesson 4, new exercise: the lesson's Q95 opposite A82. Test the diamonds first; when they don't split, lead toward dummy's queen.
+title: Lead toward the queen
+id: L04-05
+type: exercise
+lesson: 4
+concepts: 4.4
+student: S
+board: 59
+dealer: S
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  Q95    Q73    KQ64   A54
+  E  JT63   652    J952   Q8
+  S  A82    AK4    A73    J962
+  W  K74    JT98   T8     KT73
+
+auction:
+  S 1NT    = 15-17 points, balanced
+     not *: 16 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so West will lead to the first trick.
+
+planning:
+  winners: 8-10
+  spades: 1-2 = The ace. Dummy's queen too, if West has the king and you lead toward the queen.
+  hearts: 3 = The ace, king and queen.
+  diamonds: 3-4 = The ace, king and queen. A fourth if they split 3-3.
+  clubs: 1 = The ace.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: You have two chances for a ninth trick. Which can you try without giving up the lead?
+play:
+  1   W HJ  N H3  E H2  S HK
+      note: Eight winners on top. The ninth could come from a 3-3 diamond split, or from dummy's ♠Q if West has the king. Win in your hand.
+  2   S DA  W D8  N D4  E D2
+      note: Try the diamonds first: if they split 3-3 you have nine tricks without any risk. Your ace first, the high card from the short side.
+  3   S D3  W DT  N DK  E D5
+      note: Over to dummy's king and queen.
+  4   N DQ  E D9  S D7  W C3
+      note: West shows out, so East still has the ♦J. No fourth diamond trick. Time for the second chance.
+  5   N H7  E H5  S HA  W H8
+      note: Back to your hand, so you can lead a spade toward dummy's queen.
+  6   S S2  W S4  N SQ*  E S3
+      note: Lead a low spade toward the queen.
+      SQ key: West played low, so play the queen. If West has the king, the queen wins.
+      SQ not *: Did you think about playing the queen? If West has the king, it can't beat the queen, because West has already played.
+  7   N HQ  E H6  S H4  W H9
+      note: The queen won. Now cash dummy's ♥Q.
+  8   N S5  E S6  S SA  W S7
+      note: Then your ♠A.
+  9   S C2  W C7  N CA  E C8
+      note: And the ♣A. That's nine tricks.
+  10  N D6  E DJ  S C6  W HT
+      note: Nothing left to win. Give up the rest.
+  11  E ST  S S8  W SK  N S9
+  12  W CT  N C4  E CQ  S C9
+  13  E SJ  S CJ  W CK  N C5
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: count eight winners on top, then look for the ninth. Try the
+  diamonds first, because that chance costs nothing. When they don't split,
+  lead a spade toward dummy's queen.
+
+  Leading toward the queen wins whenever West has the king: West must play
+  before dummy. Leading the queen from dummy would not work: whoever has the
+  king would simply cover it. Here the king was with West. If East had held
+  it, the queen would have lost, and you would have gone down one.

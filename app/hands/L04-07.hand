@@ -1,0 +1,79 @@
+# Lesson 4, new exercise: the lesson's AJT9 opposite 632. Two finesses; the first loses, the second wins.
+title: Two finesses in one suit
+id: L04-07
+type: exercise
+lesson: 4
+concepts: 4.5, 3.5
+student: N
+board: 61
+dealer: N
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AJT9   KQ4    A82    K73
+  E  Q85    JT98   T976   A8
+  S  632    A65    KQ5    J542
+  W  K74    732    J43    QT96
+
+auction:
+  N 1NT    = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  E Pass
+  S 3NT    = 10+ points: game
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so East will lead to the first trick.
+
+planning:
+  winners: 7-10
+  spades: 1-3 = The ace. Up to two more if you lead toward your jack-ten-nine twice and West has the king or queen.
+  hearts: 3 = The ace, king and queen.
+  diamonds: 3 = The ace, king and queen.
+  clubs: 0-1 = Maybe the king, after the ace is gone.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: Which hand must lead spades? How many times can you get there?
+play:
+  1   E HJ  S H5  W H2  N HK
+      note: Seven winners on top. Spades can give you two more if you lead them twice from dummy. Win this in your hand, and keep dummy's ♥A as a way across.
+  2   N D2  E D6  S DK  W D3
+      note: Over to dummy with a diamond.
+  3   S S2  W S4  N S9*  E SQ
+      note: Lead a spade toward your ace-jack-ten-nine.
+      S9 key: West played low, so play the nine (the ten or jack would do just as well). If West has both the king and queen, it wins. If not, it at least drives out one of them.
+      S9 not SA: Did you think about the finesse? The ace wins only one trick. Playing the nine now, and the ten next time, wins two more whenever West has the king or the queen.
+  4   E HT  S H6  W H3  N HQ
+      note: The nine lost to East's queen. That's fine: West may still have the king.
+  5   N D8  E D7  S DQ  W D4
+      note: Back to dummy for the second finesse.
+  6   S S3  W S7  N ST*  E S5
+      note: Lead another spade toward your hand.
+      ST key: Same again: West played low, so play the ten (or jack). If West has the king, it wins.
+      ST not SA: Did you think about finessing again? If West has the king, your ten wins.
+  7   N SA  E S8  S S6  W SK
+      note: The ten won. Now the ace, and West's king falls.
+  8   N SJ  E H9  S C2  W C6
+      note: Your last spade is a winner too.
+  9   N DA  E D9  S D5  W DJ
+      note: Cash your ♦A.
+      ok: H
+  10  N H4  E H8  S HA  W H7
+      note: And dummy's ♥A. That's nine tricks.
+  11  S C4  W C9  N CK  E CA
+      note: Nothing left to win. Give up the rest.
+  12  E DT  S C5  W CT  N C3
+  13  E C8  S CJ  W CQ  N C7
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: count seven winners on top and get two more from the spades by
+  leading toward your ace-jack-ten-nine twice.
+
+  This is a double finesse. You lose a trick only to an honor East holds, so
+  you get your three spade tricks whenever West has the king or the queen,
+  about three times out of four. The first finesse lost, which is fine: you
+  still needed to be in dummy again for the second, so you kept the
+  diamonds and the ♥A as ways across.

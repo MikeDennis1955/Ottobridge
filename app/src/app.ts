@@ -273,7 +273,9 @@ const bidSyms = (t: string) => prose(t).replace(/\b([1-7])([CDHS])\b/g, (_, n, s
 function blocksHTML(bs: Block[]) {
   return bs.map(b => typeof b === 'string' ? `<p>${bidSyms(b)}</p>` : 'list' in b ? `<ul>${b.list.map(x => `<li>${bidSyms(x)}</li>`).join('')}</ul>` : 'aside' in b ? `<aside class="laside"><div class="lasidet">${esc(b.aside)}</div>${b.text.map(x => `<p>${bidSyms(x)}</p>`).join('')}</aside>` : 'ol' in b ? `<ol>${b.ol.map(x => `<li>${bidSyms(x)}</li>`).join('')}</ol>` : 'sub' in b ? `<h4>${esc(b.sub)}</h4>` : 'note' in b ? `<aside class="lnote">${bidSyms(b.note)}</aside>` : 'pre' in b ? `<pre class="lpre">${bidSyms(b.pre)}</pre>` : 'auction' in b ? ((a: string[]) => `<table class="lauc"><tr><th>West</th><th>North</th><th>East</th><th>South</th></tr>${Array.from({ length: Math.ceil(a.length / 4) }, (_, r) => `<tr>${[0, 1, 2, 3].map(c => `<td>${a[r * 4 + c] ? bidSyms(a[r * 4 + c]) : ''}</td>`).join('')}</tr>`).join('')}</table>`)(['', ...b.auction]) : `<h3>${esc(b.h)}</h3>`).join('');
 }
-function conceptOf(lesson: number, id: string): Concept | undefined { return LESSONS.find(l => l.n === lesson)?.concepts.find(c => c.id === id); }
+function conceptOf(lesson: number, id: string): Concept | undefined { // a hand may also be tagged with an earlier lesson's concept (e.g. 3.5, entries)
+  return LESSONS.find(l => l.n === lesson)?.concepts.find(c => c.id === id) ?? LESSONS.flatMap(l => l.concepts).find(c => c.id === id);
+}
 // --- progress and resume (browser storage only) ---
 const setOf = (lesson: number) => handsFor(lesson).sort((a, b) => a.h.script!.id.localeCompare(b.h.script!.id, 'en', { numeric: true }));
 function lessonDone(n: number) { const set = setOf(n); return { done: set.filter(x => progGet(x.h.script!.id)).length, total: set.length }; }

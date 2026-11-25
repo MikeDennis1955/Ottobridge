@@ -1,0 +1,80 @@
+# Lesson 4, new exercise: the same finesse against a queen. AKJ in your hand: lead from dummy and play the jack.
+title: Finessing for a queen
+id: L04-06
+type: exercise
+lesson: 4
+concepts: 4.1, 3.5
+student: N
+board: 60
+dealer: W
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AQJ84  AKJ    K2     953
+  E  T5     T95    QJT9   KQJ7
+  S  K962   643    A85    842
+  W  73     Q872   7643   AT6
+
+auction:
+  W Pass
+  N 1S     = 13+ points, at least four spades
+     not *: 18 points and five spades: open your long suit at the one level.
+  E Pass
+  S 2S     = 6-9 points, 3+ spades
+  W Pass
+  N 4S     = Game
+     not *: You have 19 points counting your doubleton, and partner has at least 6: enough for game.
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1♠ and partner raised to 2♠. With 19 points counting
+  distribution, you bid game. You are declarer, because you bid spades
+  first, and so East will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 4
+  spades: 0 = Nine spades with the ace, king, queen and jack.
+  hearts: 1 = The jack, unless West has the queen and you lead toward your ace-king-jack.
+  diamonds: 0 = Your king and dummy's ace.
+  clubs: 3 = Three small clubs opposite three small clubs.
+  remind: You can afford three losers in 4♠. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
+  remind: Which loser might go away? Which hand should lead that suit?
+play:
+  1   E CK  S C2  W C6  N C3
+      note: Four losers, one too many. The heart jack might not be one: if West has the queen and you lead hearts from dummy, the jack wins. Nothing to be done about the clubs.
+  2   E CQ  S C4  W CT  N C5
+  3   E CJ  S C8  W CA  N C9
+  4   W D3  N DK  E D9  S D5
+      note: Win with your king, and keep dummy's ♦A as a way across.
+  5   N SA  E S5  S S2  W S3
+      note: Draw trumps. Ace first, then over to dummy's king: you want to end in dummy.
+  6   N S4  E ST  S SK  W S7
+      note: Trumps are drawn, and you're in dummy.
+  7   S H3  W H2  N HJ*  E H5
+      note: Lead a heart toward your ace-king-jack.
+      HJ key: The finesse. West played low, so play the jack. If West has the queen, the jack wins.
+      HJ not HA: That can still work if you come back to dummy and lead hearts toward your jack later. But why not take the finesse now, while you're there? West has played, so if West has the queen, your jack wins.
+      HJ not HK: That can still work if you come back to dummy and lead hearts toward your jack later. But why not take the finesse now, while you're there? West has played, so if West has the queen, your jack wins.
+  8   N HA  E H9  S H4  W H7
+      note: The jack won. Cash the ace and king.
+  9   N HK  E HT  S H6  W HQ
+      note: And West's queen falls.
+  10  N SQ  E C7  S S6  W D4
+      note: The rest are yours.
+  11  N SJ  E DT  S S9  W D6
+  12  N S8  E DJ  S D8  W H8
+  13  N D2  E DQ  S DA  W D7
+      note: 10 tricks: 4♠ made.
+
+play recap:
+  The plan: you counted four losers, one too many. The heart jack was the
+  one that might go away, if West held the queen and you led hearts from
+  dummy.
+
+  This is the same finesse as against a king, one step down: lead toward
+  your ace-king-jack and, when West plays low, play the jack. Because you
+  needed to be in dummy to lead hearts, you drew trumps ending there, with
+  the ♦A kept in reserve as another way across.

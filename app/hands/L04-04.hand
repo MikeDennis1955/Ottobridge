@@ -1,0 +1,82 @@
+# Lesson 4, new exercise: the lesson's QJ5 opposite AT942 as trumps. Lead the queen from dummy; if it wins, you're still in dummy to repeat.
+title: Lead the queen, then the jack
+id: L04-04
+type: exercise
+lesson: 4
+concepts: 4.2, 3.5
+student: S
+board: 58
+dealer: E
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A852   QJ5    752    843
+  E  T763   K73    986    T65
+  S  K4     AT942  AK3    A72
+  W  QJ9    86     QJT4   KQJ9
+
+auction:
+  E Pass
+  S 1H     = 13+ points, at least four hearts
+     not *: 18 points and five hearts: open your long suit at the one level.
+  W Pass
+  N 2H     = 6-9 points, 3+ hearts
+  E Pass
+  S 4H     = Game
+     not *: You have 19 points counting your doubleton, and partner has at least 6: enough for game.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1♥ and partner raised to 2♥. With 19 points counting
+  distribution, you bid game. You are declarer, because you bid hearts
+  first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 5
+  losers: 4
+  spades: 0 = Your king and dummy's ace.
+  hearts: 1 = The king, unless East has it and you lead toward your ace-ten from dummy.
+  diamonds: 1 = Your third diamond.
+  clubs: 2 = The ace takes care of only one of your three clubs.
+  remind: You can afford three losers in 4♥. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
+  remind: Which loser might go away? Which hand should lead that suit, and how will you get there?
+play:
+  1   W CK  N C3  E C5  S CA
+      note: Four losers, one too many. The ♥K might not be one: if East has it, leading hearts from dummy traps it. Dummy's only sure way in is the ♠A.
+  2   S SK  W S9  N S2  E S3
+      note: Cash your ♠K first, the high card from the short side, and then cross to dummy's ace.
+  3   S S4  W SJ  N SA  E S6
+      note: Now you're in dummy.
+  4   N HQ  E H3  S H2*  W H6
+      note: Lead the ♥Q from dummy.
+      H2 key: Play low and let the queen win. If East had covered with the king, you would win with the ace, and your ten and nine would take care of the rest.
+      H2 not HA: Did you mean to win your own queen? Let it run: if East has the king, the queen wins and you're still in dummy.
+  5   N HJ  E H7  S H4*  W H8
+      note: The queen won, and you're still in dummy. That's the beauty of leading an honor: you can lead again from the same place.
+      H4 key: Same again. Play low and let the jack win.
+      H4 not HA: Did you notice East may still have the king? Play low and let the jack win.
+  6   N H5  E HK  S HA  W SQ
+      note: Lead hearts once more. East's king has nowhere to hide.
+  7   S C2  W CQ  N C4  E C6
+      note: Trumps are drawn. Now give up the tricks you have to lose, two clubs and a diamond.
+  8   W CJ  N C8  E CT  S C7
+  9   W DQ  N D2  E D6  S DA
+  10  S DK  W DT  N D5  E D8
+      note: Cash your other diamond winner.
+  11  S D3  W DJ  N D7  E D9
+      note: The diamond loser.
+  12  W C9  N S5  E S7  S H9
+  13  S HT  W D4  N S8  E ST
+      note: 10 tricks: 4♥ made.
+
+play recap:
+  The plan: you counted four losers, one too many, and saw that the ♥K would
+  not be a loser if East held it and you led hearts from dummy.
+
+  Leading the queen, then the jack, kept you in dummy each time they won,
+  so you could lead through East's king three times with only one way
+  across. You could lead an honor because you held the next cards too: the
+  jack behind the queen, and the ten and nine in your hand. If West had held
+  the king, the finesse would have lost, and you would have gone down one.
