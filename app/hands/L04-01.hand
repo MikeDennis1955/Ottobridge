@@ -10,10 +10,10 @@ dealer: S
 vulnerable: both
 
 deal:            # spades  hearts  diamonds  clubs
-  N  642    K85    K94    J932
+  N  642    K85    K94    9632
   E  K83    JT73   652    A54
   S  AQJT75 Q4     A83    KQ
-  W  9      A962   QJT7   T876
+  W  9      A962   QJT7   JT87
 
 auction:
   S 1S     = 13+ points, at least four spades
@@ -51,18 +51,18 @@ play:
       pause
   4   S H4  W H2  N HK  E H3
       note: East may still hold the king, guarded. To lead spades from dummy again, declarer needs another way there: a heart toward dummy's king. West has the ace but plays low, so the king wins.
-  5   N S4  E S8  S SJ  W C6
+  5   N S4  E S8  S SJ  W C7
       note: Lead from dummy again. East plays low, and the jack wins.
-  6   S SA  W C7  N S6  E SK
+  6   S SA  W C8  N S6  E SK
       note: Now the ace, and East's king drops. All the trumps are drawn, and you have lost no spade at all.
-  7   S CK  W C8  N C2  E CA
+  7   S CK  W CT  N C2  E CA
       note: Now give up the tricks you have to lose. First the ♣A.
   8   E HJ  S HQ  W HA  N H5
   9   W DJ  N D9  E D6  S D8
   10  W DT  N C3  E H7  S S5
-  11  S CQ  W CT  N C9  E C4
+  11  S CQ  W CJ  N C9  E C4
       note: The rest are yours.
-  12  S S7  W H9  N CJ  E C5
+  12  S S7  W H9  N C6  E C5
   13  S ST  W H6  N H8  E HT
       note: 10 tricks: 4♠ made.
 
