@@ -1,0 +1,83 @@
+# Lesson 4, new exercise: QJT95 opposite A432 at no-trump. Lead the queen from dummy; giving up a diamond to East would let West run the spades.
+title: Lead the queen through East
+id: L04-12
+type: exercise
+lesson: 4
+concepts: 4.2, 3.5
+student: S
+board: 66
+dealer: E
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  942    Q7     QJT95  A63
+  E  T5     J653   K87    KJ42
+  S  A73    AK4    A432   Q87
+  W  KQJ86  T982   6      T95
+
+auction:
+  E Pass
+  S 1NT    = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 2NT    = 8-9 points, balanced: inviting game
+  E Pass
+  S 3NT    = A maximum: accept
+     not Pass: You have 17, the top of your range. Accept the invitation.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1NT, partner invited with 2NT, and with 17 you accepted. You are
+  declarer, because you bid no-trump first, and so West will lead to the
+  first trick.
+
+planning:
+  winners: 9-10
+  spades: 1 = The ace.
+  hearts: 3 = Your ace and king, and dummy's queen. Play the queen early, the high card from the short side.
+  diamonds: 4-5 = Four once the king is gone. All five if East has the king and you lead from dummy.
+  clubs: 1 = Dummy's ace.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: Your ♠A is your only spade stopper. What happens if you lose the lead?
+play:
+  1   W SK  N S2  E S5  S SA
+      note: Nine winners if you can set up the diamonds, but once your ♠A is gone, West's spades are all winners. You can't afford to lose a diamond trick to the king. Win the ♠A.
+  2   S H4  W H2  N HQ  E H3
+      note: Over to dummy with the ♥Q, to lead diamonds from there.
+  3   N DQ  E D7  S D2*  W D6
+      note: Lead the ♦Q from dummy.
+      D2 key: Let the queen run. If East has the king, the queen wins and you are still in dummy.
+      D2 not DA: Did you think about letting the queen run? With the ace, you'll have to lose a diamond to the king, and then West takes four spades. If East has the king, the queen wins and you never lose the lead.
+  4   N DJ  E D8  S D3*  W C5
+      note: The queen won, and West shows out. East still has the king. Lead the jack.
+      D3 key: Let it run again. East's king is trapped.
+      D3 not DA: Did you notice East still has the king? Let the jack run.
+  5   N DT  E DK  S DA  W C9
+      note: Lead the ten. East covers with the king, and your ace takes it.
+  6   S D4  W H8  N D9  E C2
+      note: Keep a low diamond in your hand to reach dummy's last two.
+  7   N D5  E C4  S S3  W S6
+      note: Dummy's last diamond.
+  8   N H7  E H5  S HA  W H9
+      note: Back to your hand for the hearts.
+  9   S HK  W HT  N S4  E H6
+      note: That's nine tricks. Cash the ♣A too.
+  10  S C7  W CT  N CA  E CJ
+      note: Ten.
+  11  N C6  E CK  S C8  W S8
+      note: Nothing left to win. Give up the rest.
+  12  E HJ  S CQ  W SJ  N S9
+  13  E ST  S S7  W SQ  N C3
+      note: 10 tricks: 3NT made with an overtrick.
+
+play recap:
+  The plan: you had nine tricks once the diamonds were set up, but you could
+  not afford to let East in with the ♦K, because East would lead a spade and
+  West would cash four.
+
+  Leading the queen, then the jack, kept you in dummy whenever they won, and
+  you could lead honors because you held all the cards in between. With the
+  king in East, you never lost a diamond. If West had held the king, you
+  would have lost it to West, and West would have cashed the spades.
