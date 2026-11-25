@@ -12,12 +12,12 @@ vulnerable: NS
 deal:            # spades  hearts  diamonds  clubs
   N  Q95    Q73    KQ64   A54
   E  JT63   652    J952   Q8
-  S  A82    AK4    A73    J962
-  W  K74    JT98   T8     KT73
+  S  A82    AK4    A73    9632
+  W  K74    JT98   T8     KJT7
 
 auction:
   S 1NT    = 15-17 points, balanced
-     not *: 16 points and a balanced hand: what does the lesson open?
+     not *: 15 points and a balanced hand: what does the lesson open?
   W Pass
   N 3NT    = 10+ points: game
   E Pass
@@ -43,7 +43,7 @@ play:
       note: Try the diamonds first: if they split 3-3 you have nine tricks without any risk. Your ace first, the high card from the short side.
   3   S D3  W DT  N DK  E D5
       note: Over to dummy's king and queen.
-  4   N DQ  E D9  S D7  W C3
+  4   N DQ  E D9  S D7  W C7
       note: West shows out, so East still has the ♦J. No fourth diamond trick. Time for the second chance.
   5   N H7  E H5  S HA  W H8
       note: Back to your hand, so you can lead a spade toward dummy's queen.
@@ -55,13 +55,13 @@ play:
       note: The queen won. Now cash dummy's ♥Q.
   8   N S5  E S6  S SA  W S7
       note: Then your ♠A.
-  9   S C2  W C7  N CA  E C8
+  9   S C2  W CT  N CA  E C8
       note: And the ♣A. That's nine tricks.
   10  N D6  E DJ  S C6  W HT
       note: Nothing left to win. Give up the rest.
   11  E ST  S S8  W SK  N S9
-  12  W CT  N C4  E CQ  S C9
-  13  E SJ  S CJ  W CK  N C5
+  12  W CJ  N C4  E CQ  S C9
+  13  E SJ  S C3  W CK  N C5
       note: 9 tricks: 3NT made.
 
 play recap:
