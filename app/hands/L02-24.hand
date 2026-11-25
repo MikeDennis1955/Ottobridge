@@ -19,12 +19,12 @@ auction:
   W Pass
   N 1S     = 13+ points, at least four spades
   E Pass
-  S 3S*    = 12-13 points and four spades: forcing to game
+  S 3S*    = an opening hand or better and four spades: forcing to game
      key: 11 HCP plus 2 for the singleton heart is 13, with four spades. That's the 3♠ raise.
      not 2S: 2♠ shows 6-9. Did you count the singleton? It brings you to 13.
      not 2D: You have four spades. Isn't the raise the first thing to show?
      not 4S: 4♠ isn't in our system. 3♠ shows the fit and game values, and partner will bid game.
-     not *: With four spades and 12-13 points, which raise shows both?
+     not *: With four spades and an opening hand, which raise shows both?
   W Pass
   N 4S     = Game
   E Pass

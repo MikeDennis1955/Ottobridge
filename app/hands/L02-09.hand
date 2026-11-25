@@ -22,7 +22,7 @@ auction:
      key: 6 HCP plus 1 for the doubleton spade is 7, and five clubs. Raise.
      not Pass: Did you count 7 points? With 6 or more, find a response.
      not 1NT: Did you check the list from the top? With five clubs, the raise comes first.
-     not 3C: 3♣ shows 12-13 points. Did you count 7?
+     not 3C: 3♣ shows an opening hand or better. Did you count 7?
      not *: With 6-9 points and club support, can you raise partner?
   W Pass
   N Pass   = A minimum: no game

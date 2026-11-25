@@ -23,11 +23,11 @@ auction:
      not 2H: A two-bid needs 22+. Did you count 17?
      not *: With two five-card suits, open the higher-ranking one.
   W Pass
-  N 3H     = 12-13 points and four hearts: forcing to game
+  N 3H     = an opening hand or better and four hearts: forcing to game
   E Pass
   S 4H*    = Game
-     key: Partner showed 12-13 and four hearts. Your side has well over 25 and nine hearts. Bid game.
-     not Pass: 3♥ shows 12-13 points. With your 17, is there enough for game?
+     key: Partner showed an opening hand or better and four hearts. Your side has well over 25 and nine hearts. Bid game.
+     not Pass: 3♥ shows an opening hand or better. With your 17, is there enough for game?
      not 3NT: You have nine hearts between you. Which game is the better bet?
      not 4C: We won't worry about slams yet. Partner showed enough for game: bid it.
   W Pass
@@ -36,7 +36,7 @@ auction:
 
 auction recap:
   With two five-card suits you open the higher one, 1♥. Partner's jump to
-  3♥ showed 12-13 points and four hearts. Your side has about 30 points
+  3♥ showed an opening hand or better and four hearts. Your side has about 30 points
   and a nine-card fit, so you bid game. You are declarer, because you bid
   hearts first, and so West will lead to the first trick.
 
