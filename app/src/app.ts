@@ -505,8 +505,9 @@ function shownPosition(L: Loaded, pend: boolean): Pos {
   return pos;
 }
 
-function seatAt(student: Seat, posn: 'bottom' | 'left' | 'top' | 'right'): Seat {
-  return next(student, { bottom: 0, left: 1, top: 2, right: 3 }[posn]);
+/** The table always shows South at the bottom, whichever seat the student holds. */
+function seatAt(_student: Seat, posn: 'bottom' | 'left' | 'top' | 'right'): Seat {
+  return next('S', { bottom: 0, left: 1, top: 2, right: 3 }[posn]);
 }
 
 function renderTable(L: Loaded, pos: Pos) {
