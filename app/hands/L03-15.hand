@@ -43,36 +43,43 @@ planning:
   remind: You need 9 tricks. Count the obvious winners in each suit.
   remind: Dummy's clubs are missing the ace and the king. How many tricks will they give once both are gone?
 play:
-  1   W SQ  N S2  E S3  S SK
-      note: Seven winners on top: two spades, three hearts and two diamonds. Dummy's clubs give three more, but only after the ace and the king are gone. You'll lose the lead twice, so keep a spade stopper in each hand: win with the king in your hand.
-  2   S C2  W C5  N CQ  E CA
+  1   W SQ  N S2  E S3  S S4*
+      note: Seven winners on top: two spades, three hearts and two diamonds. Dummy's clubs give three more, but only after the ace and the king are gone, so you'll lose the lead twice. Duck the first spade: let West's queen win.
+      S4 key: Duck. You'll have to lose two club tricks anyway, so lose a spade now, while you can afford it.
+      S4 not SK: Did you think about the two club tricks you must lose? If you duck now, East may have no spade left to lead back when he wins a club.
+  2   W SJ  N S7  E S5  S SK
+      note: Now win with your king. Dummy's ace stays as a second stopper, and a way back to the clubs.
+  3   S C2  W C5  N CQ  E CA
       note: Start on clubs right away.
-  3   E S5  S S4  W ST  N SA
-      note: East returns partner's spades. Dummy's ace stops them a second time.
-  4   N CJ  E CK  S C3  W H3
-      note: Keep going: force out the king. If East had held it back, dummy's ♥Q would still be a way back to the clubs later.
-  5   E DQ  S DA  W D3  N D4
-      note: East is out of spades and tries diamonds. You still have the ♦A.
-  6   S C4  W H4  N CT  E C6
-      note: Your last club takes you to dummy's winners.
-  7   N C9  E C7  S D2  W S8
+  4   E DQ  S DA  W D3  N D4
+      note: East has no spades left to lead, so he tries diamonds. You still have the ♦A.
+  5   S C3  W D6  N CJ  E CK
+      note: Keep going: force out the king.
+  6   E HJ  S H5  W H3  N HQ
+      note: East still has no spades. Dummy's ♥Q wins, and you're in dummy with the clubs.
+  7   N CT  E C6  S C4  W H4
+      note: Dummy's clubs are all winners now.
+  8   N C9  E C7  S D2  W S8
       note: Keep cashing dummy's clubs.
-  8   N C8  E H6  S S6  W S9
+  9   N SA  E H6  S S6  W S9
+      note: Dummy's ♠A.
+  10  N C8  E H7  S D7  W D8
       note: The last club.
-  9   N HQ  E H7  S H5  W HT
-      note: Now the hearts: dummy's queen first, while you're in dummy.
-  10  N H8  E H9  S HK  W D6
-      note: Then over to your king...
-  11  S DK  W D8  N D5  E D9
+  11  N H8  E H9  S HK  W HT
+      note: Over to your ♥K...
+  12  S HA  W ST  N H2  E D9
       note: ...and your other winners.
-  12  S HA  W DT  N H2  E HJ
-  13  S D7  W SJ  N S7  E DJ
+  13  S DK  W DT  N D5  E DJ
       note: 10 tricks: 3NT made with an overtrick.
 
 play recap:
   The plan: count seven winners on top, then force out the ♣A and ♣K to set up
   dummy's clubs.
 
-  You had to give up the lead twice, and you had a spade stopper ready each
-  time. West's spades were set up by the end, but West never got in to take
-  them.
+  You had to lose the lead twice in clubs, so you lost a spade early too.
+  Ducking the first spade took away East's spades. Here East held both club
+  honors, so it didn't matter. But if West had held one of them, East could
+  have won the first club and led a spade back, and West would have set up
+  his spades with the other club honor still to come as a way back in.
+
+  Lose the tricks you have to lose early in the play.
