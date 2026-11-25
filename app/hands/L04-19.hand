@@ -1,0 +1,81 @@
+# Lesson 4, new exercise: the ace-queen is in dummy this time, so lead from your hand toward it. Draw trumps so you end in your hand.
+title: Toward dummy's ace-queen
+id: L04-19
+type: exercise
+lesson: 4
+concepts: 4.1, 3.5
+student: N
+board: 73
+dealer: N
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AKJ92  A73    K84    64
+  E  T7     KQT9   763    KJ93
+  S  Q854   J62    A52    AQ5
+  W  63     854    QJT9   T872
+
+auction:
+  N 1S     = 13+ points, at least four spades
+     not *: 15 points and five spades: open your long suit at the one level.
+  E Pass
+  S 3S     = 4+ spades, an opening hand or better: game forcing
+  W Pass
+  N 4S     = Game
+     not *: Partner's 3♠ is forcing to game. Bid it.
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1♠ and partner jumped to 3♠, showing four spades and an opening
+  hand or better, so you bid game. You are declarer, because you bid spades
+  first, and so East will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 4
+  spades: 0 = Nine spades with the ace, king and queen.
+  hearts: 2 = The ace takes care of one heart; your other two are losers.
+  diamonds: 1 = Your third diamond.
+  clubs: 1 = Dummy's ace takes care of one club. The other is a loser unless East has the king and you lead toward dummy's ace-queen.
+  remind: You can afford three losers in 4♠. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
+  remind: Dummy has the ace-queen of clubs. Which hand should lead clubs?
+play:
+  1   E HK  S H2  W H4  N HA
+      note: Four losers, one too many. The ♣K might not win: if East has it and you lead clubs from your hand, dummy's queen sits over it. Win the ♥A.
+  2   N S2  E S7  S SQ  W S3
+      note: Draw trumps. Dummy's queen first, the high card from the short side, then back to your hand.
+  3   S S4  W S6  N SA  E ST
+      note: Trumps are drawn, and you're back in your hand, ready to lead clubs.
+  4   N C4  E C3  S CQ*  W C2
+      note: Lead a club toward dummy's ace-queen.
+      CQ key: East played low, so finesse the queen. If East has the king, the queen wins.
+      CQ not CA: That gives up on the queen unless you come back to your hand and lead toward it again. Why not finesse now? East has played, so if East has the king, the queen wins.
+  5   S CA  W C7  N C6  E C9
+      note: The queen won. Cash the ace.
+  6   S H6  W H5  N H7  E HQ
+      note: Now give up your heart and diamond losers. Hearts first or diamonds first: it makes no difference.
+      ok: D
+  7   E HT  S HJ  W H8  N H3
+      note: Dummy's ♥J wins: East's king and queen are gone.
+  8   S D2  W D9  N DK  E D3
+      note: Now the diamonds. One of them is a loser.
+  9   N D4  E D6  S DA  W DT
+  10  S D5  W DQ  N D8  E D7
+      note: The diamond loser.
+  11  W CT  N S9  E CJ  S C5
+  12  N SK  E CK  S S5  W DJ
+      note: The rest are yours.
+  13  N SJ  E H9  S S8  W C8
+      note: 11 tricks: 4♠ made with an overtrick.
+
+play recap:
+  The plan: you counted four losers, one too many. The club loser would go
+  away if East held the king and you led clubs from your hand toward dummy's
+  ace-queen.
+
+  It's the same finesse as always, from the other side: lead toward the
+  ace-queen, wherever it is, and let the opponent in between play first. To
+  lead from your hand, you drew trumps ending there, cashing dummy's queen
+  first. If West had held the ♣K, the queen would have lost to it.
