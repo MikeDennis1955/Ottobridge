@@ -1,4 +1,4 @@
-# Lesson 4, new exercise: the basic finesse at no-trump. Ace-queen in your hand, lead from dummy toward it.
+# Lesson 4, new exercise: the basic finesse at no-trump. Ace-queen in dummy, lead from your hand toward it. Duck the first spade first, so a losing finesse costs only one down (Mike, 2026-11-25).
 title: The ninth trick: a finesse
 id: L04-03
 type: exercise
@@ -10,10 +10,10 @@ dealer: S
 vulnerable: none
 
 deal:            # spades  hearts  diamonds  clubs
-  N  962    K84    862    AKJ5
-  E  T73    T652   K973   T3
-  S  A54    A93    AQ5    Q842
-  W  KQJ8   QJ7    JT4    976
+  N  962    K84    AQ5    Q842
+  E  3      QT652  JT93   T73
+  S  A54    A93    862    AKJ5
+  W  KQJT87 J7     K74    96
 
 auction:
   S 1NT    = 15-17 points, balanced
@@ -29,49 +29,53 @@ auction recap:
   bid no-trump first, and so West will lead to the first trick.
 
 planning:
-  winners: 8-9
+  winners: 8
   spades: 1 = The ace.
   hearts: 2 = The ace and king.
-  diamonds: 1-2 = The ace, and the queen too if East has the king and you lead toward your ace-queen from dummy.
+  diamonds: 1 = The ace. The queen becomes a ninth trick only if West has the king and you lead toward dummy's ace-queen.
   clubs: 4 = Eight clubs with the ace, king, queen and jack: four tricks.
   remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
   remind: Where can the ninth trick come from? Which hand should lead that suit?
+  remind: If the ninth trick doesn't come, what could West's spades do to you?
 play:
-  1   W SK  N S2  E S3  S SA
-      note: Eight winners on top. The ninth can come from the ♦Q, if East has the king. Win the ♠A.
-  2   S C2  W C6  N CA  E C3
-      note: Get to dummy, so you can lead a diamond toward your ace-queen. The ♥K would do just as well.
-      ok: H
-  3   N D2  E D3  S DQ*  W D4
-      note: Lead a diamond from dummy toward your ace-queen.
-      DQ key: The finesse. East played low, so play the queen. If East has the king, it can't beat your queen, and it wins.
-      DQ not DA: That can still work if you come back to dummy and lead another diamond toward your queen. But why not take the finesse now, while you're there? East has played, so if East has the king, your queen wins.
-  4   S DA  W DJ  N D6  E D7
-      note: Cash the ♦A too. That's two diamond tricks. From here on, the order you cash your winners doesn't matter.
+  1   W SK  N S2  E S3  S S4*
+      note: Eight obvious winners: a spade, two hearts, a diamond and four clubs. There's no obvious ninth trick. It can come only from the ♦Q, if West holds the king and you finesse. That finesse might lose to East, so get ready for it first.
+      S4 key: Duck. You'll have to lose a spade anyway, so lose it now. If the finesse loses later, East may have no spade left to lead back to West.
+      S4 not SA: Did you think about ducking? If you win now and the diamond finesse loses to East, East leads a spade back and West runs the rest of the suit: down two. Lose the spade you have to lose now, while East still has a spade to play.
+  2   W SQ  N S6  E H2  S SA
+      note: East shows out: no spades left. Now win the ace.
+  3   S D2  W D4  N DQ*  E D3
+      note: Here is the finesse: lead a diamond from your hand toward dummy's ace-queen.
+      DQ key: The finesse. West played low, so play the queen. If West has the king, it can't beat your queen, and the queen wins.
+      DQ not DA: That gives up on the queen unless you come back to your hand and lead toward it again. Why not finesse now? West has played, so if West has the king, the queen wins.
+  4   N DA  E D9  S D6  W D7
+      note: The finesse worked: that's your ninth trick. Cash the ♦A too. From here on, the order you cash your winners doesn't matter.
       ok: C H
-  5   S CQ  W C7  N C5  E CT
-      note: Now the clubs, your queen first. Hearts first would be just as good.
+  5   N CQ  E C3  S C5  W C6
+      note: Now the clubs. Hearts first would be just as good.
       ok: H
-  6   S C4  W C9  N CK  E H2
-      note: Over to dummy's king and jack.
-  7   N CJ  E H5  S C8  W S8
+  6   N C2  E C7  S CA  W C9
+      note: Over to your hand for the rest of the clubs.
+  7   S CK  W S7  N C4  E CT
+  8   S CJ  W S8  N C8  E DT
       note: The last club.
-  8   N HK  E H6  S H3  W H7
+  9   S H3  W H7  N HK  E H5
       note: Now the hearts.
-  9   N H4  E HT  S HA  W HJ
+  10  N H4  E H6  S HA  W HJ
       note: That's nine tricks.
-  10  S H9  W HQ  N H8  E D9
+  11  S S5  W SJ  N S9  E HT
       note: Nothing left to win. Give up the rest.
-  11  W SQ  N S6  E S7  S S4
-  12  W SJ  N S9  E ST  S S5
-  13  W DT  N D8  E DK  S D5
+  12  W ST  N D5  E DJ  S D8
+  13  W DK  N H8  E HQ  S H9
       note: 9 tricks: 3NT made.
 
 play recap:
-  The plan: count eight winners on top, then go to dummy and lead a diamond
-  toward your ace-queen, hoping East has the king.
+  The plan: count eight obvious winners, duck the first spade, then lead a
+  diamond toward dummy's ace-queen, hoping West has the king.
 
-  That is the finesse. East had to play before your hand, so when East
-  played low, your queen won. If West had held the king, the queen would
-  have lost, and you would have gone down. That happens about half the time,
-  but there was no better chance.
+  That is the finesse. West had to play before dummy, so when West played
+  low, the queen won. If East had held the king, the queen would have lost,
+  and you would have gone down. But because you ducked the first spade,
+  East would have had no spade to lead back, and you would have been down
+  only one. Win the first spade, and East leads a spade back to West's
+  winners: down two.
