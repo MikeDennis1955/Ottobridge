@@ -368,3 +368,20 @@ export const CATALOG: CatalogEntry[] = [
   { n: 11, title: 'Managing Trumps 2' },
   { n: 12, title: 'Defensive Signalling' },
 ];
+
+// --- Our system: the bidding agreements in force at each lesson (shown from the ☰ menu, and given to Ask Claude) ---
+// from: the lesson that introduces it; until: the lesson that replaces it (not shown from then on).
+export interface SysItem { from: number; until?: number; head: string; text: string | string[] } // a list shows as bullets
+export const SYSTEM: SysItem[] = [
+  { from: 2, head: 'Counting points', text: 'Ace 4, king 3, queen 2, jack 1. For a trump contract, add distribution points: doubleton 1, singleton 2, void 3.' },
+  { from: 2, until: 8, head: 'Opening one of a suit', text: ['13+ points and at least 4 cards in the suit: four-card majors, Goren style.', 'With two 4-card suits, open the lower-ranking.', 'With two 5-card suits, open the higher-ranking.', 'Otherwise open the longer suit.'] },
+  { from: 2, head: 'Opening no-trump (balanced hands)', text: '1NT 15-17 HCP. 2NT 21-22 HCP. 3NT 23-25 HCP.' },
+  { from: 2, until: 9, head: 'Opening two of a suit', text: '22+ points and at least a 5-card suit. Partner must respond, usually with 2NT.' },
+  { from: 2, head: 'Responding to one of a suit', text: ['Under 6 points, pass.', '6-9 points and 3+ card support: raise to 2.', 'An opening hand or better and 4+ card support: jump raise to 3, forcing to game.', '6-9 HCP, balanced, poor support: 1NT.', '6+ points and a 4-card higher-ranking suit: bid it at the 1 level.', '10+ points and a 5-card lower-ranking suit: bid it at the 2 level.', '12-14 HCP, balanced, no good support: 2NT.'] },
+  { from: 2, until: 5, head: 'Responding to 1NT and 2NT', text: 'Over 1NT: 8-9 balanced, raise to 2NT; 10+ balanced, raise to 3NT. Over 2NT: under 4 HCP pass; 4+ HCP raise to 3NT.' },
+  { from: 2, head: 'How high to bid', text: 'About 25 combined points for a game in 3NT, 4♥ or 4♠.' },
+  { from: 5, head: 'Stayman', text: ['Over 1NT, 2♣ asks opener for a 4-card major: 8+ HCP and at least one 4- or 5-card major.', 'Opener bids 2♥ (also with both majors), 2♠, or 2♦ with no major.', 'Over 2NT, 3♣ is Stayman (4+ HCP).'] },
+  { from: 5, until: 12, head: 'Other responses to 1NT', text: ['2♦, 2♥ or 2♠: fewer than 8 points and a 5- or 6-card suit; opener must pass.', '2NT: 8-9, balanced, no 4-card major.', '3NT: 10+, balanced, no 4-card major.', '3♥ or 3♠: 8-9 points and a 6-card major, inviting game.', '4♥ or 4♠: 6+ cards, usually 10+ points; opener must pass.'] },
+];
+/** The agreements in force for a hand from lesson n. */
+export function systemFor(n: number): SysItem[] { return SYSTEM.filter(x => x.from <= n && (x.until === undefined || n < x.until)); }

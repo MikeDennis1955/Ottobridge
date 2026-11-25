@@ -7,7 +7,7 @@ declare const BUNDLED_HANDS: { file: string; text: string }[];
 declare const claude: any;
 import { scoreHand } from './score';
 import { Recorder, type Recording } from './recorder';
-import { LESSONS, CATALOG, type Block, type Concept, type Lesson } from './lessons';
+import { LESSONS, CATALOG, systemFor, type Block, type Concept, type Lesson } from './lessons';
 
 // ---------- state ----------
 type Step =
@@ -392,6 +392,14 @@ function openNotes() {
   d.hidden = false; d.classList.add('open');
   $('#ndclose').onclick = closeNotes;
   $('#ndfull').onclick = () => { closeNotes(); openLesson(L.script!.lesson, cs[0]?.id); };
+}
+// The bidding agreements in force for the lesson the student is in (later lessons change some of them).
+function openSystem() {
+  const n = Math.max(2, (S.view === 'home' ? furthest() : S.lesson) || 2);
+  const d = $('#notesdrawer');
+  d.innerHTML = `<div class="ndhead"><b>Our system: Lesson ${n}</b><button class="btn ghost sm" id="ndclose" aria-label="Close">✕</button></div><div class="lpage"><p class="muted small">What our bids mean at this point in the course. Some of this changes in later lessons.</p>${systemFor(n).map(x => `<h3>${bidSyms(x.head)}</h3>${Array.isArray(x.text) ? `<ul>${x.text.map(y => `<li>${bidSyms(y)}</li>`).join('')}</ul>` : `<p>${bidSyms(x.text)}</p>`}`).join('')}</div>`;
+  d.hidden = false; d.classList.add('open');
+  $('#ndclose').onclick = closeNotes;
 }
 function closeNotes() { const d = document.getElementById('notesdrawer'); if (d) { d.hidden = true; d.classList.remove('open'); } }
 
@@ -1090,7 +1098,7 @@ function askPrompt(L: Loaded): string {
   const seats: Seat[] = ['N', 'E', 'S', 'W'];
   const seen = seats.filter(x => isVisible(L, pos, x));
   const lines: string[] = [];
-  lines.push(`I'm a beginning bridge student practicing on a scripted hand (${s.title.replace(/[*_]/g, '')}, Lesson ${s.lesson}). Please tutor me on it at a beginner's level, in plain words. Our system: Standard American, 5-card majors, 15-17 1NT with Stayman, 2NT = 21-22.`);
+  lines.push(`I'm a beginning bridge student practicing on a scripted hand (${s.title.replace(/[*_]/g, '')}, Lesson ${s.lesson}). Please tutor me on it at a beginner's level, in plain words. Our bidding agreements at this stage of the course: ${systemFor(s.lesson).map(x => `${x.head}: ${([] as string[]).concat(x.text).join(' ')}`).join(' ')}`);
   lines.push(`Only use what I can see below. Don't guess at the hidden hands beyond what the bidding and the play so far show.`);
   lines.push('');
   lines.push(`I am ${SEAT_NAME[s.student]}. Dealer: ${SEAT_NAME[s.dealer]}. Vulnerable: ${s.vulnerable === 'none' ? 'none' : s.vulnerable}.`);
@@ -1235,6 +1243,7 @@ function boot() {
   $('#preview').onclick = () => { S.mode = 'student'; lsSet('bridge-mode', S.mode); $('#tabbody').innerHTML = ''; restart(); S.view = 'home'; S.fresh = true; render(); window.scrollTo(0, 0); };
   $('#m-home').onclick = () => { $('#menu').hidden = true; closeNotes(); goHome(); };
   $('#m-tour').onclick = takeTour;
+  $('#m-system').onclick = () => { $('#menu').hidden = true; openSystem(); };
   $('#record').onclick = () => { void openRecorder(); };
   $('#m-review').onclick = () => { $('#menu').hidden = true; S.mode = S.mode === 'review' ? 'student' : 'review'; lsSet('bridge-mode', S.mode); $('#tabbody').innerHTML = ''; restart(); };
   window.addEventListener('resize', () => { if (tourStep >= 0) showTour(); });
