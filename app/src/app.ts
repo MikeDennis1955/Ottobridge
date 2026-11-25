@@ -395,7 +395,7 @@ function openNotes() {
 }
 // The bidding agreements in force for the lesson the student is in (later lessons change some of them).
 function openSystem() {
-  const n = Math.max(2, (S.view === 'home' ? furthest() : S.lesson) || 2);
+  const n = Math.max(2, (S.view === 'home' ? resumeGet()?.lesson : S.lesson) || 2); // the lesson in front of the student (on the home page, the last one worked on), not how far they've got
   const d = $('#notesdrawer');
   d.innerHTML = `<div class="ndhead"><b>Our system: Lesson ${n}</b><button class="btn ghost sm" id="ndclose" aria-label="Close">✕</button></div><div class="lpage"><p class="muted small">What our bids mean at this point in the course. Some of this changes in later lessons.</p>${systemFor(n).map(x => `<h3>${bidSyms(x.head)}</h3>${Array.isArray(x.text) ? `<ul>${x.text.map(y => `<li>${bidSyms(y)}</li>`).join('')}</ul>` : `<p>${bidSyms(x.text)}</p>`}`).join('')}</div>`;
   d.hidden = false; d.classList.add('open');
