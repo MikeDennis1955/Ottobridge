@@ -1,0 +1,83 @@
+# Lesson 4, Mike's idea (original L02-05 North-South, turned around): 3NT, cross to dummy twice and run the clubs through East for the queen.
+title: Run the ten
+id: L04-09
+type: exercise
+lesson: 4
+concepts: 4.1, 3.5
+student: S
+board: 71
+dealer: S
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  KQ7    A743   86     T943
+  E  632    T862   AT3    Q62
+  S  A54    KQ5    KJ72   KJ5
+  W  JT98   J9     Q954   A87
+
+auction:
+  S 1NT    = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 2NT    = 8-9 points, balanced: inviting game
+  E Pass
+  S 3NT    = A maximum: accept
+     not Pass: You have 17, the top of your range. Accept the invitation.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1NT, partner invited with 2NT, and with 17 you accepted. You are
+  declarer, because you bid no-trump first, and so West will lead to the
+  first trick.
+
+planning:
+  winners: 7-10
+  spades: 3 = The ace, king and queen.
+  hearts: 3 = The king, queen and ace. A fourth if they split 3-3.
+  diamonds: 0-1 = Your king, if East has the ace and you lead toward it.
+  clubs: 1-3 = One once the ace is gone. Two or three if East has the queen and you lead clubs from dummy.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: Clubs offer the most. Which hand should lead them, and how many times can you get there?
+play:
+  1   W SJ  N SQ*  E S2  S S4
+      note: Seven winners on top. Clubs can give two more if East has the queen and you lead them from dummy, twice.
+      SQ key: Win in dummy, so you can lead a club right away. Dummy's ♠K is a second way across, and your ♠A stays home to stop the spades.
+      SQ not S7: Did you think about winning in dummy? You need to lead clubs from there. Winning in your hand with the ♠A means using up another spade stopper later just to get across.
+  2   N CT  E C2  S C5*  W CA
+      note: Lead the ♣10 from dummy.
+      C5 key: Let the ten run. If East has the queen, the ten pushes out an honor, and your king and jack sit over East's queen.
+      C5 not *: Did you think about letting the ten run? Leading from dummy only works if you wait to see East's card. Play low and keep the king and jack behind East.
+  3   W ST  N SK  E S3  S S5
+      note: West won the ace and kept on with spades. Win in dummy with the king: just where you want to be, and your ace is still at home.
+  4   N C9  E C6  S CJ*  W C7
+      note: Lead clubs from dummy again.
+      CJ key: East played low, so finesse the jack. If East has the queen, it wins.
+      CJ not CK: Did you think about the finesse? West has already won the ace, so East probably holds the queen. Play the jack.
+  5   S CK  W C8  N C3  E CQ
+      note: The jack won. Cash the king, and East's queen falls. Dummy's last club is a winner.
+  6   S H5  W H9  N HA  E H6
+      note: Over to dummy's ♥A to cash the club.
+  7   N C4  E H2  S D2  W S8
+      note: The fourth club.
+  8   N H3  E H8  S HK  W HJ
+      note: Back to your hearts.
+  9   S HQ  W D4  N H7  E HT
+  10  S SA  W S9  N S7  E S6
+      note: That's nine tricks.
+  11  S D7  W D5  N D6  E DA
+      note: Nothing left to win. Give up the rest.
+  12  E D3  S DJ  W DQ  N D8
+  13  W D9  N H4  E DT  S DK
+      note: 10 tricks: 3NT made with an overtrick.
+
+play recap:
+  The plan: count seven winners on top and get two more from the clubs, by
+  leading them from dummy twice so that your king and jack sit over East's
+  queen.
+
+  Winning the first spade in dummy was the quiet key: you could lead a club
+  at once, dummy's ♠K was a second way across, and your ♠A stayed home as a
+  stopper. If the club finesse had lost, you would still have had chances:
+  a 3-3 heart split, or a diamond led toward your king.

@@ -1,0 +1,76 @@
+# Lesson 4, batch 2: is a finesse the right play? Nine trumps missing the queen: cash the ace and king instead of finessing ("eight ever, nine never"). West's queen-doubleton falls.
+title: Nine trumps: play for the drop
+id: L04-24
+type: exercise
+lesson: 4
+concepts: 4.7
+student: S
+board: 102
+dealer: E
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  952    9873   A64    K63
+  E  763    T2     9872   JT98
+  S  AK4    AKJ54  K3     Q52
+  W  QJT8   Q6     QJT5   A74
+
+auction:
+  E Pass
+  S 1H     = 13+ points, at least four hearts
+     not *: 20 points and five hearts: open your long suit at the one level.
+  W Pass
+  N 2H     = 6-9 points, 3+ hearts
+  E Pass
+  S 4H     = Game
+     not *: You have 21 points counting your doubleton, and partner has at least 6: enough for game.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1♥ and partner raised to 2♥. With 21 points counting
+  distribution, you bid game. You are declarer, because you bid hearts
+  first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 3
+  spades: 1 = Your third spade.
+  hearts: 0 = Nine hearts, missing only the queen.
+  diamonds: 0 = Your king and dummy's ace.
+  clubs: 2 = The ace, and one more. Your queen and dummy's king make one trick between them.
+  remind: You can afford three losers in 4♥. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
+  remind: You can't afford to lose a trump. How should you play the hearts?
+play:
+  1   W SQ  N S2  E S3  S SA
+      note: Three losers, as long as you don't lose a heart. Draw trumps.
+  2   S HA  W H6  N H3  E H2
+      note: The ace first.
+  3   S HK*  W HQ  N H7  E HT
+      note: Both opponents followed. Now what?
+      HK key: Cash the king. With nine trumps missing only the queen, the queen falls more often than a finesse wins. Players remember it as "eight ever, nine never": with eight cards, finesse; with nine, play for the drop.
+      HK not *: Did you think about cashing the king? Only two hearts are left between the opponents. With nine trumps missing the queen, playing for it to fall is a better chance than a finesse.
+  4   S SK  W SJ  N S5  E S6
+      note: The queen fell, and trumps are drawn. Now give up the tricks you have to lose.
+  5   S S4  W ST  N S9  E S7
+  6   W DQ  N DA  E D2  S D3
+  7   N C3  E C8  S CQ  W CA
+  8   W DJ  N D4  E D7  S DK
+  9   S C2  W C4  N CK  E C9
+  10  N C6  E CT  S C5  W C7
+      note: Your last club is a loser.
+  11  E D9  S H4  W D5  N D6
+      note: The rest are yours.
+  12  S HJ  W S8  N H8  E D8
+  13  S H5  W DT  N H9  E CJ
+      note: 10 tricks: 4♥ made.
+
+play recap:
+  The plan: three losers, as long as you didn't lose a trump.
+
+  A finesse isn't the only way to find a missing queen. With nine cards
+  between your hands, the opponents have four, and when both follow to the
+  ace only two are left: the queen falls more often than not. That's why you
+  cashed the king instead of finessing. The finesse would have lost here:
+  West had the queen. With eight cards, the finesse is the better chance.

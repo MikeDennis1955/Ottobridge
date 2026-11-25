@@ -1,0 +1,78 @@
+# Lesson 4, new exercise: a finesse you shouldn't take. Nine sure tricks; a losing finesse would let West cash the spades.
+title: Nine tricks: take them
+id: L04-08
+type: exercise
+lesson: 4
+concepts: 4.7
+student: S
+board: 70
+dealer: E
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  82     KQ6    8652   AKJ3
+  E  T76    J932   J74    T65
+  S  A43    A75    AQ3    Q842
+  W  KQJ95  T84    KT9    97
+
+auction:
+  E Pass
+  S 1NT    = 15-17 points, balanced
+     not *: 16 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so West will lead to the first trick.
+
+planning:
+  winners: 9
+  spades: 1 = The ace. After that, West's spades are all winners.
+  hearts: 3 = The ace, king and queen.
+  diamonds: 1 = The ace. If you needed a tenth trick, you'd finesse the queen. You don't: if the finesse lost, West would win the king and cash his spades.
+  clubs: 4 = Eight clubs with the ace, king, queen and jack: four tricks.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: You have nine tricks. What happens if you take a finesse and it loses?
+play:
+  1   W SK  N S2  E S6  S SA
+      note: Nine winners on top. A diamond finesse could make a tenth, but if it lost, West would win the king and cash four more spades. Win the ♠A and take your nine tricks.
+  2   S CQ  W C7  N C3  E C5
+      note: Start with the clubs, your queen first.
+      ok: H
+  3   S C2  W C9  N CA  E C6
+      note: Over to dummy's ace.
+  4   N D2  E D4  S DA*  W D9
+      note: You're in dummy, where a diamond finesse would start. Lead a diamond.
+      DA key: Take the ace: it's one of your nine tricks. The finesse might give you a tenth, but if it lost, West would win and cash four spades, and you'd go down.
+      DA not DQ: Did you count your tricks? The ace is one of your nine. The finesse might win an overtrick, but if it loses, West cashes four spades and you go down. Don't risk the contract for an overtrick.
+  5   S C4  W H4  N CK  E CT
+      note: Back to the clubs: dummy's king and jack.
+      ok: H
+  6   N CJ  E D7  S C8  W H8
+      note: The last club.
+  7   N H6  E H2  S HA  W HT
+      note: Now the hearts.
+  8   S H5  W DT  N HK  E H3
+      note: Over to dummy's king and queen.
+  9   N HQ  E H9  S H7  W S5
+      note: That's nine tricks.
+  10  N D5  E DJ  S DQ  W DK
+      note: Nothing left to win. Give up the rest.
+  11  W SQ  N S8  E S7  S S3
+  12  W SJ  N D6  E ST  S S4
+  13  W S9  N D8  E HJ  S D3
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: count nine winners on top and take them, without ever giving up
+  the lead.
+
+  The diamond finesse was tempting, but it could only gain an overtrick, and
+  if it lost, West would win the king and run the spades. As it happens,
+  West had the king, so the finesse would have cost you the contract. A
+  finesse is a tool, not a habit: take one when you need the trick, and
+  think about what happens if it loses.

@@ -1,0 +1,75 @@
+# Lesson 4, batch 2: leading toward two honors. KQ4 in dummy opposite 753 at no-trump; lead toward dummy twice, and both honors score because West has the ace. Keep dummy's ♦A as a way back.
+title: Toward the king-queen
+id: L04-27
+type: exercise
+lesson: 4
+concepts: 4.4, 3.5
+student: S
+board: 107
+dealer: S
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  KQ4    984    A5     JT763
+  E  JT92   32     8762   Q94
+  S  753    AK6    KQJ4   A82
+  W  A86    QJT75  T93    K5
+
+auction:
+  S 1NT    = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so West will lead to the first trick.
+
+planning:
+  winners: 8
+  spades: 1 = The king or queen, once the ace is gone. Both, if West has the ace and you lead toward them twice.
+  hearts: 2 = The ace and king.
+  diamonds: 4 = Your king, queen and jack, and dummy's ace.
+  clubs: 1 = The ace.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: Where can the ninth trick come from? Which hand should lead that suit, and how often?
+play:
+  1   W HQ  N H4  E H2  S HA
+      note: Eight obvious winners. The ninth can come from spades: lead toward dummy's king-queen twice, and if West has the ace, both honors win a trick.
+  2   S S3  W S6  N SK*  E S2
+      note: Lead a spade toward dummy.
+      SK key: West played low, so play an honor. If West has the ace, it wins.
+      SK not S4: Did you think about playing an honor? West has already played, so if West has the ace, the king wins now.
+  3   N D5  E D2  S DK  W D3
+      note: Back to your hand to lead another spade. Use the ♦K and keep dummy's ace: you'll need it to get back to the ♠Q.
+  4   S S5  W SA  N S4*  E S9
+      note: Lead toward dummy again.
+      S4 key: West took the ace, so keep the queen. It's a winner now.
+      S4 not SQ: Did you mean to throw the queen under West's ace? Play low and the queen is a winner.
+  5   W HJ  N H8  E H3  S HK
+  6   S D4  W D9  N DA  E D6
+      note: Over to dummy's ♦A, to cash the ♠Q.
+  7   N SQ  E ST  S S7  W S8
+      note: That's your ninth trick.
+  8   N C3  E C4  S CA  W C5
+      note: Back to your hand for the diamonds.
+  9   S DQ  W DT  N C6  E D7
+  10  S DJ  W H5  N C7  E D8
+      note: That's nine tricks.
+  11  S H6  W HT  N H9  E SJ
+      note: Nothing left to win. Give up the rest.
+  12  W H7  N CT  E C9  S C8
+  13  W CK  N CJ  E CQ  S C2
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: eight obvious winners, and a ninth from the spades if West held
+  the ace and you led toward dummy's king-queen twice.
+
+  West had to play before dummy each time. When West played low, the king
+  won. When West took the ace on the second round, the queen was good. If
+  East had held the ace, you'd have made only one spade trick. You also kept
+  dummy's ♦A for last, so you could get back to cash the queen.

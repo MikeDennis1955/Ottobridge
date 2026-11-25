@@ -1,0 +1,81 @@
+# Lesson 4, new exercise: a double finesse with AQT opposite 632. The ten loses to West's jack; the queen wins against East's king.
+title: Ten first, then the queen
+id: L04-13
+type: exercise
+lesson: 4
+concepts: 4.5, 3.5
+student: S
+board: 79
+dealer: S
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A873   Q854   632    95
+  E  T52    76     K984   T763
+  S  K4     AKJ93  AQT    J42
+  W  QJ96   T2     J75    AKQ8
+
+auction:
+  S 1H     = 13+ points, at least four hearts
+     not *: 18 points and five hearts: open your long suit at the one level.
+  W Pass
+  N 2H     = 6-9 points, 3+ hearts
+  E Pass
+  S 4H     = Game
+     not *: You have 19 points counting your doubleton, and partner has at least 6: enough for game.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1♥ and partner raised to 2♥. With 19 points counting
+  distribution, you bid game. You are declarer, because you bid hearts
+  first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 4
+  spades: 0 = Your king and dummy's ace.
+  hearts: 0 = Solid.
+  diamonds: 2 = The king and the jack, unless you lead toward your ace-queen-ten from dummy and East has one of them.
+  clubs: 2 = The ace and king. Dummy can ruff your third club.
+  remind: You can afford three losers in 4♥. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
+  remind: Which hand must lead diamonds? How many ways do you have to get there?
+play:
+  1   W CA  N C5  E C3  S C2
+      note: Four losers, one too many. The diamonds are the hope: lead them twice from dummy, and you lose only one diamond whenever East has the king or the jack.
+  2   W CK  N C9  E C6  S C4
+  3   W SQ  N S3  E S2  S SK
+      note: Win in your hand and keep dummy's ♠A: it's one of your ways across.
+  4   S HA  W H2  N H4  E H6
+      note: Draw trumps, finishing in dummy with the queen. That's your other way across.
+  5   S H3  W HT  N HQ  E H7
+      note: Trumps are drawn, and you're in dummy.
+  6   N D2  E D4  S DT  W DJ
+      note: Lead a diamond toward your ace-queen-ten. East plays low, so finesse the ten. If East has the jack, or both the king and jack, the ten wins. If not, it drives out an honor and you try again.
+  7   W SJ  N SA  E S5  S S4
+      note: The ten lost to West's jack. That's fine. Win with dummy's ace and try again.
+  8   N D3  E D8  S DQ*  W D5
+      note: Lead another diamond from dummy.
+      DQ key: East played low again, so play the queen. If East has the king, it wins.
+      DQ not DA: Did you think about finessing again? West has shown the jack, so East may well have the king. The ace wins only if the king falls under it.
+  9   S DA  W D7  N D6  E D9
+      note: The queen won. Cash the ace.
+  10  S CJ  W CQ  N H5  E C7
+      note: Now ruff your last club in dummy.
+  11  N S7  E ST  S H9  W S6
+      note: The rest are yours.
+  12  S HK  W S9  N H8  E CT
+  13  S HJ  W C8  N S8  E DK
+      note: 10 tricks: 4♥ made.
+
+play recap:
+  The plan: you counted four losers, one too many, and saw that two leads
+  toward your ace-queen-ten from dummy would save a diamond whenever East
+  held the king or the jack.
+
+  The first finesse lost to West's jack, which is fine: you had kept the ♠A
+  as a second way to dummy, and the second finesse won. That is the double
+  finesse: three times out of four, East has at least one of the missing
+  honors. If West had held both, you would have lost two diamonds and gone
+  down, and that would just have been bad luck.

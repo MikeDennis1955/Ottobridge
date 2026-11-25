@@ -1,0 +1,72 @@
+# Lesson 4, batch 2: nothing to lose in diamonds. West leads a low diamond; dummy's K5 goes up and wins, and nine tricks follow without giving up the lead.
+title: The king goes up
+id: L04-31
+type: exercise
+lesson: 4
+concepts: 4.3
+student: S
+board: 115
+dealer: S
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  9752   K82    K5     KQT9
+  E  QJ3    QT54   QT7    643
+  S  AK4    A63    863    AJ52
+  W  T86    J97    AJ942  87
+
+auction:
+  S 1NT    = 15-17 points, balanced
+     not *: 16 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so West will lead to the first trick.
+
+planning:
+  winners: 8
+  spades: 2 = The ace and king.
+  hearts: 2 = The ace and king.
+  diamonds: 0 = Dummy's king wins only if West, who led the suit, has the ace.
+  clubs: 4 = Eight clubs with the ace, king, queen and jack.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: West led a low diamond. Who might have the ♦A?
+play:
+  1   W D4  N DK*  E D7  S D3
+      DK key: Nothing to lose. If West has the ace, the king wins now. If East has it, the king was never going to win a trick.
+      DK not D5: Did you think about playing the king? If you play low, East plays a high diamond, and later the ace captures your king. If West has the ace, the king wins right now.
+  2   N CK  E C3  S C2  W C7
+      note: The king won: that's your ninth trick. Now take your nine without giving up the lead. You're in dummy, so start with the clubs.
+      ok: H S
+  3   N CQ  E C4  S C5  W C8
+  4   N CT  E C6  S CJ  W S6
+      note: Overtake with your jack, to reach your ♣A.
+  5   S CA  W S8  N C9  E DT
+      note: Four club tricks.
+  6   S SA  W ST  N S2  E S3
+      note: Now the spades and hearts.
+      ok: H
+  7   S SK  W H7  N S5  E SJ
+  8   S H3  W H9  N HK  E H4
+  9   N H2  E H5  S HA  W HJ
+      note: That's nine tricks.
+  10  S H6  W D2  N H8  E HT
+      note: Nothing left to win. Give up the rest.
+  11  E HQ  S S4  W D9  N S7
+  12  E SQ  S D6  W DJ  N S9
+  13  E DQ  S D8  W DA  N D5
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: eight obvious winners, and dummy's ♦K as the ninth if West, who
+  led the suit, had the ace.
+
+  Playing the king cost nothing. If East had held the ace, the king would
+  have been lost anyway. West had it, so the king won, and you took nine
+  tricks without ever giving up the lead. Give West the lead, and the
+  defense would have taken four diamonds.

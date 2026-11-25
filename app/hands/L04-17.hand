@@ -1,0 +1,73 @@
+# Lesson 4, new exercise: nothing to lose again. West leads a low heart; dummy's K6 must go up, and then nine tricks run without giving up the lead.
+title: Up with the king
+id: L04-17
+type: exercise
+lesson: 4
+concepts: 4.3
+student: S
+board: 87
+dealer: S
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  Q85    K6     KQJ84  763
+  E  7632   QT7    9653   AT
+  S  AK4    953    A72    KQJ5
+  W  JT9    AJ842  T      9842
+
+auction:
+  S 1NT    = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so West will lead to the first trick.
+
+planning:
+  winners: 10-11
+  spades: 3 = The ace, king and queen.
+  hearts: 0 = Dummy's king wins only if West, who led the suit, has the ace. Fingers crossed.
+  diamonds: 5 = Dummy's long suit. Cash your ace first, the high card from the short side.
+  clubs: 2-3 = Two or three, once the ace is gone. But you can't afford to give up the lead: the defense would run the hearts. Your real tricks are five diamonds, three spades and, with luck, the ♥K.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: West led a low heart. Who might have the ♥A?
+play:
+  1   W H4  N HK*  E H7  S H3
+      HK key: Nothing to lose. If West has the ace, the king wins now. If East has it, the king was never going to win a trick.
+      HK not H6: Did you think about playing the king? If you play low, East plays a high heart, and later the ace captures your king. If West has the ace, the king wins right now.
+  2   N D4  E D3  S DA  W DT
+      note: With the ♥K in, you have nine tricks without giving up the lead: three spades, one heart and five diamonds. Leave the clubs alone. Start the diamonds with your ace, the high card from the short side.
+  3   S D2  W C2  N DK  E D5
+      note: Over to dummy's diamonds. West shows out, but dummy's diamonds are still good: East has only four.
+  4   N DQ  E D6  S D7  W C4
+      note: Keep cashing diamonds.
+  5   N DJ  E D9  S H5  W C8
+      note: That's the last of East's diamonds.
+  6   N D8  E S2  S H9  W C9
+      note: Dummy's fifth diamond.
+  7   N S5  E S3  S SK  W S9
+      note: Now the spades.
+  8   S SA  W ST  N S8  E S6
+  9   S S4  W SJ  N SQ  E S7
+      note: That's nine tricks.
+  10  N C3  E CA  S C5  W H2
+      note: Nothing left to win. Give up the rest.
+  11  E HQ  S CJ  W H8  N H6
+  12  E HT  S CQ  W HJ  N C6
+  13  W HA  N C7  E CT  S CK
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: play dummy's ♥K at once, then take nine tricks without giving up
+  the lead.
+
+  The king won because West, who led, had the ace. Had you played low, East
+  would have won with the ♥Q and led another heart, and West's ace would
+  have captured the king. Then West would have run the hearts the moment you
+  went after the clubs. Nine tricks were there all along, as long as the
+  king went up at trick 1.

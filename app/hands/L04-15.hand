@@ -1,0 +1,83 @@
+# Lesson 4, new exercise: QJT8 opposite A32 at no-trump. Duck the first spade, win the second in dummy, lead the queen then the jack (East's king trapped), then leave clubs and set up diamonds (Mike's line, 2026-11-25).
+title: Keep leading from dummy
+id: L04-15
+type: exercise
+lesson: 4
+concepts: 4.2, 3.5
+student: S
+board: 83
+dealer: S
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K52    K74    J43    QJT8
+  E  63     QJT6   T97    K976
+  S  A84    A93    KQ52   A32
+  W  QJT97  852    A86    54
+
+auction:
+  S 1NT    = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so West will lead to the first trick.
+
+planning:
+  winners: 7
+  spades: 2 = The ace and king.
+  hearts: 2 = The ace and king.
+  diamonds: 2 = Two once the ace is gone. A third if they split 3-3.
+  clubs: 1 = The ace. Two more if East has the king and you lead the queen and jack from dummy.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: West's spades will be a threat once your stoppers are gone. How many times can you afford to give up the lead?
+play:
+  1   W SQ  N S2  E S3  S S4*
+      note: Seven obvious winners. Clubs can give two more if East has the king and you lead the queen and then the jack from dummy. You'll have to give up the lead to the ♦A, and West's spades are the danger.
+      S4 key: Duck. You'll lose a spade sooner or later, so lose it now. Then East may have no spade left to lead back to West.
+      S4 not SA: Did you think about ducking? Win now, and whoever wins the ♦A may still have a spade to lead to West. Lose the spade you have to lose now.
+  2   W SJ  N SK  E S6  S S8
+      note: Win in dummy, ready to lead clubs, and keep your ♠A as a stopper.
+  3   N CQ  E C6  S C2*  W C4
+      note: Lead the ♣Q from dummy.
+      C2 key: Let the queen run. If East has the king, it wins, and you're still in dummy.
+      C2 not CA: Did you mean to win your own queen? Let it run: if East has the king, the queen wins and you're still in dummy to lead again.
+  4   N CJ  E C7  S C3*  W C5
+      note: The queen won. Now the jack, the same way.
+      C3 key: Let it run again.
+      C3 not CA: Did you notice East may still have the king? Let the jack run.
+  5   N D3  E D7  S DK  W DA
+      note: The jack won too: with your ♣A, that's the club tricks you need. Leave the rest of the clubs alone, and set up the diamonds. Playing a third club now would make East's king a winner.
+  6   W ST  N S5  E H6  S SA
+      note: West knocks out your last spade stopper, but West has no way back in.
+  7   S D2  W D6  N DJ  E D9
+      note: Cash the diamonds. Dummy's jack first, the high card from the short side.
+  8   N D4  E DT  S DQ  W D8
+      note: Over to your queen.
+  9   S D5  W S7  N C8  E HT
+      note: Both opponents followed to three diamonds, so your last one wins too.
+  10  S HA  W H2  N H4  E HJ
+      note: Now the hearts.
+  11  S H3  W H5  N HK  E HQ
+      note: That's nine tricks.
+  12  N CT  E CK  S CA  W S9
+      note: Lead the ♣10 through East. The king has to cover, and your ace wins.
+  13  S H9  W H8  N H7  E C9
+      note: 11 tricks: 3NT made with two overtricks.
+
+play recap:
+  The plan: seven obvious winners, two more from clubs if East held the
+  king, and the diamonds to set up. Before anything else, you ducked the
+  first spade, so West's spades would be harder to reach.
+
+  Leading the queen and then the jack from dummy kept you in dummy each time
+  they won, so one entry was enough. You could lead honors because you held
+  the cards in between: the queen, jack and ten together. Once they had won,
+  you left the clubs alone and went after the diamonds: a third club would
+  only have set up East's king. When you have the tricks you need from one
+  suit, you don't have to cash them all at once.

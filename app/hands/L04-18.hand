@@ -1,0 +1,81 @@
+# Lesson 4, new exercise: lead toward the king (K73 opposite 6542) in a trump contract, drawing trumps so you end in dummy.
+title: Draw trumps, then lead toward the king
+id: L04-18
+type: exercise
+lesson: 4
+concepts: 4.4, 3.5
+student: S
+board: 90
+dealer: E
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K84    Q854   AK     6542
+  E  763    62     75432  AQ9
+  S  A52    AKJ93  86     K73
+  W  QJT9   T7     QJT9   JT8
+
+auction:
+  E Pass
+  S 1H     = 13+ points, at least four hearts
+     not *: 15 points and five hearts: open your long suit at the one level.
+  W Pass
+  N 3H     = 4+ hearts, an opening hand or better: game forcing
+  E Pass
+  S 4H     = Game
+     not *: Partner's 3♥ is forcing to game. Bid it.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1♥ and partner jumped to 3♥, showing four hearts and an opening
+  hand or better, so you bid game. You are declarer, because you bid hearts
+  first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 4
+  spades: 1 = Your third spade.
+  hearts: 0 = Solid.
+  diamonds: 0 = Dummy's ace and king.
+  clubs: 3 = Three, unless East has the ace and you lead toward your king.
+  remind: You can afford three losers in 4♥. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
+  remind: When can your ♣K win a trick? Which hand should lead clubs?
+play:
+  1   W SQ  N S4  E S3  S SA
+      note: Four losers, one too many. The ♣K can win a trick if East has the ace and you lead clubs from dummy. Win in your hand.
+  2   S HA  W H7  N H4  E H2
+      note: Draw trumps. Your ace first, then over to dummy's queen: this time you want to end in dummy, to lead a club.
+  3   S H3  W HT  N HQ  E H6
+      note: Trumps are drawn, and you're in dummy.
+  4   N C2  E C9  S CK*  W C8
+      note: Lead a low club toward your king.
+      CK key: East played low, so play the king. If East has the ace, the king wins.
+      CK not *: That can still work if you come back to dummy and lead toward the king again, but why wait? East has already played, so if East has the ace, your king wins now.
+  5   S C3  W CT  N C4  E CQ
+      note: The king won. Your other clubs are losers: get them out of the way.
+  6   E S6  S S2  W ST  N SK
+      note: East leads a spade, setting up a spade winner for West.
+  7   N C5  E CA  S C7  W CJ
+      note: Give up your last club loser.
+  8   E S7  S S5  W SJ  N S8
+      note: The third spade is a loser you can't avoid.
+  9   W DQ  N DA  E D2  S D6
+  10  N C6  E D3  S D8  W D9
+      note: Dummy's last club is a winner: nobody else has a club left.
+  11  N DK  E D4  S H9  W DT
+      note: The rest are yours.
+  12  S HK  W DJ  N H5  E D5
+  13  S HJ  W S9  N H8  E D7
+      note: 10 tricks: 4♥ made.
+
+play recap:
+  The plan: you counted four losers, one too many. The ♣K could win a trick
+  if East held the ace and you led clubs from dummy.
+
+  Normally you'd draw trumps by cashing the queen from the short side first
+  and finishing in your own hand. Here you wanted to finish in dummy, so you
+  could lead a club toward your king straight away. Leading toward the king
+  works only when the ace is in front of it. If West had held the ♣A, you
+  would have lost three clubs and gone down one.
