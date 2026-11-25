@@ -19,19 +19,19 @@ auction:
   S 1S*    = 13+ points, at least four spades
      not *: 15 high-card points and five spades: what does the lesson open?
   W Pass
-  N 3S     = 4+ spades, 12-13 points: game forcing
+  N 3S     = 4+ spades, an opening hand or better: game forcing
   E Pass
   S 4S*    = Game
      key: Partner's jump raise forces to game. Bid it.
-     not Pass: Partner's 3♠ forces to game. Did you add your points to partner's 12-13?
-     not *: Partner showed 12-13 points and four spades. Can you see 25?
+     not Pass: Partner's 3♠ forces to game. Did you add your points to partner's opening hand?
+     not *: Partner showed an opening hand or better and four spades. Can you see 25?
   W Pass
   N Pass
   E Pass
 
 auction recap:
-  You opened 1♠ and partner's jump to 3♠ showed four spades and 12-13
-  points, so you bid game. You are declarer, because you bid spades first,
+  You opened 1♠ and partner's jump to 3♠ showed four spades and an opening hand or
+  better, so you bid game. You are declarer, because you bid spades first,
   and so West will lead to the first trick.
 
 planning:

@@ -108,7 +108,7 @@ export const LESSONS: Lesson[] = [
           { list: [
             'With fewer than 6 pts, pass.',
             'With 6-9 points and at least 3-card support for partner\'s suit (prefer 4 cards), raise partner\'s bid to 2 of their suit.',
-            'With 12-13 pts and at least 4-card support, raise to 3.',
+            'With an opening hand or better and at least 4-card support, raise to 3 (forcing to game).',
             'With 6-9 HCP, a balanced hand and poor support, respond 1NT.',
             'With 6+ pts and a 4-card higher-ranking suit, respond 1 of that suit.',
             'With 10+ pts and a 5-card lower-ranking suit, respond 2 of that suit.',

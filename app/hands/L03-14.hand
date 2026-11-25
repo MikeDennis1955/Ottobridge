@@ -19,7 +19,7 @@ auction:
   E Pass
   S 1H     = 13+ points, at least four hearts
   W Pass
-  N 3H     = 4+ hearts, 12-13 points: game forcing
+  N 3H     = 4+ hearts, an opening hand or better: game forcing
   E Pass
   S 4H     = Game
   W Pass
@@ -27,8 +27,8 @@ auction:
   E Pass
 
 auction recap:
-  You opened 1♥ and partner jumped to 3♥, showing four hearts and 12-13
-  points, so you bid game. You are declarer, because you bid hearts first,
+  You opened 1♥ and partner jumped to 3♥, showing four hearts and an opening hand or
+  better, so you bid game. You are declarer, because you bid hearts first,
   and so West will lead to the first trick.
 
 planning:

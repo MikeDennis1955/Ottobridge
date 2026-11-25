@@ -18,12 +18,12 @@ deal:            # spades  hearts  diamonds  clubs
 auction:
   N 1C     = 13+ points, at least four clubs
   E Pass
-  S 3C*    = 12-13 points and four or more clubs: forcing to game
-     key: 13 HCP and five clubs. With 12-13 and four-card support, raise to 3.
+  S 3C*    = an opening hand or better and four or more clubs: forcing to game
+     key: 13 HCP and five clubs. With an opening hand and four-card support, raise to 3.
      not 2C: 2♣ shows 6-9. Did you count 13?
      not 2NT: 2NT is for hands without good support. Five clubs is good support.
      not 1D: You have five-card support. Isn't the raise the first thing to show?
-     not *: With 12-13 points and club support, which raise shows both?
+     not *: With an opening hand or better and club support, which raise shows both?
   W Pass
   N 3NT    = Balanced: prefers game in no-trump
   E Pass
@@ -34,7 +34,7 @@ auction:
   W Pass
 
 auction recap:
-  Your 3♣ showed 12-13 points and club support, enough for game. Partner,
+  Your 3♣ showed an opening hand or better and club support, enough for game. Partner,
   with a balanced hand, chose 3NT: nine tricks are easier than the eleven
   a club game needs. North is declarer, because he bid no-trump first, and
   so East will lead to the first trick.

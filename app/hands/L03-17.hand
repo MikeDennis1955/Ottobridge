@@ -19,19 +19,19 @@ auction:
   N 1H*    = 13+ points, at least four hearts
      not *: 14 high-card points and five hearts: what does the lesson open?
   E Pass
-  S 3H     = 4+ hearts, 12-13 points: game forcing
+  S 3H     = 4+ hearts, an opening hand or better: game forcing
   W Pass
   N 4H*    = Game
      key: Partner's jump raise forces to game. Bid it.
      not Pass: Partner's 3♥ forces to game. Did you add 16 and 12?
-     not *: Partner showed 12-13 points and four hearts. Can you see 25?
+     not *: Partner showed an opening hand or better and four hearts. Can you see 25?
   E Pass
   S Pass
   W Pass
 
 auction recap:
-  You opened 1♥ and partner's jump to 3♥ showed four hearts and 12-13
-  points, so you bid game. You are declarer, because you bid hearts first,
+  You opened 1♥ and partner's jump to 3♥ showed four hearts and an opening hand or
+  better, so you bid game. You are declarer, because you bid hearts first,
   and so East will lead to the first trick.
 
 planning:
