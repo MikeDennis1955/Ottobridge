@@ -47,8 +47,10 @@ planning:
 play:
   1   W CK  N C3  E C4  S CA
       note: Four losers: two diamonds and two clubs. One too many. But dummy's hearts are better than yours: after your ♥Q is gone, dummy's king is an extra winner, and you can throw a loser away on it. First, draw trumps.
-  2   S S4  W S6  N SQ  E S3
+  2   S S4*  W S6  N SQ  E S3
       note: Draw trumps. Start with dummy's queen, the high card from the short side, so that you finish in your own hand with the ace and king. If trumps break badly, you can draw the last one from there.
+      S4 key: Lead low to dummy's queen first. Then the ace and king finish in your hand.
+      S4 not *: Did you remember to play the high card from the short side first? Cash dummy's queen, then you can draw the rest from your hand.
   3   N S2  E S8  S SA  W ST
       note: Back to your hand with the ace.
   4   S SK  W D5  N S5  E S9

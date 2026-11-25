@@ -45,7 +45,9 @@ planning:
 play:
   1   E SJ  S S3  W S2  N SQ
       note: Eight winners on top: three spades, three hearts and two diamonds. The ninth can come from your fourth diamond, if the opponents' six diamonds split three and three.
-  2   N D5  E D3  S D4  W D9
+  2   N D5  E D3  S D4*  W D9
+      D4 key: Duck. You have to lose a diamond anyway, so lose it now.
+      D4 not DK: Did you remember that you have to lose a diamond anyway? Lose it now, on the first round, and keep the ace and king to take control later.
       note: Start on diamonds, and duck the first round: play low from both hands. You have to lose a diamond anyway, so lose it now, while you still control the other suits.
   3   W CQ  N C2  E CA  S C3
       note: The defense takes its club tricks.
