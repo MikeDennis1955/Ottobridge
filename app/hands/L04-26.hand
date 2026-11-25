@@ -1,0 +1,81 @@
+# Lesson 4, batch 2: a ruffing finesse against the ace. Dummy's ♣KQJ5 opposite a void; lead the king and throw a loser when East plays low.
+title: Ruffing finesse against the ace
+id: L04-26
+type: exercise
+lesson: 4
+concepts: 4.8, 3.5
+student: S
+board: 106
+dealer: E
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  JT5    742    964    KQJ5
+  E  32     T85    J73    A6432
+  S  AKQ974 A63    A852   -
+  W  86     KQJ9   KQT    T987
+
+auction:
+  E Pass
+  S 1S     = 13+ points, at least four spades
+     not *: 17 points and six spades: open your long suit at the one level.
+  W Pass
+  N 2S     = 6-9 points, 3+ spades
+  E Pass
+  S 4S     = Game
+     not *: You have 20 points counting your void, and partner has at least 6: enough for game.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1♠ and partner raised to 2♠. With 20 points counting
+  distribution, you bid game. You are declarer, because you bid spades
+  first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 4
+  spades: 0 = Nine spades with the ace, king and queen.
+  hearts: 2 = The ace takes care of one heart; the other two are losers.
+  diamonds: 2 = The ace takes care of one, and dummy can ruff your fourth.
+  clubs: 0 = You have none.
+  remind: You can afford three losers in 4♠. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
+  remind: You have no clubs, and dummy has the king, queen and jack. How could they help? How many times can you get to dummy?
+play:
+  1   W HK  N H2  E H5  S HA
+      note: Four losers, one too many. Dummy's clubs can take care of that: lead the king, and if East has the ace, you can throw losers without losing the lead. Win the ♥A: you'll throw your other hearts on the clubs.
+  2   S S4  W S6  N ST  E S2
+      note: Draw a round of trumps, ending in dummy with the ten. Dummy's jack is a second way back.
+  3   N CK  E C2  S H3*  W C7
+      note: Lead the ♣K.
+      H3 key: East played low, so throw a loser. If East has the ace, the king wins.
+      H3 not *: Did you think about throwing a loser? If East has the ace, the king wins and you're still in dummy. Ruffing it wastes the king. Throw a heart.
+  4   N CQ  E CA  S S7  W C8
+      note: The king won. Now the queen: this time East covers with the ace, and you ruff. Dummy's jack is a winner.
+  5   S S9  W S8  N SJ  E S3
+      note: Back to dummy with the ♠J. Trumps are drawn too.
+  6   N CJ  E C3  S H6  W C9
+      note: Throw your other heart on the jack.
+  7   N D4  E D3  S DA  W DT
+      note: Now the diamonds. You have two losers, and dummy can ruff your fourth.
+  8   S D2  W DK  N D6  E D7
+  9   W HQ  N H4  E H8  S SQ
+  10  S D5  W DQ  N D9  E DJ
+  11  W HJ  N H7  E HT  S SK
+  12  S D8  W H9  N S5  E C4
+      note: Dummy ruffs your last diamond.
+  13  N C5  E C6  S SA  W CT
+      note: 11 tricks: 4♠ made with an overtrick.
+
+play recap:
+  The plan: you counted four losers, one too many, and dummy's clubs offered
+  a way to throw your heart losers away.
+
+  This is a ruffing finesse against the ace. When you lead the king, East
+  has to decide first. If East covers, you ruff, and dummy's queen and jack
+  are winners. If East plays low, you throw a loser and the king wins. Either
+  way you keep the lead. You needed two ways back to dummy, so you used
+  dummy's ten and jack of trumps. If West had held the ace, the king would
+  have lost to it, but you'd have thrown a heart on it, and the queen would
+  still have taken your other heart: 4♠ made just the same.

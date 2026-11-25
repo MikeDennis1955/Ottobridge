@@ -1,0 +1,80 @@
+# Lesson 4, batch 2: leading an honor in trumps. QJ9 in dummy opposite AT8752; lead the queen and let it run, then the jack, then the nine through East's king.
+title: Queen, jack, then the nine
+id: L04-21
+type: exercise
+lesson: 4
+concepts: 4.2
+student: S
+board: 95
+dealer: S
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  QJ9    K64    873    8652
+  E  K64    852    Q962   J93
+  S  AT8752 A73    AK     Q4
+  W  3      QJT9   JT54   AKT7
+
+auction:
+  S 1S     = 13+ points, at least four spades
+     not *: 17 points and six spades: open your long suit at the one level.
+  W Pass
+  N 2S     = 6-9 points, 3+ spades
+  E Pass
+  S 4S     = Game
+     not *: You have 19 points counting your two doubletons, and partner has at least 6: enough for game.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1♠ and partner raised to 2♠. With 19 points counting
+  distribution, you bid game. You are declarer, because you bid spades
+  first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 4
+  spades: 1 = The king, unless East has it and you lead the queen from dummy.
+  hearts: 1 = Your third heart.
+  diamonds: 0 = Your ace and king.
+  clubs: 2 = The ace and king.
+  remind: You can afford three losers in 4♠. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
+  remind: Which loser might go away? How many times can you get to dummy?
+play:
+  1   W CA  N C2  E C3  S C4
+      note: Four losers, one too many. The ♠K is the one that might go away, if East has it and you lead spades from dummy.
+  2   W CK  N C5  E C9  S CQ
+  3   W HQ  N HK*  E H2  S H3
+      HK key: Win in dummy, so you can lead spades from there.
+      HK not *: Did you think about winning in dummy? You want to lead spades from dummy, and the ♥K is your only way there.
+  4   N SQ  E S4  S S2*  W S3
+      note: Lead the ♠Q from dummy.
+      S2 key: Let the queen run. If East has the king, the queen wins and you're still in dummy.
+      S2 not SA: Did you think about letting the queen run? If East has the king, the queen wins, and you can lead from dummy again. With the ace, you'll lose to the king later.
+  5   N SJ  E S6  S S5*  W D4
+      note: The queen won. Now the jack, the same way.
+      S5 key: Let it run again. East's king is still trapped.
+      S5 not SA: Did you notice East may still have the king? Let the jack run.
+  6   N S9  E SK  S SA  W C7
+      note: Now the nine. East covers with the king, and your ace takes it. No trump loser.
+  7   S HA  W H9  N H4  E H5
+      note: Now give up your heart loser.
+  8   S H7  W HJ  N H6  E H8
+  9   W DJ  N D3  E D2  S DA
+  10  S DK  W D5  N D7  E D6
+      note: The rest are yours.
+  11  S ST  W CT  N D8  E D9
+  12  S S8  W HT  N C6  E DQ
+  13  S S7  W DT  N C8  E CJ
+      note: 10 tricks: 4♠ made.
+
+play recap:
+  The plan: you counted four losers, one too many, and saw that the ♠K could
+  be caught if East held it and you led spades from dummy.
+
+  With only one way to dummy, you led the queen and then the jack. Each time
+  it won, you were still in dummy to lead again. You could lead honors
+  because you held the ten and eight: if East had covered, your ace would
+  have won and your ten would have been good. If West had held the king,
+  the queen would have lost, and you would have gone down one.

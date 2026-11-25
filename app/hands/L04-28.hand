@@ -1,0 +1,77 @@
+# Lesson 4, batch 2: is a finesse the right play? Dummy's ♦A is its only outside entry; use it for the clubs (duck one round first), not for a spade finesse.
+title: Save the entry for the clubs
+id: L04-28
+type: exercise
+lesson: 4
+concepts: 4.7, 3.5
+student: S
+board: 110
+dealer: E
+vulnerable: none
+
+deal:            # spades  hearts  diamonds  clubs
+  N  862    76     A5     AK6542
+  E  T943   532    Q73    QJ9
+  S  AQ5    AK4    KJ862  73
+  W  KJ7    QJT98  T94    T8
+
+auction:
+  E Pass
+  S 1NT    = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so West will lead to the first trick.
+
+planning:
+  winners: 7
+  spades: 1 = The ace. The queen too, if East has the king and you lead toward it from dummy.
+  hearts: 2 = The ace and king.
+  diamonds: 2 = Your king and dummy's ace.
+  clubs: 2 = The ace and king. Three more if they split 3-2 and you can reach dummy after setting them up.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: Dummy has only one way in outside clubs. What is it worth most for?
+play:
+  1   W HQ  N H6  E H2  S H4*
+      note: Seven obvious winners. The clubs can give five tricks if they split 3-2, but you'll have to lose one club first, and you'll need dummy's ♦A to get back. A spade finesse would use up that entry, so leave the spades alone.
+      H4 key: Duck. You'll lose the lead once in clubs anyway. Duck a heart now, and East may have no heart left when East gets in.
+      H4 not *: Did you think about ducking? You'll have to give up a club trick, and whoever wins it will lead a heart. Lose a heart now, while you still have the ace and king.
+  2   W HJ  N H7  E H3  S HA
+      note: Now win the ace. Your king still stops the hearts.
+  3   S C3  W C8  N C2*  E C9
+      note: Now the clubs.
+      C2 key: Duck. You have to lose a club anyway, so lose it now, while dummy still has the ace and king to get back in.
+      C2 not *: Did you think about ducking? With the ace and king gone, you'd have to give up a club and then need another way back to dummy. Lose the first round, and dummy's ace and king bring the rest home.
+  4   E H5  S HK  W H8  N S2
+      note: East had one heart left. Your king wins.
+  5   S C7  W CT  N CA  E CJ
+      note: Over to dummy's clubs. Both opponents followed twice.
+  6   N CK  E CQ  S D2  W D4
+      note: The clubs split 3-2. All of dummy's clubs are winners.
+  7   N C6  E S3  S D6  W S7
+  8   N C5  E S4  S D8  W H9
+  9   N C4  E D3  S S5  W D9
+  10  N DA  E D7  S DJ  W DT
+      note: That's nine tricks.
+  11  N D5  E DQ  S DK  W HT
+  12  S SA  W SJ  N S6  E S9
+      note: Nothing left to win. Give up the rest.
+  13  S SQ  W SK  N S8  E ST
+      note: 10 tricks: 3NT made with an overtrick.
+
+play recap:
+  The plan: seven obvious winners, and five club tricks if they split 3-2.
+  Dummy's ♦A was its only way in, and the clubs needed it more than a
+  spade finesse did.
+
+  You ducked the first club while dummy still had its ace and king, so the
+  rest of the clubs ran without needing any other entry. Here the spade
+  finesse would have lost too, but that wasn't the point: one trick from a
+  finesse is worth less than five from a long suit. A finesse is one tool,
+  not the only one.

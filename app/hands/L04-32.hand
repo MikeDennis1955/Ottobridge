@@ -1,0 +1,80 @@
+# Lesson 4, batch 2: the lesson's Q95 opposite A82 layout in a trump contract. Draw trumps ending in your hand, lead toward dummy's queen; West has the king.
+title: Toward the queen in trumps
+id: L04-32
+type: exercise
+lesson: 4
+concepts: 4.4
+student: S
+board: 118
+dealer: E
+vulnerable: EW
+
+deal:            # spades  hearts  diamonds  clubs
+  N  Q853   Q95    A54    763
+  E  92     T763   T72    K854
+  S  AKJ74  A82    K63    A2
+  W  T6     KJ4    QJ98   QJT9
+
+auction:
+  E Pass
+  S 1S     = 13+ points, at least four spades
+     not *: 19 points and five spades: open your long suit at the one level.
+  W Pass
+  N 2S     = 6-9 points, 3+ spades
+  E Pass
+  S 4S     = Game
+     not *: You have 20 points counting your doubleton, and partner has at least 6: enough for game.
+  W Pass
+  N Pass
+  E Pass
+
+auction recap:
+  You opened 1♠ and partner raised to 2♠. With 20 points counting
+  distribution, you bid game. You are declarer, because you bid spades
+  first, and so West will lead to the first trick.
+
+planning:
+  trumps out: 4
+  losers: 4
+  spades: 0 = Nine spades with the ace, king and queen.
+  hearts: 2 = Your ace takes care of one. Dummy's queen can take care of another, if West has the king and you lead toward it.
+  diamonds: 1 = Your third diamond.
+  clubs: 1 = Your small club.
+  remind: You can afford three losers in 4♠. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
+  remind: When can dummy's ♥Q win a trick? Which hand should lead hearts?
+play:
+  1   W CQ  N C3  E C4  S CA
+      note: Four losers, one too many. Dummy's ♥Q can win a trick if West has the king and you lead hearts from your hand.
+  2   S S4  W S6  N SQ  E S2
+      note: Draw trumps. Dummy's queen first, the high card from the short side, then back to your hand.
+  3   N S3  E S9  S SA  W ST
+      note: Trumps are drawn, and you're in your hand, ready to lead a heart.
+  4   S H2  W H4  N HQ*  E H3
+      note: Lead a low heart toward dummy's queen.
+      HQ key: West played low, so play the queen. If West has the king, the queen wins.
+      HQ not *: Did you think about playing the queen? West has already played, so if West has the king, the queen wins now.
+  5   N H5  E H6  S HA  W HJ
+      note: The queen won. Cash your ace.
+  6   S H8  W HK  N H9  E H7
+      note: Your third heart is a loser.
+  7   W CJ  N C6  E C5  S C2
+      note: And your small club.
+  8   W DQ  N DA  E D2  S D3
+  9   N D4  E D7  S DK  W D8
+  10  S D6  W DJ  N D5  E DT
+      note: And your third diamond.
+  11  W D9  N C7  E C8  S S7
+      note: The rest are yours.
+  12  S SK  W C9  N S5  E CK
+  13  S SJ  W CT  N S8  E HT
+      note: 10 tricks: 4♠ made.
+
+play recap:
+  The plan: four losers, one too many. Dummy's ♥Q could win a trick if West
+  held the king and you led hearts from your hand.
+
+  This is the same layout as in the lesson, in a trump contract. You drew
+  trumps ending in your hand, then led toward the queen. West had to play
+  first, and the queen won. Leading the queen from dummy would not have
+  worked: whoever had the king would simply have covered it. If East had
+  held the king, you would have lost two hearts and gone down one.

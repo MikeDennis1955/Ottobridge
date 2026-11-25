@@ -1,0 +1,77 @@
+# Lesson 4, batch 2: a double finesse against the ace and queen. KJT4 opposite 832 at no-trump; duck the first heart, then lead toward dummy twice. The ten loses to East's ace, the jack wins.
+title: Toward the king-jack-ten
+id: L04-25
+type: exercise
+lesson: 4
+concepts: 4.5
+student: S
+board: 103
+dealer: S
+vulnerable: both
+
+deal:            # spades  hearts  diamonds  clubs
+  N  864    A52    Q73    KJT4
+  E  QJT9   64     T852   A65
+  S  AK5    K73    AK96   832
+  W  732    QJT98  J4     Q97
+
+auction:
+  S 1NT    = 15-17 points, balanced
+     not *: 17 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so West will lead to the first trick.
+
+planning:
+  winners: 8
+  spades: 2 = The ace and king.
+  hearts: 2 = The ace and king.
+  diamonds: 3 = The ace, king and queen. A fourth only if they split 3-3.
+  clubs: 1 = One, once the ace and queen are gone. Two if West has the queen and you lead toward dummy twice.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: To set up the clubs, you'll lose the lead at least once. What will the defense lead when they get in?
+play:
+  1   W HQ  N H2  E H6  S H3*
+      note: Eight obvious winners. Clubs can give a ninth: lead toward dummy's king-jack-ten twice, and you make two club tricks whenever West has the queen. But you'll lose the lead to the ♣A first, and West's hearts are the danger.
+      H3 key: Duck. You'll have to lose the lead anyway, so lose a heart now. Then East may have no heart left to lead back.
+      H3 not HK: Did you think about ducking? Win now, and when East gets in with the ♣A, East leads a heart and knocks out your last stopper. Lose a heart now, while it costs nothing.
+  2   W HJ  N H5  E H4  S HK
+      note: Win in your hand: you want to lead clubs from there, and dummy's ♥A is still a stopper.
+  3   S C2  W C7  N CT*  E CA
+      note: Lead a club toward dummy.
+      CT key: West played low, so finesse the ten. If West has the queen, the ten forces out the ace, and the queen is still trapped.
+      CT not CK: Did you think about finessing? The king wins only if West has the ace. Finesse the ten, and then the jack: you make two club tricks whenever West has the queen.
+  4   E SQ  S SA  W S2  N S4
+      note: The ten lost to the ace, but East has no heart to lead. Back in your hand, lead another club.
+  5   S C3  W C9  N CJ*  E C5
+      CJ key: West played low again, so finesse the jack. If West has the queen, it wins.
+      CJ not CK: Did you notice West may still have the queen? Finesse again with the jack.
+  6   N CK  E C6  S C8  W CQ
+      note: The jack won. Cash the king, and West's queen falls.
+  7   N C4  E ST  S S5  W S3
+      note: Dummy's last club is a winner too.
+  8   N HA  E D2  S H7  W H9
+  9   N D3  E D5  S DA  W D4
+      note: Now the diamonds.
+  10  S DK  W DJ  N D7  E D8
+  11  S D6  W S7  N DQ  E DT
+      note: That's ten tricks.
+  12  N S6  E SJ  S SK  W H8
+  13  S D9  W HT  N S8  E S9
+      note: 11 tricks: 3NT made with two overtricks.
+
+play recap:
+  The plan: eight obvious winners, and two club tricks if West held the
+  queen and you led toward dummy's king-jack-ten twice.
+
+  Before you touched the clubs, you ducked a heart. When East won the ♣A,
+  East had no heart left to lead, so West's hearts never got going. Then the
+  second finesse won, because West had the queen. This double finesse works
+  whenever West has the queen. If East held both the ace and the queen, you
+  would make only one club trick.

@@ -1,0 +1,78 @@
+# Lesson 4, batch 2: leading an honor at no-trump. QJT9 in dummy opposite A54; lead the queen, then the jack, then the ten, and East's king is trapped. Dummy's ♠A and ♥K are the entries.
+title: Queen, jack, ten
+id: L04-30
+type: exercise
+lesson: 4
+concepts: 4.2, 3.5
+student: S
+board: 114
+dealer: E
+vulnerable: NS
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A63    K64    QJT9   952
+  E  JT852  53     K87    JT6
+  S  K94    A82    A54    A873
+  W  Q7     QJT97  632    KQ4
+
+auction:
+  E Pass
+  S 1NT    = 15-17 points, balanced
+     not *: 15 points and a balanced hand: what does the lesson open?
+  W Pass
+  N 3NT    = 10+ points: game
+  E Pass
+  S Pass
+  W Pass
+
+auction recap:
+  You opened 1NT and partner raised to game. You are declarer, because you
+  bid no-trump first, and so West will lead to the first trick.
+
+planning:
+  winners: 8
+  spades: 2 = The ace and king.
+  hearts: 2 = The ace and king.
+  diamonds: 3 = Three once the king is gone. Four if East has the king and you lead the honors from dummy.
+  clubs: 1 = The ace.
+  remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
+  remind: Where can the ninth trick come from? Which hand should lead that suit, and how will you get there?
+play:
+  1   W HQ  N H4  E H3  S HA
+      note: Eight obvious winners. The ninth can come from diamonds: if East has the king, lead the queen, jack and ten from dummy, and the king is trapped. Win in your hand, and keep dummy's ♥K and ♠A as ways across.
+  2   S S4  W S7  N SA  E S2
+      note: Over to dummy with the ♠A.
+  3   N DQ  E D7  S D4*  W D2
+      note: Lead the ♦Q from dummy.
+      D4 key: Let the queen run. If East has the king, the queen wins and you're still in dummy.
+      D4 not DA: Did you mean to win your own queen? Let it run: if East has the king, the queen wins and you can lead again from dummy.
+  4   N DJ  E D8  S D5*  W D3
+      note: The queen won. Now the jack, the same way.
+      D5 key: Let it run again. East's king is still trapped.
+      D5 not DA: Did you notice East may still have the king? Let the jack run.
+  5   N DT  E DK  S DA  W D6
+      note: Now the ten. East has only the king left and has to play it, and your ace wins. Dummy's nine is a winner.
+  6   S H2  W HJ  N HK  E H5
+      note: Over to dummy's ♥K to cash the nine.
+  7   N D9  E S5  S C3  W H7
+      note: The fourth diamond.
+  8   N C2  E C6  S CA  W C4
+  9   S SK  W SQ  N S3  E S8
+      note: That's nine tricks.
+  10  S H8  W HT  N H6  E ST
+      note: Nothing left to win. Give up the rest.
+  11  W H9  N C5  E SJ  S C7
+  12  W CK  N C9  E CT  S C8
+  13  W CQ  N S6  E CJ  S S9
+      note: 9 tricks: 3NT made.
+
+play recap:
+  The plan: eight obvious winners, and a fourth diamond trick if East held
+  the king and you led the diamonds from dummy.
+
+  Leading the queen, then the jack, kept you in dummy each time they won.
+  You could lead honors because you held the cards in between: the queen,
+  jack, ten and nine together. When East had only the king left, it had to
+  fall under your ace, and dummy's nine was good. You needed the ♥K to get
+  back to it. If West had held the king, you would have made only three
+  diamond tricks and gone down one.

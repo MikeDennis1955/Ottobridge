@@ -311,6 +311,9 @@ export const LESSONS: Lesson[] = [
       { h: 'The Double Finesse' },
       { pre: 'North (dummy):  A J T 9\nSouth (you):    6 3 2' },
       'The lead is in your hand and you want to maximize the chance of winning three tricks in the suit. Lead the 2, intending to play the 9 if West follows with a low card. You will likely lose to the king or queen in East. When you subsequently regain the lead, lead the 3 to repeat the finesse. Notice that this “double finesse” will succeed whenever West holds either the king or the queen, which will happen about 75% of the time. If East happens to hold both the king and queen, you will lose 2 tricks. Tough beans.',
+      { h: 'The Ruffing Finesse' },
+      { pre: 'North (dummy):  A Q J 4\nSouth (you):    (none)' },
+      'In a trump contract there is one more kind of finesse. Say dummy has A Q J 4 in a side suit and you have none, with trumps still left in both hands. Cash the ace, then lead the queen from dummy. If East covers with the king, ruff it, and dummy\'s jack is now a winner. If East plays low, throw a loser from your hand instead. If East has the king, the queen wins. If West has it, the queen loses, but you threw a loser on it, so it cost you nothing. This is a “ruffing finesse”. Like any finesse, it works when the missing honor sits in front of the cards you lead toward, here East\'s king, which has to play before your hand.',
     ],
     concepts: [
       { id: '4.1', name: 'The finesse: lead toward the cards you want to win with',
@@ -354,6 +357,12 @@ export const LESSONS: Lesson[] = [
         quote: 'Just because a finesse is available doesn\'t mean it\'s the correct play in a particular situation.',
         text: [
           'In general, and without other information to go on, a finesse will lose about half the time. There may be other, more important uses of dummy\'s entries. Just because a finesse is available doesn\'t mean it\'s the correct play in a particular situation. Many other factors affect that decision.',
+        ] },
+      { id: '4.8', name: 'The ruffing finesse',
+        quote: 'If East covers with the king, ruff it, and dummy\'s jack is now a winner.',
+        text: [
+          { pre: 'North (dummy):  A Q J 4\nSouth (you):    (none)' },
+          'In a trump contract there is one more kind of finesse. Say dummy has A Q J 4 in a side suit and you have none, with trumps still left in both hands. Cash the ace, then lead the queen from dummy. If East covers with the king, ruff it, and dummy\'s jack is now a winner. If East plays low, throw a loser from your hand instead. If East has the king, the queen wins. If West has it, the queen loses, but you threw a loser on it, so it cost you nothing. This is a “ruffing finesse”. Like any finesse, it works when the missing honor sits in front of the cards you lead toward, here East\'s king, which has to play before your hand.',
         ] },
     ],
   },
