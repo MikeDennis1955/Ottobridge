@@ -46,8 +46,8 @@ play:
       note: East shows out: no spades left. Now win the ace.
   3   S D2  W D4  N DQ*  E D3
       note: Here is the finesse: lead a diamond from your hand toward dummy's ace-queen.
-      DQ key: The finesse. West played low, so play the queen. If West has the king, it can't beat your queen, and the queen wins.
-      DQ not DA: That gives up on the queen unless you come back to your hand and lead toward it again. Why not finesse now? West has played, so if West has the king, the queen wins.
+      DQ key: The finesse, just as you planned. West played low, so play the queen. If West has the king, it can't beat your queen, and the queen wins.
+      DQ not DA: Remember the plan? The ninth trick comes from finessing the queen. West has played low, so play the queen now: if West has the king, it wins.
   4   N DA  E D9  S D6  W D7
       note: The finesse worked: that's your ninth trick. Cash the ♦A too. From here on, the order you cash your winners doesn't matter.
       ok: C H
