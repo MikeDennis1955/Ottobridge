@@ -4,74 +4,74 @@ id: L04-03
 type: exercise
 lesson: 4
 concepts: 4.1
-student: N
-board: 57
-dealer: N
-vulnerable: EW
+student: S
+board: 59
+dealer: S
+vulnerable: none
 
 deal:            # spades  hearts  diamonds  clubs
-  N  A54    A93    AQ5    Q842
-  E  KQJ8   QJ7    JT4    976
-  S  962    K84    862    AKJ5
-  W  T73    T652   K973   T3
+  N  962    K84    862    AKJ5
+  E  T73    T652   K973   T3
+  S  A54    A93    AQ5    Q842
+  W  KQJ8   QJ7    JT4    976
 
 auction:
-  N 1NT    = 15-17 points, balanced
+  S 1NT    = 15-17 points, balanced
      not *: 16 points and a balanced hand: what does the lesson open?
-  E Pass
-  S 3NT    = 10+ points: game
   W Pass
-  N Pass
+  N 3NT    = 10+ points: game
   E Pass
+  S Pass
+  W Pass
 
 auction recap:
   You opened 1NT and partner raised to game. You are declarer, because you
-  bid no-trump first, and so East will lead to the first trick.
+  bid no-trump first, and so West will lead to the first trick.
 
 planning:
   winners: 8-9
   spades: 1 = The ace.
   hearts: 2 = The ace and king.
-  diamonds: 1-2 = The ace, and the queen too if West has the king and you lead toward your ace-queen from dummy.
+  diamonds: 1-2 = The ace, and the queen too if East has the king and you lead toward your ace-queen from dummy.
   clubs: 4 = Eight clubs with the ace, king, queen and jack: four tricks.
   remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
   remind: Where can the ninth trick come from? Which hand should lead that suit?
 play:
-  1   E SK  S S2  W S3  N SA
-      note: Eight winners on top. The ninth can come from the ♦Q, if West has the king. Win the ♠A.
-  2   N C2  E C6  S CA  W C3
+  1   W SK  N S2  E S3  S SA
+      note: Eight winners on top. The ninth can come from the ♦Q, if East has the king. Win the ♠A.
+  2   S C2  W C6  N CA  E C3
       note: Get to dummy, so you can lead a diamond toward your ace-queen. The ♥K would do just as well.
       ok: H
-  3   S D2  W D3  N DQ*  E D4
+  3   N D2  E D3  S DQ*  W D4
       note: Lead a diamond from dummy toward your ace-queen.
-      DQ key: The finesse. West played low, so play the queen. If West has the king, it can't beat your queen, and it wins.
-      DQ not DA: That can still work if you come back to dummy and lead another diamond toward your queen. But why not take the finesse now, while you're there? West has played, so if West has the king, your queen wins.
-  4   N DA  E DJ  S D6  W D7
+      DQ key: The finesse. East played low, so play the queen. If East has the king, it can't beat your queen, and it wins.
+      DQ not DA: That can still work if you come back to dummy and lead another diamond toward your queen. But why not take the finesse now, while you're there? East has played, so if East has the king, your queen wins.
+  4   S DA  W DJ  N D6  E D7
       note: Cash the ♦A too. That's two diamond tricks. From here on, the order you cash your winners doesn't matter.
       ok: C H
-  5   N CQ  E C7  S C5  W CT
+  5   S CQ  W C7  N C5  E CT
       note: Now the clubs, your queen first. Hearts first would be just as good.
       ok: H
-  6   N C4  E C9  S CK  W H2
+  6   S C4  W C9  N CK  E H2
       note: Over to dummy's king and jack.
-  7   S CJ  W H5  N C8  E S8
+  7   N CJ  E H5  S C8  W S8
       note: The last club.
-  8   S HK  W H6  N H3  E H7
+  8   N HK  E H6  S H3  W H7
       note: Now the hearts.
-  9   S H4  W HT  N HA  E HJ
+  9   N H4  E HT  S HA  W HJ
       note: That's nine tricks.
-  10  N H9  E HQ  S H8  W D9
+  10  S H9  W HQ  N H8  E D9
       note: Nothing left to win. Give up the rest.
-  11  E SQ  S S6  W S7  N S4
-  12  E SJ  S S9  W ST  N S5
-  13  E DT  S D8  W DK  N D5
+  11  W SQ  N S6  E S7  S S4
+  12  W SJ  N S9  E ST  S S5
+  13  W DT  N D8  E DK  S D5
       note: 9 tricks: 3NT made.
 
 play recap:
   The plan: count eight winners on top, then go to dummy and lead a diamond
-  toward your ace-queen, hoping West has the king.
+  toward your ace-queen, hoping East has the king.
 
-  That is the finesse. West had to play before your hand, so when West
-  played low, your queen won. If East had held the king, the queen would
+  That is the finesse. East had to play before your hand, so when East
+  played low, your queen won. If West had held the king, the queen would
   have lost, and you would have gone down. That happens about half the time,
   but there was no better chance.

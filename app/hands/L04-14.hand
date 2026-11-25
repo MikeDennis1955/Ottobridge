@@ -1,78 +1,78 @@
-# Lesson 4, new exercise: the right play that doesn't work. The diamond finesse is the only chance, and East has the king: down one.
+# Lesson 4, new exercise: the right play that doesn't work. The diamond finesse is the only chance, and West has the king: down one.
 title: A good finesse that loses
 id: L04-14
 type: exercise
 lesson: 4
 concepts: 4.1
-student: N
-board: 68
-dealer: W
-vulnerable: both
+student: S
+board: 82
+dealer: E
+vulnerable: NS
 
 deal:            # spades  hearts  diamonds  clubs
-  N  A6     KQJT5  AQ4    J43
-  E  QJT    764    KJT    KQT8
-  S  K842   9832   752    A6
-  W  9753   A      9863   9752
+  N  K842   9832   752    A6
+  E  9753   A      9863   9752
+  S  A6     KQJT5  AQ4    J43
+  W  QJT    764    KJT    KQT8
 
 auction:
-  W Pass
-  N 1H     = 13+ points, at least four hearts
+  E Pass
+  S 1H     = 13+ points, at least four hearts
      not *: 17 points and five hearts: open your long suit at the one level.
-  E Pass
-  S 2H     = 6-9 points, 3+ hearts
   W Pass
-  N 4H     = Game
+  N 2H     = 6-9 points, 3+ hearts
+  E Pass
+  S 4H     = Game
      not *: You have 18 points counting your doubleton, and partner has at least 6: enough for game.
-  E Pass
-  S Pass
   W Pass
+  N Pass
+  E Pass
 
 auction recap:
   You opened 1♥ and partner raised to 2♥. With 18 points counting
   distribution, you bid game. You are declarer, because you bid hearts
-  first, and so East will lead to the first trick.
+  first, and so West will lead to the first trick.
 
 planning:
   trumps out: 4
   losers: 4
   spades: 0 = Your ace and dummy's king.
   hearts: 1 = The ace.
-  diamonds: 2 = The queen, unless West has the king and you lead toward your ace-queen, and your third diamond.
+  diamonds: 2 = The queen, unless East has the king and you lead toward your ace-queen, and your third diamond.
   clubs: 1 = Dummy's ace takes care of one club, and dummy can ruff the third. That leaves one.
   remind: You can afford three losers in 4♥. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
   remind: Which loser might go away? Which hand should lead that suit?
 play:
-  1   E CK  S CA  W C2  N C3
-      note: Four losers, one too many. The only one that might go away is the ♦Q, if West has the king. You'll need to lead diamonds from dummy. Win in dummy.
-  2   S H2  W HA  N H5  E H4
+  1   W CK  N CA  E C2  S C3
+      note: Four losers, one too many. The only one that might go away is the ♦Q, if East has the king. You'll need to lead diamonds from dummy. Win in dummy.
+  2   N H2  E HA  S H5  W H4
       note: You're in dummy. Start on trumps: you have to lose the ace anyway.
-  3   W C9  N C4  E C8  S C6
-  4   W C7  N CJ  E CQ  S H3
+  3   E C9  S C4  W C8  N C6
+  4   E C7  S CJ  W CQ  N H3
       note: Dummy ruffs, and you're in dummy, just where you want to be.
-  5   S D2  W D3  N DQ*  E DK
+  5   N D2  E D3  S DQ*  W DK
       note: Lead a diamond toward your ace-queen.
-      DQ key: West played low, so finesse the queen. It's your only chance to get rid of a loser.
-      DQ not DA: With the ace, you're sure to lose two diamonds and go down. The finesse is your only chance: if West has the king, the queen wins.
-  6   E SQ  S S2  W S3  N SA
-      note: The finesse lost: East had the king. That happens about half the time.
-  7   N HK  E H6  S H8  W S5
+      DQ key: East played low, so finesse the queen. It's your only chance to get rid of a loser.
+      DQ not DA: With the ace, you're sure to lose two diamonds and go down. The finesse is your only chance: if East has the king, the queen wins.
+  6   W SQ  N S2  E S3  S SA
+      note: The finesse lost: West had the king. That happens about half the time.
+  7   S HK  W H6  N H8  E S5
       note: Draw the rest of the trumps.
-  8   N HQ  E H7  S H9  W S7
-  9   N DA  E DT  S D5  W D6
+  8   S HQ  W H7  N H9  E S7
+  9   S DA  W DT  N D5  E D6
       note: Cash the ♦A.
-  10  N D4  E DJ  S D7  W D8
+  10  S D4  W DJ  N D7  E D8
       note: Your last diamond is the fourth loser.
-  11  E SJ  S SK  W S9  N S6
-  12  S S8  W C5  N HT  E ST
-  13  N HJ  E CT  S S4  W D9
+  11  W SJ  N SK  E S9  S S6
+  12  N S8  E C5  S HT  W ST
+  13  S HJ  W CT  N S4  E D9
       note: 9 tricks: 4♥ down one.
 
 play recap:
   The plan: you counted four losers, one too many, and the ♦Q was the only
-  one that might go away, if West held the king.
+  one that might go away, if East held the king.
 
-  You did everything right, and East had the king. A finesse loses about
+  You did everything right, and West had the king. A finesse loses about
   half the time, and nothing else would have worked on this deal. 4♥ was a
   good contract and you played it the right way: the cards just weren't
   where you needed them. Judge your play by the decisions you made, not by

@@ -1,77 +1,77 @@
-# Lesson 4, new exercise: the lesson's "nothing to lose" layout (K5 opposite 863). East leads a low spade; play dummy's king.
+# Lesson 4, new exercise: the lesson's "nothing to lose" layout (K5 opposite 863). West leads a low spade; play dummy's king.
 title: Nothing to lose: play the king
 id: L04-02
 type: exercise
 lesson: 4
 concepts: 4.3
-student: N
-board: 56
-dealer: W
-vulnerable: none
+student: S
+board: 58
+dealer: E
+vulnerable: both
 
 deal:            # spades  hearts  diamonds  clubs
-  N  863    AK72   A3     KQJ5
-  E  AJ942  T98    72     A94
-  S  K5     Q54    KQJ84  863
-  W  QT7    J63    T965   T72
+  N  K5     Q54    KQJ84  863
+  E  QT7    J63    T965   T72
+  S  863    AK72   A3     KQJ5
+  W  AJ942  T98    72     A94
 
 auction:
-  W Pass
-  N 1NT    = 15-17 points, balanced
+  E Pass
+  S 1NT    = 15-17 points, balanced
      not *: 17 points and a balanced hand: what does the lesson open?
-  E Pass
-  S 3NT    = 10+ points: game
   W Pass
-  N Pass
+  N 3NT    = 10+ points: game
   E Pass
+  S Pass
+  W Pass
 
 auction recap:
   You opened 1NT and partner raised to game. You are declarer, because you
-  bid no-trump first, and so East will lead to the first trick.
+  bid no-trump first, and so West will lead to the first trick.
 
 planning:
   winners: 11-12
-  spades: 0-1 = Dummy's king, if East, who led the suit, has the ace.
+  spades: 0-1 = Dummy's king, if West, who led the suit, has the ace.
   hearts: 3 = The ace, king and queen.
   diamonds: 5 = Dummy's long suit. Cash your ace first, the high card from the short side.
   clubs: 3 = Three, once the ace is gone. But giving up the lead could be dangerous here.
   remind: You need 9 tricks. Count the obvious winners in each suit: spades, hearts, diamonds, clubs.
-  remind: East led a low spade. Who might have the ♠A?
+  remind: West led a low spade. Who might have the ♠A?
 play:
-  1   E S4  S SK*  W S7  N S3
-      SK key: Nothing to lose. If East has the ace, the king wins now. If West has it, the king was never going to win a trick.
-      SK not *: Did you think about playing the king? If you play low, West plays a high spade, and later the ace captures your king. If East has the ace, the king wins right now.
-  2   S D4  W D5  N DA  E D2
+  1   W S4  N SK*  E S7  S S3
+      SK key: Nothing to lose. If West has the ace, the king wins now. If East has it, the king was never going to win a trick.
+      SK not *: Did you think about playing the king? If you play low, East plays a high spade, and later the ace captures your king. If West has the ace, the king wins right now.
+  2   N D4  E D5  S DA  W D2
       note: With the ♠K in, you have nine tricks without ever giving up the lead: one spade, three hearts and five diamonds. Leave the clubs alone. Start the diamonds with your ace, the high card from the short side.
-  3   N D3  E D7  S DK  W D6
+  3   S D3  W D7  N DK  E D6
       note: Back to dummy's diamonds.
-  4   S DQ  W D9  N C5  E S2
+  4   N DQ  E D9  S C5  W S2
       note: Keep cashing diamonds. Throw a club from your hand: you won't need clubs.
-  5   S DJ  W DT  N S6  E C4
+  5   N DJ  E DT  S S6  W C4
       note: The fourth diamond.
-  6   S D8  W C2  N S8  E C9
+  6   N D8  E C2  S S8  W C9
       note: And the fifth.
-  7   S HQ  W H3  N H2  E H8
+  7   N HQ  E H3  S H2  W H8
       note: Now the hearts. Dummy's queen first, the high card from the short side.
-  8   S H4  W H6  N HA  E H9
+  8   N H4  E H6  S HA  W H9
       note: Over to your ace and king.
-  9   N HK  E HT  S H5  W HJ
+  9   S HK  W HT  N H5  E HJ
       note: Both opponents followed three times, so your last heart is a winner too.
-  10  N H7  E S9  S C3  W C7
+  10  S H7  W S9  N C3  E C7
       note: That's ten tricks. The rest belong to the defense.
-  11  N CK  E CA  S C6  W CT
+  11  S CK  W CA  N C6  E CT
       note: Nothing left to win. Give up the rest.
-  12  E SA  S S5  W ST  N CQ
-  13  E SJ  S C8  W SQ  N CJ
+  12  W SA  N S5  E ST  S CQ
+  13  W SJ  N C8  E SQ  S CJ
       note: 10 tricks: 3NT made with an overtrick.
 
 play recap:
   The plan: play dummy's ♠K at once, then take your nine tricks without
   giving up the lead.
 
-  The king was the key. With the ace in front of it, East's hand, the king
-  wins. If West had held the ace, the king would have been lost whatever you
-  did, so there was nothing to lose. Had you played low, West would have won
-  with the ♠Q and led another spade, and East's ace would have captured your
-  king. Then you would have had to knock out the ♣A, and East would have
+  The king was the key. With the ace in front of it, West's hand, the king
+  wins. If East had held the ace, the king would have been lost whatever you
+  did, so there was nothing to lose. Had you played low, East would have won
+  with the ♠Q and led another spade, and West's ace would have captured your
+  king. Then you would have had to knock out the ♣A, and West would have
   cashed the rest of the spades.

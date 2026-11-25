@@ -4,76 +4,76 @@ id: L04-11
 type: exercise
 lesson: 4
 concepts: 4.7
-student: N
-board: 65
-dealer: N
+student: S
+board: 75
+dealer: S
 vulnerable: none
 
 deal:            # spades  hearts  diamonds  clubs
-  N  853    AKJ84  AQ3    92
-  E  AKJ    63     KJT9   6543
-  S  762    Q975   74     AKQJ
-  W  QT94   T2     8652   T87
+  N  762    Q975   74     AKQJ
+  E  QT94   T2     8652   T87
+  S  853    AKJ84  AQ3    92
+  W  AKJ    63     KJT9   6543
 
 auction:
-  N 1H     = 13+ points, at least four hearts
+  S 1H     = 13+ points, at least four hearts
      not *: 14 points and five hearts: open your long suit at the one level.
-  E Pass
-  S 3H     = 4+ hearts, an opening hand or better: game forcing
   W Pass
-  N 4H     = Game
+  N 3H     = 4+ hearts, an opening hand or better: game forcing
+  E Pass
+  S 4H     = Game
      not *: Partner's 3♥ is forcing to game. Bid it.
-  E Pass
-  S Pass
   W Pass
+  N Pass
+  E Pass
 
 auction recap:
   You opened 1♥ and partner jumped to 3♥, showing four hearts and an opening
   hand or better, so you bid game. You are declarer, because you bid hearts
-  first, and so East will lead to the first trick.
+  first, and so West will lead to the first trick.
 
 planning:
   trumps out: 4
   losers: 4
   spades: 3 = Three small spades opposite three small spades.
   hearts: 0 = Solid.
-  diamonds: 1 = The queen, unless West has the king. Dummy can ruff your third diamond.
+  diamonds: 1 = The queen, unless East has the king. Dummy can ruff your third diamond.
   clubs: 0 = Your two small clubs are covered by dummy's ace and king.
   remind: You can afford three losers in 4♥. Count the obvious losers suit by suit in your own hand: spades, hearts, diamonds, clubs.
   remind: The diamond finesse is one way to get rid of a loser. Is there a surer way?
 play:
-  1   E SA  S S2  W S4  N S3
+  1   W SA  N S2  E S4  S S3
       note: Four losers, one too many. The diamond finesse is one way to save a trick, but there's a sure way: dummy has four club winners and you have only two clubs. The third and fourth clubs can take your two diamonds.
-  2   E SK  S S6  W S9  N S5
-  3   E SJ  S S7  W SQ  N S8
+  2   W SK  N S6  E S9  S S5
+  3   W SJ  N S7  E SQ  S S8
       note: Three spade losers, as you counted. You can't afford another.
-  4   W H2  N H4  E H3  S H5
-      note: West switches to a trump. Draw trumps before you cash the clubs, so nobody can ruff them.
-  5   S H7  W HT  N HA  E H6
+  4   E H2  S H4  W H3  N H5
+      note: East switches to a trump. Draw trumps before you cash the clubs, so nobody can ruff them.
+  5   N H7  E HT  S HA  W H6
       note: Both opponents followed twice, so trumps are drawn.
-  6   N C2  E C3  S CA  W C7
+  6   S C2  W C3  N CA  E C7
       note: Now the clubs. Lead to dummy's ace.
-  7   S CK  W C8  N C9  E C4
+  7   N CK  E C8  S C9  W C4
       note: And the king.
-  8   S CQ  W CT  N D3  E C5
+  8   N CQ  E CT  S D3  W C5
       note: You're out of clubs, so throw a diamond on dummy's queen.
-  9   S CJ  W ST  N DQ*  E C6
+  9   N CJ  E ST  S DQ*  W C6
       note: And the ♦Q on the jack. No diamond finesse needed.
       DQ key: Throw the queen. Now you have no diamond loser at all, and you never needed the finesse.
       DQ not *: Did you count your losers? Throw the ♦Q: your ace will take care of the last diamond, and no finesse is needed.
-  10  S D4  W D2  N DA  E D9
+  10  N D4  E D2  S DA  W D9
       note: Over to your ♦A.
-  11  N HK  E DT  S H9  W D5
+  11  S HK  W DT  N H9  E D5
       note: The rest are yours.
-  12  N HJ  E DJ  S HQ  W D6
-  13  S D7  W D8  N H8  E DK
+  12  S HJ  W DJ  N HQ  E D6
+  13  N D7  E D8  S H8  W DK
       note: 10 tricks: 4♥ made.
 
 play recap:
-  The plan: you counted four losers, one too many. Rather than hope West held
+  The plan: you counted four losers, one too many. Rather than hope East held
   the ♦K for a finesse, you threw your diamonds away on dummy's extra club
   winners, a sure thing.
 
-  East had the ♦K, so the finesse would have lost, and with three spades
+  West had the ♦K, so the finesse would have lost, and with three spades
   already gone, you'd have been down one. When you have a sure way to get rid
   of a loser, take it, and save the finesse for when you need it.

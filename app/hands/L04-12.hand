@@ -5,9 +5,9 @@ type: exercise
 lesson: 4
 concepts: 4.2, 3.5
 student: S
-board: 66
+board: 78
 dealer: E
-vulnerable: NS
+vulnerable: none
 
 deal:            # spades  hearts  diamonds  clubs
   N  942    Q7     QJT95  A63
