@@ -140,7 +140,7 @@ export function validate(s: HandScript): { errors: Issue[]; warnings: Issue[]; d
           if (!ok) W(`${T}: ${fmt(pc.card)} is marked for the student, but the student doesn't play ${pc.seat}'s cards`);
         }
         if (pc.whyNot) for (const key of Object.keys(pc.whyNot))
-          if (key !== '*' && !parseCard(key)) W(`${T}: wrong-pick note for "${key}", which isn't a card`);
+          if (key !== '*' && !parseCard(key) && !/^[SHDC♠♥♦♣]$/i.test(key)) W(`${T}: wrong-pick note for "${key}", which isn't a card or a suit`);
       });
       t.cards.forEach(pc => played.add(cardKey(pc.card)));
       const w = t.cards[trickWinner(t.cards, trump)].seat;

@@ -1,0 +1,72 @@
+# Lesson 6, Mike's Exercise 3, turned so the student (South) is on lead. East deals here, so dummy's jump raise is an unpassed hand.
+title: Your Exercise 3: a singleton
+id: L06-06
+type: exercise
+lesson: 6
+concepts: 6.8
+student: S
+board: 6
+
+deal:            # spades  hearts  diamonds  clubs
+  N  6      T98    T83     AT9542
+  E  KQ984  AK7    K4      Q83
+  S  T72    J532   A9762   6
+  W  AJ53   Q64    QJ5     KJ7
+
+auction:
+  E 1S     = 13+ points, 4+ spades
+  S Pass   = Not enough to bid
+  W 3S     = An opening hand or better with 4+ spades: game is on
+  N Pass   = Nothing to say
+  E 4S     = Game in spades
+  S Pass   = Nothing to add
+  W Pass   = Done
+  N Pass   = Nothing to add
+
+auction recap:
+  East opened 1♠ and West's jump to 3♠ showed an opening hand with four or
+  more spades, so East bid the game. East is declarer, and so you, South,
+  will lead to the first trick.
+
+lead planning:
+  declarer: 13-21 = East opened one of a suit: 13 to 21.
+  dummy: 13-27 = West's jump raise showed an opening hand or better.
+  partner: 0-9 = 40, minus your 5 and the opponents' 26 or more, leaves at most 9.
+  remind: You hold three trumps. Could a short suit turn one of them into a trick?
+
+play:
+  1   S C6*  W C7  N CA  E C3
+      C6 key: A singleton in a side suit. If partner can win a club, you ruff the next one: a cheap trick from your small trumps.
+      C6 not D: Leading away from an ace against a suit contract can give declarer a trick with the king. Your ♦A is a sure trick: save it.
+      C6 not DA: Cashing the ♦A is safe, but it builds nothing. Your singleton club could earn a ruff.
+      C6 not H: From J532 a heart is a guess. Your singleton club has a plan.
+      C6 not S: Your small trumps are worth more ruffing clubs than leading out.
+      note: Partner wins the ♣A. With six clubs in her hand and three in dummy, she can tell your ♣6 is probably a singleton.
+  2   N C4  E C8  S S2  W CJ
+      note: Partner returns a club and you ruff: a trick from one of your small trumps.
+  3   S DA  W D5  N D3  E D4
+      note: Now cash your ♦A.
+  4   S D7  W DJ  N D8  E DK
+      note: Nothing else to cash, so you get out with a diamond.
+  5   E SK  S S7  W S3  N S6
+      note: Declarer draws trumps.
+  6   E SQ  S ST  W S5  N C2
+      note: Your last trump goes.
+  7   E H7  S H2  W HQ  N H8
+      note: Declarer runs the hearts.
+  8   W H4  N H9  E HA  S H3
+  9   E HK  S H5  W H6  N HT
+  10  E CQ  S D2  W CK  N C5
+      note: Declarer's clubs win one trick between them.
+  11  W SA  N C9  E S4  S D6
+      note: The rest are declarer's.
+  12  W SJ  N CT  E S8  S D9
+  13  W DQ  N DT  E S9  S HJ
+
+play recap:
+  Your singleton club worked as hoped: partner won the ♣A, and your ruff
+  plus the ♦A gave the defense three tricks. Declarer still made 4♠, but
+  without the ruff he would have made an overtrick. To beat it, partner
+  would have needed one more way in for a second ruff. A singleton lead
+  needs two things: a partner who can win the trick, and trumps of your own
+  to ruff with before declarer draws them.

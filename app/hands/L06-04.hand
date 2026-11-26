@@ -1,0 +1,79 @@
+# Lesson 6, Mike's Exercise 6, turned so the student (South) is on lead.
+title: Your Exercise 6: aggressive or passive?
+id: L06-04
+type: exercise
+lesson: 6
+concepts: 6.7, 6.8
+student: S
+board: 4
+
+deal:            # spades  hearts  diamonds  clubs
+  N  J8632  T2     Q65     QJT
+  E  AK4    AJ74   J82     A73
+  S  T9     Q65    KT43    9862
+  W  Q75    K983   A97     K54
+
+auction:
+  W Pass   = Not enough to open
+  N Pass   = Not enough to open
+  E 1NT    = 15-17 points, balanced
+  S Pass   = Nothing to say
+  W 2C     = Stayman: do you have a 4-card major?
+  N Pass   = Nothing to say
+  E 2H     = Four hearts
+  S Pass   = Nothing to say
+  W 4H     = Four hearts too: let's play game in hearts
+  N Pass   = Nothing to say
+  E Pass   = Happy with game
+  S Pass   = Nothing to add
+
+auction recap:
+  East opened 1NT, and West's Stayman 2♣ found a 4-4 heart fit. West, who
+  passed at first, bid the game. East is declarer, because East bid hearts
+  first, and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 15-17 = East's 1NT showed 15 to 17, and 2♥ showed four hearts.
+  dummy: 10-12 = West passed at first, so under 13, then bid game: 10 to 12, with four hearts.
+  partner: 6-10 = 40, minus your 5, East's 15 to 17 and West's 10 to 12, leaves 6 to 10.
+  remind: Your ♥Q65 sits over declarer's hearts. It may take a trick on its own.
+  remind: Do you need to grab tricks quickly, or can you wait for them?
+
+play:
+  1   S D3*  W D7  N DQ  E D2
+      ok: C
+      D3 key: The aggressive choice: fourth from your best suit, hoping partner holds a diamond honor so you can set up tricks before declarer gets going.
+      D3 not C: The passive choice. Dummy has shown a balanced hand, so declarer may have no long suit to throw losers on. Waiting for your tricks makes sense too.
+      D3 not S: The ♠10 might find a ruff, but your trumps could take a trick anyway with the ♥Q65 sitting over declarer. A ruff with a natural trump trick gains little.
+      D3 not H: Leading from ♥Q65 could help declarer find your queen. Keep it for a trick of its own.
+      D3 not DK: Right suit! But leading the king from K-10-4-3 can give away a trick. Lead low, fourth from the top.
+      D3 not D: Right suit! The usual card is the fourth from the top: count down K, 10, 4, 3.
+      note: Partner wins the ♦Q. Your lead found partner's honor.
+  2   N D5   E D8  S DT  W DA
+      note: Partner returns your suit. Your 10 forces dummy's ace, and your ♦K is now a winner.
+  3   W H3   N H2  E HJ  S HQ
+      note: Declarer tries a trump finesse. With the ♥Q sitting after declarer's jack, it loses.
+  4   S DK   W D9  N D6  E DJ
+      note: Cash your diamond winner.
+  5   S C9   W C4  N CT  E CA
+      note: Now get out safely. A club gives nothing away.
+  6   E HA   S H5  W H8  N HT
+      note: Declarer draws the last trumps.
+  7   E H4   S H6  W HK  N S2
+  8   W CK   N CJ  E C3  S C2
+      note: Declarer has to lose a club, and that's the fourth trick for the defense.
+  9   W C5   N CQ  E C7  S C6
+  10  N S3   E SA  S S9  W S5
+      note: Partner gets out with a spade. The rest belong to declarer.
+  11  E SK   S ST  W S7  N S6
+  12  E S4   S C8  W SQ  N S8
+  13  W H9   N SJ  E H7  S D4
+
+play recap:
+  A close lead problem. The ♦3 is aggressive: it set up two diamond tricks
+  while declarer was busy with trumps. The ♣9 is passive, and on this deal it
+  would most likely have worked too: with no long suit in dummy, declarer had nowhere to
+  throw losers, so the defense's tricks would have waited. Your ♥Q took its
+  trick as hoped, and the defense took four tricks: down one. When dummy is
+  flat and you hold a natural trump trick, passive leads get more attractive;
+  when dummy has a long suit to run, you need to attack.
