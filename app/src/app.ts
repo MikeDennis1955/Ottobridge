@@ -868,7 +868,7 @@ function isDefLead(L: Loaded, i: number): boolean {
 function pickRight(L: Loaded, i: number, pick: string): boolean {
   if (cardRightAt(L, i, pick)) return true;
   const st = L.steps[i], pk = parseCardSafe(pick);
-  return st.kind === 'card' && st.c === 0 && !!pk && !!L.script!.play[st.t].okLeads?.includes(pk.suit) && pk.suit !== L.script!.play[st.t].cards[0].card.suit;
+  return st.kind === 'card' && st.c === 0 && !!pk && !!L.script!.play[st.t].okLeads?.includes(pk.suit);
 }
 function legalCardsAt(L: Loaded, i: number): Card[] {
   const s = L.script!, st = L.steps[i]; if (st.kind !== 'card') return [];
@@ -1045,7 +1045,9 @@ function renderStudentCard(L: Loaded, pos: Pos) {
         } else if (st.c === 0 && !ok && pickRight(L, S.step, pick)) {
           // a starred lead with another good suit listed under "ok:": right too, but the hand follows the script's card
           const why = pc.whyNot && Object.entries(pc.whyNot).find(([k]) => suitKey(k) === pk.suit)?.[1];
-          parts.push(`<div class="verdict yes"><b>Good choice: <span class="cardtxt">${cardText(pk)}</span> is a sensible lead too.</b>${why ? ` ${prose(why)}` : ''}</div><p class="muted small">We'll follow the hand with the other good lead, <span class="cardtxt">${cardText(pc.card)}</span>.</p>`);
+          parts.push(pk.suit === pc.card.suit
+            ? `<div class="verdict yes"><b>Fine: <span class="cardtxt">${cardText(pk)}</span> and <span class="cardtxt">${cardText(pc.card)}</span> do the same job here.</b></div>`
+            : `<div class="verdict yes"><b>Good choice: <span class="cardtxt">${cardText(pk)}</span> is a sensible lead too.</b>${why ? ` ${prose(why)}` : ''}</div><p class="muted small">We'll follow the hand with the other good lead, <span class="cardtxt">${cardText(pc.card)}</span>.</p>`);
         } else parts.push(ok === 'equal'
           ? `<div class="verdict yes"><b>Fine: <span class="cardtxt">${cardText(parseCardSafe(pick)!)}</span> and <span class="cardtxt">${cardText(pc.card)}</span> are the same here.</b></div>`
           : ok
@@ -1186,7 +1188,7 @@ function askPrompt(L: Loaded): string {
     }
   }
   const st = L.steps[S.step];
-  if (pend) lines.push('', st.kind === 'call' ? "It's my turn to bid." : st.kind === 'card' ? "It's my turn to play a card." : '');
+  if (pend) lines.push('', st.kind === 'call' ? "It's my turn to bid." : st.kind === 'card' ? (isDefLead(L, S.step) ? "It's my turn to make the opening lead." : "It's my turn to play a card.") : st.kind === 'leadPlan' ? "I'm about to make the opening lead." : '');
   return lines.join('\n');
 }
 // In-page chat through the viewer's own Claude (sample capability). Fallback: copy the hand.

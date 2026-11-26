@@ -1,0 +1,80 @@
+# Lesson 6: the trump lead from the lesson's example auction, turned so the student (South) is on lead.
+title: Take away dummy's ruffs
+id: L06-08
+type: exercise
+lesson: 6
+concepts: 6.9, 6.1
+student: S
+board: 8
+
+deal:            # spades  hearts  diamonds  clubs
+  N  A4     QT53   7542    T83
+  E  K962   J8     AJ83    A97
+  S  873    A64    KQT9    J52
+  W  QJT5   K972   6       KQ64
+
+auction:
+  W Pass   = Not enough to open
+  N Pass   = Not enough to open
+  E 1D     = 13+ points, 4+ diamonds
+  S Pass   = Not enough to bid
+  W 1H     = 6+ points, 4+ hearts
+  N Pass   = Nothing to say
+  E 1S     = Four spades too
+  S Pass   = Nothing to say
+  W 3S     = Four spades, about 10-12 points: inviting game
+  N Pass   = Nothing to say
+  E 4S     = Accepting the invitation
+  S Pass   = Nothing to add
+  W Pass   = Done
+  N Pass   = Nothing to add
+
+auction recap:
+  East opened 1♦ and showed four spades too. West, a passed hand, jumped to
+  3♠ to invite game, and East accepted. East is declarer, because East bid
+  spades first, and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 13-18 = East opened 1♦ and rebid 1♠ without jumping: about 13 to 18.
+  dummy: 10-12 = West passed at first, then invited game: 10 to 12.
+  partner: 0-7 = 40, minus your 10, East's 13 or more and West's 10 or more, leaves at most 7.
+  remind: Declarer bid diamonds, and your diamonds are strong. Who will win the diamond tricks?
+  remind: Dummy has four trumps. What might declarer do with them?
+
+play:
+  1   S S3*  W S5  N SA  E S2
+      ok: S
+      S3 key: A trump lead. Declarer bid diamonds first, and you hold the diamond honors, so declarer has diamond losers that dummy's trumps could ruff. Every trump you lead takes away one ruff.
+      S3 not D: The ♦K is a safe card, but it doesn't spoil declarer's plan: ruffing diamonds in dummy. Which lead takes away dummy's trumps?
+      S3 not H: West bid hearts, and leading away from your ♥A against a suit contract can hand declarer a trick.
+      S3 not C: Clubs are unbid and safe enough, but they don't stop declarer's plan. What will declarer want to do with dummy's trumps?
+      note: Partner wins the ♠A, and sees what you're up to.
+  2   N S4  E S9  S S7  W ST
+      note: Partner leads a second trump. Dummy started with four; now it has two.
+  3   W D6  N D2  E DA  S D9
+      note: Declarer starts on the plan: cash the ♦A, then ruff diamonds in dummy.
+  4   E D3  S DT  W SJ  N D4
+      note: The first ruff.
+  5   W C4  N C3  E CA  S C2
+      note: Back to declarer's hand with the ♣A.
+  6   E D8  S DQ  W SQ  N D5
+      note: The second ruff uses dummy's last trump. Declarer still has the ♦J to lose.
+  7   W H2  N H3  E HJ  S HA
+      note: Declarer leads a heart, and you win the ace.
+  8   S DK  W H7  N D7  E DJ
+      note: Cash your ♦K: dummy has no trumps left to ruff it.
+  9   S S8  W H9  N H5  E SK
+      note: Nothing else to cash. A trump is safe.
+  10  E C7  S C5  W CK  N C8
+      note: The rest are declarer's.
+  11  W CQ  N CT  E C9  S CJ
+  12  W C6  N HT  E H8  S H4
+  13  W HK  N HQ  E S6  S H6
+
+play recap:
+  Declarer's plan was to ruff diamonds in dummy. Your trump lead, and
+  partner's trump back, left dummy only two trumps, so one diamond loser
+  stayed behind for your ♦K. Declarer made exactly ten tricks. With any other
+  lead, declarer has time to ruff all three diamond losers and make eleven.
+  When the auction tells you dummy's trumps will be used for ruffing, a
+  trump lead is often the best start.
