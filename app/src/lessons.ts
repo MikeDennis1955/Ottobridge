@@ -352,7 +352,19 @@ export const LESSONS: Lesson[] = [
   },
   {
     n: 6, title: 'Opening Leads', date: '21 June 2021',
-    practiceIntro: ['In these hands you sit South, on defense. East will be declarer, so you make the opening lead. First the table asks what the auction told you; then you choose your lead. After that, dummy goes down and the hand plays itself, stopping if there is a decision for you to make.'],
+    practiceIntro: [
+      { h: 'Playing a hand on defense' },
+      'Until now, you have mostly been declarer, playing every card for your side. In this lesson\'s hands you are a defender, and the table works a little differently:',
+      { list: [
+        '**You sit South, on defense.** East ends up as declarer, so you are on lead, and West will be dummy.',
+        '**You make your own calls,** usually Pass, and you can tap any call to see what it means.',
+        '**Before you lead, a pause asks what the auction told you:** how many points declarer has shown, how many dummy has shown, and so how many partner can hold. A single number or a range is fine.',
+        '**You choose the opening lead.** This is the decision the lesson is about. If most players would lead something else, the table says so and explains why, then carries on with that lead.',
+        '**After the lead, dummy goes down and the hand plays itself.** Partner\'s cards, declarer\'s cards and your own routine cards appear one by one, with short notes along the way saying what is going on. The table stops only when there is a card for you to choose.',
+        '**At the end, all four hands are shown,** with a recap of how your lead worked out, and often what other leads would have done.',
+      ] },
+      'Watch the play closely after your lead. Seeing how declarer goes about the hand, and where the defense\'s tricks come from, is the best way to learn which leads work.',
+    ],
     intro: [
       'The most critical card in many hands is the opening lead. In one sense the defense has an advantage in selecting the opening lead: it can attack declarer\'s weak spot before she can take effective countermeasures. But because the opening lead is “blind”, in contrast to the other 51 cards to be played in the hand, it can be difficult to guess right. These two realities make the opening lead both important and difficult, at least compared to other choices you will face on defense.',
       'What follows are some general rules for opening leads, and then specific recommendations for leads against no-trump and then against suit contracts.',
