@@ -16,7 +16,7 @@ deal:            # spades  hearts  diamonds  clubs
 auction:
   E 1NT    = 15-17 points, balanced
   S Pass   = Nothing to say
-  W 3NT    = 10+ points, balanced: let's play game
+  W 3NT    = 10-14 points, balanced: let's play game
   N Pass   = Nothing to say
   E Pass   = Happy with game
   S Pass   = Nothing to add
@@ -27,8 +27,8 @@ auction recap:
 
 lead planning:
   declarer: 15-17 = East's 1NT showed 15 to 17.
-  dummy: 10-40 = West went straight to game opposite 1NT: 10 or more.
-  partner: 0-5 = 40, minus your 10, East's 15 or more and West's 10 or more, leaves at most 5.
+  dummy: 10-14 = West went straight to game opposite 1NT: 10 to 14. With less, West would invite or pass; with more, West would think about slam.
+  partner: 0-5 = 40, minus your 10, East's 15 to 17 and West's 10 to 14, leaves at most 5.
   remind: Partner can't hold much. Your own long suit is your best hope.
   remind: At no-trump the play is a race to set up long suits, and the first move is yours.
 

@@ -1,4 +1,4 @@
-# Lesson 6, Mike's Exercise 2, turned so the student (South) is on lead.
+# Lesson 6, Mike's Exercise 2, turned so the student (South) is on lead. South's cards are Mike's; the other hands were re-dealt 2026-11-27 so good defense beats it.
 title: Your Exercise 2: fourth from your longest and strongest
 id: L06-03
 type: exercise
@@ -8,10 +8,10 @@ student: S
 board: 3
 
 deal:            # spades  hearts  diamonds  clubs
-  N  J96    T952   Q3      AT54
-  E  K82    AKJ4   K84     J93
+  N  985    A9732  K83     43
+  E  K62    KQ54   64      AQJT
   S  T74    86     AJ952   K87
-  W  AQ53   Q73    T76     Q62
+  W  AQJ3   JT     QT7     9652
 
 auction:
   S Pass   = Not enough to open
@@ -36,43 +36,44 @@ auction recap:
 
 lead planning:
   declarer: 15-17 = East's 1NT showed 15 to 17, and 2♥ showed four hearts.
-  dummy: 10-12 = West passed at first, so under 13, then bid game: 10 to 12, with four spades.
-  partner: 3-7 = 40, minus your 8, East's 15 to 17 and West's 10 to 12, leaves 3 to 7.
+  dummy: 10-14 = West bid game opposite 1NT: 10 to 14, with four spades. (West passed at first, so 12 at most is likely.)
+  partner: 1-7 = 40, minus your 8, East's 15 to 17 and West's 10 to 14, leaves 1 to 7.
   remind: The opponents have shown both majors. Which suits has nobody bid?
   remind: At no-trump, your longest and strongest suit is where your extra tricks will come from.
 
 play:
-  1   S D5*  W D6  N DQ  E DK
+  1   S D5*  W DT  N DK  E D4
       D5 key: Fourth from your longest and strongest. Leading away from your ace is fine against no-trump: you're starting to set up the suit.
       D5 not DA: Right suit! But the ace is your way back in later, once the suit is set up. Lead low and keep the ace.
       D5 not D: Right suit! The usual card is the fourth from the top: count down A, J, 9, 5.
       D5 not S: Dummy has four spades. Which suit is your longest and strongest?
       D5 not H: Declarer has four hearts. Which suit is your longest and strongest?
       D5 not C: Clubs are a fair unbid suit, but diamonds are longer and stronger.
-      note: Partner's queen forces out declarer's king.
-  2   E H4   S H6  W HQ  N H2
-      note: Declarer counts nine tricks on top: four spades (if they split 3-3), four hearts and the ♦K. She starts with the hearts, dummy's short side first.
-  3   W H3   N H5  E HA  S H8
-  4   E HK   S C7  W H7  N H9
-      note: You have no hearts left, so you throw a small club and keep your diamonds.
-  5   E HJ   S C8  W C2  N HT
-      note: The fourth heart is good too.
-  6   E SK   S S4  W S3  N S6
-      note: Now spades, starting with the king from the short side.
-  7   E S2   S S7  W SA  N S9
-  8   W SQ   N SJ  E S8  S ST
-  9   W S5   N C4  E C3  S D2
-      note: The spades split 3-3, so dummy's ♠5 is the ninth trick.
-  10  W DT   N D3  E D4  S DJ
-      note: Declarer has made the contract and gives up the rest.
-  11  S DA   W D7  N C5  E D8
-  12  S D9   W C6  N CT  E C9
-  13  S CK   W CQ  N CA  E CJ
+      note: Partner wins the ♦K.
+  2   N D8  E D6  S D2  W DQ
+      note: Partner returns a diamond. Dummy's queen will win a trick whatever you do, so you play low and keep your ♦A as a way back in. Your A, J and 9 are now all winners.
+  3   W C2  N C3  E CJ  S CK
+      note: Declarer needs club tricks and tries a finesse. Your ♣K wins.
+  4   S DA  W D7  N D3  E H4
+      note: Now your diamonds run.
+  5   S DJ  W C5  N C4  E H5
+  6   S D9  W C6  N H2  E CT
+      note: Five tricks for the defense: 3NT can't make.
+  7   S S4  W SJ  N S5  E S2
+      note: Nothing else to cash, so you get out with a spade.
+  8   W S3  N S8  E SK  S S7
+  9   E S6  S ST  W SQ  N S9
+  10  W SA  N H3  E CQ  S H6
+  11  W HJ  N HA  E HQ  S H8
+      note: Partner's ♥A: down two.
+  12  N H7  E HK  S C8  W HT
+  13  E CA  S C7  W C9  N H9
 
 play recap:
-  The ♦5 was the right start: your longest and strongest suit, attacking from
-  the very first trick. Partner's ♦Q forced out declarer's king, and the rest
-  of your diamonds were ready to run. This time declarer won the race: she had
-  nine tricks without needing to set anything up, so no lead could beat 3NT.
-  When declarer has to give up the lead even once, a head start like this is
-  what beats the contract.
+  The ♦5 got the defense off to a running start. Partner's ♦K won, and
+  because you kept your ♦A, you still had a way back in when declarer's club
+  finesse lost to your king. Then your diamonds ran: five tricks before
+  declarer could take nine, and partner's ♥A made it down two. Declarer had
+  to give up the lead to set up her ninth trick, and your diamonds were
+  ready and waiting. That's the race at no-trump: get your long suit going
+  first.

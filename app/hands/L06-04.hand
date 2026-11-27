@@ -34,8 +34,8 @@ auction recap:
 
 lead planning:
   declarer: 15-17 = East's 1NT showed 15 to 17, and 2♥ showed four hearts.
-  dummy: 10-12 = West passed at first, so under 13, then bid game: 10 to 12, with four hearts.
-  partner: 6-10 = 40, minus your 5, East's 15 to 17 and West's 10 to 12, leaves 6 to 10.
+  dummy: 10-14 = West bid game opposite 1NT: 10 to 14, with four hearts. (West passed at first, so 12 at most is likely.)
+  partner: 4-10 = 40, minus your 5, East's 15 to 17 and West's 10 to 14, leaves 4 to 10.
   remind: Your ♥Q65 sits over declarer's hearts. It may take a trick on its own.
   remind: Do you need to grab tricks quickly, or can you wait for them?
 
@@ -55,25 +55,25 @@ play:
       note: Declarer tries a trump finesse. With the ♥Q sitting after declarer's jack, it loses.
   4   S DK   W D9  N D6  E DJ
       note: Cash your diamond winner.
-  5   S C9   W C4  N CT  E CA
+  5   S D4  W S5  N S2  E C3
+      note: Your last diamond is a winner too: nobody else has one left. Declarer throws away a losing club.
+  6   S C9  W C4  N CT  E CA
       note: Now get out safely. A club gives nothing away.
-  6   E HA   S H5  W H8  N HT
+  7   E HA  S H5  W H8  N HT
       note: Declarer draws the last trumps.
-  7   E H4   S H6  W HK  N S2
-  8   W CK   N CJ  E C3  S C2
-      note: Declarer has to lose a club, and that's the fourth trick for the defense.
-  9   W C5   N CQ  E C7  S C6
-  10  N S3   E SA  S S9  W S5
-      note: Partner gets out with a spade. The rest belong to declarer.
-  11  E SK   S ST  W S7  N S6
-  12  E S4   S C8  W SQ  N S8
-  13  W H9   N SJ  E H7  S D4
+  8   E H4  S H6  W HK  N S3
+  9   W CK  N CJ  E C7  S C2
+  10  W S7  N S6  E SA  S S9
+      note: The rest belong to declarer.
+  11  E SK  S ST  W SQ  N S8
+  12  E S4  S C6  W H9  N SJ
+  13  W C5  N CQ  E H7  S C8
 
 play recap:
   A close lead problem. The ♦3 is aggressive: it set up two diamond tricks
   while declarer was busy with trumps. The ♣9 is passive, and on this deal it
   would most likely have worked too: with no long suit in dummy, declarer had nowhere to
   throw losers, so the defense's tricks would have waited. Your ♥Q took its
-  trick as hoped, and the defense took four tricks: down one. When dummy is
+  trick as hoped, and the diamonds took three more: down one. When dummy is
   flat and you hold a natural trump trick, passive leads get more attractive;
   when dummy has a long suit to run, you need to attack.

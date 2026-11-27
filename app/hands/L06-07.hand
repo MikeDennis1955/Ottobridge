@@ -19,7 +19,7 @@ auction:
   N Pass   = Not enough to open
   E 1NT    = 15-17 points, balanced
   S Pass   = Nothing to say
-  W 3NT    = 10+ points, balanced, no 4-card major: let's play game
+  W 3NT    = 10-14 points, balanced, no 4-card major: let's play game
   N Pass   = Nothing to say
   E Pass   = Happy with game
   S Pass   = Nothing to add
@@ -31,8 +31,8 @@ auction recap:
 
 lead planning:
   declarer: 15-17 = East's 1NT showed 15 to 17.
-  dummy: 10-12 = West passed at first, so under 13, then bid game: 10 to 12.
-  partner: 8-12 = 40, minus your 3, East's 15 to 17 and West's 10 to 12, leaves 8 to 12.
+  dummy: 10-14 = West bid game opposite 1NT: 10 to 14. (West passed at first, so 12 at most is likely.)
+  partner: 6-12 = 40, minus your 3, East's 15 to 17 and West's 10 to 14, leaves 6 to 12.
   remind: You have almost nothing. Where are your side's tricks going to come from?
   remind: West skipped Stayman. What does that tell you about the majors?
 
