@@ -366,7 +366,7 @@ export const CATALOG: CatalogEntry[] = [
   { n: 9, title: 'Preemptive Bidding' },
   { n: 10, title: 'Managing Trumps 1' },
   { n: 11, title: 'Managing Trumps 2' },
-  { n: 12, title: 'Defensive Signalling' },
+  { n: 12, title: 'Jacoby Transfers' },
 ];
 
 // --- Our system: the bidding agreements in force at each lesson (shown from the ☰ menu, and given to Ask Claude) ---
