@@ -1,0 +1,76 @@
+# Lesson 6, batch 2 (2026-11-28): partner opened; lead low from three to an honor in her suit. Makes.
+title: Partner opened 1♦
+id: L06-16
+type: exercise
+lesson: 6
+concepts: 6.2
+student: S
+board: 16
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K9     A73    AT952   Q75
+  E  AQJT2  K4     4       AJT63
+  S  864    J952   Q73     K82
+  W  753    QT86   KJ86    94
+
+auction:
+  W Pass   = Not enough to open
+  N 1D     = 13+ points, 4+ diamonds
+  E 1S     = A good spade suit and an opening hand
+  S Pass   = Not enough to bid
+  W 2S     = 6-9 points, 3+ spades
+  N Pass   = Nothing to add
+  E 4S     = A good hand: game is worth bidding
+  S Pass   = Nothing to add
+  W Pass   = Done
+  N Pass   = Nothing to add
+
+auction recap:
+  Partner (North) opened 1♦, and East came in with 1♠. West raised, and East
+  bid the game. East is declarer, and so you, South, will lead to the first
+  trick.
+
+lead planning:
+  declarer: 14-20 = East bid spades over partner's opening, then went to game over a simple raise: a good hand, about 15 or more.
+  dummy: 6-9 = West's raise to 2♠ showed 6 to 9.
+  partner: 13-16 = Partner opened: 13 or more. 40, minus your 6, East's 15 or so and West's 6 to 9, leaves room for little more than 13 or 14.
+  remind: Partner opened 1♦. What does that suggest for your lead?
+
+play:
+  1   S D3*  W D6  N DA  E D4
+      D3 key: Partner's suit. With three cards headed by an honor, lead low, and keep the queen to win a trick later.
+      D3 not DQ: Right suit! With three cards to an honor, lead the lowest and keep the queen.
+      D3 not D: Right suit! With three cards to an honor, lead the lowest.
+      D3 not H: From J-9-5-2, a heart is a guess. Which suit did partner bid?
+      D3 not C: Leading away from your ♣K is risky against a suit contract. Which suit did partner bid?
+      D3 not S: Trumps can wait. Which suit did partner bid?
+      note: Partner wins the ace.
+  2   N HA  E H4  S H2  W H6
+      note: Partner cashes the ♥A...
+  3   N H3  E HK  S H5  W H8
+      note: ...and leads another, but declarer's king wins.
+  4   E CA  S C2  W C4  N C5
+      note: Declarer needs club ruffs in dummy, and starts with the ace.
+  5   E CJ  S CK  W C9  N C7
+      note: Your ♣K wins: three tricks for the defense.
+  6   S D7  W DK  N D2  E C3
+      note: Dummy's ♦K wins, and now declarer is in dummy...
+  7   W S3  N S9  E ST  S S4
+      note: ...to take the spade finesse through partner's king. It works.
+  8   E C6  S C8  W S5  N CQ
+      note: Dummy ruffs a club.
+  9   W S7  N SK  E SA  S S6
+      note: Partner's king falls under the ace.
+  10  E SQ  S S8  W HT  N D5
+      note: Trumps are drawn, and declarer's clubs are good.
+  11  E CT  S H9  W D8  N D9
+  12  E SJ  S HJ  W DJ  N DT
+  13  E S2  S DQ  W HQ  N H7
+
+play recap:
+  Your ♦3 found partner's ace, and the defense took three tricks: the ♦A,
+  the ♥A and your ♣K. That was all there was. Declarer's spade finesse
+  through partner's king worked, and dummy ruffed a club, so 4♠ made. No
+  lead beats it: the cards just lie well for declarer. Leading partner's
+  suit is never the lead you'll regret, even on the hands when nothing
+  works.

@@ -1,0 +1,77 @@
+# Lesson 6, batch 2 (2026-11-28): dummy has a long suit for discards: attack with an unbid suit, even from a king.
+title: Attack before dummy's clubs run
+id: L06-15
+type: exercise
+lesson: 6
+concepts: 6.1, 6.4
+student: S
+board: 15
+
+deal:            # spades  hearts  diamonds  clubs
+  N  QJ8    43     A9742   KJ6
+  E  632    AK985  QT5     A5
+  S  K954   T6     J863    874
+  W  AT7    QJ72   K       QT932
+
+auction:
+  S Pass   = Not enough to open
+  W 1C     = 13+ points, 4+ clubs
+  N Pass   = Not enough to bid
+  E 1H     = 6+ points, 4+ hearts
+  S Pass   = Nothing to say
+  W 2H     = Heart support, a minimum opening
+  N Pass   = Nothing to say
+  E 4H     = Enough for game
+  S Pass   = Nothing to add
+  W Pass   = Done
+  N Pass   = Nothing to add
+
+auction recap:
+  West opened 1♣ and raised East's 1♥ response, and East bid the game. East
+  is declarer, because East bid hearts first, and so you, South, will lead
+  to the first trick.
+
+lead planning:
+  declarer: 12-17 = East responded 1♥, then bid game over a minimum raise: an opening hand or a bit more.
+  dummy: 12-16 = West opened and raised once: a minimum opening, about 13 to 15 with distribution.
+  partner: 3-12 = 40, minus your 4, East's 12 to 17 and West's 12 to 16, leaves 3 to 12.
+  remind: Dummy opened clubs. Once declarer sets them up, what will she do with them?
+  remind: Which suits has nobody bid?
+
+play:
+  1   S S4*  W S7  N SJ  E S2
+      S4 key: Dummy's long clubs will soon give declarer discards, so the defense must grab its tricks quickly. Spades are unbid: lead the 4, fourth from your K-9-5-4, hoping partner has something there.
+      S4 not SK: Right suit! From K-9-5-4, lead the fourth-highest card, keeping the king to win a trick later.
+      S4 not S: Right suit! From K-9-5-4, the usual card is the 4, the fourth from the top.
+      S4 not D: A diamond is safe, but it's too slow: dummy's clubs are coming, and declarer will throw her losers on them. Which unbid suit could set up tricks quickly?
+      S4 not C: West bid clubs, and they are declarer's source of tricks. Which unbid suit could set up tricks quickly?
+      S4 not H: A trump lead is too slow here: dummy's clubs are coming. Which unbid suit could set up tricks quickly?
+      note: Partner's jack wins: dummy ducked.
+  2   N SQ  E S3  S S5  W SA
+      note: Partner continues with the queen, and dummy's ace wins. Your ♠K is now high.
+  3   W H2  N H3  E HA  S H6
+      note: Declarer draws trumps.
+  4   E HK  S HT  W H7  N H4
+  5   E D5  S D3  W DK  N DA
+      note: Declarer plays a diamond toward dummy's king. Partner takes the ace...
+  6   N S8  E S6  S SK  W ST
+      note: ...and puts you in with the ♠K: three tricks.
+  7   S C8  W C2  N C6  E CA
+      note: You get out with a club.
+  8   E DT  S D6  W HJ  N D2
+  9   W CQ  N CK  E C5  S C7
+      note: Partner covers dummy's queen with his king: the fourth trick, and 4♥ is down one.
+  10  N D4  E DQ  S D8  W HQ
+      note: Declarer takes the rest.
+  11  W C9  N CJ  E H5  S C4
+  12  E H9  S S9  W C3  N D7
+  13  E H8  S DJ  W CT  N D9
+
+play recap:
+  Dummy's clubs were the danger: once they were set up, declarer would throw
+  a spade on them. Your spade lead got there first. Partner's ♠J and your
+  ♠K, with the ♦A and ♣K, beat 4♥ by a trick. A diamond lead looks safer,
+  but it gives declarer the time she needs: she sets up the clubs, throws
+  her spade losers, and makes 4♥. When dummy has a long suit that will give
+  declarer discards, attack: lead the suit where your tricks could come
+  from, even away from a king.

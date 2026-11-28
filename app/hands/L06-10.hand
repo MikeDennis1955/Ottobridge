@@ -1,0 +1,71 @@
+# Lesson 6, batch 2 (2026-11-28): top of a strong sequence against a suit contract.
+title: A strong sequence against 4♥
+id: L06-10
+type: exercise
+lesson: 6
+concepts: 6.3
+student: S
+board: 10
+
+deal:            # spades  hearts  diamonds  clubs
+  N  863    984    874     AJ43
+  E  T92    AKJT5  KQT     K9
+  S  KQJ5   72     A63     T852
+  W  A74    Q63    J952    Q76
+
+auction:
+  E 1H     = 13+ points, 4+ hearts
+  S Pass   = Not enough to bid
+  W 2H     = 6-9 points, 3+ hearts
+  N Pass   = Nothing to say
+  E 4H     = A good hand: game is worth bidding
+  S Pass   = Nothing to add
+  W Pass   = Done
+  N Pass   = Nothing to add
+
+auction recap:
+  East opened 1♥ and West raised to 2♥. That was enough for East to bid the
+  game. East is declarer, and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 16-21 = East opened and went straight to game over a simple raise: about 16 or more.
+  dummy: 6-9 = West's raise to 2♥ showed 6 to 9 points.
+  partner: 0-8 = 40, minus your 10, East's 16 or more and West's 6 to 9, leaves at most 8.
+  remind: One of your suits has three touching high cards. What could it do for the defense?
+
+play:
+  1   S SK*  W SA  N S3  E S2
+      SK key: Top of a sequence. The ♠K gives nothing away, and once the ace is gone your ♠Q and ♠J are winners.
+      SK not S5: Right suit! With the king, queen and jack on top, lead the king.
+      SK not DA: Cashing the ♦A is safe, but it builds nothing. Which suit has a sequence you could set up?
+      SK not D: Leading away from an ace against a suit contract can give declarer a trick with the king. Your ♦A is a sure trick: save it.
+      SK not C: A club is a guess. Which of your suits has a sequence on top?
+      SK not H: Trumps can wait. Which of your suits has a sequence on top?
+      note: Dummy's ace wins. Your ♠Q and ♠J are now set up, ready for when you get in.
+  2   W H3  N H4  E HA  S H2
+      note: Declarer draws trumps.
+  3   E HK  S H7  W H6  N H8
+  4   E H5  S C2  W HQ  N H9
+      note: Out of trumps, you throw a small club.
+  5   W D2  N D4  E DK  S DA
+      note: Declarer goes after diamonds. You take your ♦A at once: if you wait, dummy's fourth diamond will give declarer a discard.
+  6   S SQ  W S4  N S6  E S9
+      note: Now cash your spades.
+  7   S SJ  W S7  N S8  E ST
+      note: The ♠J is good too.
+  8   S C5  W C6  N CA  E C9
+      note: Partner's ♣A is the fourth trick: down one.
+  9   N C4  E CK  S C8  W C7
+      note: The rest are declarer's.
+  10  E DQ  S D3  W D5  N D7
+  11  E DT  S D6  W DJ  N D8
+  12  W D9  N CJ  E HT  S S5
+  13  E HJ  S CT  W CQ  N C3
+
+play recap:
+  Your ♠K pushed out dummy's ace at trick one, so your ♠Q and ♠J were ready
+  the moment the ♦A got you in. Declarer had two spades, a diamond and a
+  club to lose, and no time to get rid of any of them. Lead a club or a
+  diamond instead, and declarer draws trumps and sets up dummy's diamonds:
+  the fourth one takes care of a spade loser, and 4♥ makes. That is what a
+  sequence lead is for: it builds tricks quickly and gives nothing away.

@@ -1,0 +1,75 @@
+# Lesson 6, batch 2 (2026-11-28): a singleton lead, with trumps to ruff and a partner with entries.
+title: A singleton, and two ruffs
+id: L06-19
+type: exercise
+lesson: 6
+concepts: 6.8
+student: S
+board: 19
+
+deal:            # spades  hearts  diamonds  clubs
+  N  743    J      A962    KJ943
+  E  KJ     AQ6542 KT      QT8
+  S  Q862   K93    J8743   5
+  W  AT95   T87    Q5      A762
+
+auction:
+  S Pass   = Not enough to open
+  W Pass   = Not enough to open
+  N Pass   = Not enough to open
+  E 1H     = 13+ points, 4+ hearts
+  S Pass   = Nothing to say
+  W 1S     = 6+ points, 4+ spades
+  N Pass   = Nothing to say
+  E 2H     = A minimum with six hearts
+  S Pass   = Nothing to say
+  W 3H     = Heart support, about 10-11: inviting game
+  N Pass   = Nothing to say
+  E 4H     = Accepting the invitation
+  S Pass   = Nothing to add
+  W Pass   = Done
+  N Pass   = Nothing to add
+
+auction recap:
+  After three passes East opened 1♥. West bid 1♠, and East's 2♥ showed six
+  hearts. West, a passed hand, invited with 3♥, and East accepted. East is
+  declarer, and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 13-15 = East opened and rebid 2♥: about 13 to 15, with six hearts.
+  dummy: 10-12 = West passed at first, then invited game: 10 to 12.
+  partner: 7-12 = 40, minus your 6, East's 13 to 15 and West's 10 to 12, leaves 7 to 11. Partner passed, so not much more.
+  remind: You hold three trumps, and partner has a fair hand. Could a short suit turn your trumps into tricks?
+
+play:
+  1   S C5*  W C2  N CK  E C8
+      C5 key: A singleton in a side suit. Partner has some points: if he can win a club, or get in early, you ruff with one of your small trumps.
+      C5 not S: West bid spades. Your singleton club has a plan.
+      C5 not D: From J-8-7-4-3, a diamond builds little against a suit contract. Your singleton club has a plan.
+      C5 not H: Your ♥K may score a trick if you leave trumps alone, and your small trumps are worth more ruffing clubs.
+      note: Partner's king wins.
+  2   N C3  E CT  S H3  W C6
+      note: Partner returns a club, and you ruff.
+  3   S D3  W D5  N DA  E DT
+      note: How can you reach partner for a second ruff? He has a few more points somewhere. Try a diamond: partner wins the ace.
+  4   N C4  E CQ  S H9  W C7
+      note: A second ruff: four tricks, down one.
+  5   S S2  W S5  N S3  E SJ
+      note: Declarer takes the rest.
+  6   E HA  S HK  W H7  N HJ
+      note: Your ♥K falls under the ace, but it doesn't matter now.
+  7   E HQ  S D4  W H8  N S4
+  8   E SK  S S6  W S9  N S7
+  9   E DK  S D7  W DQ  N D2
+  10  E H2  S D8  W HT  N D6
+  11  W SA  N C9  E H4  S S8
+  12  E H5  S DJ  W ST  N CJ
+  13  E H6  S SQ  W CA  N D9
+
+play recap:
+  Your singleton club did just what it should. Partner's ♣K won, and his
+  club return gave you a ruff. The diamond to partner's ace got him in for a
+  second club, and your second ruff beat 4♥. Lead anything else, and
+  declarer draws trumps before you can ruff, and makes 4♥ with an overtrick
+  or two. A singleton lead works best with small trumps of your own and a
+  partner who can get in.

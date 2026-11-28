@@ -1,0 +1,77 @@
+# Lesson 6, batch 2 (2026-11-28): trump lead when dummy gives preference and your strength is in declarer's second suit.
+title: Trumps, to stop the heart ruffs
+id: L06-14
+type: exercise
+lesson: 6
+concepts: 6.9, 6.1
+student: S
+board: 14
+
+deal:            # spades  hearts  diamonds  clubs
+  N  Q63    J65    Q97     A962
+  E  AKJ85  K842   84      KT
+  S  742    AQT9   K63     J85
+  W  T9     73     AJT52   Q743
+
+auction:
+  E 1S     = 13+ points, 4+ spades
+  S Pass   = Not enough to bid
+  W 1NT    = 6-9 points, no good spade support
+  N Pass   = Nothing to say
+  E 2H     = Four hearts as well
+  S Pass   = Nothing to say
+  W 2S     = I prefer spades to hearts
+  N Pass   = Nothing to say
+  E Pass   = Content with 2♠
+  S Pass   = Nothing to add
+
+auction recap:
+  East opened 1♠ and West's 1NT showed a weak hand. East showed his hearts,
+  and West went back to 2♠, preferring spades to hearts. East is declarer,
+  and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 13-17 = East opened and showed a second suit without jumping: about 13 to 17.
+  dummy: 6-9 = West's 1NT response showed 6 to 9.
+  partner: 4-11 = 40, minus your 10, East's 13 to 17 and West's 6 to 9, leaves 4 to 11.
+  remind: Declarer bid hearts, and your hearts are strong. Who will win the heart tricks?
+  remind: West preferred spades to hearts. How many hearts might dummy have?
+
+play:
+  1   S S2*  W S9  N S3  E S5
+      ok: S
+      S2 key: A trump lead. Your hearts sit over declarer's, so his heart losers can only go away by ruffing them in dummy. Every trump you lead takes away a ruff.
+      S2 not H: Your hearts are strong, but leading them helps declarer: he can ruff the losers in dummy, or play toward his king. Which lead takes away dummy's ruffs?
+      S2 not D: Diamonds don't spoil declarer's plan of ruffing hearts in dummy. Which lead does?
+      S2 not C: Clubs don't spoil declarer's plan of ruffing hearts in dummy. Which lead does?
+      note: Dummy's 9 wins the trick.
+  2   W H3  N H5  E HK  S HA
+      note: Declarer leads a heart toward his king. You win the ace.
+  3   S S4  W ST  N S6  E SJ
+      note: Now a second trump, and dummy has none left to ruff with.
+  4   E H4  S HT  W H7  N H6
+      note: Declarer has to lose his hearts. Your 10 wins.
+  5   S HQ  W D2  N HJ  E H8
+      note: Your ♥Q wins too.
+  6   S H9  W D5  N C2  E H2
+      note: And your last heart: four heart tricks.
+  7   S C5  W C3  N CA  E CT
+      note: Partner's ♣A makes five: one more and 2♠ is down.
+  8   N C6  E CK  S C8  W C4
+      note: Declarer's king wins.
+  9   E SA  S S7  W C7  N SQ
+      note: Partner's ♠Q falls under the ace.
+  10  E SK  S D3  W DT  N C9
+  11  E S8  S CJ  W CQ  N D7
+  12  E D4  S D6  W DA  N D9
+  13  W DJ  N DQ  E D8  S DK
+      note: Your ♦K takes the last trick: down one.
+
+play recap:
+  Declarer's plan was to ruff his heart losers in dummy. Your trump lead,
+  and the second trump after you won the ♥A, left dummy with nothing to ruff
+  with, so all four of your hearts scored. With the ♣A and ♦K, that beat 2♠.
+  Lead a heart, a diamond or a club instead, and declarer ruffs hearts in
+  dummy and makes 2♠, with an overtrick or two after a heart lead. When
+  dummy prefers declarer's first suit, and you hold declarer's second suit,
+  lead a trump.

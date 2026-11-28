@@ -1,0 +1,74 @@
+# Lesson 6, batch 2 (2026-11-28): partner overcalled; lead his suit against 3NT, not your own weak spades.
+title: Partner came in with hearts
+id: L06-09
+type: exercise
+lesson: 6
+concepts: 6.2, 6.1
+student: S
+board: 9
+
+deal:            # spades  hearts  diamonds  clubs
+  N  96     KQJ32  JT7     AT2
+  E  KJ8    A76    92      KQ983
+  S  QT742  95     8653    J4
+  W  A53    T84    AKQ4    765
+
+auction:
+  N Pass   = Not enough to open
+  E 1C     = 13+ points, 4+ clubs
+  S Pass   = Not enough to bid
+  W 1D     = 6+ points, 4+ diamonds
+  N 1H     = A good heart suit. Partner wants you to know about it.
+  E 1NT    = A balanced minimum, about 13-15, with hearts stopped
+  S Pass   = Nothing to add
+  W 3NT    = Enough for game opposite a minimum
+  N Pass   = Nothing more to say
+  E Pass   = Happy with game
+  S Pass   = Nothing to add
+
+auction recap:
+  East opened 1♣ and West responded 1♦. Partner (North) passed at first, but
+  then came in with 1♥ to tell you about his hearts. East's 1NT showed a
+  balanced minimum with a heart stopper, and West raised to game. East is
+  declarer, and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 13-15 = East opened, then rebid 1NT: a balanced minimum, about 13 to 15.
+  dummy: 11-15 = West responded, then jumped to game opposite a minimum: about 12 or more.
+  partner: 7-12 = 40, minus your 3, East's 13 to 15 and West's 11 to 15, leaves 7 to 13. North passed at first, so 12 at most.
+  remind: Partner bid hearts after passing. What is he telling you?
+  remind: Your spades are long, but where are the high cards to make them good?
+
+play:
+  1   S H9*  W H4  N HJ  E H6
+      H9 key: Partner's suit. With two small cards, lead the higher one: the 9.
+      H9 not H5: Right suit! From two small cards, lead the higher one first, so partner can tell you are short.
+      H9 not S: Your spades are long, but with only the queen and ten on top they take a long time to set up, and you have no way back in. Which suit did partner bid?
+      H9 not D: West bid diamonds. Which suit did partner bid?
+      H9 not C: East opened clubs. Partner told you which suit he likes.
+      note: Partner plays the jack, and declarer lets it win, holding on to her ace.
+  2   N HK  E HA  S H5  W H8
+      note: Partner leads the king, and this time declarer takes her ace.
+  3   E CK  S C4  W C5  N CA
+      note: Declarer needs club tricks and leads the king. Partner wins the ♣A at once: his hearts are ready.
+  4   N HQ  E H7  S S2  W HT
+      note: Partner's ♥Q drops dummy's 10. You have no hearts left, so you throw a small spade.
+  5   N H3  E S8  S S4  W S3
+  6   N H2  E D2  S S7  W S5
+      note: Five tricks for the defense: 3NT is down one.
+  7   N DJ  E D9  S D3  W DQ
+  8   W C6  N C2  E CQ  S CJ
+  9   E C9  S D5  W C7  N CT
+      note: Partner's ♣10 takes another trick: down two.
+  10  N S6  E SJ  S SQ  W SA
+  11  W DA  N D7  E C3  S D6
+  12  W DK  N DT  E C8  S D8
+  13  W D4  N S9  E SK  S ST
+
+play recap:
+  Your ♥9 went straight to partner's suit. Declarer held up her ace once,
+  but partner still had the ♣A to get back in, and his hearts ran: four
+  heart tricks and the ♣A beat 3NT, and the ♣10 made it down two. A spade
+  lead would have given declarer time to set up the clubs, and 3NT would
+  have made with an overtrick or two. When partner bids, his suit is usually
+  the lead that counts, even when you have a long suit of your own.

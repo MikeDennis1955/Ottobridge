@@ -1,0 +1,75 @@
+# Lesson 6, batch 2 (2026-11-28): fourth best from AQxxx, underleading the ace at no-trump. Makes.
+title: Underleading an ace at no-trump
+id: L06-20
+type: exercise
+lesson: 6
+concepts: 6.5, 6.1
+student: S
+board: 20
+
+deal:            # spades  hearts  diamonds  clubs
+  N  QT942  832    Q97     J8
+  E  A5     AKQ5   J652    KT4
+  S  86     J94    T83     AQ752
+  W  KJ73   T76    AK4     963
+
+auction:
+  W Pass   = Not enough to open
+  N Pass   = Not enough to open
+  E 1NT    = 15-17 points, balanced
+  S Pass   = Nothing to say
+  W 2C     = Stayman: do you have a 4-card major?
+  N Pass   = Nothing to say
+  E 2H     = Four hearts
+  S Pass   = Nothing to say
+  W 3NT    = Game values, four spades, not four hearts
+  N Pass   = Nothing to say
+  E Pass   = No four spades: 3NT it is
+  S Pass   = Nothing to add
+
+auction recap:
+  East opened 1NT. West's Stayman 2♣ found four hearts with East, but West
+  has four spades, not hearts, so the contract is 3NT. East is declarer, and
+  so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 15-17 = East's 1NT showed 15 to 17, and 2♥ showed four hearts.
+  dummy: 10-14 = West bid game opposite 1NT: 10 to 14, with four spades. (West passed at first, so 12 at most is likely.)
+  partner: 2-8 = 40, minus your 7, East's 15 to 17 and West's 10 to 14, leaves 2 to 8.
+  remind: The opponents have shown both majors. Which suit is your longest and strongest?
+
+play:
+  1   S C5*  W C3  N CJ  E CK
+      C5 key: Fourth from your longest and strongest: count down A, Q, 7, 5. Underleading an ace is fine against no-trump: you are setting up the suit.
+      C5 not CA: Right suit! But the ace is your way back in later, once the suit is set up. Lead low and keep the ace.
+      C5 not CQ: Right suit! The usual card is the fourth from the top: A, Q, 7, 5.
+      C5 not C: Right suit! The usual card is the fourth from the top: A, Q, 7, 5.
+      C5 not S: West has four spades. Which suit is your longest and strongest?
+      C5 not H: Declarer has four hearts. Which suit is your longest and strongest?
+      C5 not D: A diamond is a fair unbid suit, but your clubs are longer and stronger.
+      note: Partner's jack forces out declarer's king.
+  2   E HA  S H4  W H6  N H2
+      note: Declarer has nine tricks: four hearts, two spades, two diamonds and the club he just won. He cashes them.
+  3   E HK  S H9  W H7  N H3
+  4   E HQ  S HJ  W HT  N H8
+      note: Your ♥J falls, and declarer's ♥5 is good.
+  5   E H5  S D3  W S3  N S2
+      note: You keep your clubs and throw a diamond.
+  6   E S5  S S6  W SK  N S4
+  7   W S7  N S9  E SA  S S8
+  8   E D2  S D8  W DA  N D7
+  9   W DK  N D9  E D5  S DT
+      note: Declarer's ninth trick. He gives up the rest.
+  10  W D4  N DQ  E D6  S C2
+      note: Partner wins the ♦Q and leads a club through declarer.
+  11  N C8  E C4  S CQ  W C6
+      note: Now your clubs take the rest.
+  12  S CA  W C9  N ST  E CT
+  13  S C7  W SJ  N SQ  E DJ
+
+play recap:
+  Declarer had nine tricks once your club lead had knocked out his king, so
+  3NT made. No lead beats it. But your ♣5 held declarer to nine: a spade,
+  heart or diamond lead gives him time to set up a tenth trick before you
+  get your clubs going. Leading away from an ace is fine against no-trump,
+  and fourth from your longest and strongest is the usual start.
