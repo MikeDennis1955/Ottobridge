@@ -350,6 +350,66 @@ export const LESSONS: Lesson[] = [
     ],
     outro: ['A couple of points to wrap up. First, we\'ve said nothing about minor suit auctions. When partner opens in NT, we generally are not interested in playing minor suit contracts. There are other conventions that can be used to explore those options, but we don\'t care about those, at least for now.', 'Second, note that the NT opener generally doesn\'t have much thinking to do; once he opens in NT, responder has a pretty clear picture of his hand and drives the decision making. We say responder is the “captain” in such situations.'],
   },
+  {
+    n: 6, title: 'Opening Leads', date: '21 June 2021',
+    practiceIntro: [
+      { h: 'Playing a hand on defense' },
+      'Until now, you have mostly been declarer, playing every card for your side. In this lesson\'s hands you are a defender, and the table works a little differently:',
+      { list: [
+        '**You sit South, on defense.** East ends up as declarer, so you are on lead, and West will be dummy.',
+        '**You make your own calls,** usually Pass, and you can tap any call to see what it means.',
+        '**Before you lead, a pause asks what the auction told you:** how many points declarer has shown, how many dummy has shown, and so how many partner can hold. A single number or a range is fine.',
+        '**You choose the opening lead.** This is the decision the lesson is about. If most players would lead something else, the table says so and explains why, then carries on with that lead.',
+        '**After the lead, dummy goes down and the hand plays itself.** Partner\'s cards, declarer\'s cards and your own routine cards appear one by one, with short notes along the way saying what is going on. The table stops only when there is a card for you to choose.',
+        '**At the end, all four hands are shown,** with a recap of how your lead worked out, and often what other leads would have done.',
+      ] },
+      'Watch the play closely after your lead. Seeing how declarer goes about the hand, and where the defense\'s tricks come from, is the best way to learn which leads work.',
+    ],
+    intro: [
+      'The most critical card in many hands is the opening lead. In one sense the defense has an advantage in selecting the opening lead: it can attack declarer\'s weak spot before she can take effective countermeasures. But because the opening lead is “blind”, in contrast to the other 51 cards to be played in the hand, it can be difficult to guess right. These two realities make the opening lead both important and difficult, at least compared to other choices you will face on defense.',
+      'What follows are some general rules for opening leads, and then specific recommendations for leads against no-trump and then against suit contracts.',
+    ],
+    concepts: [
+      { id: '6.1', name: 'Read the auction first',
+        quote: 'Review the auction to get an initial impression of the hand. How many points has declarer shown? What about dummy?',
+        text: [{ h: 'General rules' }, 'Review the auction to get an initial impression of the hand. How many points has declarer shown? What about dummy? Did partner make any noise in the bidding?'] },
+      { id: '6.2', name: 'Partner\'s suit',
+        quote: 'You can rarely be blamed for leading partner\'s suit.',
+        text: ['A suit bid by partner is usually safe. In fact in a competitive auction (one in which both sides are bidding), partner\'s suit bid should generally suggest leading that suit. In any case, you can rarely be blamed for leading partner\'s suit, while if your failure to do so allows an otherwise unmakeable contract to be made, you\'ll have some \'splainin\' to do. From a holding with an honor card, lead that card if it is a doubleton, but underlead that honor with three or more in the suit.'] },
+      { id: '6.3', name: 'Top of a sequence',
+        quote: 'A lead from the top of a sequence of high cards can be both safe, in that it doesn\'t give anything away, and effective at creating winners.',
+        text: [
+          'A lead from the top of a sequence of high cards or (not quite as good) a semi-sequence of high cards can be both safe, in that it doesn\'t give anything away, and effective at creating winners. Lead the top card in such a sequence (the card to lead is in bold):',
+          { list: ['**K**QJ103', '**A**K108 (against a suit contract; lead low against no-trump)', '**Q**J984', 'K**J**1097 (note that this is an internal sequence)'] },
+        ] },
+      { id: '6.4', name: 'An unbid suit',
+        quote: 'Lacking other information, you might lead an unbid suit.',
+        text: ['Lacking other information, you might lead an unbid suit on the theory that opponents are more likely to have high cards in the suits they\'ve bid.'] },
+      { id: '6.5', name: 'Against no-trump: longest and strongest',
+        quote: 'If your partner has not bid, you will generally do best to lead the 4th highest card from your longest and strongest suit.',
+        text: [{ h: 'Leading against no-trump' }, 'Usually your defensive goal against no-trump is to establish a suit in which you can take extra tricks when declarer shows out. If your partner has not bid, you will generally do best to lead the 4th highest card from your longest and strongest suit. Note that it\'s perfectly OK to underlead an ace against no-trump, something you should rarely do against a suit contract.'] },
+      { id: '6.6', name: 'Against no-trump: finding partner\'s suit',
+        quote: 'Sometimes your hand offers no realistic prospect of establishing and cashing tricks in your own suit.',
+        text: ['Sometimes your hand offers no realistic prospect of establishing and cashing tricks in your own suit. You might look for a potential suit in partner\'s hand, especially if the opponents have not bid it.'] },
+      { id: '6.7', name: 'Against a suit: don\'t lead away from an ace',
+        quote: 'Don\'t lead away from an ace!',
+        text: [
+          { h: 'Leading against a suit contract' },
+          'This tends to be more difficult than the lead against no-trump, mainly because the goals are more difficult to discern. Do we need to be aggressive in cashing winners early, or is it better to play passively and force declarer to do his own work? Should we try to score a trump trick by playing our short side suit? Is it critical to lead trumps to prevent declarer from using trumps to ruff losers early in the play? Here are a few rules for leading against a suit contract:',
+          { ol: ['Lead partner\'s suit unless you have a solid reason not to do so.', 'Don\'t lead away from an ace!'] },
+        ] },
+      { id: '6.8', name: 'Against a suit: short suits',
+        quote: 'Leading a singleton in a side suit can be very effective.',
+        text: ['**Shortness:** leading a singleton in a side suit can be very effective; if partner can get the lead before declarer draws your trumps, you can score a cheap trump trick. This lead is not nearly so effective if you lead a doubleton (although leading an ace and then a small card from a doubleton can work well), but if you do lead a doubleton hoping for a ruff, lead the top of the two cards first.'] },
+      { id: '6.9', name: 'Against a suit: trump leads',
+        quote: 'Declarer will often need to use trumps to take care of losers in his own hand, and leading a trump early may disrupt that strategy.',
+        text: [
+          'A trump lead can sometimes be effective. Declarer will often need to use trumps to take care of losers in his own hand, and leading a trump early may disrupt that strategy. Consider this auction:',
+          { auction: ['P', 'P', '1D', 'P', '1H', 'P', '1S', 'P', '3S', 'P', '4S', 'P', 'P', 'P'] },
+          'North got very interested after opener\'s 1S rebid, and it seems possible that declarer will want to trump losing diamonds in the dummy. Consider a spade lead to make declarer\'s plan more difficult.',
+        ] },
+    ],
+  },
 ];
 
 // The full course, for the home page. A lesson is playable once it is in LESSONS and has hands.
@@ -360,7 +420,7 @@ export const CATALOG: CatalogEntry[] = [
   { n: 3, title: 'Intro to Play', summary: 'Counting winners and losers, and making a plan before you play.', builds: [2] },
   { n: 4, title: 'Playing With Finesse' },
   { n: 5, title: 'Responding to NT (Stayman)', summary: 'Finding a 4-4 major fit after partner opens 1NT or 2NT.', builds: [2] },
-  { n: 6, title: 'Opening Leads' },
+  { n: 6, title: 'Opening Leads', summary: 'Choosing the first card on defense: reading the auction, partner\'s suit, sequences, and leads against no-trump and suit contracts.', builds: [2, 5] },
   { n: 7, title: 'Competitive Bidding' },
   { n: 8, title: 'Five Card Majors' },
   { n: 9, title: 'Preemptive Bidding' },
@@ -378,10 +438,10 @@ export const SYSTEM: SysItem[] = [
   { from: 2, head: 'Opening no-trump (balanced hands)', text: '1NT 15-17 HCP. 2NT 21-22 HCP. 3NT 23-25 HCP.' },
   { from: 2, until: 9, head: 'Opening two of a suit', text: '22+ points and at least a 5-card suit. Partner must respond, usually with 2NT.' },
   { from: 2, head: 'Responding to one of a suit', text: ['Under 6 points, pass.', '6-9 points and 3+ card support: raise to 2.', 'An opening hand or better and 4+ card support: jump raise to 3, forcing to game.', '6-9 HCP, balanced, poor support: 1NT.', '6+ points and a 4-card higher-ranking suit: bid it at the 1 level.', '10+ points and a 5-card lower-ranking suit: bid it at the 2 level.', '12-14 HCP, balanced, no good support: 2NT.'] },
-  { from: 2, until: 5, head: 'Responding to 1NT and 2NT', text: 'Over 1NT: 8-9 balanced, raise to 2NT; 10+ balanced, raise to 3NT. Over 2NT: under 4 HCP pass; 4+ HCP raise to 3NT.' },
+  { from: 2, until: 5, head: 'Responding to 1NT and 2NT', text: 'Over 1NT: 8-9 balanced, raise to 2NT; 10-14 balanced, raise to 3NT. Over 2NT: under 4 HCP pass; 4+ HCP raise to 3NT.' },
   { from: 2, head: 'How high to bid', text: 'About 25 combined points for a game in 3NT, 4♥ or 4♠.' },
   { from: 5, head: 'Stayman', text: ['Over 1NT, 2♣ asks opener for a 4-card major: 8+ HCP and at least one 4- or 5-card major.', 'Opener bids 2♥ (also with both majors), 2♠, or 2♦ with no major.', 'Over 2NT, 3♣ is Stayman (4+ HCP).'] },
-  { from: 5, until: 12, head: 'Other responses to 1NT', text: ['2♦, 2♥ or 2♠: fewer than 8 points and a 5- or 6-card suit; opener must pass.', '2NT: 8-9, balanced, no 4-card major.', '3NT: 10+, balanced, no 4-card major.', '3♥ or 3♠: 8-9 points and a 6-card major, inviting game.', '4♥ or 4♠: 6+ cards, usually 10+ points; opener must pass.'] },
+  { from: 5, until: 12, head: 'Other responses to 1NT', text: ['2♦, 2♥ or 2♠: fewer than 8 points and a 5- or 6-card suit; opener must pass.', '2NT: 8-9, balanced, no 4-card major.', '3NT: 10-14, balanced, no 4-card major.', '3♥ or 3♠: 8-9 points and a 6-card major, inviting game.', '4♥ or 4♠: 6+ cards, usually 10+ points; opener must pass.'] },
 ];
 /** The agreements in force for a hand from lesson n. */
 export function systemFor(n: number): SysItem[] { return SYSTEM.filter(x => x.from <= n && (x.until === undefined || n < x.until)); }

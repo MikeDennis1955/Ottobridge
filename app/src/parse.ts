@@ -1,6 +1,6 @@
 // Parse a .hand text file into a HandScript. Errors carry line numbers.
 import type {
-  Annotation, Call, Card, Deal, HandScript, HandType, PlanningPause, Rank,
+  Annotation, Call, Card, Deal, HandScript, HandType, LeadPlan, PlanningPause, Rank,
   ScriptedCall, ScriptedCard, Seat, Strain, Suit, Trick, Vulnerability,
 } from './model';
 
@@ -194,6 +194,24 @@ export function parseHand(src: string): ParseResult {
     }
   }
 
+  // ---- lead planning (defensive hands): "declarer: 15-17 = East's 1NT showed 15-17."
+  let leadPlan: LeadPlan | undefined;
+  if (sections['lead planning']) {
+    leadPlan = { why: {}, reminders: [] };
+    for (const l of sections['lead planning']) {
+      const m = /^([a-z ]+):\s*(.*)$/i.exec(l.text);
+      if (!m) { err(l.n, `Can't read lead planning line "${l.text}"`); continue; }
+      const k = m[1].toLowerCase().trim(), v = m[2].trim();
+      if (k === 'remind') { leadPlan.reminders.push(v); continue; }
+      if (!['declarer', 'dummy', 'partner'].includes(k)) { err(l.n, `Unknown lead planning item "${k}" (declarer, dummy, partner or remind)`); continue; }
+      const cm = /^(\d+)(?:\s*-\s*(\d+))?\s*(?:=\s*(.*))?$/.exec(v);
+      if (!cm) { err(l.n, `"${k}" needs points or a range like 15-17`); continue; }
+      const key = k as 'declarer' | 'dummy' | 'partner';
+      leadPlan[key] = { min: Number(cm[1]), max: Number(cm[2] ?? cm[1]) };
+      if (cm[3]) leadPlan.why[key] = cm[3].trim();
+    }
+  }
+
   const block = (k: string) => sections[k]?.map(l => l.text).join(' ');
   const script: HandScript = {
     id: need('id'), title: head['title'] ?? head['id'] ?? 'Untitled', type,
@@ -202,10 +220,10 @@ export function parseHand(src: string): ParseResult {
     student: seat('student', 'S'), dealer: head['dealer'] || !board ? seat('dealer') : boardDealer(board),
     vulnerable: head['vulnerable'] || !board ? vulMap[vul] ?? (err(undefined, 'vulnerable must be none, NS, EW or both'), 'none') : boardVul(board),
     board: board || undefined,
-    deal, auction, auctionRecap: block('auction recap'), planning, play, playRecap: block('play recap'),
+    deal, auction, auctionRecap: block('auction recap'), planning, leadPlan, play, playRecap: block('play recap'),
   };
   for (const k of Object.keys(sections))
-    if (!['deal', 'auction', 'auction recap', 'planning', 'play', 'play recap'].includes(k))
+    if (!['deal', 'auction', 'auction recap', 'planning', 'lead planning', 'play', 'play recap'].includes(k))
       err(sectionLine[k], `Unknown section "${k}:"`);
   return { script, errors };
 }

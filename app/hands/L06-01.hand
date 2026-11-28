@@ -1,0 +1,75 @@
+# Lesson 6, Mike's Exercise 4, turned so the student (South) is on lead. South's cards are Mike's; the other hands were re-dealt 2026-11-27 so good defense beats it.
+title: Your Exercise 4: partner bid spades
+id: L06-01
+type: exercise
+lesson: 6
+concepts: 6.2, 6.1
+student: S
+board: 1
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AQJ98  874    AT      865
+  E  T64    AJ     KJ8762  A3
+  S  K5     T962   943     JT74
+  W  732    KQ53   Q5      KQ92
+
+auction:
+  N Pass   = Not enough to open
+  E 1D     = 13+ points, 4+ diamonds
+  S Pass   = Not enough to bid
+  W 1H     = 6+ points, 4+ hearts
+  N 1S     = Spades: a good 5-card suit. Partner wants you to know about it.
+  E 2D     = A minimum opening hand with 6 diamonds
+  S Pass   = Nothing to add
+  W 3D     = Diamond support, about 10-12 points: inviting game
+  N Pass   = Nothing more to say
+  E Pass   = A minimum: no game
+  S Pass   = Nothing to add
+
+auction recap:
+  East opened 1♦ and West responded 1♥. Partner (North) then bid 1♠ to tell
+  you about her spades. East's 2♦ showed a minimum with six diamonds, and
+  West's 3♦ invited game, which East declined. East is declarer, because East
+  bid diamonds first, and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 13-15 = East opened, then rebid 2♦: a minimum opening hand, about 13 to 15.
+  dummy: 10-12 = West's jump to 3♦ invites game: about 10 to 12.
+  partner: 9-12 = 40, minus your 4, East's 13 to 15 and West's 10 to 12, leaves 9 to 13. North passed at first, so under 13.
+  remind: Partner has a fair hand and bid spades. What does that suggest for your lead?
+
+play:
+  1   S SK*  W S2  N S8  E S4
+      SK key: Partner bid spades, so lead them. With a doubleton honor, lead the honor: the king, then the 5.
+      SK not S5: Right suit! With only two cards, lead the honor first. If you lead the 5 and partner wins the ace, your king is stuck alone.
+      SK not H: Partner bid spades for a reason. Which suit did partner ask you to lead?
+      SK not D: Leading declarer's trump suit rarely helps here. What did partner bid?
+      SK not C: Clubs are a guess. Partner told you which suit she likes.
+      note: Your king wins the first trick.
+  2   S S5  W S3  N SJ  E S6
+      note: Now the 5. Partner wins with the jack.
+  3   N SA  E ST  S H2  W S7
+      note: Partner cashes the ♠A. You have no spades left, so you throw a small heart.
+  4   N H8  E HJ  S H6  W H3
+      note: Partner gets out safely with a heart and waits for her ♦A.
+  5   E DK  S D3  W D5  N DT
+      note: Declarer starts on trumps.
+  6   E DJ  S D4  W DQ  N DA
+      note: Partner wins the ♦A.
+  7   N SQ  E D8  S D9  W C2
+      note: Partner leads her last spade. If declarer throws a card, the ♠Q wins. He ruffs, but his highest trump left is the 8, and your 9 is higher: the defense's fifth trick, and 3♦ is down one.
+  8   S CJ  W CQ  N C5  E C3
+      note: The rest are declarer's.
+  9   W H5  N H4  E HA  S H9
+  10  E CA  S C4  W C9  N C6
+  11  E D2  S HT  W CK  N C8
+  12  E D6  S C7  W HQ  N H7
+  13  E D7  S CT  W HK  N S9
+
+play recap:
+  Your ♠K, then the 5, let partner win two more spades with the jack and
+  the ace. Partner's ♦A was the fourth trick, and her last spade made the
+  fifth: declarer had to ruff, and your ♦9 was higher than his trump. Down
+  one. Lead anything else, and declarer has time to draw trumps and throw
+  his spade losers on dummy's hearts and clubs. When partner bids a suit,
+  that's usually the lead that counts.

@@ -1,0 +1,72 @@
+# Lesson 6, batch 2 (2026-11-28): the unbid suit, with an inside sequence: lead the jack.
+title: An inside sequence in an unbid suit
+id: L06-18
+type: exercise
+lesson: 6
+concepts: 6.4, 6.3
+student: S
+board: 18
+
+deal:            # spades  hearts  diamonds  clubs
+  N  Q9754  74     A83     T73
+  E  J      KQJT92 Q64     KJ6
+  S  863    A8     KJT9    9542
+  W  AKT2   653    752     AQ8
+
+auction:
+  E 1H     = 13+ points, 4+ hearts
+  S Pass   = Not enough to bid
+  W 1S     = 6+ points, 4+ spades
+  N Pass   = Nothing to say
+  E 2H     = A minimum with six hearts
+  S Pass   = Nothing to say
+  W 4H     = Enough for game opposite a minimum
+  N Pass   = Nothing to say
+  E Pass   = Done
+  S Pass   = Nothing to add
+
+auction recap:
+  East opened 1♥, West bid 1♠, and East's 2♥ showed a minimum with six
+  hearts. West bid the game. East is declarer, and so you, South, will lead
+  to the first trick.
+
+lead planning:
+  declarer: 13-15 = East opened and rebid 2♥: a minimum, about 13 to 15, with six hearts.
+  dummy: 12-17 = West jumped to game opposite a minimum: about 13 or more.
+  partner: 0-7 = 40, minus your 8, East's 13 to 15 and West's 12 to 17, leaves at most 7.
+  remind: Which suits has nobody bid?
+
+play:
+  1   S DJ*  W D2  N DA  E D4
+      DJ key: Diamonds are unbid, and your K-J-10-9 is an inside sequence: lead the jack, the top of the touching cards. If partner has the ace or queen, the suit sets up fast.
+      DJ not DK: Right suit! With K-J-10-9, lead the jack, the top of the inside sequence. The king could run into the ace.
+      DJ not D: Right suit! With K-J-10-9, lead the jack, the top of the touching cards.
+      DJ not C: Clubs are unbid too, but 9-5-4-2 builds nothing. Which unbid suit has touching high cards?
+      DJ not S: West bid spades. Which suits has nobody bid?
+      DJ not HA: Your ♥A is a sure trick whenever you take it, so leading it builds nothing. Which unbid suit has touching high cards?
+      DJ not H: Your ♥A is a sure trick whenever you take it, so a trump lead builds nothing. Which unbid suit has touching high cards?
+      note: Partner wins the ace...
+  2   N D8  E D6  S D9  W D5
+      note: ...and returns a diamond through declarer. Declarer plays low, and your 9 wins.
+  3   S HA  W H3  N H4  E H2
+      note: Cash your ♥A.
+  4   S DK  W D7  N D3  E DQ
+      note: Now your ♦K beats the queen: four tricks, down one.
+  5   S H8  W H5  N H7  E H9
+      note: You get out with a trump, and declarer takes the rest.
+  6   E HK  S C2  W H6  N C3
+  7   E HQ  S S3  W S2  N S4
+  8   E HJ  S C4  W C8  N S5
+  9   E HT  S C5  W ST  N S7
+  10  E CK  S C9  W CQ  N C7
+  11  E CJ  S S6  W CA  N CT
+  12  W SA  N S9  E SJ  S S8
+  13  W SK  N SQ  E C6  S DT
+
+play recap:
+  Your ♦J found partner's ace, and her diamond return through declarer's ♦Q
+  set up two more diamond tricks for you. With your ♥A, that was four tricks
+  before declarer could get going. Lead a spade or a club, and declarer
+  draws trumps, throws losers on dummy's spades, and makes 4♥. With an
+  inside sequence like K-J-10-9, lead the jack: it gives nothing away, and
+  the king is still there later.

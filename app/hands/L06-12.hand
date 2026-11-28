@@ -1,0 +1,78 @@
+# Lesson 6, batch 2 (2026-11-28): a near-sequence instead of leading away from an ace.
+title: Not away from your ace
+id: L06-12
+type: exercise
+lesson: 6
+concepts: 6.7, 6.3
+student: S
+board: 12
+
+deal:            # spades  hearts  diamonds  clubs
+  N  7      Q6532  8652    AT8
+  E  AKQT864 KT     J93     J
+  S  52     AJ74   KQT     9643
+  W  J93    98     A74     KQ752
+
+auction:
+  W Pass   = Not enough to open
+  N Pass   = Not enough to open
+  E 1S     = 13+ points, 4+ spades
+  S Pass   = Not enough to bid
+  W 2C     = 10+ points, 5+ clubs
+  N Pass   = Nothing to say
+  E 2S     = A minimum with long spades
+  S Pass   = Nothing to say
+  W 3S     = Spade support, about 10-11 points: inviting game
+  N Pass   = Nothing to say
+  E 4S     = Accepting: long spades make up for a minimum
+  S Pass   = Nothing to add
+  W Pass   = Done
+  N Pass   = Nothing to add
+
+auction recap:
+  East opened 1♠ and West, a passed hand, bid 2♣. East rebid his spades, and
+  West's raise to 3♠ invited game, which East accepted. East is declarer,
+  and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 13-16 = East opened and rebid 2♠ without jumping: about 13 to 16, with long spades.
+  dummy: 10-12 = West passed at first, bid 2♣ (10 or more), then only invited: 10 to 11 or so.
+  partner: 2-7 = 40, minus your 10, East's 13 to 16 and West's 10 to 12, leaves 2 to 7.
+  remind: Against a suit contract, which of your suits can you lead from safely?
+
+play:
+  1   S DK*  W DA  N D2  E D3
+      DK key: Top of your best sequence. K-Q-10 is nearly solid: once the ace goes, your queen is a winner, and the king gives nothing away.
+      DK not DQ: Right suit! From K-Q-10, lead the king, the top of the touching cards.
+      DK not D: Right suit! From K-Q-10, lead the king, the top of the touching cards.
+      DK not H: Leading away from an ace against a suit contract can hand declarer a trick with the king. Your ♥A will still be there later.
+      DK not HA: Cashing the ♥A builds nothing, and it can set up a king for declarer. Which suit has a sequence on top?
+      DK not C: West bid clubs. Which suit has touching high cards on top?
+      DK not S: Trumps can wait. Which suit has touching high cards on top?
+      note: Dummy's ace wins. Your ♦Q is now set up.
+  2   W S3  N S7  E SA  S S2
+      note: Declarer draws trumps.
+  3   E SK  S S5  W S9  N H2
+  4   E CJ  S C3  W CK  N CA
+      note: Declarer goes after dummy's clubs: once partner's ace is gone, they'll give him discards. Partner takes the ace at once.
+  5   N H3  E HK  S HA  W H8
+      note: Partner sees the danger in dummy's clubs and switches to a heart, through declarer. Your ace beats the king.
+  6   S DQ  W D4  N D5  E D9
+      note: Cash your ♦Q.
+  7   S HJ  W H9  N H5  E HT
+      note: And your ♥J is good too, now that the king is gone: four tricks, down one.
+  8   S DT  W D7  N D6  E DJ
+      note: The rest are declarer's.
+  9   E SQ  S C4  W SJ  N H6
+  10  E ST  S C6  W C7  N C8
+  11  E S8  S C9  W C2  N CT
+  12  E S6  S H4  W CQ  N HQ
+  13  E S4  S H7  W C5  N D8
+
+play recap:
+  Your ♦K set up the ♦Q at trick one, and you kept your ♥A for later. When
+  partner won the ♣A, she switched to a heart, and the defense cashed four
+  tricks before dummy's clubs could take care of declarer's losers. Lead a
+  heart away from your ace instead, and declarer's ♥K scores a trick: he
+  loses only one heart, and 4♠ makes. Against a suit contract, a sequence is
+  a far safer start than leading away from an ace.

@@ -1,0 +1,79 @@
+# Lesson 6, Mike's Exercise 2, turned so the student (South) is on lead. South's cards are Mike's; the other hands were re-dealt 2026-11-27 so good defense beats it.
+title: Your Exercise 2: fourth from your longest and strongest
+id: L06-03
+type: exercise
+lesson: 6
+concepts: 6.5, 6.4
+student: S
+board: 3
+
+deal:            # spades  hearts  diamonds  clubs
+  N  985    A9732  K83     43
+  E  K62    KQ54   64      AQJT
+  S  T74    86     AJ952   K87
+  W  AQJ3   JT     QT7     9652
+
+auction:
+  S Pass   = Not enough to open
+  W Pass   = Not enough to open
+  N Pass   = Not enough to open
+  E 1NT    = 15-17 points, balanced
+  S Pass   = Nothing to say
+  W 2C     = Stayman: do you have a 4-card major?
+  N Pass   = Nothing to say
+  E 2H     = Four hearts
+  S Pass   = Nothing to say
+  W 3NT    = Game values, four spades, not four hearts
+  N Pass   = Nothing to say
+  E Pass   = No four spades: 3NT it is
+  S Pass   = Nothing to add
+
+auction recap:
+  East opened 1NT. West's Stayman 2♣ found four hearts with East, but West's
+  3NT said "not hearts for me; I have four spades." East has no four spades,
+  so the contract is 3NT. East is declarer, and so you, South, will lead to
+  the first trick.
+
+lead planning:
+  declarer: 15-17 = East's 1NT showed 15 to 17, and 2♥ showed four hearts.
+  dummy: 10-14 = West bid game opposite 1NT: 10 to 14, with four spades. (West passed at first, so 12 at most is likely.)
+  partner: 1-7 = 40, minus your 8, East's 15 to 17 and West's 10 to 14, leaves 1 to 7.
+  remind: The opponents have shown both majors. Which suits has nobody bid?
+  remind: At no-trump, your longest and strongest suit is where your extra tricks will come from.
+
+play:
+  1   S D5*  W DT  N DK  E D4
+      D5 key: Fourth from your longest and strongest. Leading away from your ace is fine against no-trump: you're starting to set up the suit.
+      D5 not DA: Right suit! But the ace is your way back in later, once the suit is set up. Lead low and keep the ace.
+      D5 not D: Right suit! The usual card is the fourth from the top: count down A, J, 9, 5.
+      D5 not S: Dummy has four spades. Which suit is your longest and strongest?
+      D5 not H: Declarer has four hearts. Which suit is your longest and strongest?
+      D5 not C: Clubs are a fair unbid suit, but diamonds are longer and stronger.
+      note: Partner wins the ♦K.
+  2   N D8  E D6  S D2  W DQ
+      note: Partner returns a diamond. Dummy's queen will win a trick whatever you do, so you play low and keep your ♦A as a way back in. Your A, J and 9 are now all winners.
+  3   W C2  N C3  E CJ  S CK
+      note: Declarer needs club tricks and tries a finesse. Your ♣K wins.
+  4   S DA  W D7  N D3  E H4
+      note: Now your diamonds run.
+  5   S DJ  W C5  N C4  E H5
+  6   S D9  W C6  N H2  E CT
+      note: Five tricks for the defense: 3NT can't make.
+  7   S S4  W SJ  N S5  E S2
+      note: Nothing else to cash, so you get out with a spade.
+  8   W S3  N S8  E SK  S S7
+  9   E S6  S ST  W SQ  N S9
+  10  W SA  N H3  E CQ  S H6
+  11  W HJ  N HA  E HQ  S H8
+      note: Partner's ♥A: down two.
+  12  N H7  E HK  S C8  W HT
+  13  E CA  S C7  W C9  N H9
+
+play recap:
+  The ♦5 got the defense off to a running start. Partner's ♦K won, and
+  because you kept your ♦A, you still had a way back in when declarer's club
+  finesse lost to your king. Then your diamonds ran: five tricks before
+  declarer could take nine, and partner's ♥A made it down two. Declarer had
+  to give up the lead to set up her ninth trick, and your diamonds were
+  ready and waiting. That's the race at no-trump: get your long suit going
+  first.

@@ -1,0 +1,74 @@
+# Lesson 6, batch 2 (2026-11-28): a weak hand against 3NT: lead the unbid major for partner.
+title: Look for partner's suit
+id: L06-13
+type: exercise
+lesson: 6
+concepts: 6.6, 6.4
+student: S
+board: 13
+
+deal:            # spades  hearts  diamonds  clubs
+  N  AQ854  A84    9       6532
+  E  J62    KJ6    AQT3    QJT
+  S  T93    Q72    J8642   74
+  W  K7     T953   K75     AK98
+
+auction:
+  N Pass   = Not enough to open
+  E 1D     = 13+ points, 4+ diamonds
+  S Pass   = Not enough to bid
+  W 1H     = 6+ points, 4+ hearts
+  N Pass   = Nothing to say
+  E 1NT    = A balanced minimum, about 13-15
+  S Pass   = Nothing to say
+  W 3NT    = Enough for game opposite a minimum
+  N Pass   = Nothing to say
+  E Pass   = Happy with game
+  S Pass   = Nothing to add
+
+auction recap:
+  East opened 1♦, West responded 1♥, and East's 1NT showed a balanced
+  minimum without four spades. West raised to game. East is declarer, and so
+  you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 13-15 = East opened, then rebid 1NT: a balanced minimum, about 13 to 15.
+  dummy: 11-15 = West responded, then jumped to game opposite a minimum: about 12 or more.
+  partner: 7-12 = 40, minus your 3, East's 13 to 15 and West's 11 to 15, leaves 7 to 13. North passed at first, so 12 at most.
+  remind: Your hand has almost nothing, and your long suit is the one declarer bid.
+  remind: Partner has some points. Which suit has nobody bid?
+
+play:
+  1   S ST*  W S7  N SQ  E S2
+      ST key: Nobody has bid spades, and East's 1NT denied four of them. Partner has the points, so spades are the likeliest place for partner's suit. From 10-9-3, lead the 10.
+      ST not S: Right suit! With the 10 and 9 on top, lead the 10.
+      ST not D: Your diamonds are long, but declarer bid them, and you have no way back in even if they came good. Where might partner's points be?
+      ST not H: West bid hearts, and your ♥Q may be a trick if you leave the suit alone. Which suit has nobody bid?
+      ST not C: Clubs are a fair try, but East would have bid 1♠ with four spades, so spades are the more likely home for partner's length. Which suit has nobody bid at all?
+      note: Partner wins the queen.
+  2   N SA  E S6  S S3  W SK
+      note: Partner cashes the ace, and dummy's king falls.
+  3   N S5  E SJ  S S9  W H3
+      note: Partner knocks out declarer's ♠J while he still has the ♥A to get back in. Now his last two spades are winners.
+  4   E CQ  S C4  W C9  N C2
+      note: Declarer has eight tricks: the ♠J, four clubs and three diamonds. She runs them, hoping for a mistake.
+  5   E CJ  S C7  W C8  N C3
+  6   E CT  S D2  W CK  N C5
+      note: You have no clubs left, so you throw a diamond.
+  7   W CA  N C6  E H6  S D4
+  8   W DK  N D9  E D3  S D6
+  9   W D5  N H4  E DA  S D8
+  10  E DQ  S DJ  W D7  N H8
+  11  E HJ  S H2  W H5  N HA
+      note: Declarer has to lead a heart at last. Partner wins the ace...
+  12  N S8  E HK  S H7  W H9
+      note: ...and cashes his spades: down one.
+  13  N S4  E DT  S HQ  W HT
+
+play recap:
+  Your hand had nothing to set up, so you led for partner, and the ♠10 found
+  his suit. Partner took two spade tricks, knocked out declarer's ♠J, and
+  kept the ♥A as a way back in to cash the rest: five tricks, down one. A
+  diamond lead, from your long suit, would have handed declarer time to set
+  up a ninth trick. When your own hand is hopeless, think about where
+  partner's points are.

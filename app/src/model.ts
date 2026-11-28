@@ -60,6 +60,15 @@ export interface PlanningPause {
   reminders: string[];              // e.g. "What is the contract?"
 }
 
+/** Asked before the student's opening lead (defensive hands): what the auction showed, in points. */
+export interface LeadPlan {
+  declarer?: Count;                 // points declarer has shown
+  dummy?: Count;                    // points dummy has shown
+  partner?: Count;                  // so what partner can hold
+  why: Partial<Record<'declarer' | 'dummy' | 'partner', string>>;  // shown after checking
+  reminders: string[];
+}
+
 export interface Contract {         // derived from the auction, not written in the file
   level: number; strain: Strain;
   doubled: '' | 'X' | 'XX';
@@ -80,6 +89,7 @@ export interface HandScript {
   auction: ScriptedCall[];
   auctionRecap?: string;
   planning?: PlanningPause;
+  leadPlan?: LeadPlan;              // "lead planning:" section
   play: Trick[];                    // always all 13 tricks
   playRecap?: string;
 }

@@ -1,0 +1,72 @@
+title: A sequence, and an ace to keep
+id: L06-05
+type: exercise
+lesson: 6
+concepts: 6.3, 6.7
+student: S
+board: 5
+
+deal:            # spades  hearts  diamonds  clubs
+  N  QJT6   T2     T942    T65
+  E  K4     AJ985  A73     K82
+  S  A852   74     KQJ6    943
+  W  973    KQ63   85      AQJ7
+
+auction:
+  N Pass   = Not enough to open
+  E 1H     = 13+ points, 4+ hearts
+  S Pass   = Not enough to bid
+  W 3H     = An opening hand or better with 4+ hearts: game is on
+  N Pass   = Nothing to say
+  E 4H     = Game in hearts
+  S Pass   = Nothing to add
+  W Pass   = Done
+  N Pass   = Nothing to add
+
+auction recap:
+  East opened 1♥ and West's jump to 3♥ showed an opening hand with four or
+  more hearts, so East bid the game. East is declarer, and so you, South,
+  will lead to the first trick.
+
+lead planning:
+  declarer: 13-21 = East opened one of a suit: 13 to 21.
+  dummy: 13-27 = West's jump raise showed an opening hand or better.
+  partner: 0-4 = 40, minus your 10 and the opponents' 26 or more, leaves at most 4.
+  remind: Against a suit contract, which of your suits is safe to lead?
+
+play:
+  1   S DK*  W D5  N D2  E DA
+      DK key: Top of your sequence. The ♦K is safe, and once the ace is gone your queen and jack are ready to win.
+      DK not S: Never lead away from an ace against a suit contract. Declarer's king might win a trick it would never otherwise take.
+      DK not SA: Cashing the ♠A is safe, but it sets up declarer's king. The ♦K is just as safe and builds tricks for you.
+      DK not H: A trump lead isn't wrong, but your diamond sequence is safe and builds tricks.
+      DK not C: Leading from three small clubs is a guess. Your diamond sequence is a sure thing.
+      DK not D: Right suit! Lead the top of the sequence, the king.
+      note: Declarer wins the ♦A. Your ♦Q is now set up, if you get the chance to cash it.
+  2   E H5   S H4  W HK  N H2
+      note: Declarer draws trumps, starting with dummy's king and queen, the short side.
+  3   W HQ   N HT  E H8  S H7
+      note: That's all the trumps.
+  4   W C7   N C5  E CK  S C3
+      note: Next, clubs: the king from the short side first.
+  5   E C2   S C4  W CQ  N C6
+  6   W CA   N CT  E C8  S C9
+  7   W CJ   N S6  E S4  S D6
+      note: Dummy's fourth club takes care of declarer's small spade.
+  8   W D8   N D4  E D7  S DJ
+      note: Declarer gives up a diamond, planning to ruff the last one in dummy.
+  9   S SA   W S3  N ST  E SK
+      note: You cash your ace, and declarer's king falls under it.
+  10  S DQ   W H3  N D9  E D3
+      note: Dummy ruffs, as declarer planned.
+  11  W S7   N SJ  E H9  S S2
+  12  E HA   S S5  W H6  N DT
+  13  E HJ   S S8  W S9  N SQ
+
+play recap:
+  Declarer had eleven tricks after your ♦K: five trumps, four clubs, the ♦A
+  and a diamond ruff. The defense took the ♠A and a diamond. Your lead didn't
+  beat the contract, but it gave nothing away. A low spade lead would have
+  cost a trick: declarer's ♠K would have won at once, making twelve tricks.
+  Leading away from an ace against a suit contract often hands declarer a
+  trick with the king, while top of a sequence is about as safe as a lead gets.

@@ -1,5 +1,5 @@
 // Reviewer table: load a hand script, step through auction and play, leave notes.
-import type { Call, Card, Count, HandScript, PlanningPause, Seat, Suit } from './model';
+import type { Call, Card, Count, HandScript, LeadPlan, PlanningPause, Seat, Suit } from './model';
 import { parseHand, type Issue } from './parse';
 import { validate, next, partner, side, callText, cardKey, fmt, hcp, SUITS, SUIT_SYM, RANKS, trickWinner, type Derived } from './rules';
 
@@ -16,6 +16,7 @@ type Step =
   | { kind: 'auctionRecap' }
   | { kind: 'card'; t: number; c: number }
   | { kind: 'planning' }
+  | { kind: 'leadPlan' }
   | { kind: 'playRecap' };
 
 interface Loaded {
@@ -38,6 +39,7 @@ const S = {
   picks: new Map<number, string>(),
   auto: new Set<number>(),               // steps the student let Autoplay or Claim play for them      // step index -> what the student chose
   plan: { vals: {} as Record<string, string>, checked: false },
+  lp: { vals: {} as Record<string, string>, checked: false },   // lead pause answers (defensive hands)
   tab: 'auction' as 'auction' | 'tricks' | 'checks' | 'script' | 'notes',
   notes: new Map<string, Note>(),
   db: null as any,
@@ -80,6 +82,7 @@ function buildSteps(s: HandScript, d: Derived): Step[] {
   s.auction.forEach((_, i) => st.push({ kind: 'call', i }));
   if (s.auctionRecap) st.push({ kind: 'auctionRecap' });
   s.play.forEach((t, ti) => t.cards.forEach((_, ci) => {
+    if (ti === 0 && ci === 0 && s.leadPlan && d.contract) st.push({ kind: 'leadPlan' });
     st.push({ kind: 'card', t: ti, c: ci });
     if (ti === 0 && ci === 0 && s.planning && d.contract) st.push({ kind: 'planning' });
   }));
@@ -95,7 +98,7 @@ function stepLabel(L: Loaded, st: Step): string {
   if (st.kind === 'deal') return 'The deal';
   if (st.kind === 'call') { const a = s.auction[st.i]; return `Call ${st.i + 1}: ${SEAT_NAME[a.seat]} ${callText(a.call)}`; }
   if (st.kind === 'card') { const pc = s.play[st.t].cards[st.c]; return `Trick ${st.t + 1}, card ${st.c + 1}: ${SEAT_NAME[pc.seat]} ${fmt(pc.card)}`; }
-  return { auctionRecap: 'Auction recap', planning: 'Planning pause', playRecap: 'Play recap' }[st.kind];
+  return { auctionRecap: 'Auction recap', planning: 'Planning pause', leadPlan: 'Lead pause', playRecap: 'Play recap' }[st.kind];
 }
 
 // ---------- notes storage (shared db when available, else this browser) ----------
@@ -632,6 +635,11 @@ function renderStepCard(L: Loaded, pos: Pos) {
     if (p.winners !== undefined) q.push(`<li>How many obvious winners? <b>${countText(p.winners)}</b></li>`);
     if (p.bySuit) q.push(`<li>By suit:${catalogueHTML(p)}</li>`);
     parts.push(`<div class="headline">Planning pause</div><p class="muted">Dummy is down. Before declarer plays, the student answers:</p><ul class="plan">${q.join('')}</ul>`);
+  } else if (st.kind === 'leadPlan') {
+    const p = s.leadPlan!;
+    const q = leadQuestions(L).map(x => `<li>${esc(x.q)} <b>${rangeText(x.answer)}</b>${p.why[x.key] ? ` <span class="muted">${prose(p.why[x.key])}</span>` : ''}</li>`);
+    p.reminders.forEach(r => q.push(`<li>${prose(r)} <span class="muted">reminder</span></li>`));
+    parts.push(`<div class="headline">Lead pause</div><p class="muted">Before the opening lead, the student answers:</p><ul class="plan">${q.join('')}</ul>`);
   } else if (st.kind === 'card') {
     const tr = s.play[st.t], pc = tr.cards[st.c];
     parts.push(`<div class="headline">${SEAT_NAME[pc.seat]} ${st.c === 0 ? 'leads' : 'plays'} <span class="cardtxt">${cardText(pc.card)}</span> ${flags(pc)}${pc.countMark ? `<span class="chip">${pc.countMark}</span>` : ''}</div>`);
@@ -670,7 +678,7 @@ function renderStepCard(L: Loaded, pos: Pos) {
 }
 
 function callTextHTML(k: string) { const c = parseCallSafe(k); return c ? callHTML(c, 'sm') : esc(k); }
-function cardTextHTML(k: string) { const c = parseCardSafe(k); return c ? `<span class="cardtxt">${cardText(c)}</span>` : esc(k); }
+function cardTextHTML(k: string) { const c = parseCardSafe(k), su = suitKey(k); return c ? `<span class="cardtxt">${cardText(c)}</span>` : su ? `any ${suitSpan(su)}` : esc(k); }
 import { parseCall as parseCallSafe, parseCard as parseCardSafe } from './parse';
 
 // ---------- tabs ----------
@@ -782,7 +790,7 @@ const allVisible = () => S.mode === 'review' && S.showAll;
 function selectHand(i: number) { S.cur = i; askReset(); restart(); }
 function restart() {
   if (S.playing) { clearInterval(S.playing); S.playing = 0; }
-  S.picks.clear(); S.auto.clear(); S.plan = { vals: {}, checked: false }; S.step = 0; $('#tabbody').innerHTML = ''; render();
+  S.picks.clear(); S.auto.clear(); S.plan = { vals: {}, checked: false }; S.lp = { vals: {}, checked: false }; S.step = 0; $('#tabbody').innerHTML = ''; render();
 }
 /** The student makes every one of their own calls (not in Example hands), plus any call marked *. */
 function studentCalls(s: HandScript, i: number): boolean {
@@ -797,8 +805,25 @@ function pendingAt(L: Loaded, i: number): boolean {
   if (st.kind === 'call') return studentCalls(s, st.i) && !S.picks.has(i);
   if (st.kind === 'card') return studentPlays(L, i) && legalCardsAt(L, i).length > 1 && !S.picks.has(i);
   if (st.kind === 'planning') return S.help && planQuestions(L).length > 0 && !S.plan.checked;
+  if (st.kind === 'leadPlan') return S.help && leadQuestions(L).length > 0 && !S.lp.checked;
   return false;
 }
+/** The lead pause: what the auction showed about declarer, dummy and so partner, in points. */
+function leadQuestions(L: Loaded): { key: 'declarer' | 'dummy' | 'partner'; q: string; answer: Count }[] {
+  const p = L.script!.leadPlan, c = L.derived?.contract; if (!p || !c) return [];
+  const out: { key: 'declarer' | 'dummy' | 'partner'; q: string; answer: Count }[] = [];
+  if (p.declarer) out.push({ key: 'declarer', q: `How many points has declarer (${SEAT_NAME[c.declarer]}) shown?`, answer: p.declarer });
+  if (p.dummy) out.push({ key: 'dummy', q: `How many points has dummy (${SEAT_NAME[partner(c.declarer)]}) shown?`, answer: p.dummy });
+  if (p.partner) out.push({ key: 'partner', q: 'So how many points can partner hold?', answer: p.partner });
+  return out;
+}
+/** A point answer: "16" or "15-17". Right when it lies inside the script's range. */
+function pointsOk(v: string, a: Count): boolean {
+  const m = /^\s*(\d+)\s*(?:(?:-|to|–)\s*(\d+))?\s*\+?\s*$/.exec(v); if (!m) return false;
+  const lo = Number(m[1]), hi = Number(m[2] ?? m[1]);
+  return lo <= hi && lo >= a.min && hi <= a.max;
+}
+const rangeText = (c: Count) => c.min === c.max ? `${c.min}` : c.max >= 37 ? `${c.min} or more` : `${c.min} to ${c.max}`;
 function planQuestions(L: Loaded): { key: string; q: string; answer: Count }[] {
   const p = L.script!.planning; if (!p) return [];
   const out: { key: string; q: string; answer: Count }[] = [];
@@ -831,7 +856,19 @@ function studentPlays(L: Loaded, i: number): boolean {
   if (!c) return false;
   if (c.declarer === s.student) return pc.seat === s.student || pc.seat === partner(s.student);
   if (partner(c.declarer) === s.student) return false; // student is dummy: partner plays
-  return pc.seat === s.student;
+  // defending: the student makes the opening lead; after that the hand plays itself, stopping only at cards marked *
+  return pc.seat === s.student && st.t === 0 && st.c === 0;
+}
+/** The student's opening lead on defense: judged card by card (the lead's card carries a message to partner). */
+function isDefLead(L: Loaded, i: number): boolean {
+  const s = L.script!, st = L.steps[i], c = L.derived?.contract;
+  return st?.kind === 'card' && st.t === 0 && st.c === 0 && !!c && side(c.declarer) !== side(s.student) && s.play[0].cards[0].seat === s.student;
+}
+/** A judged pick counts as right: the card, an equal card, or a lead in a suit listed under "ok:". */
+function pickRight(L: Loaded, i: number, pick: string): boolean {
+  if (cardRightAt(L, i, pick)) return true;
+  const st = L.steps[i], pk = parseCardSafe(pick);
+  return st.kind === 'card' && st.c === 0 && !!pk && !!L.script!.play[st.t].okLeads?.includes(pk.suit);
 }
 function legalCardsAt(L: Loaded, i: number): Card[] {
   const s = L.script!, st = L.steps[i]; if (st.kind !== 'card') return [];
@@ -847,12 +884,14 @@ function cardRightAt(L: Loaded, i: number, pick: string): 'same' | 'equal' | fal
   const s = L.script!, st = L.steps[i]; if (st.kind !== 'card') return false;
   const pc = s.play[st.t].cards[st.c], c = parseCardSafe(pick); if (!c) return false;
   if (cardKey(c) === cardKey(pc.card)) return 'same';
-  if (c.suit !== pc.card.suit) return false;
+  if (c.suit !== pc.card.suit || isDefLead(L, i)) return false;
   const played = position(L, i - 1).played, hand = new Set((s.deal[pc.seat] ?? []).map(cardKey));
   const [a, b] = [RANKS.indexOf(c.rank), RANKS.indexOf(pc.card.rank)].sort((x, y) => x - y);
   for (let r = a + 1; r < b; r++) { const k = c.suit + RANKS[r]; if (!hand.has(k) && !played.has(k)) return false; }
   return 'equal';
 }
+/** "S" or "♠" in a not-line means any card of that suit. */
+function suitKey(k: string): Suit | null { return ({ S: 'S', H: 'H', D: 'D', C: 'C', '♠': 'S', '♥': 'H', '♦': 'D', '♣': 'C' } as Record<string, Suit>)[k.toUpperCase()] ?? null; }
 function sameCardKey(a: string, b: Card) { const c = parseCardSafe(a); return !!c && cardKey(c) === cardKey(b); }
 function studentPick(choice: string) {
   const L = S.hands[S.cur]; if (!pendingAt(L, S.step)) return;
@@ -867,7 +906,7 @@ function cardNeedsReading(L: Loaded, i: number): boolean {
   if (pc.key || (st.c === 3 && tr.note)) return true;
   if (pick === undefined) return false;
   const ok = cardRightAt(L, i, pick), pk = parseCardSafe(pick);
-  if (pc.studentDecides) return !ok;
+  if (pc.studentDecides) return !ok || isDefLead(L, i);
   return st.c === 0 && !ok && !!pk && pk.suit !== pc.card.suit;
 }
 /** Card play flows on its own: after the student's card, the next cards appear one by one until the student's next decision or something to read. */
@@ -914,7 +953,8 @@ function biddingBox(L: Loaded, i: number) {
 }
 function wrongNote(w: Record<string, string> | undefined, pick: string, isCall: boolean, right: string): string {
   if (!S.help) return '';
-  const hit = w && Object.entries(w).find(([k]) => k !== '*' && (isCall ? sameCallText(k, parseCallSafe(pick)!) : sameCardKey(k, parseCardSafe(pick)!)));
+  const hit = w && (Object.entries(w).find(([k]) => k !== '*' && (isCall ? sameCallText(k, parseCallSafe(pick)!) : sameCardKey(k, parseCardSafe(pick)!)))
+    ?? (isCall ? undefined : Object.entries(w).find(([k]) => suitKey(k) === parseCardSafe(pick)?.suit)));
   const text = hit?.[1] ?? w?.['*'] ?? '';
   const pass = isCall && right.includes('>Pass<');
   const opts = isCall
@@ -967,10 +1007,26 @@ function renderStudentCard(L: Loaded, pos: Pos) {
       }).join('')}${S.plan.checked ? '' : '<button class="btn primary" type="submit">Check my answers</button>'}</form>`);
       if (S.plan.checked && (p.bySuit || p.suitNotes)) parts.push(`<div class="catwrap"><div class="lbl">Suit by suit</div>${catalogueHTML(p)}</div>`);
     }
+  } else if (st.kind === 'leadPlan') {
+    const p = s.leadPlan!, qs = leadQuestions(L);
+    parts.push(`<div class="headline">Before you lead</div><p class="muted">You're on lead. First, what did the auction tell you? A single number or a range like 12-14 is fine.</p>`);
+    if (qs.length) {
+      parts.push(`<form id="leadform" class="planform">${qs.map(q => {
+        const v = S.lp.vals[q.key] ?? '';
+        const res = !S.lp.checked ? '' : pointsOk(v, q.answer)
+          ? `<span class="ok-t">Right${q.answer.min !== q.answer.max ? ` (${rangeText(q.answer)})` : ''}</span>`
+          : `<span class="no-t">We'd say ${rangeText(q.answer)}</span>`;
+        return `<label class="pq"><span>${esc(q.q)}</span><input type="text" inputmode="numeric" autocomplete="off" id="lq-${q.key}" value="${esc(v)}" ${S.lp.checked ? 'disabled' : ''}>${res}</label>${S.lp.checked && p.why[q.key] ? `<p class="muted small lpwhy">${prose(p.why[q.key])}</p>` : ''}`;
+      }).join('')}${S.lp.checked ? '' : '<button class="btn primary" type="submit">Check my answers</button>'}</form>`);
+    }
+    if ((S.lp.checked || !qs.length) && p.reminders.length) parts.push(`<ul class="plan">${p.reminders.map(r => `<li>${prose(r)}</li>`).join('')}</ul>`);
+    if (S.lp.checked || !qs.length) parts.push(`<p class="muted small">Press Next to choose your lead.</p>`);
   } else if (st.kind === 'card') {
     const tr = s.play[st.t], pc = tr.cards[st.c];
     if (pend) {
-      parts.push(`<div class="headline">Your play</div><p class="muted">Tap a card in ${pc.seat === s.student ? 'your hand' : 'dummy (' + SEAT_NAME[pc.seat] + ')'}. Cards you can't play are dimmed.</p>`);
+      parts.push(isDefLead(L, S.step)
+        ? `<div class="headline">Your opening lead</div><p class="muted">Tap the card you want to lead. After the lead, dummy goes down and the hand plays itself, stopping when you have a decision to make.</p>`
+        : `<div class="headline">Your play</div><p class="muted">Tap a card in ${pc.seat === s.student ? 'your hand' : 'dummy (' + SEAT_NAME[pc.seat] + ')'}. Cards you can't play are dimmed.</p>`);
     } else {
       const pick = S.picks.get(S.step);
       if (pick !== undefined) {
@@ -986,6 +1042,12 @@ function renderStudentCard(L: Loaded, pos: Pos) {
           // not a key moment: no verdict; if the script's card differs, say quietly what is played
           parts.push(ok ? `<div class="headline">You play <span class="cardtxt">${cardText(parseCardSafe(pick)!)}</span></div>`
             : `<div class="headline">${SEAT_NAME[pc.seat]} plays <span class="cardtxt">${cardText(pc.card)}</span></div><p class="muted small">Play continues with the script's card.</p>`);
+        } else if (st.c === 0 && !ok && pickRight(L, S.step, pick)) {
+          // a starred lead with another good suit listed under "ok:": right too, but the hand follows the script's card
+          const why = pc.whyNot && Object.entries(pc.whyNot).find(([k]) => suitKey(k) === pk.suit)?.[1];
+          parts.push(pk.suit === pc.card.suit
+            ? `<div class="verdict yes"><b>Fine: <span class="cardtxt">${cardText(pk)}</span> and <span class="cardtxt">${cardText(pc.card)}</span> do the same job here.</b></div>`
+            : `<div class="verdict yes"><b>Good choice: <span class="cardtxt">${cardText(pk)}</span> is a sensible lead too.</b>${why ? ` ${prose(why)}` : ''}</div><p class="muted small">We'll follow the hand with the other good lead, <span class="cardtxt">${cardText(pc.card)}</span>.</p>`);
         } else parts.push(ok === 'equal'
           ? `<div class="verdict yes"><b>Fine: <span class="cardtxt">${cardText(parseCardSafe(pick)!)}</span> and <span class="cardtxt">${cardText(pc.card)}</span> are the same here.</b></div>`
           : ok
@@ -1002,7 +1064,7 @@ function renderStudentCard(L: Loaded, pos: Pos) {
     const d = L.derived!, c = d.contract!, need = c.level + 6;
     const res = d.declarerTricks >= need ? (d.declarerTricks > need ? `made with ${d.declarerTricks - need} overtrick${d.declarerTricks - need > 1 ? 's' : ''}` : 'made exactly') : `down ${need - d.declarerTricks}`;
     const judged = [...S.picks.entries()].filter(([i]) => { const x = L.steps[i]; return x.kind === 'call' || (x.kind === 'card' && s.play[x.t].cards[x.c].studentDecides); });
-    const right = judged.filter(([i, p]) => { const x = L.steps[i]; return x.kind === 'call' ? sameCallText(p, s.auction[x.i].call) : x.kind === 'card' ? !!cardRightAt(L, i, p) : false; }).length;
+    const right = judged.filter(([i, p]) => { const x = L.steps[i]; return x.kind === 'call' ? sameCallText(p, s.auction[x.i].call) : x.kind === 'card' ? pickRight(L, i, p) : false; }).length;
     parts.push(`<div class="headline">The result: ${c.level}${c.strain === 'NT' ? 'NT' : SUIT_SYM[c.strain]} ${res}<span class="hscore">· ${scoreShort(L)}</span></div>`);
     if (judged.length) parts.push(`<p class="score">You made ${right} of ${judged.length} key decision${judged.length > 1 ? 's' : ''} the way most players would.</p>`);
     if (S.mode === 'student') progSet(s.id, { right, total: judged.length });
@@ -1018,6 +1080,13 @@ function renderStudentCard(L: Loaded, pos: Pos) {
     for (const q of planQuestions(L)) S.plan.vals[q.key] = (document.querySelector<HTMLInputElement>('#pq-' + q.key)?.value ?? '').trim();
     if (planQuestions(L).some(q => S.plan.vals[q.key] === '')) { const f = pf.querySelector('input'); (f as HTMLInputElement)?.focus(); return; }
     S.plan.checked = true; render();
+  };
+  const lf = document.querySelector<HTMLFormElement>('#leadform');
+  if (lf) lf.onsubmit = e => {
+    e.preventDefault();
+    for (const q of leadQuestions(L)) S.lp.vals[q.key] = (document.querySelector<HTMLInputElement>('#lq-' + q.key)?.value ?? '').trim();
+    if (leadQuestions(L).some(q => S.lp.vals[q.key] === '')) { (lf.querySelector('input') as HTMLInputElement)?.focus(); return; }
+    S.lp.checked = true; render();
   };
   const ag = document.querySelector<HTMLButtonElement>('#again'); if (ag) ag.onclick = restart;
   const nh = document.querySelector<HTMLButtonElement>('#nexthand'); if (nh) nh.onclick = () => S.mode === 'student' ? playHand(Number(nh.dataset.i)) : selectHand(Number(nh.dataset.i));
@@ -1054,7 +1123,7 @@ function go(i: number) {
   if (S.mode === 'student') {
     // never move past a decision the student hasn't made yet
     if (i > S.step) for (let k = S.step; k < i; k++) if (pendingAt(L, k)) { i = k; break; }
-    if (!S.help) { const dir = i >= S.step ? 1 : -1; while (L.steps[i]?.kind === 'planning') i += dir; }
+    if (!S.help) { const dir = i >= S.step ? 1 : -1; while (L.steps[i]?.kind === 'planning' || L.steps[i]?.kind === 'leadPlan') i += dir; }
   }
   S.step = Math.max(0, Math.min(i, L.steps.length - 1));
   render();
@@ -1072,7 +1141,7 @@ function toggleAuto() {
     // Autoplay plays cards (and skips the planning pause) for the student; it still stops for their calls
     if (S.mode === 'student') for (const k of [S.step, S.step + 1]) {
       const x = L.steps[k];
-      if (x && (x.kind === 'card' || x.kind === 'planning') && pendingAt(L, k)) S.auto.add(k);
+      if (x && (x.kind === 'card' || x.kind === 'planning' || x.kind === 'leadPlan') && pendingAt(L, k)) S.auto.add(k);
     }
     go(S.step + 1);
     const st = L.steps[S.step] as any;
@@ -1080,7 +1149,7 @@ function toggleAuto() {
     if (pendingAt(L, S.step)) { toggleAuto(); return; }
     const pauseHere = st.kind === 'call' ? s.auction[st.i].pause || (S.mode === 'student' && studentCalls(s, st.i))
       : st.kind === 'card' ? (S.mode === 'student' ? false : s.play[st.t].cards[st.c].pause || s.play[st.t].cards[st.c].studentDecides)
-      : st.kind === 'planning' && S.mode === 'student' ? false
+      : (st.kind === 'planning' || st.kind === 'leadPlan') && S.mode === 'student' ? false
       : st.kind !== 'deal';
     if (pauseHere) toggleAuto();
   }, 900);
@@ -1119,7 +1188,7 @@ function askPrompt(L: Loaded): string {
     }
   }
   const st = L.steps[S.step];
-  if (pend) lines.push('', st.kind === 'call' ? "It's my turn to bid." : st.kind === 'card' ? "It's my turn to play a card." : '');
+  if (pend) lines.push('', st.kind === 'call' ? "It's my turn to bid." : st.kind === 'card' ? (isDefLead(L, S.step) ? "It's my turn to make the opening lead." : "It's my turn to play a card.") : st.kind === 'leadPlan' ? "I'm about to make the opening lead." : '');
   return lines.join('\n');
 }
 // In-page chat through the viewer's own Claude (sample capability). Fallback: copy the hand.

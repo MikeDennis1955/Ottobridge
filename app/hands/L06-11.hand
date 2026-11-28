@@ -1,0 +1,77 @@
+# Lesson 6, batch 2 (2026-11-28): fourth from your longest and strongest; no lead beats it.
+title: Fourth best against a strong 2NT
+id: L06-11
+type: exercise
+lesson: 6
+concepts: 6.5
+student: S
+board: 11
+
+deal:            # spades  hearts  diamonds  clubs
+  N  QT62   9874   AKT     76
+  E  A93    KJT    J98     AKQ8
+  S  KJ874  63     Q52     J93
+  W  5      AQ52   7643    T542
+
+auction:
+  S Pass   = Not enough to open
+  W Pass   = Not enough to open
+  N Pass   = Not enough to open
+  E 1C     = 13+ points, 4+ clubs
+  S Pass   = Nothing to say
+  W 1H     = 6+ points, 4+ hearts
+  N Pass   = Nothing to say
+  E 2NT    = 18-20 points, balanced
+  S Pass   = Nothing to say
+  W 3NT    = Enough for game opposite 18-20
+  N Pass   = Nothing to say
+  E Pass   = Happy with game
+  S Pass   = Nothing to add
+
+auction recap:
+  After three passes East opened 1♣, and West, a passed hand, bid 1♥. East's
+  jump to 2NT showed a strong balanced hand, 18 to 20, and West raised to
+  game. East is declarer, and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 18-20 = East opened and then jumped to 2NT: 18 to 20, balanced.
+  dummy: 6-11 = West passed at first, then responded 1♥: 6 to 11.
+  partner: 2-9 = 40, minus your 7, East's 18 to 20 and West's 6 to 11, leaves 2 to 9.
+  remind: At no-trump the play is a race to set up long suits, and the first move is yours.
+
+play:
+  1   S S7*  W S5  N SQ  E SA
+      S7 key: Fourth from your longest and strongest: count down K, J, 8, 7. Spades are the one suit that could give the defense extra tricks.
+      S7 not S: Right suit! The usual card is the fourth from the top: K, J, 8, 7.
+      S7 not H: West bid hearts. Which suit is your longest and strongest?
+      S7 not D: From Q52, a diamond is a guess. Which suit could give you extra tricks?
+      S7 not C: East opened clubs, and your ♣J93 builds nothing. Which suit is your longest?
+      note: Partner plays his queen, and declarer wins the ace.
+  2   E HK  S H3  W H2  N H4
+      note: Declarer counts nine tricks on top: the ♠A, four hearts and four clubs. She starts with the hearts, her short side first.
+  3   E HJ  S H6  W H5  N H7
+  4   E HT  S D2  W HA  N H8
+      note: Dummy's ace overtakes, so the fourth heart can be cashed in dummy.
+  5   W HQ  N H9  E D8  S D5
+      note: Declarer throws a diamond.
+  6   W C2  N C6  E CA  S C3
+      note: Now the clubs.
+  7   E CK  S C9  W C4  N C7
+  8   E CQ  S CJ  W C5  N S2
+      note: Your ♣J falls under the queen.
+  9   E C8  S DQ  W CT  N DT
+      note: Declarer's ninth trick. She gives up the rest.
+  10  W D3  N DK  E D9  S S4
+      note: Partner wins the ♦K and ♦A.
+  11  N DA  E DJ  S S8  W D4
+  12  N S6  E S3  S SK  W D6
+      note: Partner leads a spade, and your spades take the last two tricks.
+  13  S SJ  W D7  N ST  E S9
+
+play recap:
+  Declarer had nine tricks on top, so no lead could beat 3NT: she never had
+  to give up the lead until she had made her contract. Your ♠7 was still the
+  right start, and once declarer had her nine tricks, your spades and
+  partner's diamonds took the rest. Most hands aren't like this one: usually
+  declarer has to give up the lead at least once, and a long suit started at
+  trick one is what beats the contract.

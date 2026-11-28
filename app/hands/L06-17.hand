@@ -1,0 +1,67 @@
+# Lesson 6, batch 2 (2026-11-28): top of a long sequence against 3NT.
+title: Queen from a long sequence
+id: L06-17
+type: exercise
+lesson: 6
+concepts: 6.3, 6.5
+student: S
+board: 17
+
+deal:            # spades  hearts  diamonds  clubs
+  N  K3     JT643  432     KJT
+  E  A852   A97    AQJ5    84
+  S  QJT94  852    K6      973
+  W  76     KQ     T987    AQ652
+
+auction:
+  N Pass   = Not enough to open
+  E 1NT    = 15-17 points, balanced
+  S Pass   = Nothing to say
+  W 3NT    = 10-14 points, no 4-card major: let's play game
+  N Pass   = Nothing to say
+  E Pass   = Happy with game
+  S Pass   = Nothing to add
+
+auction recap:
+  East opened 1NT (15-17) and West raised straight to 3NT. East is declarer,
+  and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 15-17 = East's 1NT showed 15 to 17.
+  dummy: 10-14 = West went straight to game opposite 1NT: 10 to 14.
+  partner: 3-9 = 40, minus your 6, East's 15 to 17 and West's 10 to 14, leaves 3 to 9.
+  remind: At no-trump the play is a race to set up long suits, and the first move is yours.
+
+play:
+  1   S SQ*  W S6  N SK  E SA
+      SQ key: Your longest suit, with a sequence on top. The ♠Q gives nothing away and pushes out declarer's high spades, so the rest of your spades become winners.
+      SQ not S: Right suit! With the queen, jack and ten on top, lead the queen.
+      SQ not H: A heart is a guess. Which of your suits is longest, with a sequence on top?
+      SQ not D: Your ♦K is your way back in later, once your spades are set up. Which suit could give you extra tricks?
+      SQ not C: A club is a guess. Which of your suits is longest, with a sequence on top?
+      note: Partner plays his king, so as not to block your suit, and declarer wins the ace. Your spades are now set up.
+  2   E H7  S H2  W HK  N H3
+      note: Declarer crosses to dummy's ♥K...
+  3   W DT  N D2  E D5  S DK
+      note: ...and tries the diamond finesse. Your king wins, and you have spades to cash.
+  4   S SJ  W S7  N S3  E S2
+      note: Run your spades.
+  5   S ST  W C2  N H4  E S5
+  6   S S9  W C5  N H6  E S8
+  7   S S4  W C6  N D3  E C4
+      note: Five tricks: 3NT is down one.
+  8   S H8  W HQ  N HT  E H9
+      note: You get out with a heart, and declarer takes the rest.
+  9   W D9  N D4  E DJ  S D6
+  10  E DA  S H5  W D8  N HJ
+  11  E DQ  S C3  W D7  N CT
+  12  E HA  S C7  W CQ  N CJ
+  13  E C8  S C9  W CA  N CK
+
+play recap:
+  Your ♠Q knocked out declarer's ace at trick one, and partner helped by
+  throwing his king under it, so the suit wasn't blocked. When the diamond
+  finesse lost to your king, your spades were ready: four spade tricks and
+  the ♦K, down one. Lead anything else, and declarer has time to set up the
+  diamonds and clubs while your spades sit idle. A long suit with a sequence
+  on top is the ideal lead against no-trump.

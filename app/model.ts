@@ -48,12 +48,25 @@ export interface Trick {
 }
 
 /** Asked after dummy is tabled. Numeric answers are checked; the rest are reminders. */
+/** A count the student estimates. Any answer from min to max is accepted ("7-9" in the file; "7" means 7-7). */
+export interface Count { min: number; max: number }
+
 export interface PlanningPause {
   trumpsOutstanding?: number;       // validator recomputes this from the deal
-  losers?: number;
-  winners?: number;
-  bySuit?: Partial<Record<Suit, number>>;  // Counting hands: estimate per suit
+  losers?: Count;                   // obvious losers, counted in the long-trump hand
+  winners?: Count;                  // obvious winners: certain tricks, including ones set up by giving up the lead
+  bySuit?: Partial<Record<Suit, Count>>;   // the per-suit catalogue behind the total
+  suitNotes?: Partial<Record<Suit, string>>; // the job each suit needs, e.g. "Ruff the third heart in dummy."
   reminders: string[];              // e.g. "What is the contract?"
+}
+
+/** Asked before the student's opening lead (defensive hands): what the auction showed, in points. */
+export interface LeadPlan {
+  declarer?: Count;                 // points declarer has shown
+  dummy?: Count;                    // points dummy has shown
+  partner?: Count;                  // so what partner can hold
+  why: Partial<Record<'declarer' | 'dummy' | 'partner', string>>;  // shown after checking
+  reminders: string[];
 }
 
 export interface Contract {         // derived from the auction, not written in the file
@@ -71,10 +84,12 @@ export interface HandScript {
   student: Seat;                    // seat shown at the bottom of the table
   dealer: Seat;
   vulnerable: Vulnerability;
+  board?: number;          // duplicate board number; sets dealer and vulnerability
   deal: Deal;
   auction: ScriptedCall[];
   auctionRecap?: string;
   planning?: PlanningPause;
+  leadPlan?: LeadPlan;              // "lead planning:" section
   play: Trick[];                    // always all 13 tricks
   playRecap?: string;
 }

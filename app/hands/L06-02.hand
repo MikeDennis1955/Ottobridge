@@ -1,0 +1,74 @@
+# Lesson 6, Mike's Exercise 1, turned so the student (South) is on lead.
+title: Your Exercise 1: a sequence against 3NT
+id: L06-02
+type: exercise
+lesson: 6
+concepts: 6.3, 6.5
+student: S
+board: 2
+
+deal:            # spades  hearts  diamonds  clubs
+  N  973    96     T932   JT96
+  E  AQ5    A42    K654   A52
+  S  KT82   QJT85  A7     73
+  W  J64    K73    QJ8    KQ84
+
+auction:
+  E 1NT    = 15-17 points, balanced
+  S Pass   = Nothing to say
+  W 3NT    = 10-14 points, balanced: let's play game
+  N Pass   = Nothing to say
+  E Pass   = Happy with game
+  S Pass   = Nothing to add
+
+auction recap:
+  East opened 1NT (15-17) and West raised straight to 3NT. East is declarer,
+  and so you, South, will lead to the first trick.
+
+lead planning:
+  declarer: 15-17 = East's 1NT showed 15 to 17.
+  dummy: 10-14 = West went straight to game opposite 1NT: 10 to 14. With less, West would invite or pass; with more, West would think about slam.
+  partner: 0-5 = 40, minus your 10, East's 15 to 17 and West's 10 to 14, leaves at most 5.
+  remind: Partner can't hold much. Your own long suit is your best hope.
+  remind: At no-trump the play is a race to set up long suits, and the first move is yours.
+
+play:
+  1   S HQ*  W H3  N H6  E HA
+      HQ key: Your longest suit, with a sequence on top. The ♥Q gives nothing away and starts setting up your hearts.
+      HQ not S: Spades are a fair try, but which of your suits is longer, with a sequence on top?
+      HQ not D: Your ♦A is your way back in later, once your hearts are set up. Which suit could give you extra tricks?
+      HQ not C: A short suit rarely builds tricks against no-trump. Which suit is your longest?
+      HQ not H: Right suit! With QJ10 on top, lead the top of the sequence: the queen.
+      note: Declarer wins the ace and keeps dummy's ♥K as a second stopper.
+  2   E D4   S D7  W DJ  N D2
+      note: Declarer has 6 tricks on top and goes after diamonds, the suit that can give three more.
+  3   W D8   N D3  E D5  S DA
+      note: Your ♦A has to go now. It's your only diamond.
+  4   S HJ   W HK  N H9  E H2
+      note: Back to hearts. This knocks out dummy's ♥K, and your last three hearts are now winners. You just need a way back in.
+  5   W DQ   N D9  E D6  S S2
+      note: Declarer cashes the diamonds.
+  6   W C4   N C6  E CA  S C3
+      note: Over to the ♣A, the short side of the clubs first.
+  7   E DK   S C7  W S4  N DT
+      note: The last diamond.
+  8   E C2   S S8  W CK  N C9
+      note: Back to dummy's clubs.
+  9   W CQ   N CT  E C5  S H5
+      note: Declarer now has eight tricks.
+  10  W S6   N S3  E SA  S ST
+      note: The ♠A is the ninth trick. Notice that you keep your ♠K with a card beside it, so declarer can't drop it under the ace.
+  11  E SQ   S SK  W SJ  N S7
+      note: Declarer has made the contract and gives up the rest.
+  12  S HT   W H7  N S9  E H4
+      note: Your hearts take the last two tricks.
+  13  S H8   W C8  N CJ  E S5
+
+play recap:
+  The ♥Q made the first move in the race. It gave nothing away, and with the
+  ♦A as your way back in, it knocked out both of declarer's heart stoppers.
+  Declarer had just enough: nine tricks once the diamonds were set up. On a
+  day when partner holds an entry, your hearts are ready to beat the contract.
+  A spade lead would have run round to declarer's ♠Q and handed over a tenth
+  trick. Remember: leading from a broken suit like K-10-8-2 is often right
+  against no-trump. Here hearts were longer and stronger.
